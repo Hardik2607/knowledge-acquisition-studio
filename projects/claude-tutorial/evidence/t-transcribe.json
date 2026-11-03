@@ -1,0 +1,13 @@
+{
+  "task_id": "t-transcribe",
+  "criteria": [
+    "AC-05"
+  ],
+  "result": "pass",
+  "artifacts": [
+    "sources/src-1d87ab58a8ee/transcript.json"
+  ],
+  "command": "kas build --project /home/hardik/ai-agent-ecosystem/projects/knowledge-acquisition-studio/projects/claude-tutorial",
+  "run_at": "2026-11-03T09:34:34Z",
+  "notes": "Segments ordered, start < end, no overlap, none over 30s, all non-empty."
+}

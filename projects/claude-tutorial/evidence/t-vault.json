@@ -1,0 +1,18 @@
+{
+  "task_id": "t-vault",
+  "criteria": [
+    "AC-24",
+    "AC-25"
+  ],
+  "result": "pass",
+  "artifacts": [
+    "/home/hardik/Obsidian/knowledge-vault/Sources/src-1d87ab58a8ee.md",
+    "/home/hardik/Obsidian/knowledge-vault/Notes/src-1d87ab58a8ee.md",
+    "/home/hardik/Obsidian/knowledge-vault/Knowledge/k-993fee7f4f30.md",
+    "/home/hardik/Obsidian/knowledge-vault/Knowledge/k-0357f61a7312.md",
+    "/home/hardik/Obsidian/knowledge-vault/Procedures/p-create-a-warm-and-cozy-website-for-amber.md"
+  ],
+  "command": "kas vault --project /home/hardik/ai-agent-ecosystem/projects/knowledge-acquisition-studio/projects/claude-tutorial",
+  "run_at": "2026-11-03T09:34:34Z",
+  "notes": "Projected 5 notes into vault; hand-edit conflicts: 0"
+}

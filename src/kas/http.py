@@ -47,8 +47,9 @@ def _request(request: urllib.request.Request, timeout: int) -> bytes:
     except urllib.error.HTTPError as exc:
         body = exc.read().decode("utf-8", errors="replace")
         raise HttpError(exc.code, body, request.full_url) from exc
-    except urllib.error.URLError as exc:
-        raise HttpError(0, str(exc.reason), request.full_url) from exc
+    except (urllib.error.URLError, TimeoutError, OSError) as exc:
+        reason = getattr(exc, "reason", str(exc))
+        raise HttpError(0, str(reason), request.full_url) from exc
 
 
 def post_json(url: str, payload: dict, headers: dict, timeout: int = 120) -> dict:

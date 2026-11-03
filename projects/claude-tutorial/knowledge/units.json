@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-03T09:34:30Z",
+  "provider": "ollama",
+  "model": "qwen2.5-coder:7b",
+  "units": [
+    {
+      "id": "k-993fee7f4f30",
+      "statement": "Claude Design is used to create a warm, cozy website for Amber Light Candles.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 2848.0,
+          "end": 2908.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-0357f61a7312",
+      "statement": "Claude Design uses a powerful model, such as Opus 5, for the best results.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 3240.0,
+          "end": 3296.0
+        }
+      ],
+      "confidence": "high"
+    }
+  ]
+}

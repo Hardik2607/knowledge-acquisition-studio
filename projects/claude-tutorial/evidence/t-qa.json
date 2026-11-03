@@ -1,0 +1,14 @@
+{
+  "task_id": "t-qa",
+  "criteria": [
+    "AC-22",
+    "AC-23"
+  ],
+  "result": "pass",
+  "artifacts": [
+    "reports/qa-report.md"
+  ],
+  "command": "kas qa --project /home/hardik/ai-agent-ecosystem/projects/knowledge-acquisition-studio/projects/claude-tutorial",
+  "run_at": "2026-11-03T09:34:34Z",
+  "notes": "QA report covering AC-01\u2026AC-25 and skill version check."
+}

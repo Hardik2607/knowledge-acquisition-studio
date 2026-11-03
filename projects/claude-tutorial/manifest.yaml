@@ -1,0 +1,6 @@
+project_id: claude-tutorial
+goal: Learn Claude AI fundamentals, prompt engineering, and workflows from beginner tutorial
+sources:
+  - kind: video
+    origin: https://www.youtube.com/watch?v=9oJySubZRSA
+    title: The Ultimate Beginner’s Guide to Claude AI

@@ -172,9 +172,20 @@ class ExtractionError(Exception):
         super().__init__(f"{code}: {message}")
 
 
-def _coerce_seconds(value) -> float | None:
+def _coerce_seconds(value, max_seconds: float | None = None) -> float | None:
     if isinstance(value, (int, float)):
-        return float(value)
+        val = float(value)
+        if max_seconds is not None and val > max_seconds:
+            mins = int(val) // 100
+            secs = val % 100
+            if mins > 0:
+                converted = mins * 60 + secs
+                if converted <= max_seconds:
+                    return converted
+            dec_min_secs = (val / 100.0) * 60.0
+            if dec_min_secs <= max_seconds:
+                return dec_min_secs
+        return val
     if not isinstance(value, str):
         return None
     value = value.strip()
@@ -188,13 +199,24 @@ def _coerce_seconds(value) -> float | None:
         except ValueError:
             return None
     try:
-        return float(value)
+        val = float(value)
+        if max_seconds is not None and val > max_seconds:
+            mins = int(val) // 100
+            secs = val % 100
+            if mins > 0:
+                converted = mins * 60 + secs
+                if converted <= max_seconds:
+                    return converted
+            dec_min_secs = (val / 100.0) * 60.0
+            if dec_min_secs <= max_seconds:
+                return dec_min_secs
+        return val
     except ValueError:
         return None
 
 
 
-def _coerce_note(entry: dict) -> tuple[float, float, str]:
+def _coerce_note(entry: dict, max_seconds: float | None = None) -> tuple[float, float, str]:
     text = entry.get("text")
     if text is None:
         text = entry.get("note")
@@ -204,8 +226,8 @@ def _coerce_note(entry: dict) -> tuple[float, float, str]:
         text = entry.get("content")
     text = " ".join(str(text or "").split())
 
-    start = _coerce_seconds(entry.get("start"))
-    end = _coerce_seconds(entry.get("end"))
+    start = _coerce_seconds(entry.get("start"), max_seconds)
+    end = _coerce_seconds(entry.get("end"), max_seconds)
     if start is None or end is None:
         for key in ("timestamp", "time", "range", "timestamps", "window"):
             if key in entry:
@@ -323,11 +345,11 @@ class NoteBook:
 def build_notes(client: ChatClient, source, transcript: Transcript) -> NoteBook:
     system = (
         "You extract timestamped study notes from a transcript. "
-        "Return JSON: {\"notes\":[{\"start\":<seconds number>,\"end\":<seconds number>,\"text\":\"...\"}]}. "
+        "Return JSON: {\"notes\":[{\"start\":<timestamp like 'MM:SS' or seconds>,\"end\":<timestamp like 'MM:SS' or seconds>,\"text\":\"...\"}]}. "
         "Use the exact keys start, end and text. Every note must be supported by the transcript. No invention."
     )
 
-    chunk_size = 40
+    chunk_size = 60
     segments = transcript.segments
     chunks = [segments[i:i + chunk_size] for i in range(0, len(segments), chunk_size)] or [[]]
 
@@ -341,20 +363,44 @@ def build_notes(client: ChatClient, source, transcript: Transcript) -> NoteBook:
         user = f"Title: {source.title}\nLanguage: {transcript.language or 'unknown'}\n\nTranscript:\n{profile}"
         result = client.chat(system, user)
         payload = _json_block(result.text)
-        entries = payload.get("notes") or []
-        if not isinstance(entries, list) or not entries:
-            raise ExtractionError("no_notes", "model returned no notes")
+        if isinstance(payload, list):
+            entries = payload
+        elif isinstance(payload, dict):
+            entries = (
+                payload.get("notes")
+                or payload.get("study_notes")
+                or payload.get("bullets")
+                or payload.get("points")
+                or payload.get("items")
+                or []
+            )
+        else:
+            entries = []
+
+        if not isinstance(entries, list):
+            entries = []
+
+        max_sec = transcript.segments[-1].end if transcript.segments else None
         for entry in entries:
             if not isinstance(entry, dict):
                 raise ExtractionError("bad_note", f"malformed note entry: {entry!r}")
             try:
-                start, end, text = _coerce_note(entry)
+                start, end, text = _coerce_note(entry, max_sec)
             except (KeyError, TypeError, ValueError) as exc:
                 raise ExtractionError("bad_note", f"malformed note entry: {entry!r}") from exc
             if not text:
                 raise ExtractionError("bad_note", "empty note text")
             if end <= start:
                 end = start + 1.0
+            if transcript.segments:
+                first = transcript.segments[0].start
+                last = transcript.segments[-1].end
+                if start < first - 0.5 or start > last + 0.5:
+                    if not all_bullets and len(entries) == 1:
+                        _assert_range_in_transcript(transcript, start, end)
+                    continue
+                start = max(first, start)
+                end = min(last, max(start + 0.1, end))
             _assert_range_in_transcript(transcript, start, end)
             all_bullets.append(
                 {

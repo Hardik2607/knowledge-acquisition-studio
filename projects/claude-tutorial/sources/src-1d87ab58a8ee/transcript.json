@@ -1,0 +1,922 @@
+{
+  "source_id": "src-1d87ab58a8ee",
+  "provider": "yt-dlp",
+  "model": "subtitles",
+  "language": "en",
+  "generated_at": "",
+  "schema_version": 1,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 24.770000000000003,
+      "text": "Hey, I'm Matt and this is the ultimate beginners guide to Claude AI. By the end you'll have it fully mastered. We're going from zero to a complete setup. We'll cover smart prompting, file uploads, deep research, real documents and spreadsheets, project memory, connected apps, and Claude working for you on its own. We'll do it step-by-step and you don't need any technical background to get started. The way I see it, there are six levels of using Claude",
+      "language": null
+    },
+    {
+      "start": 24.770000000000003,
+      "end": 48.57,
+      "text": "it, there are six levels of using Claude and that's the ladder we're climbing today. Level one is talking to Claude. Level two is giving it your world. Level three is making real things. Level four is making Claude remember you. Level five is connecting the apps you already use and level six is Claude working while you're away. Now, if you've tried AI tools like this and felt overwhelmed or you've watched other tutorials and still didn't know exactly what to do with this thing, stay with me. I'll walk you through every step, explain the why",
+      "language": null
+    },
+    {
+      "start": 48.57,
+      "end": 71.97,
+      "text": "you through every step, explain the why behind each one, and flag the things that trip people up. And if you already use Claude, this video will show you exactly where you stand on that ladder and what your next level looks like. So, level one starts with a simple question. What exactly is Claude? Claude is an AI assistant made by a company called Anthropic. If you've used ChatGPT or any chatbot, you already know the basic idea. You type in natural language and",
+      "language": null
+    },
+    {
+      "start": 71.97,
+      "end": 95.41,
+      "text": "idea. You type in natural language and it answers, writes, and builds things for you. Now, Claude's reputation comes down to three things. It writes like a human, it's excellent with your documents and files, and it's built for real work instead of just quick answers. And if you're coming from ChatGPT, later in this video I'll show you how Claude can import what ChatGPT already knows about you. One thing before we start. I'll use one example throughout this whole video, a small handmade candle",
+      "language": null
+    },
+    {
+      "start": 95.41,
+      "end": 120.09,
+      "text": "whole video, a small handmade candle shop. And I have one request. Don't copy my example. It's just a demo concept for this video. Run every prompt through your topic instead, whether that's a newsletter, a job search, or schoolwork. You'll learn 10 times faster by doing something that you actually care about. So, let's get you started on a free account. Okay, so first go to claude.ai in your browser or use the link in the description below. That'll take you to",
+      "language": null
+    },
+    {
+      "start": 120.09,
+      "end": 144.73,
+      "text": "description below. That'll take you to this login/signup page. So, go ahead and either sign up with Google or use your email to create a free account. Then, go ahead and walk through whatever onboarding steps they present to you. So, here mine says, \"Let's create your account.\" I need to agree to the terms of service, and I'm going to go ahead and skip the subscription to the promotional emails. We'll click create account. It asks for my birthday, so I'll go ahead and plug that in. And then, we're presented with some pricing",
+      "language": null
+    },
+    {
+      "start": 144.73,
+      "end": 169.45,
+      "text": "then, we're presented with some pricing options. Now, I want to point out Claude is free to start, and most of what I'll show you works on the free plan. There are a few paid plan options, and the cheapest one, Pro, starts at $17 a month billed annually, or if you go for the monthly option, it's $20 a month. I'll tell you exactly when a feature needs a paid plan and we'll upgrade at that time. For now, let's go ahead and use Claude for free. Next, you might be prompted to download Claude to your desktop. For this video,",
+      "language": null
+    },
+    {
+      "start": 169.45,
+      "end": 192.25,
+      "text": "Claude to your desktop. For this video, though, we're just going to get started in the browser, and I'll show you how to download the app later. So, I'll go ahead and just click skip. Here, you get an option to opt in to help improve the AI models by allowing your chats and coding sessions to train and improve Anthropic's models, or you can opt out. This is a personal preference. I'm not going to tell you which one to choose, but for me, I value my privacy, so I'm going to go ahead and",
+      "language": null
+    },
+    {
+      "start": 192.25,
+      "end": 217.25,
+      "text": "my privacy, so I'm going to go ahead and toggle this off and then click continue. It'll ask for your name, so go ahead and tell it. Then, tell it what kind of work you do. I'll say marketing. Answer any follow-up questions, or you can click I have my own topic to skip straight to the dashboard. All right, and we're in. Welcome to Claude. Now, I want to point out this is how Claude looks while I'm recording today. But, software like this changes all the time, so a button might move, the design might change, or they",
+      "language": null
+    },
+    {
+      "start": 217.25,
+      "end": 241.76999999999998,
+      "text": "move, the design might change, or they could even release new features by the time you're watching. That's true for the onboarding flow we just did, also. So, follow the concept I'm presenting here instead of the exact screenshot. The platform itself is incredibly intuitive, so you'll figure out the interface in just a few minutes of using it. Let's go straight to the skill that determines everything. How you ask Claude for things. You've probably heard the term prompt. What is that? A prompt",
+      "language": null
+    },
+    {
+      "start": 241.76999999999998,
+      "end": 266.65000000000003,
+      "text": "the term prompt. What is that? A prompt is just the message you send to Claude or any other AI. And the difference between a bad prompt and a good one is the difference between a useless answer and the one that feels like magic. Let me show you. Let's start with a weak prompt. Write a product description for a candle. To send your prompt, you can click the orange send message button or just hit return on your keyboard. All right, so this is the result we got back and it's fine. It's a little",
+      "language": null
+    },
+    {
+      "start": 266.65000000000003,
+      "end": 290.89000000000004,
+      "text": "back and it's fine. It's a little generic and that's because Claude knows nothing about what we're selling or who we're selling to. So, watch what happens with what I call the three-part prompt that includes context, task, and format. Here's a stronger prompt. I'll say, \"I run a small handmade candle shop called Amber Light. Our candles are soy wax,",
+      "language": null
+    },
+    {
+      "start": 290.89000000000004,
+      "end": 315.49,
+      "text": "Amber Light. Our candles are soy wax, hand-poured with natural scents like cedar and sea salt. Our customers care about cozy homes and natural ingredients. Write a product description for our new Autumn Cabin candle. Give it a warm and personal tone, under 100 words, and with one short sentence that makes you want to light it tonight.\" And we'll send that. All right, let's read this result out loud because it has a completely different feeling.",
+      "language": null
+    },
+    {
+      "start": 315.49,
+      "end": 338.93,
+      "text": "different feeling. Autumn Cabin. Picture this. Wool socks, a crackling fire, leaves tumbling past the window. Autumn Cabin brings that feeling home. Warm cedarwood and soft spice layered with a whisper of wood smoke, all poured by hand into natural soy wax. No harsh chemicals, just simple, honest scent that fills the room slowly and gently. It's the candle we",
+      "language": null
+    },
+    {
+      "start": 338.93,
+      "end": 363.53000000000003,
+      "text": "slowly and gently. It's the candle we reach for when the air turns crisp and the couch calls your name. Light it tonight. The cabin's waiting. All right, this is the exact same Claude. The only thing that changed is what I gave it. The context is who you are and what you're working with. The task is exactly what you want and the format is how you want it. The length, the tone, and the structure. And here's something you need to know",
+      "language": null
+    },
+    {
+      "start": 363.53000000000003,
+      "end": 388.53000000000003,
+      "text": "And here's something you need to know right now because it's true for this entire video. If you type my exact prompt, you will not get my exact answer. AI gives a different result every time, even for the same question. And that's completely normal. So, don't chase my exact results. Take the pattern I'm demonstrating here, put your own topic in, and judge what you get back. Now, that leads us to the second crucial habit. Don't start over when the answer",
+      "language": null
+    },
+    {
+      "start": 388.53000000000003,
+      "end": 412.13,
+      "text": "habit. Don't start over when the answer isn't right. Reply and refine. Claude remembers everything in the conversation. So, let's say great, but make it half as long and keep the mention that it's hand-poured. There we go. We have something that's half as long. Let me read it out loud. Autumn Cabin cedarwood, soft spice, and a whisper of wood smoke. Hand-poured",
+      "language": null
+    },
+    {
+      "start": 412.13,
+      "end": 435.85,
+      "text": "a whisper of wood smoke. Hand-poured into natural soy wax to bring that first frost on the window feeling home. Light it tonight. The cabin's waiting. Ooh, that's really punchy. All right. So, replying and refining is the real skill. Treat every answer as a first draft and then keep shaping it. So, here's your first challenge of the video. Pause right now and ask Claude to write something about your topic and",
+      "language": null
+    },
+    {
+      "start": 435.85,
+      "end": 460.49,
+      "text": "write something about your topic and then change it a couple times without starting over. All right. Let's talk about models. Down here at the bottom right, you can see it says Sonnet 5 medium. And if I click on that, we'll see a whole list of other models that are available. Granted, some are only available on the paid plans. The model is the brain answering you. The names and version numbers change all the time. So, here's the only pattern",
+      "language": null
+    },
+    {
+      "start": 460.49,
+      "end": 483.73,
+      "text": "the time. So, here's the only pattern you need to know. There's a fast model for everyday tasks and a more powerful model for complex work. It's like fast food versus a fine dining chef. One feeds you right away for cheap, but the quality can vary. The other takes longer and costs more, but it handles the complex meals, the special requests, and the occasions where the details have to be just right.",
+      "language": null
+    },
+    {
+      "start": 483.73,
+      "end": 508.67,
+      "text": "where the details have to be just right. So, when do you actually switch models? The default is right for everyday work. Move up to a more powerful model when the job is big or the result really matters, like analyzing a long contract, writing something important, or planning a complex project. Move down to the fast model when you're firing off lots of small questions and speed matters more than polish. You can switch at any time, even in the",
+      "language": null
+    },
+    {
+      "start": 508.67,
+      "end": 533.25,
+      "text": "You can switch at any time, even in the middle of a conversation. Right now, as I'm recording, Sonnet is the default model for most things. Haiku is a lighter-weight model. Opus is a step up, and Fable is the top model available. Now, you might also see an effort setting next to the model. That's down here. It controls how long Claude thinks before it answers. Raise the effort level for problems with many steps where the details have to be",
+      "language": null
+    },
+    {
+      "start": 533.25,
+      "end": 557.1700000000001,
+      "text": "many steps where the details have to be right. Leave it on the default for everything else. One practical note, the powerful model and higher effort both use up your usage allowance faster, which brings us to limits. Here's how they work. Every plan, free and paid, give you an amount of usage that refills on a schedule. If you ever hit the limit, nothing is broken and nothing is lost. You just wait for the reset, or",
+      "language": null
+    },
+    {
+      "start": 557.1700000000001,
+      "end": 580.09,
+      "text": "lost. You just wait for the reset, or you upgrade if it keeps happening. My advice is to start free and then upgrade on the day the limit starts to annoy you. And that is level one complete already. You can talk to Claude, shape its answers, and pick the right brain for the job. Many people stop here, and they're missing everything that's coming because right now, Claude can only work with what you type into the box. Level two is where",
+      "language": null
+    },
+    {
+      "start": 580.09,
+      "end": 605.03,
+      "text": "type into the box. Level two is where you hand it your world, your files, your images, and the live internet. We're starting a new topic, so I'm starting a new chat. To do that, click the plus in the upper left in the sidebar. And just like that, we have a fresh chat. Now, this is a habit worth copying. The rule is simple, same task, same chat. New topic, new chat. Claude names every chat automatically based on the content of your first message, so",
+      "language": null
+    },
+    {
+      "start": 605.03,
+      "end": 628.0500000000001,
+      "text": "the content of your first message, so you can find them again in the sidebar by clicking at the top to open the sidebar, and then finding the name of your conversation. You can switch between the chats anytime, and even pin the ones you use the most so they stay at the top. Separate chats keep Claude focused, and they use less of your usage allowance than one giant endless conversation. Now, this is where Claude starts feeling like a real assistant. You can hand it files like PDFs, Word",
+      "language": null
+    },
+    {
+      "start": 628.0500000000001,
+      "end": 652.85,
+      "text": "You can hand it files like PDFs, Word documents, spreadsheets, and images, and it reads them and works with what's inside. For example, I'm going to attach a supplier price list PDF. To do that, we'll click the plus button in the bottom left of the chat, click add files or photos, and select file from the file picker. I'll tell Claude, \"This is a price list from a candle wax supplier. Summarize it in a short table and tell me which option is the cheapest per kilogram.\"",
+      "language": null
+    },
+    {
+      "start": 652.85,
+      "end": 676.0500000000001,
+      "text": "option is the cheapest per kilogram.\" And then I'll submit that and let it run. Now, for you, this could be a contract, a bank statement, a study paper, or a recipe book. Anything you'd normally read line by line, Claude reads in seconds. And here, just like that, it identified that from the list, per kilogram is this golden soy 464 in the bulk format. That's this one up top. Claude can also see images, too. Let me show you. We'll",
+      "language": null
+    },
+    {
+      "start": 676.0500000000001,
+      "end": 698.85,
+      "text": "see images, too. Let me show you. We'll click plus, add files or photos, and then select this candle photo here. I'll give you a little preview here. This is what it looks like. And I'll say, \"What would you improve about this product photo to make it sell better online?\" And in seconds, it comes back with a response. The biggest thing I learned from this is that it says the background is too present. It pulls the focus away from the candle and reads as a casual",
+      "language": null
+    },
+    {
+      "start": 698.85,
+      "end": 721.85,
+      "text": "from the candle and reads as a casual snapshot instead of a product shot. In addition to regular photos, you can also give it screenshots and handwritten notes. So, here's your challenge for this level. Upload the most boring document in your life and ask Claude to explain it. That's when this feature really clicks. One thing to know is that Claude reads what you give it, but it doesn't automatically know today's news or live",
+      "language": null
+    },
+    {
+      "start": 721.85,
+      "end": 745.97,
+      "text": "automatically know today's news or live prices. For that, it needs to go online, and this is where it gets interesting. Claude can search the web when your question needs current information. Watch. I'll say, \"Search the web. What are people saying about current candle and home fragrance trends? Give me sources.\" Now, you can also make sure that your web search is turned on by clicking the plus and then going to the bottom of the menu here and making sure that there's a",
+      "language": null
+    },
+    {
+      "start": 745.97,
+      "end": 769.41,
+      "text": "menu here and making sure that there's a little check mark next to web search. If you don't have the check mark here, it might not be able to search the web for you. So, go ahead and double-check that before your first web search, and then click send. So, here is Claude's response, and it's got some interesting stuff to say, but the really interesting thing is notice that it shows exactly where the information came from. Here, there's a source for this information, so you can check it. Make that a habit with any AI.",
+      "language": null
+    },
+    {
+      "start": 769.41,
+      "end": 793.929,
+      "text": "check it. Make that a habit with any AI. When facts matter, look at the sources. Now, that was a quick search. The next feature, called research, goes much further. Claude goes off on its own, reads dozens or even hundreds of sources, and comes back with a full cited report, like a research assistant that you'd normally pay for. Now, this one needs the paid plan. It's honestly one of the two features that made the upgrade worth it for me, and you'll see the other one at level six.",
+      "language": null
+    },
+    {
+      "start": 793.929,
+      "end": 818.61,
+      "text": "the other one at level six. So, let's do a quick upgrade. In the bottom left, we'll click the profile icon, and then click upgrade plan. I'll go ahead and select the pro plan, but we'll do the monthly option instead of yearly, and then click get pro. On the next page, you'll plug in your billing information, and once that's all filled out, you'll click subscribe. You'll get a payment confirmation, and it might tell you to download the desktop app again, but again, we'll go ahead and skip that for the moment. I'll show you how to do this manually later when you want to.",
+      "language": null
+    },
+    {
+      "start": 818.61,
+      "end": 843.55,
+      "text": "when you want to. All right, we're back in Claude. Let's go to the left sidebar and find our conversation. Here's the one about the current candle and home fragrance trends, and then we'll click the plus button at the bottom, and you can see now there's a research function that appears. So, go ahead and turn that on, and then type your prompt. I'll say, \"Research the market for small handmade candle brands. Who buys handmade candles, what they pay, how small brands",
+      "language": null
+    },
+    {
+      "start": 843.55,
+      "end": 866.8100000000001,
+      "text": "candles, what they pay, how small brands market themselves, and the three biggest mistakes new candle businesses make. I'm starting a small online candle shop.\" And then start it running. Now, this can take a while, sometimes a few minutes, sometimes much longer, because it's actually reading. Now, one thing to know is that research uses up your usage limit faster than just normal chatting. So, save it for questions that really deserve the deep research. I'll let it",
+      "language": null
+    },
+    {
+      "start": 866.8100000000001,
+      "end": 891.01,
+      "text": "deserve the deep research. I'll let it work and cut ahead to when it's done. Okay, and here it's finished. On the left side, you can see its response in the chat, and then if it hasn't opened for you already, there should be a little button you can click to open the document that it created, and that'll show up on the right side of the screen. It has a too long did not read section at the top with a high-level summary of the core buyer, what they pay, and how",
+      "language": null
+    },
+    {
+      "start": 891.01,
+      "end": 914.85,
+      "text": "the core buyer, what they pay, and how to win, and what to avoid. There's some key findings, and if we scroll through, we can see that it lists a bunch of information. It's a really nice detailed report. We can see the sources again that it listed. And for me, one of the biggest takeaways from this document is the three biggest mistakes new candle businesses make. I want to avoid these three mistakes, so this is really valuable information. So, here you can see how you get a complete sourced",
+      "language": null
+    },
+    {
+      "start": 914.85,
+      "end": 937.73,
+      "text": "see how you get a complete sourced report from one sentence. Think about the next big decision in your life, like a move, a job change, or a big purchase. That's your research prompt, and that is level two complete. Claude can now read your files, see your images, and research anything with a real sources. And speaking of research, there's one thing a report like ours tells every new online store sooner or later. Email",
+      "language": null
+    },
+    {
+      "start": 937.73,
+      "end": 960.97,
+      "text": "online store sooner or later. Email marketing is where the money is. That brings me to the sponsor of this video, Omnisend. Omnisend is an email and SMS platform built specifically for e-commerce. It plugs straight into stores like Shopify, WooCommerce, and Wix, and it handles the emails that make stores money. Welcome emails, abandoned cart reminders, and newsletters. Now, two things stand out to me. The first is",
+      "language": null
+    },
+    {
+      "start": 960.97,
+      "end": 984.77,
+      "text": "two things stand out to me. The first is pricing. If you already pay for an email tool, Omnisend says stores that switch can end up paying up to 35% less. The second is that the switch is done for you. Their team moves your lists, your automations, and your templates in about 5 days. You don't do a thing. You just show up when it's done. And if you like starting from zero, like our candle shop, it's free to start. Use the link on screen or in the description",
+      "language": null
+    },
+    {
+      "start": 984.77,
+      "end": 1009.25,
+      "text": "the link on screen or in the description below, and the code MM30 gets you 30% off any paid plan for your first 3 months. And don't go anywhere, because at level five, I'll connect Claude directly to Omnisend and have it do real marketing work inside the platform all on its own. Level three is where Claude stops writing text and starts building real things. Level three is a mindset shift. Everything Claude has made so far lived",
+      "language": null
+    },
+    {
+      "start": 1009.25,
+      "end": 1032.9699999999998,
+      "text": "Everything Claude has made so far lived inside the chat. Now, Claude starts producing real usable things, and there are two kinds. The first is downloadable files like Word documents, Excel spreadsheets, PowerPoints, and PDFs. The second kind is interactive builds like pages and mini apps it creates right in front of you. Let's start with files. For my candle store, I'll say, \"Create an Excel spreadsheet to track my candle",
+      "language": null
+    },
+    {
+      "start": 1032.9699999999998,
+      "end": 1056.1299999999999,
+      "text": "an Excel spreadsheet to track my candle inventory. Columns for product name, scent, cost to make, selling price, profit margin calculated, and stock. Fill in eight example candles with realistic numbers and send it. And after a minute, here you can see it came up with a spreadsheet. Let's click the full screen expand button to see the full thing. And that's a real spreadsheet with working formulas that",
+      "language": null
+    },
+    {
+      "start": 1056.1299999999999,
+      "end": 1080.6499999999999,
+      "text": "spreadsheet with working formulas that you can open in Excel. If you click the download button, you can [clears throat] get the actual Excel file for it. It does the same with Word documents and presentations. For you, this might be a budget, a resume, a lesson plan, or a report for work. If the file takes a few minutes to generate, that's totally normal. It's actually building it. Now, let's look at the second kind. Artifacts. Ask Claude to build something visual and it opens a window next to the",
+      "language": null
+    },
+    {
+      "start": 1080.6499999999999,
+      "end": 1105.63,
+      "text": "visual and it opens a window next to the chat and builds it live. I'll show you. First, let's open a fresh chat. And then we'll say, create a simple, beautiful landing page for Amber Light Candles. Warm colors, a headline, three featured candles and an and an email sign-up section. Here it begins to think. You can see it loads something called front-end design skill. I'll explain skills a bit later in this video. And it begins to build an HTML page. And after a minute, you can",
+      "language": null
+    },
+    {
+      "start": 1105.63,
+      "end": 1129.9699999999998,
+      "text": "HTML page. And after a minute, you can see it built the web page on the right side. Let's go ahead and expand to see the full thing. Right away what stands out to me is that it has this beautiful color combination that I asked for and it even added a little candle flicker animation here up top. You can see it moving around randomly. We can scroll through to see more details. It has some placeholder images for candles. But overall, this is a really good starting point. Let's go ahead and collapse the full size.",
+      "language": null
+    },
+    {
+      "start": 1129.9699999999998,
+      "end": 1154.4099999999999,
+      "text": "collapse the full size. And then let's ask for some changes. Let's say, make the background cream and the headline bigger. And if we scroll to the top here, we can see it changing in real time. Now, let's throw one wild card at it. We'll say, now turn it into a scent quiz that recommends one of our candles. Let's see how it does with that. All right, and this one took a little bit",
+      "language": null
+    },
+    {
+      "start": 1154.4099999999999,
+      "end": 1178.1299999999999,
+      "text": "right, and this one took a little bit longer, but now we have this hero section of the landing page that says, \"Take the quiz.\" Or we can scroll down to see it. And here we have the actual scent quiz. So, let's click through it. Where is this candle burning? Uh we'll say in the kitchen, no particular reason. What note pulls you in first? Uh I like wood smoke. And pick the evening. Walk home with sand still on your feet. All",
+      "language": null
+    },
+    {
+      "start": 1178.1299999999999,
+      "end": 1203.01,
+      "text": "home with sand still on your feet. All right, and it matched me to a candle. Then I can click the button to actually shop this candle. You can keep talking to Claude like a designer sitting next to you, and you can push it way past where you might think it stops. So, here's your challenge for this level. Ask Claude to build one small tool for your life. It could be a budget calculator, a workout planner, or a quiz for your friends. Whatever it builds for you will be different from mine, and",
+      "language": null
+    },
+    {
+      "start": 1203.01,
+      "end": 1227.33,
+      "text": "you will be different from mine, and that's the whole point. And that completes level three. Claude now makes real things for you. But notice a problem. Our descriptions, research, and files are scattered across separate chats, and every new chat starts from zero like Claude has amnesia. Level four fixes that. This is where Claude starts to know you. Let's organize your work with projects. A project is a workspace where related chats live together and share the same",
+      "language": null
+    },
+    {
+      "start": 1227.33,
+      "end": 1251.29,
+      "text": "chats live together and share the same knowledge. To access projects, you can get there by opening the sidebar on the left and clicking projects. There's an example project already loaded in there, but to start a new one, you can go up to the right and click new project. Go ahead and name your project. I'll call mine Amber Light Candles. And then click create project. Now there are two superpowers in here. The first is knowledge. Any file you add in this section on the right is",
+      "language": null
+    },
+    {
+      "start": 1251.29,
+      "end": 1276.2099999999998,
+      "text": "in this section on the right is available in every chat you start inside the project. So, you never have to upload the same file twice. The second is instructions. Describe your situation once, and every chat in the project already knows it. So, for my situation, I'm going to add a supplier price list and a research report to this project. We'll click the plus and then upload from device. Here we'll add the wax supplier price list.",
+      "language": null
+    },
+    {
+      "start": 1276.2099999999998,
+      "end": 1299.2099999999998,
+      "text": "list. And we'll do the same thing to add the research report. Next, we can set project instructions. To do that, we'll click the plus. And let's say this project is for Amber Light Candles, a small handmade soy candle shop. Warm, personal brand voice. Customers care about natural ingredients and cozy homes. We'll go ahead and save those instructions. Now, let's start a new chat inside this",
+      "language": null
+    },
+    {
+      "start": 1299.2099999999998,
+      "end": 1324.1299999999999,
+      "text": "Now, let's start a new chat inside this project. I'll say, \"Write three ideas for our first newsletter.\" And here you can see it already started diving in and exploring newsletter concepts based on the information and files I added to the project. I didn't have to tell it about Amber Light in my first message. It already had that context. There was practically nothing in my prompt and it pulled everything it needed from the project. This is the single biggest step from casually using",
+      "language": null
+    },
+    {
+      "start": 1324.1299999999999,
+      "end": 1346.81,
+      "text": "single biggest step from casually using Claude to actually working with it. So, here's your challenge for this level. Create one project for the biggest topic in your life and add two files to its knowledge to kick it off. Projects give Claude memory about a topic, but what about memory about you? Two features make Claude remember you. Personal instructions and memory. To access them, click your name in the",
+      "language": null
+    },
+    {
+      "start": 1346.81,
+      "end": 1370.1299999999999,
+      "text": "access them, click your name in the bottom left and then click settings. Here in the general tab, you'll see your profile. There it'll show your full name, what Claude should call you, what best describes your work, and then any particular instructions you want for Claude. Here you can set your instructions for all chats. Memory works in the other direction. Claude notices and remembers things from your conversations on its own. So, it gets",
+      "language": null
+    },
+    {
+      "start": 1370.1299999999999,
+      "end": 1395.09,
+      "text": "conversations on its own. So, it gets more useful the more you use it. You access that under settings in the memory tab. Here you can see it already remembers some information about me regarding Amber Light. Let's click to see the details. It's made a brief summary saying user's small handmade candle shop Amber Light product line and brand details and then has some details about what we've discussed so far including that we have a product called Autumn Cabin. Now you stay in control of",
+      "language": null
+    },
+    {
+      "start": 1395.09,
+      "end": 1418.8899999999999,
+      "text": "Autumn Cabin. Now you stay in control of all of it. You can read everything Claude has remembered, edit it by chatting with the memory or delete it entirely. And if you're working on something that you don't want remembered at all, there's an incognito chat where nothing sticks around. Let me show you. If we close out of settings and start a new chat in the upper right there's this little ghost icon. You can click that and now you're in incognito mode. While you're in incognito mode, the chats aren't",
+      "language": null
+    },
+    {
+      "start": 1418.8899999999999,
+      "end": 1442.9699999999998,
+      "text": "in incognito mode, the chats aren't saved, nothing gets added to memory or even used to train the models. We can test this by asking it who am I? And there we go, it has no idea who I am. To exit an incognito chat, you simply close it. And poof, that chat is gone. Now if you're coming from chat GPT, this is the moment I promised. You can bring what chat GPT already knows about you into Claude so it doesn't start as a stranger. To do this, let's reopen",
+      "language": null
+    },
+    {
+      "start": 1442.9699999999998,
+      "end": 1467.77,
+      "text": "stranger. To do this, let's reopen settings. Go to memory, find the option that says import memory from other AI providers and click start import. It'll give you a prompt that you can copy and paste into a chat with your other provider. So now if I go to chat GPT, I can paste in that prompt and simply send it right away. Now here it didn't give me a file that I can simply download but it did give me instructions on where I can find my memory which is useful enough. So in",
+      "language": null
+    },
+    {
+      "start": 1467.77,
+      "end": 1492.01,
+      "text": "my memory which is useful enough. So in chat GPT, I can go to settings, personalization and memory. So let's do that. We'll click on my account personalization and then scroll down to the memory summary manage and here we can copy everything in here. Return to Claude and paste it in here. Then click add to memory. It'll show that the import is in progress. Then after a minute you'll see that it",
+      "language": null
+    },
+    {
+      "start": 1492.01,
+      "end": 1515.01,
+      "text": "after a minute you'll see that it updates your memories. For example, it pulled in information about AI tools, food and pets. Now, this import feature is experimental, so don't worry if a few details come through imperfectly. You can edit any memory afterwards by simply chatting with Claude. Now, one setting I like and recommend turning on if you like the experience of memory in Claude is to turn on this search and reference",
+      "language": null
+    },
+    {
+      "start": 1515.01,
+      "end": 1538.6499999999999,
+      "text": "is to turn on this search and reference chats toggle. This allows Claude to search for relevant details in past chats. So, even if it doesn't have a stored memory about you, it can search past chats for details. This gets you an effect similar to projects, but a little bit more generic. There's one more piece that completes level four. A Claude that knows you should be with you everywhere. There's a mobile app for iPhone and Android, and everything syncs. Your",
+      "language": null
+    },
+    {
+      "start": 1538.6499999999999,
+      "end": 1562.2099999999998,
+      "text": "Android, and everything syncs. Your account, your chats, your projects, and your memory. All right, so here's the mobile app right here on my phone. And this is what it looks like when you open up a new chat. But, you can open up to see previous chats by clicking the hamburger menu in the upper left, and then scroll to find the one you like. Like, for example, this first newsletter ideas chat. And here I can continue the chat if I want to. So, let's take a photo,",
+      "language": null
+    },
+    {
+      "start": 1562.2099999999998,
+      "end": 1586.1699999999998,
+      "text": "if I want to. So, let's take a photo, for example. I have this candle right here. I want to see what a reasonable price for this candle would be. So, let's click the plus button. Uh we'll keep the current selection, and hit the camera, and snap a photo here. Let's zoom in. &gt;&gt; [snorts] &gt;&gt; All right, and now we can use the photo. And because we're on the phone, we can",
+      "language": null
+    },
+    {
+      "start": 1586.1699999999998,
+      "end": 1610.05,
+      "text": "And because we're on the phone, we can also use the voice mode here, so I'll go ahead and just say, \"What would a reasonable price for a candle like this be?\" And hit send. I can turn on to receive notifications when it actually finishes processing, which is nice. That way I can just stick my phone in my pocket if I want to, and wait till it pings me for longer tasks.",
+      "language": null
+    },
+    {
+      "start": 1610.05,
+      "end": 1633.33,
+      "text": "wait till it pings me for longer tasks. Here I got a response. It says it has four wicks. Actually it has three, but good enough. And it thinks basically a candle like this would be about $48 to $65 for a premium handmade candle. If you ever want to start a new chat on the Claude app, you can simply tap the plus button in the upper right and you have a fresh chat. You can also access your",
+      "language": null
+    },
+    {
+      "start": 1633.33,
+      "end": 1658.1699999999998,
+      "text": "fresh chat. You can also access your projects here, too. If you click to open projects under the chats in the menu, you can get access to the project that you set up on your desktop and keep working. The ideal way to use the phone app is to capture and continue. You take a picture of the thing in front of you. You talk about an idea that came to you spontaneously while out for a walk and the full conversation waiting for you on your computer when you sit back down at your desk. There's also a desktop app for Mac and Windows that put Claude one",
+      "language": null
+    },
+    {
+      "start": 1658.1699999999998,
+      "end": 1681.4499999999998,
+      "text": "for Mac and Windows that put Claude one shortcut away all day and you'll want to install because levels five and six live there. I'll show you where to download the desktop app now. Downloading the Claude desktop app is super easy. On the web app on the left side next to your name, click the download button. And then from there, there should be a download button obviously placed for the desktop version. Here for me it says download",
+      "language": null
+    },
+    {
+      "start": 1681.4499999999998,
+      "end": 1705.77,
+      "text": "version. Here for me it says download for Mac OS, so I'll go ahead and click that and then click save. Once you've downloaded it, a pop-up will appear that gives you instructions for how to complete the installation. Now, the installation is going to be a little bit different for every device, so I'm not going to walk you through it here. Just go ahead and follow the steps it presents to you. It should be pretty standard app installation procedure. Once you've got it installed, go ahead and open the app and log in to get ready",
+      "language": null
+    },
+    {
+      "start": 1705.77,
+      "end": 1729.49,
+      "text": "and open the app and log in to get ready for our next level. Once you're all logged in to Claude in the desktop app, it should be pretty similar looking to the cloud version, the one you use in your web browser. But if you notice any additional pop-ups or instructions to complete the setup for the desktop app specifically, go ahead and follow those. Like for me for example, I have this get set up for agent mode, download a one-time package prompt. So, I'll go ahead and do that.",
+      "language": null
+    },
+    {
+      "start": 1729.49,
+      "end": 1752.2099999999998,
+      "text": "prompt. So, I'll go ahead and do that. That completes level four. Claude knows your work, remembers you, and travels with you. Now, we cross the biggest line in this whole video. So far, Claude has only ever talked about your world. At level five, it reaches into it. All right. So, your real information from your life lives in other apps. Your calendar, your email, your notes, and",
+      "language": null
+    },
+    {
+      "start": 1752.2099999999998,
+      "end": 1776.8899999999999,
+      "text": "calendar, your email, your notes, and your business tools. Connectors let Claude securely plug into those apps, read what's in them, and do work there for you. You choose what to connect, and you can disconnect anything at any time. Let's connect your first app. To do this, click the plus button in a chat, and then go to connectors, add connector, then click browse connectors. Here, you'll see some popular options right away, like Gmail, Google Drive,",
+      "language": null
+    },
+    {
+      "start": 1776.8899999999999,
+      "end": 1800.6899999999998,
+      "text": "right away, like Gmail, Google Drive, Slack, and you can scroll through and find other options. I want to connect my Google Calendar. So, let's search for calendar, and there it is. We'll click plus, and then we'll log into our Google account to authenticate it with Claude. We'll click through the prompts to do that, and then at the Google level, we'll set permissions for what Claude has access to in Google Calendar. I'll go ahead and just select all, so that it can view events, see and download any",
+      "language": null
+    },
+    {
+      "start": 1800.6899999999998,
+      "end": 1824.4499999999998,
+      "text": "can view events, see and download any calendar, and see, edit, and share, as well as delete content on the calendars. Let's go ahead and click continue. Then, I'll get a prompt to reopen Claude, and a notification saying it was connected to Google Calendar. Now, if you get that notification, but this grant access window doesn't go away, that can happen. It just means the app state hasn't refreshed yet. So, go ahead and just close that out, and you can see here that it doesn't show there's a plus",
+      "language": null
+    },
+    {
+      "start": 1824.4499999999998,
+      "end": 1848.2099999999998,
+      "text": "here that it doesn't show there's a plus icon anymore. Instead, it has a gear icon. And if we click that, we can see all the things Claude can now do inside of Google Calendar for us. So, let's try it out. We'll close out this directory, and then in a regular chat, we'll say, \"Look at my calendar for next week, and tell me which afternoon has the most free time for a deep work session.\" And send that. And here, you can see it made a recommendation after looking at my calendar for Wednesday afternoon.",
+      "language": null
+    },
+    {
+      "start": 1848.2099999999998,
+      "end": 1872.37,
+      "text": "calendar for Wednesday afternoon. Claude just read my actual calendar with no copying and pasting and no screenshots. And the pattern for connecting an app is always the same. You connect an app once and then you just ask for things. For you, the most useful connection might be your calendar, but it also could be your notes, your project board, your email, or something else. And here's your challenge for this level. Connect one app you use regularly and ask it one",
+      "language": null
+    },
+    {
+      "start": 1872.37,
+      "end": 1897.05,
+      "text": "app you use regularly and ask it one question. Now, let me show you just how far this goes because it connects back to our candle shop. The shop is brand new and every new store needs the same first thing, a welcome email for people who join the list. We're using Omnisend for our email marketing. So, watch what happens when Claude can work inside it. We'll click the plus to add a new connector, go to connectors, add connector, and then add a custom",
+      "language": null
+    },
+    {
+      "start": 1897.05,
+      "end": 1921.1299999999999,
+      "text": "add connector, and then add a custom connector. Here, I'll type in the name for it, Omnisend. And now we need the MCP server. If you want to follow along and try the same thing, I've added a link in the description below, but you can also copy it directly from the screen here. It's https://mcp.omnisend.com/mcp. And we can ignore these advanced",
+      "language": null
+    },
+    {
+      "start": 1921.1299999999999,
+      "end": 1946.09,
+      "text": "And we can ignore these advanced settings for now. All we have to do is click add. That'll automatically open an Omnisend window in our browser, and this prompts me to log in or create an account. Now, I don't have an account yet, and this is the moment to use the link in the description below. It takes you to this page here with the code MM30 for 30% off any paid plan for your first 3 months. And you can always get started for free because the free plan needs no credit card.",
+      "language": null
+    },
+    {
+      "start": 1946.09,
+      "end": 1970.1699999999998,
+      "text": "credit card. Signing up through this link also supports the channel at no extra cost to you. So, I'll click sign up now. And then on the next page, register with Google. Select my account and click continue. Then I'll create a password. And since this is a candle shop, I'll say my business is e-commerce. Agree with the terms of use and we'll",
+      "language": null
+    },
+    {
+      "start": 1970.1699999999998,
+      "end": 1994.05,
+      "text": "Agree with the terms of use and we'll skip signing up for the marketing newsletter. Then click sign up. Add a little bit of personal information. I'll save my last name, store name, Amberlight Candles, and add my website in here. Which platform are you using for your store? Well, I haven't set it up yet, so I'll scroll down and select none. Then click continue. I'll fill in my business address details here and then continue to Omnisend. After creating my account,",
+      "language": null
+    },
+    {
+      "start": 1994.05,
+      "end": 2018.99,
+      "text": "to Omnisend. After creating my account, it'll ask for permission. Whenever you connect your own tools, you'll get a page like this. It lists exactly what Claude can and can't touch. And you can turn any of these off. So, if you scroll through, you can see anything that Claude can do in this app for you. And also, on the free Claude plan, you can only add one custom connector. So, pick the tool that matters most for you. I'll go ahead and authorize access for everything, both to read and write.",
+      "language": null
+    },
+    {
+      "start": 2018.99,
+      "end": 2043.05,
+      "text": "everything, both to read and write. And then click to open Claude. Now, sometimes with custom connectors, they don't connect perfectly the first time. You did nothing wrong. It's just a bug that happens sometimes. So, let's make sure it's actually connected. We'll click plus in the bottom left, go to connectors, and then manage connectors. Here you can see Omnisend still shows up as needing to be connected. So, we'll click the connect button. And here we see this permissions page again. We'll click authorize access,",
+      "language": null
+    },
+    {
+      "start": 2043.05,
+      "end": 2066.009,
+      "text": "click authorize access, reopen Claude, and now we're connected. The Omnisend item has a check mark under status. So, we'll go ahead and close this out. Since we're connected and our Omnisend account is completely fresh, there are no campaigns in it. Let's, instead of clicking through a campaign builder for the first time, have Claude do the whole first setup. Let's start a new chat. And then we'll tell Claude, \"We just set up an Omnisend account for",
+      "language": null
+    },
+    {
+      "start": 2066.009,
+      "end": 2088.93,
+      "text": "\"We just set up an Omnisend account for Amberlight Candles, a small handmade soy candle shop with a warm personal brand voice. Create our first email campaign as a draft. A welcome email for new subscribers with a subject line, preview text, and full email content introducing the shop and our Autumn Cabin candle, cedar, wood, smoke, and amber. Include a 10% discount on the first order. Our story, hand-poured in small",
+      "language": null
+    },
+    {
+      "start": 2088.93,
+      "end": 2113.73,
+      "text": "order. Our story, hand-poured in small batches, natural soy wax, made to feel like home. All right, let's send that. You'll see that Claude asks for permission to use search from Omnisend, so let's go ahead and click always allow. Claude will ask for permission before each action it takes inside the account. I'll allow each of these as they come. You can also let it approve actions automatically, and I'll show you exactly those settings at level six.",
+      "language": null
+    },
+    {
+      "start": 2113.73,
+      "end": 2137.21,
+      "text": "those settings at level six. All right, look what it's doing. It drafted an email and then it experienced some sort of issue with text corruption, and it's tracing the origin. It's diagnosing its own problems. Here it says it noticed the platform mangled a few words in the first draft, so it's rebuilding it with safer characters. I love that Claude checks its own work before it ever considers a task finished. And here we go, now we have a clean result. It's narrating what it's",
+      "language": null
+    },
+    {
+      "start": 2137.21,
+      "end": 2160.25,
+      "text": "clean result. It's narrating what it's doing in real time. And after a while, here we go. We got a message saying the welcome campaign is created as a draft in the Omnisend account. It has some details summarizing what it did, so let's go check it out. In Omnisend, I'll navigate to campaigns, and there it is, our welcome campaign sitting and waiting for my review in draft status. Let's click to open it, and all the information's in there.",
+      "language": null
+    },
+    {
+      "start": 2160.25,
+      "end": 2183.29,
+      "text": "information's in there. Subject line, sender name is correct, a nice preheader and campaign name. All right, let's click edit email content to check out the actual email. And this looks nice. This is the desktop version, and we can click in to see the mobile version as well. It added tags, so it'll automatically pull in the contact's first name, added buttons, a welcome coupon code. We simply described to the business once, and now there's a",
+      "language": null
+    },
+    {
+      "start": 2183.29,
+      "end": 2208.0499999999997,
+      "text": "to the business once, and now there's a real campaign draft waiting inside Omnisend ready to send. We never wrote the email, and we never touched the campaign builder. And this works in both directions. Once your store has some history, you can also ask Claude to analyze what's working, like a full health check of your campaigns and automations. And again, thanks to Omnisend for sponsoring this video. More than 150,000 online stores run on Omnisend, and it holds a 4.8 star",
+      "language": null
+    },
+    {
+      "start": 2208.0499999999997,
+      "end": 2231.33,
+      "text": "Omnisend, and it holds a 4.8 star average rating on Shopify. If you want to try this exact setup, it's free to start, and the code MM30 gets you 30% off any paid plan for your first 3 months. Use the link on screen or in the description below. All right, there's one more level five tool, and it's a quick one. We're going to install and use skills. A skill is like a recipe you install once. From then on, Claude knows exactly how to do",
+      "language": null
+    },
+    {
+      "start": 2231.33,
+      "end": 2254.89,
+      "text": "then on, Claude knows exactly how to do that specific job well, including the format, the steps, and the quality bar. And skills are less mysterious than they sound. A skill is really just a text file with detailed instructions, like a recipe card written for Claude. Let's set up our first skill. In the left sidebar, click customize. Then in the skills page that opens, click browse. Here you can scroll through and look for",
+      "language": null
+    },
+    {
+      "start": 2254.89,
+      "end": 2279.17,
+      "text": "Here you can scroll through and look for various skills in the skill library. You can also search for skills. I want to make a presentation, and I want it to look really good. So, let's search for slide. And here's one called Theme Factory. It says these artifacts can be slides, docs, reportings. It's a toolkit for styling artifacts with a theme. I like this. Let's go ahead and click to open it, and then you can actually go through and look at the skill text",
+      "language": null
+    },
+    {
+      "start": 2279.17,
+      "end": 2303.0499999999997,
+      "text": "through and look at the skill text itself. You can read everything in here to understand exactly what the recipe is. So, this skill, for example, gives Claude 10 themes that it can use and quickly grab for any artifact that it creates. I like what I'm seeing, so let's go ahead and click install. And just like that, it's been installed. Let's go ahead and click the X, and then X again, and let's create a new chat. In the new chat, you You type forward slash to see available skills. And right",
+      "language": null
+    },
+    {
+      "start": 2303.0499999999997,
+      "end": 2327.93,
+      "text": "slash to see available skills. And right away we can see our new theme factory skill. So, let's go ahead and click that to call that skill for this chat. Then let's type a short prompt. We'll say, create a short slide deck introducing Amber Light Candles to a local store owner. And we'll hit send. It loads in the theme factory skill we just installed, recalled memory about the candle shop, and gets to work. Here with the theme showcase skill, it gives me some theme options. So, let's scroll",
+      "language": null
+    },
+    {
+      "start": 2327.93,
+      "end": 2352.29,
+      "text": "some theme options. So, let's scroll through them, pick one out. Which one matches our candle store the most closely? Well, the one that's most similar to our website is probably this Golden Hour. So, let's say Golden Hour, but make it look closer to the website we made earlier. And then it gets to work adapting the Golden Hour aesthetic to match the existing website that we have. And after a few minutes we have a presentation. Let's take a quick look at",
+      "language": null
+    },
+    {
+      "start": 2352.29,
+      "end": 2375.65,
+      "text": "presentation. Let's take a quick look at it. Right out of the gate, this is a beautiful presentation. Some of the icons are a little funny, but we could ask for Claude to redo those. That's not a problem at all. Overall, this is a really nice looking presentation. And that theme skill is what enabled it to look so good right away. The great thing about skills are that you install them once and they work forever in any chat. You can call them at any time. Claude even uses it automatically when the job",
+      "language": null
+    },
+    {
+      "start": 2375.65,
+      "end": 2399.25,
+      "text": "even uses it automatically when the job fits. directory later because there are skills for documents, brands, planning, and a whole lot more. All right, that's level five. Claude is now working inside your tools. That leaves one last level, the one where you stop being in the room. Everything until now was a conversation. You ask and Claude answers. And you're there the whole time. Level six is different. You hand",
+      "language": null
+    },
+    {
+      "start": 2399.25,
+      "end": 2423.41,
+      "text": "time. Level six is different. You hand Claude an actual task and it goes away and does the work while you do something else. It's called co-work and I'll use it in the desktop app. It does need a paid plan, but this is the second feature that made the upgrade worth it for me. To get started with co-work, change from the chat side of the toggle in your message when you start to co-work. This is what gives Claude the ability to work autonomously. Now, one important thing",
+      "language": null
+    },
+    {
+      "start": 2423.41,
+      "end": 2448.39,
+      "text": "autonomously. Now, one important thing before we start, in co-work, Claude can only read and write files in the folders you choose to connect. The rest of your computer stays off-limits. So, let's connect a project folder. So, here I'm going to click the project or folder drop down, and then add a folder. And then here I'm going to connect this folder of receipts that I want organized. We'll click open, and then we'll give Claude permission to",
+      "language": null
+    },
+    {
+      "start": 2448.39,
+      "end": 2473.25,
+      "text": "and then we'll give Claude permission to change files in this receipts folder. I'll go ahead and click always allow. Now, down here at the bottom it says manual, it has a hand, but if you click this to drop down, you can see what the different approval modes are. Claude asks how much freedom you want to give it. Manually approve means it asks you before each action. Automatically approve means it works on its own with safety checks, and skip all approvals",
+      "language": null
+    },
+    {
+      "start": 2473.25,
+      "end": 2497.25,
+      "text": "safety checks, and skip all approvals means it never stops to ask. Start with manual approval. You'll see exactly what Claude does with your files, and you can loosen it later once you trust the workflow. For me though, I've worked with Claude a lot, so I trust it to handle organizing some receipts, so I'll just go ahead and change this to automatically approve. I know it'll pause if anything looks unsafe. This is also one of those situations too, where I want to use an intelligent model with Claude. If it's going to be doing things",
+      "language": null
+    },
+    {
+      "start": 2497.25,
+      "end": 2520.29,
+      "text": "Claude. If it's going to be doing things on my computer for me, I want to make sure that the brain is as good as it can be. So, I'll change from Sonnet to to Opus. And I'll leave thinking level set to high, that's just fine. Now, we'll give it the prompt. We'll say, \"Go through these receipt files, pull out the date, supplier, and amount from each one, and build me one clean expense spreadsheet.\" All right, look at this. It's opening",
+      "language": null
+    },
+    {
+      "start": 2520.29,
+      "end": 2543.89,
+      "text": "All right, look at this. It's opening the files, reading them, and building the spreadsheet. Occasionally, your computer might ask you for permissions for things. Here it wants to get access to the files, so I'll click allow. This is the kind of boring hour everyone has in their week and it's happening without me on my computer. And because this is AI doing multi-step work on its own, your run will not look exactly like mine. It might take a different path to",
+      "language": null
+    },
+    {
+      "start": 2543.89,
+      "end": 2567.85,
+      "text": "mine. It might take a different path to get to the same result. That's pretty normal. Just give it a clear goal and let it work. If we expand the progress section in the upper right, you can see for longer tasks, it'll create a to-do list with each task it's going to do in sequence. All right, here's the spreadsheet it created. Now, earlier in this video, Claude created a spreadsheet for us, but it just lived in the chat. If I click the drop-down arrow next to this, I can actually click to see it in",
+      "language": null
+    },
+    {
+      "start": 2567.85,
+      "end": 2592.0499999999997,
+      "text": "this, I can actually click to see it in the folder. There it is. Now there's an Excel document on my computer. We could take this a step further since it already has all the information about the receipts. We can follow up and say, \"Rename each of my receipts with the date, supplier, and reference number.\" It might come back asking for clarification. It gives three options here and a recommendation for which one. I'll go ahead and just go with the recommendation. It changed the file",
+      "language": null
+    },
+    {
+      "start": 2592.0499999999997,
+      "end": 2617.0499999999997,
+      "text": "recommendation. It changed the file names, but because the spreadsheet referenced files that had their names changed, it also updated the spreadsheet. If we go back to that folder in finder, we can see all of the receipts have now been renamed based on the contents of them. We started this video asking Claude to describe a candle. Now it's doing my paperwork while I watch. So here's your challenge for this level. Pick one folder with one boring job in it, connect just that",
+      "language": null
+    },
+    {
+      "start": 2617.0499999999997,
+      "end": 2642.03,
+      "text": "boring job in it, connect just that folder, and give Claude a clear goal. Keep it on manual approval for your first run. And once Claude can work without you sitting there, the next question is obvious. Why not have it work while you sleep? Inside Co-work, there's a section called Scheduled and this is exactly what it sounds like. You describe a task once, set how often it should run, and Claude does it on a schedule from then on. You can access it in the left sidebar and",
+      "language": null
+    },
+    {
+      "start": 2642.03,
+      "end": 2665.85,
+      "text": "can access it in the left sidebar and click Scheduled. In the upper right, click to create a new task and then create with Claude. Claude will begin by asking you some questions. For me here, it says, \"What should the scheduled task actually do?\" What I want it to do is search the web for new candle and home fragrance trends and write me a short report. It asks, \"How often should it run?\" Let's say every Monday morning. What time of day should it run? Let's do",
+      "language": null
+    },
+    {
+      "start": 2665.85,
+      "end": 2690.85,
+      "text": "What time of day should it run? Let's do early morning, 6:00 to 7:00 a.m. That way it's ready by the time I start my work day. And how detailed should the output be? Hmm, let's say detailed write-up. Now, Claude will think through creating the scheduled task. After a minute, it comes back with this scheduled task block, so we can read through the details of the task, make sure it aligns with what we want, and then if we're happy with it, click schedule. Now, here we go. It says it's",
+      "language": null
+    },
+    {
+      "start": 2690.85,
+      "end": 2715.77,
+      "text": "schedule. Now, here we go. It says it's set up. Every Monday at 6:30 a.m. local time, it'll search the web and put together a report. Now, anytime you create a scheduled task, it's a good idea to run it once as a test to make sure any routine tasks that need permission get pre- approved. So, let's go ahead and open the sidebar, go to scheduled, open our scheduled task, and then click run now. It'll show you that the scheduled task",
+      "language": null
+    },
+    {
+      "start": 2715.77,
+      "end": 2740.41,
+      "text": "It'll show you that the scheduled task started, and you click view in the pop-up, or you can see the new run in the left where all of your various scheduled runs will show up. So, I'll click on this today option. And here's the one-time run getting to work. You can see it has a six-item to-do list in the progress on the right, and it's systematically working through it. Here, as it's working through it, you can see that the permission is set to manual. If you want it to run autonomously, you can wait until it asks for permission for",
+      "language": null
+    },
+    {
+      "start": 2740.41,
+      "end": 2765.37,
+      "text": "wait until it asks for permission for anything in particular, but for future runs, we also want to make sure it can just go. So, in the meantime, while it's thinking, let's go back to scheduled, and then click the pencil icon next to our task, and then near the bottom, you can choose whether you're going to work in a project or folder, the permissions, so we'll change this from manual to automatically approve, and then you can even set the default model you want to use. So, even though we created the scheduled task already, we can always go back in and edit it here. The actual",
+      "language": null
+    },
+    {
+      "start": 2765.37,
+      "end": 2789.17,
+      "text": "back in and edit it here. The actual details of the task, the frequency, or really anything. I'll go ahead and click save. That way future runs work on auto mode. And we'll return to this current run. It's working through things, so I'll go ahead and fast forward to when it's done. All right, and after a few minutes, here's the weekly trend report. Let's expand it. So, every [clears throat] Monday before I've had my coffee, there's a fresh trend report just like this one waiting. For you, it",
+      "language": null
+    },
+    {
+      "start": 2789.17,
+      "end": 2814.17,
+      "text": "just like this one waiting. For you, it could be a weekly summary of your industry's news, a reminder list built from your calendar, or a monthly check on your budget spreadsheet. And a scheduled task can even run in the cloud, so they can happen when your computer is off. Now, I said six levels, but I'd be lying if I told you that the ladder stops there. And this video wouldn't be the ultimate guide if I hid the top of it from you. So, the final evolution of everything you just learned is called Claude Code. And before the",
+      "language": null
+    },
+    {
+      "start": 2814.17,
+      "end": 2837.0499999999997,
+      "text": "is called Claude Code. And before the name scares you off, let me clear something up. Claude Code is not just for programmers. Co-work and Claude Code actually run on the same engine. Co-work points that engine at everyday work, like your files and your documents. Claude Code points at it building things. It writes real code, runs commands on your computer, and turns ideas into working software. You still talk to it in completely normal",
+      "language": null
+    },
+    {
+      "start": 2837.0499999999997,
+      "end": 2861.77,
+      "text": "talk to it in completely normal language. The word code describes what it produces, not who it's for. For the finale, I'm going to use two tools together. First, a tool called Claude Design, which turns a description into a finished visual design. Then, Claude Code turns that design into a real working website. First things first, I want to create a brief to explain to Claude Design a little bit about our business. So, in",
+      "language": null
+    },
+    {
+      "start": 2861.77,
+      "end": 2884.97,
+      "text": "little bit about our business. So, in the chat, I'll ask Claude, \"Put together a summary of everything we've discussed about Amber Light Candles, so that I may hand that information to Claude Design for a website design project.\" So, Claude will go through all its memories, all the chats, and put together a document that I can hand off. After a minute, it comes back with this markdown file document, which we can preview in the right side. Yeah, it's looking pretty good. So, I'll go ahead",
+      "language": null
+    },
+    {
+      "start": 2884.97,
+      "end": 2908.0899999999997,
+      "text": "looking pretty good. So, I'll go ahead and click copy, and now let's open Claude design. You can open it in the bottom left of the desktop app. Now, we'll give Claude design a prompt. We'll say, \"Design a warm, cozy website for Amber Light Candles. Homepage, shop page, and then about page with our story.\" I've pasted in a summary of all relevant business details. And now that I've typed in that prompt, I'll simply paste in those details that we copied",
+      "language": null
+    },
+    {
+      "start": 2908.0899999999997,
+      "end": 2932.89,
+      "text": "paste in those details that we copied from our Claude chat earlier. I find that Claude design tends to do its best work when you give it a powerful model. So, I'll go ahead and switch this to the most powerful model available to me now, which happens to be Opus 5. I'll also change the effort level to be high, cuz I want a really good-looking website here. Next, whatever you're designing in Claude design, you can click the template drop-down to see if there's a relevant project type. For example, here",
+      "language": null
+    },
+    {
+      "start": 2932.89,
+      "end": 2957.33,
+      "text": "relevant project type. For example, here we have UI mock-ups, user interface mock-ups, which would be perfect for a website. So, I'll go ahead and click that. All right, let's go ahead and send the prompt. The canvas will appear here, and there's a good chance if you don't have a really detailed prompt, Claude design will come back and ask you some questions, just like in the regular chat. So, let's go ahead and answer these. Regarding unconfirmed SKUs, let's use the eight",
+      "language": null
+    },
+    {
+      "start": 2957.33,
+      "end": 2982.13,
+      "text": "unconfirmed SKUs, let's use the eight example names, cuz this is a design mock-up. Show prices, let's go ahead and use this recommended option. The scent quiz, I'm not really sure how I want it to go, so we'll say, \"Decide for me.\" What does the shop page need to do? We got a few options here. A grid of all the candles, a single product detail view, bundles and sets. Hmm, let's do a grid of all the candles. Anything real for the about page? We've already given it plenty of",
+      "language": null
+    },
+    {
+      "start": 2982.13,
+      "end": 3007.0499999999997,
+      "text": "page? We've already given it plenty of information, so I'll just say, \"Info already provided.\" And you can see it goes on like this. So, I'll just go ahead and answer all of these different questions, and skip forward to when I'm done. All right, I filled everything out. We'll click continue. Now, if you're wondering why we'd use Claude design instead of a chat to design a website like we did earlier, it's because the chat's good at making simple designs. But if you want a full website built out, or really any other",
+      "language": null
+    },
+    {
+      "start": 3007.0499999999997,
+      "end": 3031.69,
+      "text": "website built out, or really any other kind of graphic design, Claude design is purpose-built for that task. And so, it generally makes much better designs and provides you a proper interface to be able to review and then give feedback and change the designs. It even allows you to tweak some things yourself. This is going to take quite a while to finish. This can take minutes. So, I'll go ahead and let it finish and then fast forward to when it's done. Okay, and now it's done. And here you can see a",
+      "language": null
+    },
+    {
+      "start": 3031.69,
+      "end": 3055.73,
+      "text": "it's done. And here you can see a beautiful website. There's a hero section that has really well-done typography and colors and a placeholder image at the right. As we scroll through, we can see here our scent quiz. If we click on it, it actually takes us through it, which is awesome and even gives us the recommended candle. We scroll down, we got the full line of candles, some placeholders for a lifestyle shot, and a spot to sign up",
+      "language": null
+    },
+    {
+      "start": 3055.73,
+      "end": 3078.77,
+      "text": "lifestyle shot, and a spot to sign up for the mailing list. This is great. Also, it might open a little tweaks dialogue right away when you first load the site. And here it gives you options to change some things yourself. So, like for example, here I have the offer bar at top, which I can turn off and on to see how that looks. The quiz placement, we can either have it featured or hidden. And then same thing with the prices. We can turn the prices off for the candles if we don't want to display them. This is looking",
+      "language": null
+    },
+    {
+      "start": 3078.77,
+      "end": 3102.61,
+      "text": "want to display them. This is looking pretty good so far. And just like you can chat with Claude in the regular chat to make modifications to something, you can do the same thing here in Claude design. So, since it put a bunch of placeholders in here for images, let's give it some actual images to use to build out our design. In the bottom left, I'll click the plus button, attach file, and then in my photos folder here, I'll grab all these photos, which are labeled open, and say, \"Swap out the",
+      "language": null
+    },
+    {
+      "start": 3102.61,
+      "end": 3126.0899999999997,
+      "text": "open, and say, \"Swap out the placeholders with these real images.\" And after a few minutes, the photos have been added in where the placeholders were. This is looking really good so far. Now, one thing that's really cool to check out, too, is what the functionality is actually like. You can click through the website using its buttons. So, let's add this Autumn Cabin Candle to the cart. We'll click the Add to Cart button. And we even have this full shopping cart here where we can change the quantity and see how that",
+      "language": null
+    },
+    {
+      "start": 3126.0899999999997,
+      "end": 3148.81,
+      "text": "change the quantity and see how that design would look. Now, while you can click around and interact with the website, this doesn't actually have full store capabilities yet. This is just the design. To actually make this a real website, we have to hand these designs off to Claude Code. Let me show you how to do that. In the upper right, you can click Share. And here I have a bunch of different options for how to share this. You can simply publish this as an artifact, and then you'll have a direct",
+      "language": null
+    },
+    {
+      "start": 3148.81,
+      "end": 3172.37,
+      "text": "artifact, and then you'll have a direct link you can use. You can export a PDF if you just want to share what the designs look like, or even get a .zip file with all the HTML files. This is useful if you're handing to a human developer or a different AI agent. For us, though, we're going to click More Formats and App at the bottom, and then click Send to Claude Code. We'll send it to a local agent since we already have Claude Code on our computer, and we'll just give it a little bit of additional",
+      "language": null
+    },
+    {
+      "start": 3172.37,
+      "end": 3195.45,
+      "text": "just give it a little bit of additional instructions. We'll say, \"Turn this design into an actual functioning website.\" Then, copy the prompt, and we can minimize this Claude design window. And then, on the Claude desktop app, switch from Home at the upper left to Code. Now, here you're going to want to create a folder for your project to be built in. So, let's go ahead and click Select Folder.",
+      "language": null
+    },
+    {
+      "start": 3195.45,
+      "end": 3219.85,
+      "text": "Select Folder. I'll put it in my documents, and create [clears throat] a new folder called Amberlight Website. Then, open. Then, we'll tell Claude Code it can trust this workspace. The workspace just being the folder that we created. And then, we'll paste in the prompt to the chat here. Notice in the prompt, it points Claude Code where to find the designs that were created. It gives additional information about the various files that are included, and then includes our custom instructions at the",
+      "language": null
+    },
+    {
+      "start": 3219.85,
+      "end": 3243.81,
+      "text": "includes our custom instructions at the bottom. Now, before we submit this, let's make sure that we're happy with our permission and model settings. On the bottom left, there's a slightly different set of permission options. In Claude Code, you have manual, which is where it always asks before making changes, accept edits, where it'll accept file edits, but will ask for permissions for other things, plan, where it'll give you a full detailed plan before implementing anything, and then it'll act on that, or",
+      "language": null
+    },
+    {
+      "start": 3243.81,
+      "end": 3268.5699999999997,
+      "text": "anything, and then it'll act on that, or auto, where it'll decide if something's safe to do on its own, or if it needs to ask you first. When I'm using Claude Code, I tend to spend most of my time on auto. So, I'll go ahead and click that and then enable auto mode. However, for your first time using Claude Code, I do recommend setting it to one of the more restrictive options, so you can build trust with how the system works. This is especially true if you're having it modify anything on your system. But, for",
+      "language": null
+    },
+    {
+      "start": 3268.5699999999997,
+      "end": 3290.5299999999997,
+      "text": "modify anything on your system. But, for a simple website, I have confidence that it's not going to break anything, so we'll just let it run. Next, again, I want to use a really intelligent model to put this website together, so I'll go ahead and change from Sonnet to the best model available to me, Opus 5. Effort level set to high is just fine for this particular project. If you wanted to include anything else, you could click the plus button here and add files,",
+      "language": null
+    },
+    {
+      "start": 3290.5299999999997,
+      "end": 3314.21,
+      "text": "the plus button here and add files, photos, or even entire folders. But again, this is just fine. So, we'll go ahead and submit this prompt and let Claude Code build. Your computer may ask for some additional permissions. We'll go ahead and allow it to access the documents folder, and then it gets to work. Like Claude Design and most of the other chats we've had, with bigger projects like this, where it's putting together an entire website, these prompts can take a while to get a result back. So,",
+      "language": null
+    },
+    {
+      "start": 3314.21,
+      "end": 3339.19,
+      "text": "take a while to get a result back. So, I'll go ahead and fast forward to when it's done. Okay, so this took about 20 minutes, which is not unreasonable considering how big of a build this was, and it looks like the site was built pretty well, but the images didn't come through. That's an easy problem to solve since I already have all the images. So, what we'll do here is simply click plus, add files or photos, and then grab all the photos. Now, one other thing that the message from Claude code here is saying, aside",
+      "language": null
+    },
+    {
+      "start": 3339.19,
+      "end": 3363.81,
+      "text": "from Claude code here is saying, aside from the photography not coming through, is that the email service isn't wired up. That's an easy problem to fix cuz we already connected Omnisend earlier. So, we can simply type a message here saying, \"Use these photos and wire up our email service using the connected Omnisend MCP.\" All right, let's go ahead and submit that. All right, and after a few minutes, Claude code went in and updated the photos and wired up the sites that if someone adds their email on the form on the site, it'll",
+      "language": null
+    },
+    {
+      "start": 3363.81,
+      "end": 3386.5699999999997,
+      "text": "on the form on the site, it'll automatically add them to my email list and start sending them emails with Omnisend. It even made some judgment calls along the way. There was one clarifying message I had to send off camera because it couldn't work with the photos, and it determined that the photos were too big of a file size to be good for a website. So, it took the liberty of converting them to a smaller file size with a JPEG format. It also gave me instructions for how to finalize",
+      "language": null
+    },
+    {
+      "start": 3386.5699999999997,
+      "end": 3411.25,
+      "text": "gave me instructions for how to finalize the Omnisend connection with an API key. I'll need to grab that from my Omnisend account. Now, the only thing actually missing from this website is any personalization I want to add and to wire in an actual e-commerce service like Shopify. But, even though it's not totally complete right now, what we've got is a real working website designed and built from plain language, working locally on this computer. And if you want to put a website like this live on",
+      "language": null
+    },
+    {
+      "start": 3411.25,
+      "end": 3436.0099999999998,
+      "text": "want to put a website like this live on the internet with a real domain, I made a full video on exactly how to do that. It's called how to deploy a Claude AI website the right way, and it's linked in the description. And if you're building a site like this and you want to connect it to your own Shopify account, I've also left a link in the description on the ultimate beginner's guide to Shopify. Now, websites are only one side of Claude code. Here's the side that changes how you think about your computer. Claude code doesn't just do work for you. It can build you a tool",
+      "language": null
+    },
+    {
+      "start": 3436.0099999999998,
+      "end": 3460.29,
+      "text": "work for you. It can build you a tool that keeps doing the work forever. Earlier in this video, Claude organized my receipts once. Now, watch it build a machine. Let's start a new chat. And we'll select the folder we want it to work in. Here, I'll select the inventory folder because I'm I'm to have it create labels from items in my inventory. Now, let's give it the prompt. Build me a small tool that reads inventory.xlsx and creates a print-ready PDF sheet of",
+      "language": null
+    },
+    {
+      "start": 3460.29,
+      "end": 3483.69,
+      "text": "and creates a print-ready PDF sheet of product labels. One label per candle with the name, the scent, and hand-poured soy wax in our warm amber brand style like the label on the candle in the attached example image. Make it something I can run again with one click whenever I add new products. Put the icon to start the app on my desktop. All right, and we'll set the permissions to auto mode, enable auto mode, and then we'll attach",
+      "language": null
+    },
+    {
+      "start": 3483.69,
+      "end": 3508.0499999999997,
+      "text": "enable auto mode, and then we'll attach the relevant files. First, I'll grab a relevant photo, and also let's attach the inventory spreadsheet. All right, and we'll run the prompt. Just like these other big tasks, this will take a while, so I'll fast forward and meet you when it's done. And here Claude finished the project. It says, \"Double click make candle labels on your desktop.\" So, let's go check out the desktop. There it is, make candle labels, and we even have a little candle icon there for our",
+      "language": null
+    },
+    {
+      "start": 3508.0499999999997,
+      "end": 3531.93,
+      "text": "a little candle icon there for our little mini app. Let's go ahead and run it. Now, we have labels for all the candles in our inventory. But, here's the part I want you to see. Claude isn't doing this job anymore. It's built a tool, and the tool is mine now. Watch this. If I open up the spreadsheet, and let's say I change something. Like, let's change the name of this second product to dusk sea salt. Just rearrange the name there a",
+      "language": null
+    },
+    {
+      "start": 3531.93,
+      "end": 3556.69,
+      "text": "salt. Just rearrange the name there a little bit. And then, [snorts] add another product at the end here called cozy kitchen, and the scent is chocolate and cinnamon. Let's say it costs five to make, 30, we have 10 of them, and we can calculate the profit margin here if we drag this formula down. There we go. I'm in numbers here, so if I want to save it as an Excel sheet, I have to do an export. So, we'll do export to Excel.",
+      "language": null
+    },
+    {
+      "start": 3556.69,
+      "end": 3580.37,
+      "text": "export to Excel. There it is. We'll save, and we'll override the original inventory file. We'll close that out. We don't need the pages file. Now, if I just do a quick preview of the inventory, you can see that the new changes are there, dusk sea salt and cozy kitchen. Let's run the app again. Go to the desktop, make candle labels. Voila, we have dusk sea salt and we have our new product at the bottom, cozy kitchen. [clears throat]",
+      "language": null
+    },
+    {
+      "start": 3580.37,
+      "end": 3604.77,
+      "text": "cozy kitchen. [clears throat] I added a product and ran it myself. I didn't need a conversation with Claude. There was no waiting, no usage limits, just code running on my computer. That's the top of the ladder. Claude stops being the worker and starts building the machines. You can build a tool like this for anything in your life. And you can also point Claude code at the computer itself, like finding out why your laptop runs slow or backing up your photos every night. And when you're ready to go",
+      "language": null
+    },
+    {
+      "start": 3604.77,
+      "end": 3628.97,
+      "text": "every night. And when you're ready to go even deeper, Claude code can run several sessions at the same time, working on different parts of a project in parallel. Now, I won't pretend you can master this in an afternoon. This is the most advanced level and it takes some practice. But, it runs on the exact same skill you've been building this entire video. You give context, you give a task, and you refine the result. If you can do level one, you can grow into level six.",
+      "language": null
+    },
+    {
+      "start": 3628.97,
+      "end": 3649.2,
+      "text": "level one, you can grow into level six. The only difference is how big the results get. When you're ready for more, two follow-ups are linked below. The video where Claude builds a $10,000 website and the one where we put a Claude website live on the internet. If you run an online store, the Omnisend link is below, too. Tell me in the comments which level you're at. Thanks for watching.",
+      "language": null
+    }
+  ]
+}

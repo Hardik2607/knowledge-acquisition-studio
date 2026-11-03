@@ -1,0 +1,13 @@
+{
+  "task_id": "t-notes",
+  "criteria": [
+    "AC-06"
+  ],
+  "result": "pass",
+  "artifacts": [
+    "notes/src-1d87ab58a8ee.json"
+  ],
+  "command": "kas build --project /home/hardik/ai-agent-ecosystem/projects/knowledge-acquisition-studio/projects/claude-tutorial",
+  "run_at": "2026-11-03T09:34:34Z",
+  "notes": "Every note carries source_id and a range inside that source's transcript."
+}

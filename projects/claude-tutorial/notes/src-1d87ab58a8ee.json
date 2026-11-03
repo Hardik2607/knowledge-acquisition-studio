@@ -1,0 +1,72 @@
+{
+  "source_id": "src-1d87ab58a8ee",
+  "provider": "ollama",
+  "model": "qwen2.5-coder:7b",
+  "generated_at": "2026-11-03T09:33:56Z",
+  "schema_version": 1,
+  "notes": [
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2884.0,
+      "end": 2908.0,
+      "range": "48:04\u201348:28",
+      "text": "The narrator starts by copying text and opening Claude Design to create a prompt for designing a warm, cozy website for Amber Light Candles."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2908.0,
+      "end": 2930.0,
+      "range": "48:28\u201348:50",
+      "text": "Claude Design is used to create the initial design of the website based on plain language instructions."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2930.0,
+      "end": 2955.0,
+      "range": "48:50\u201349:15",
+      "text": "The narrator then moves on to using Claude Code for more advanced tasks, such as building a tool that reads inventory and creates product labels."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2955.0,
+      "end": 2970.0,
+      "range": "49:15\u201349:30",
+      "text": "Claude Code is used to automate repetitive tasks and build tools that can be run independently on the user's computer."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2970.0,
+      "end": 2985.0,
+      "range": "49:30\u201349:45",
+      "text": "The narrator demonstrates how Claude Code can be used to create a tool for generating product labels from an inventory spreadsheet."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2985.0,
+      "end": 3000.0,
+      "range": "49:45\u201350:00",
+      "text": "Claude Code is able to read the inventory file, generate labels based on the data, and save them as a PDF sheet."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 3000.0,
+      "end": 3015.0,
+      "range": "50:00\u201350:15",
+      "text": "The narrator explains that once the tool is created, it can be run independently without needing to interact with Claude Code again."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 3015.0,
+      "end": 3030.0,
+      "range": "50:15\u201350:30",
+      "text": "Claude Code has built a machine that can perform the task of generating product labels automatically."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 3030.0,
+      "end": 3045.0,
+      "range": "50:30\u201350:45",
+      "text": "The narrator emphasizes that this is just one example of how Claude Code can be used to build tools and automate tasks on a computer."
+    }
+  ]
+}

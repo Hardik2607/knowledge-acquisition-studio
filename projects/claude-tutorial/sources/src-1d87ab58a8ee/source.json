@@ -1,0 +1,16 @@
+{
+  "author": null,
+  "checksum": "1d87ab58a8eefa0f6826369b5b41b34475db28d4497d7096f341041d370a9fb1",
+  "kind": "video",
+  "language": "en-orig",
+  "license": null,
+  "media_type": "text/vtt",
+  "origin": "https://www.youtube.com/watch?v=9oJySubZRSA",
+  "raw_path": "sources/src-1d87ab58a8ee/raw/9oJySubZRSA.en-orig.vtt",
+  "reason": null,
+  "retrieved_at": "2026-11-03T01:04:14Z",
+  "schema_version": 1,
+  "source_id": "src-1d87ab58a8ee",
+  "status": "ingested",
+  "title": "The Ultimate Beginner\u2019s Guide to Claude AI"
+}

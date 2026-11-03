@@ -96,11 +96,36 @@ def _normalize(segments: list[Segment]) -> list[Segment]:
     ordered = sorted(segments, key=lambda s: (s.start, s.end))
     out: list[Segment] = []
     for seg in ordered:
-        if out and seg.start < out[-1].end:
-            seg = Segment(start=out[-1].end, end=max(seg.end, out[-1].end + 0.1), text=seg.text)
-        if out and seg.text == out[-1].text:
-            out[-1] = Segment(start=out[-1].start, end=max(out[-1].end, seg.end), text=out[-1].text)
+        if not seg.text.strip():
             continue
+        if not out:
+            out.append(seg)
+            continue
+
+        prev = out[-1]
+        if seg.text == prev.text:
+            out[-1] = Segment(start=prev.start, end=max(prev.end, seg.end), text=prev.text, language=seg.language)
+            continue
+
+        prev_words = prev.text.split()
+        curr_words = seg.text.split()
+        overlap_len = 0
+        for i in range(min(len(prev_words), len(curr_words)), 0, -1):
+            if prev_words[-i:] == curr_words[:i]:
+                overlap_len = i
+                break
+
+        new_duration = seg.end - prev.start
+        if new_duration <= 25.0 and (overlap_len > 0 or seg.start <= prev.end + 0.5):
+            if overlap_len > 0:
+                combined_text = " ".join(prev_words + curr_words[overlap_len:])
+            else:
+                combined_text = prev.text + " " + seg.text
+            out[-1] = Segment(start=prev.start, end=max(prev.end, seg.end), text=combined_text, language=seg.language)
+            continue
+
+        if seg.start < prev.end:
+            seg = Segment(start=prev.end, end=max(seg.end, prev.end + 0.1), text=seg.text, language=seg.language)
         out.append(seg)
     return out
 
@@ -170,7 +195,7 @@ class VideoAdapter:
         return []
 
     def _try_subtitles(self, source, workdir, languages, browser, timeout) -> FetchedSource | None:
-        langs = ",".join(f"{lang}.*" if len(lang) == 2 else lang for lang in languages)
+        langs = ",".join(f"{lang},{lang}-orig" if len(lang) == 2 else lang for lang in languages)
         args = [
             "--no-warnings",
             "--skip-download",
@@ -184,8 +209,6 @@ class VideoAdapter:
             source.origin,
         ]
         completed = self._run(args, timeout)
-        if completed.returncode != 0:
-            return None
         vtts = sorted(workdir.glob("*.vtt"))
         if not vtts:
             return None

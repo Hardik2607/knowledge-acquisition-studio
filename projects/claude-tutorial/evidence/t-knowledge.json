@@ -1,0 +1,18 @@
+{
+  "task_id": "t-knowledge",
+  "criteria": [
+    "AC-07",
+    "AC-08",
+    "AC-09",
+    "AC-15"
+  ],
+  "result": "pass",
+  "artifacts": [
+    "knowledge/units.json",
+    "knowledge/source-map.json",
+    "knowledge/procedures/p-create-a-warm-and-cozy-website-for-amber.md"
+  ],
+  "command": "kas build --project /home/hardik/ai-agent-ecosystem/projects/knowledge-acquisition-studio/projects/claude-tutorial",
+  "run_at": "2026-11-03T09:34:34Z",
+  "notes": "Units, procedures and source map are valid and provenance-clean."
+}

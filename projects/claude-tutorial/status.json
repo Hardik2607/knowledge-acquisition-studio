@@ -1,0 +1,35 @@
+{
+  "project_id": "claude-tutorial",
+  "phase": "Phase 5 \u2014 QA, derived content, application report, vault projection complete",
+  "completed": [
+    "Ingested 1 source(s); 1 reused unchanged",
+    "Transcripts available for 1 source(s)",
+    "Notes written for 1 source(s) with timestamp provenance",
+    "Knowledge units: 2; procedures: 1; source map: 1 entries",
+    "Evidence written for AC-02, AC-03, AC-04, AC-05, AC-06, AC-07, AC-08, AC-09, AC-15",
+    "Phase 4 \u2014 Vault projected with frontmatter and hand-edit guards",
+    "Phase 5 \u2014 Derived content, application report and QA report generated"
+  ],
+  "evidence": [
+    "evidence/t-application.json",
+    "evidence/t-derived.json",
+    "evidence/t-ingest.json",
+    "evidence/t-knowledge.json",
+    "evidence/t-notes.json",
+    "evidence/t-qa.json",
+    "evidence/t-transcribe.json",
+    "evidence/t-vault.json"
+  ],
+  "decisions": [
+    "ADR-004 \u2014 content-addressed ids, immutable raw, verification gate",
+    "ADR-005 \u2014 LLM7 primary with Groq Whisper fallback for timestamps",
+    "ADR-006 \u2014 cookies via browser profile for reels; no local model fallback"
+  ],
+  "risks": [
+    "OQ-6 (copyright) remains open; notes quote the source and are not publishable drafts"
+  ],
+  "remaining": [],
+  "next_task": "none \u2014 all phases complete",
+  "updated_at": "2026-11-03T09:34:34Z",
+  "schema_version": 1
+}
