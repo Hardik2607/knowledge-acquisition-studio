@@ -1,0 +1,13 @@
+{
+  "task_id": "t-derived",
+  "criteria": [
+    "AC-21"
+  ],
+  "result": "pass",
+  "artifacts": [
+    "derived/k-cfda9286fc8a.md"
+  ],
+  "command": "kas qa --project /home/hardik/ai-agent-ecosystem/projects/knowledge-acquisition-studio/projects/live-youtube",
+  "run_at": "2026-11-03T00:26:56Z",
+  "notes": "Generated 1 derived note(s) with attributed sources and quotes."
+}

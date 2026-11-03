@@ -1,0 +1,13 @@
+{
+  "task_id": "t-application",
+  "criteria": [
+    "AC-20"
+  ],
+  "result": "pass",
+  "artifacts": [
+    "application/report.md"
+  ],
+  "command": "kas qa --project /home/hardik/ai-agent-ecosystem/projects/knowledge-acquisition-studio/projects/live-reel",
+  "run_at": "2026-11-03T00:27:19Z",
+  "notes": "Application report written to application/report.md"
+}

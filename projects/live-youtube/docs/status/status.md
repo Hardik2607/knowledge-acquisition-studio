@@ -5,7 +5,7 @@
 **Project:** `live-youtube`
 
 ## Current phase
-Phase 3 — knowledge, procedures, source map, verification and retry
+Phase 5 — QA, derived content, application report, vault projection complete
 
 ## Completed
 - Ingested 1 source(s); 1 reused unchanged
@@ -13,12 +13,18 @@ Phase 3 — knowledge, procedures, source map, verification and retry
 - Notes written for 1 source(s) with timestamp provenance
 - Knowledge units: 1; procedures: 1; source map: 1 entries
 - Evidence written for AC-02, AC-03, AC-04, AC-05, AC-06, AC-07, AC-08, AC-09, AC-15
+- Phase 4 — Vault projected with frontmatter and hand-edit guards
+- Phase 5 — Derived content, application report and QA report generated
 
 ## Evidence
+- evidence/t-application.json
+- evidence/t-derived.json
 - evidence/t-ingest.json
-- evidence/t-transcribe.json
-- evidence/t-notes.json
 - evidence/t-knowledge.json
+- evidence/t-notes.json
+- evidence/t-qa.json
+- evidence/t-transcribe.json
+- evidence/t-vault.json
 
 ## Decisions
 - ADR-004 — content-addressed ids, immutable raw, verification gate
@@ -29,13 +35,10 @@ Phase 3 — knowledge, procedures, source map, verification and retry
 - OQ-6 (copyright) remains open; notes quote the source and are not publishable drafts
 
 ## Remaining work
-- Phase 4 — vault projection and hand-edit detection (AC-24, AC-25)
-- Phase 4 — daemon trigger and publishable content (ADR-006)
-- Phase 5 — QA report, application, derived content, Skill packaging (AC-20…AC-23)
-- OQ-5/6/8 remain open with documented defaults
+- none
 
 ## Next executable task
-Implement knowledge units and the source map (AC-07, AC-09)
+none — all phases complete
 
 ## Last updated
-2026-11-02T19:50:37Z
+2026-11-03T00:26:56Z

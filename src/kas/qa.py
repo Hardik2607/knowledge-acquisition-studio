@@ -174,7 +174,7 @@ def _result_for_criterion(ac: str, project_dir: Path, evidence_index: dict) -> s
                 return "pass"
             return "fail" if sm else "not-run"
         if ac == "AC-10":
-            ev_files = list((project_dir / "evidence").glob("*.json"))
+            ev_files = [p for p in (project_dir / "evidence").glob("*.json") if p.name != "t-qa.json"]
             if not ev_files:
                 return "not-run"
             for ef in ev_files:
@@ -223,10 +223,12 @@ def _result_for_criterion(ac: str, project_dir: Path, evidence_index: dict) -> s
                 return "pass"
             return "not-run"
         if ac == "AC-22":
-            for c in (
-                project_dir.parent.parent / "skills" / "knowledge-acquisition-studio" / "VERSION",
-                Path("skills/knowledge-acquisition-studio/VERSION"),
-            ):
+            candidates = [
+                project_dir.resolve().parent.parent / "skills" / "knowledge-acquisition-studio" / "VERSION",
+                project_dir.resolve().parent / "skills" / "knowledge-acquisition-studio" / "VERSION",
+                Path("skills/knowledge-acquisition-studio/VERSION").resolve(),
+            ]
+            for c in candidates:
                 if c.is_file() and c.read_text(encoding="utf-8").strip() == VERSION:
                     return "pass"
             return "not-run"
@@ -248,9 +250,11 @@ def build_qa_report(project_dir: Path, manifest, version: str = VERSION) -> Path
     reports_dir = project_dir / "reports"
     reports_dir.mkdir(parents=True, exist_ok=True)
 
-    # index evidence results by criterion
+    # index evidence results by criterion, excluding self-referential t-qa.json
     evidence_index: dict[str, str] = {}
     for path in (project_dir / "evidence").glob("*.json"):
+        if path.name == "t-qa.json":
+            continue
         data = _read_json(path)
         for criterion in data.get("criteria", []):
             evidence_index[criterion] = data.get("result", "unknown")

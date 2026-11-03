@@ -1,0 +1,28 @@
+{
+  "task_id": "t-vault",
+  "criteria": [
+    "AC-24",
+    "AC-25"
+  ],
+  "result": "pass",
+  "artifacts": [
+    "/home/hardik/Obsidian/knowledge-vault/Sources/src-1639318a6760.md",
+    "/home/hardik/Obsidian/knowledge-vault/Notes/src-1639318a6760.md",
+    "/home/hardik/Obsidian/knowledge-vault/Knowledge/k-1d40461a6f2a.md",
+    "/home/hardik/Obsidian/knowledge-vault/Knowledge/k-94d30d73c424.md",
+    "/home/hardik/Obsidian/knowledge-vault/Knowledge/k-fa5a83531500.md",
+    "/home/hardik/Obsidian/knowledge-vault/Knowledge/k-88c164943a80.md",
+    "/home/hardik/Obsidian/knowledge-vault/Knowledge/k-1b7ca44bed6a.md",
+    "/home/hardik/Obsidian/knowledge-vault/Knowledge/k-91f5241c3a5d.md",
+    "/home/hardik/Obsidian/knowledge-vault/Knowledge/k-74d07df8b803.md",
+    "/home/hardik/Obsidian/knowledge-vault/Knowledge/k-270d563c6317.md",
+    "/home/hardik/Obsidian/knowledge-vault/Knowledge/k-c7b393944fe3.md",
+    "/home/hardik/Obsidian/knowledge-vault/Knowledge/k-00595e29b967.md",
+    "/home/hardik/Obsidian/knowledge-vault/Knowledge/k-0c4bc7214a60.md",
+    "/home/hardik/Obsidian/knowledge-vault/Knowledge/k-0dec62cc23e8.md",
+    "/home/hardik/Obsidian/knowledge-vault/Procedures/p-assessing-the-risks-and-implications-of-.md"
+  ],
+  "command": "kas vault --project /home/hardik/ai-agent-ecosystem/projects/knowledge-acquisition-studio/projects/live-reel",
+  "run_at": "2026-11-02T18:51:25Z",
+  "notes": "Projected 15 notes into vault; hand-edit conflicts: 0"
+}
