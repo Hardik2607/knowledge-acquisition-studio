@@ -351,6 +351,111 @@ class KasStudioHandler(BaseHTTPRequestHandler):
     def do_POST(self) -> None:
         parsed = urllib.parse.urlparse(self.path)
         path = parsed.path
+        if path == "/api/project/create":
+            content_length = int(self.headers.get("Content-Length", 0))
+            body = self.rfile.read(content_length).decode("utf-8") if content_length > 0 else "{}"
+            try:
+                payload = json.loads(body)
+            except Exception as err:
+                self._send_json({"error": f"Invalid JSON payload: {err}"}, status=HTTPStatus.BAD_REQUEST)
+                return
+
+            project_id = str(payload.get("project_id", "")).strip().lower()
+            goal = str(payload.get("goal", "")).strip()
+            kind = str(payload.get("kind", "video")).strip().lower()
+            origin = str(payload.get("origin", "")).strip()
+            title = str(payload.get("title", "")).strip() or project_id
+            auto_ingest = bool(payload.get("auto_ingest", False))
+
+            if not project_id:
+                self._send_json({"error": "Missing required field: 'project_id'"}, status=HTTPStatus.BAD_REQUEST)
+                return
+            if not re.match(r"^[a-z0-9][a-z0-9_-]{1,63}$", project_id):
+                self._send_json(
+                    {"error": f"Invalid project_id '{project_id}': must be 2-64 chars (lowercase letters, numbers, hyphens/underscores)."},
+                    status=HTTPStatus.BAD_REQUEST,
+                )
+                return
+            if not goal:
+                self._send_json({"error": "Missing required field: 'goal'"}, status=HTTPStatus.BAD_REQUEST)
+                return
+            if not origin:
+                self._send_json({"error": "Missing required field: 'origin'"}, status=HTTPStatus.BAD_REQUEST)
+                return
+
+            from .manifest import SOURCE_KINDS, load_manifest
+            if kind not in SOURCE_KINDS:
+                self._send_json({"error": f"Invalid source kind '{kind}'. Allowed: {', '.join(SOURCE_KINDS)}"}, status=HTTPStatus.BAD_REQUEST)
+                return
+
+            # Normalize local path origins for AC-18 path confinement
+            if origin.startswith("/") or origin.startswith("~"):
+                resolved_p = Path(origin).expanduser().resolve()
+                origin = f"file://{resolved_p}"
+            elif Path(origin).exists() and not (origin.startswith("http://") or origin.startswith("https://") or origin.startswith("file://")):
+                origin = f"file://{Path(origin).resolve()}"
+
+            proj_dir = (self.workspace_root / "projects" / project_id).resolve()
+            if proj_dir.exists() and (proj_dir / "manifest.yaml").is_file():
+                self._send_json({"error": f"Project '{project_id}' already exists at {proj_dir}"}, status=HTTPStatus.CONFLICT)
+                return
+
+            try:
+                import yaml
+                from .config import load_config
+                from .cli import _initial_status
+
+                # Create project directory structure
+                for name in ("sources", "notes", "knowledge", "derived", "application", "evidence", "reports"):
+                    (proj_dir / name).mkdir(parents=True, exist_ok=True)
+                (proj_dir / "knowledge" / "procedures").mkdir(parents=True, exist_ok=True)
+                (proj_dir / "docs" / "status").mkdir(parents=True, exist_ok=True)
+
+                manifest_data = {
+                    "project_id": project_id,
+                    "goal": goal,
+                    "sources": [
+                        {
+                            "kind": kind,
+                            "origin": origin,
+                            "title": title,
+                        }
+                    ],
+                }
+                (proj_dir / "manifest.yaml").write_text(yaml.dump(manifest_data, sort_keys=False, default_flow_style=False), encoding="utf-8")
+
+                manifest = load_manifest(proj_dir / "manifest.yaml")
+                config = load_config(None)
+                record = _initial_status(manifest, config)
+                record.write(proj_dir, write_markdown=True)
+
+                ingested_count = 0
+                warning = None
+                if auto_ingest:
+                    from .adapters import default_registry
+                    from .ingest import ingest as run_ingest
+
+                    summary = run_ingest(manifest, proj_dir, config, default_registry())
+                    ingested_count = len(summary.records)
+                    if summary.failed:
+                        warning = f"Ingest completed with {len(summary.failed)} failure(s): {summary.failed[0].reason}"
+
+                resp: dict[str, Any] = {
+                    "status": "ok",
+                    "project_id": project_id,
+                    "path": str(proj_dir),
+                    "manifest": manifest_data,
+                    "ingested": ingested_count,
+                    "message": f"Project '{project_id}' created successfully.",
+                }
+                if warning:
+                    resp["warning"] = warning
+
+                self._send_json(resp, status=HTTPStatus.CREATED)
+            except Exception as exc:
+                self._send_json({"error": f"Failed to initialize project: {exc}"}, status=HTTPStatus.INTERNAL_SERVER_ERROR)
+            return
+
         if path == "/api/keyframes/extract":
             from .keyframes import extract_project_keyframes
 
@@ -476,12 +581,18 @@ INDEX_HTML = """<!DOCTYPE html>
         </div>
       </div>
 
-      <!-- Center: Project Selector -->
-      <div class="flex items-center space-x-2 bg-slate-950 px-3 py-1.5 rounded-lg border border-slate-800">
-        <span class="text-xs text-slate-400 font-medium">Project:</span>
-        <select id="project-select" onchange="changeProject(this.value)" class="bg-transparent text-sm font-semibold text-indigo-400 focus:outline-none cursor-pointer">
-          <option value="" disabled>Loading projects...</option>
-        </select>
+      <!-- Center: Project Selector & Create Action -->
+      <div class="flex items-center space-x-3">
+        <div class="flex items-center space-x-2 bg-slate-950 px-3 py-1.5 rounded-lg border border-slate-800">
+          <span class="text-xs text-slate-400 font-medium">Project:</span>
+          <select id="project-select" onchange="changeProject(this.value)" class="bg-transparent text-sm font-semibold text-indigo-400 focus:outline-none cursor-pointer">
+            <option value="" disabled>Loading projects...</option>
+          </select>
+        </div>
+        <button onclick="openNewProjectModal()" title="Create a new acquisition project" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-indigo-600/20 hover:bg-indigo-600/30 text-indigo-300 hover:text-white border border-indigo-500/40 hover:border-indigo-500 text-xs font-semibold transition cursor-pointer shadow-sm">
+          <svg class="w-3.5 h-3.5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+          <span>New Project</span>
+        </button>
       </div>
 
       <!-- Right Actions -->
@@ -622,6 +733,82 @@ INDEX_HTML = """<!DOCTYPE html>
 
   </main>
 
+  <!-- New Project Modal -->
+  <div id="new-project-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 hidden" onclick="closeNewProjectModal()">
+    <div class="relative max-w-xl w-full bg-slate-900 border border-slate-800 rounded-2xl shadow-2xl flex flex-col overflow-hidden" onclick="event.stopPropagation()">
+      <div class="p-4 border-b border-slate-800 flex items-center justify-between bg-slate-950/60">
+        <div class="flex items-center space-x-2.5">
+          <div class="w-8 h-8 rounded-lg bg-indigo-600/20 text-indigo-400 flex items-center justify-center border border-indigo-500/30">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+          </div>
+          <div>
+            <h3 class="text-sm font-bold text-white">Create New Knowledge Project</h3>
+            <p class="text-[11px] text-slate-400">Initialize a new skill acquisition workspace</p>
+          </div>
+        </div>
+        <button onclick="closeNewProjectModal()" class="text-slate-400 hover:text-white p-1 rounded hover:bg-slate-800 transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <form id="new-project-form" onsubmit="submitNewProject(event)" class="p-5 flex flex-col space-y-4 text-xs">
+        <!-- Error Alert -->
+        <div id="modal-error-alert" class="hidden p-3 rounded-lg bg-red-900/30 border border-red-500/50 text-red-200 text-xs"></div>
+
+        <div>
+          <label class="block font-semibold text-slate-300 mb-1">Project Identifier (Slug) <span class="text-indigo-400">*</span></label>
+          <input type="text" id="np-project-id" required pattern="^[a-z0-9][a-z0-9_-]{1,63}$" placeholder="e.g. fastapi-tutorial, agent-skill-dev" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 font-mono">
+          <p class="text-[10px] text-slate-500 mt-1">Lowercase letters, numbers, and hyphens (e.g. <code>my-tutorial</code>).</p>
+        </div>
+
+        <div>
+          <label class="block font-semibold text-slate-300 mb-1">Acquisition Goal <span class="text-indigo-400">*</span></label>
+          <textarea id="np-goal" required rows="2" placeholder="e.g. Extract architectural patterns, routing, and tool implementations for autonomous agents..." class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 resize-none"></textarea>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div>
+            <label class="block font-semibold text-slate-300 mb-1">Source Kind <span class="text-indigo-400">*</span></label>
+            <select id="np-kind" onchange="updateKindPlaceholder(this.value)" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 focus:outline-none focus:border-indigo-500 cursor-pointer">
+              <option value="video" selected>🎥 Video (YouTube / MP4)</option>
+              <option value="git">🐙 Git Repository / Directory</option>
+              <option value="audio">🎙️ Audio / Podcast</option>
+              <option value="pdf">📄 PDF Document</option>
+              <option value="text">📝 Markdown / Text</option>
+              <option value="html">🌐 Web Page / HTML</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-semibold text-slate-300 mb-1">Source Title <span class="text-indigo-400">*</span></label>
+            <input type="text" id="np-title" required placeholder="e.g. Complete Tutorial Video" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500">
+          </div>
+        </div>
+
+        <div>
+          <label class="block font-semibold text-slate-300 mb-1">Source Origin (URL or Path) <span class="text-indigo-400">*</span></label>
+          <input type="text" id="np-origin" required placeholder="https://www.youtube.com/watch?v=..." class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 font-mono">
+          <p id="np-origin-hint" class="text-[10px] text-slate-500 mt-1">YouTube URL or remote video link.</p>
+        </div>
+
+        <div class="pt-1 flex items-center">
+          <label class="flex items-center space-x-2 text-slate-300 cursor-pointer">
+            <input type="checkbox" id="np-auto-ingest" class="rounded bg-slate-950 border-slate-700 text-indigo-600 focus:ring-indigo-500 w-4 h-4">
+            <span class="text-slate-300">Auto-ingest source immediately</span>
+          </label>
+        </div>
+
+        <div class="pt-4 border-t border-slate-800 flex items-center justify-end space-x-3">
+          <button type="button" onclick="closeNewProjectModal()" class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium transition cursor-pointer">
+            Cancel
+          </button>
+          <button type="submit" id="np-submit-btn" class="px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold transition flex items-center space-x-2 shadow-lg shadow-indigo-600/20 cursor-pointer">
+            <span id="np-submit-text">Create Project</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <!-- Lightbox Modal -->
   <div id="lightbox" class="fixed inset-0 z-50 bg-black/90 backdrop-blur flex items-center justify-center p-4 hidden" onclick="closeLightbox()">
     <div class="relative max-w-4xl w-full bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl flex flex-col" onclick="event.stopPropagation()">
@@ -654,20 +841,108 @@ INDEX_HTML = """<!DOCTYPE html>
     let currentData = null;
     let currentVideoId = null;
 
-    async function loadProjects() {
+    function openNewProjectModal() {
+      const errEl = document.getElementById('modal-error-alert');
+      if (errEl) {
+        errEl.classList.add('hidden');
+        errEl.textContent = '';
+      }
+      document.getElementById('new-project-modal').classList.remove('hidden');
+      setTimeout(() => {
+        document.getElementById('np-project-id').focus();
+      }, 50);
+    }
+
+    function closeNewProjectModal() {
+      document.getElementById('new-project-modal').classList.add('hidden');
+    }
+
+    function updateKindPlaceholder(kind) {
+      const originInput = document.getElementById('np-origin');
+      const hint = document.getElementById('np-origin-hint');
+      if (kind === 'git') {
+        originInput.placeholder = 'https://github.com/org/repo or file:///path/to/repo';
+        hint.textContent = 'Git clone URL or local directory path.';
+      } else if (kind === 'video') {
+        originInput.placeholder = 'https://www.youtube.com/watch?v=...';
+        hint.textContent = 'YouTube URL or remote video link.';
+      } else if (kind === 'audio') {
+        originInput.placeholder = 'https://example.com/audio.mp3 or file:///path/to/audio.mp3';
+        hint.textContent = 'Audio URL or local file path.';
+      } else {
+        originInput.placeholder = 'https://... or file:///...';
+        hint.textContent = 'Remote URL or local file path.';
+      }
+    }
+
+    async function submitNewProject(e) {
+      e.preventDefault();
+      const alertEl = document.getElementById('modal-error-alert');
+      const submitBtn = document.getElementById('np-submit-btn');
+      const submitText = document.getElementById('np-submit-text');
+
+      alertEl.classList.add('hidden');
+      alertEl.textContent = '';
+      submitBtn.disabled = true;
+      submitText.textContent = 'Creating...';
+
+      const projectId = document.getElementById('np-project-id').value.trim();
+      const payload = {
+        project_id: projectId,
+        goal: document.getElementById('np-goal').value.trim(),
+        kind: document.getElementById('np-kind').value,
+        title: document.getElementById('np-title').value.trim(),
+        origin: document.getElementById('np-origin').value.trim(),
+        auto_ingest: document.getElementById('np-auto-ingest').checked
+      };
+
+      try {
+        const res = await fetch('/api/project/create', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const result = await res.json();
+        if (!res.ok || result.error) {
+          throw new Error(result.error || 'Failed to create project');
+        }
+
+        closeNewProjectModal();
+        showToast(`Project "${projectId}" created successfully!`);
+        document.getElementById('new-project-form').reset();
+        await loadProjects(projectId);
+      } catch (err) {
+        alertEl.textContent = err.message;
+        alertEl.classList.remove('hidden');
+      } finally {
+        submitBtn.disabled = false;
+        submitText.textContent = 'Create Project';
+      }
+    }
+
+    async function loadProjects(preferredId = null) {
       try {
         const res = await fetch('/api/projects');
         const data = await res.json();
         const sel = document.getElementById('project-select');
         sel.innerHTML = '';
+        let targetPath = null;
         data.projects.forEach(p => {
           const opt = document.createElement('option');
           opt.value = p.path;
           opt.textContent = `${p.project_id} (${p.units_count} units, ${p.procedures_count} procs)`;
+          if (preferredId && p.project_id === preferredId) {
+            opt.selected = true;
+            targetPath = p.path;
+          }
           sel.appendChild(opt);
         });
-        if (data.projects.length > 0) {
-          loadProject(data.projects[0].path);
+        if (!targetPath && data.projects.length > 0) {
+          targetPath = data.projects[0].path;
+        }
+        if (targetPath) {
+          sel.value = targetPath;
+          loadProject(targetPath);
         }
       } catch (err) {
         console.error('Failed to load projects', err);
@@ -922,7 +1197,14 @@ INDEX_HTML = """<!DOCTYPE html>
       return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;');
     }
 
-    window.addEventListener('DOMContentLoaded', loadProjects);
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeLightbox();
+        closeNewProjectModal();
+      }
+    });
+
+    window.addEventListener('DOMContentLoaded', () => loadProjects());
   </script>
 </body>
 </html>
