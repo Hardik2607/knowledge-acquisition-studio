@@ -1,0 +1,82 @@
+# Knowledge Acquisition Studio — 100% Local <= 9B Hardware-Accelerated Profile
+# Replaces external APIs entirely using the local NVIDIA GeForce RTX 3060 (12GB VRAM):
+#   * Transcription: Local CUDA Whisper (base model, ~0.5GB VRAM)
+#   * Extraction: Qwen2.5-Coder-7B (4.7GB VRAM, #1 structured JSON extraction sub-9B)
+#   * Verification: Qwen3-8B (5.2GB VRAM, distinct model family for AC-10/ADR-005 D11)
+#   * Failover: Local Ollama
+#
+# Schema: src/kas/config.py (strict; unknown keys are errors — AC-19)
+
+project:
+  version: 0.1.0
+  mode: local-first
+
+orchestrator:
+  auto_continue: true
+  max_retries: 3
+  lock_timeout_seconds: 600
+
+verification:
+  require_evidence: true
+  fail_on_missing_artifact: true
+  require_distinct_verify_model: true
+
+status:
+  update_after_each_task: true
+  write_markdown: true
+
+providers:
+  extract:
+    name: ollama
+    base_url: http://localhost:11434/v1
+    api_key_env: NONE
+    model: qwen2.5-coder:7b
+    timeout_seconds: 300
+  verify:
+    name: ollama
+    base_url: http://localhost:11434/v1
+    api_key_env: NONE
+    model: qwen3:8b
+    timeout_seconds: 300
+  transcribe:
+    name: nvidia
+    base_url: http://localhost:11434/v1
+    api_key_env: NONE
+    model: base
+    timeout_seconds: 300
+  research:
+    name: ollama
+    base_url: http://localhost:11434/v1
+    api_key_env: NONE
+    model: qwen2.5-coder:7b
+    timeout_seconds: 60
+  failover:
+    name: ollama
+    base_url: http://localhost:11434/v1
+    api_key_env: NONE
+    model: qwen3:8b
+    timeout_seconds: 120
+
+network:
+  enabled: true
+
+retention:
+  keep_raw: true
+  purge_raw: false
+
+paths:
+  vault: ~/Obsidian/knowledge-vault
+  runtime: runtime
+
+daemon:
+  inbox: runtime/inbox
+  poll_seconds: 5
+  max_parallel: 1
+
+sources:
+  youtube:
+    prefer_subtitles: true
+    languages: [en, hi]
+  reels:
+    cookies_from_browser: firefox
+    cookies_file: null

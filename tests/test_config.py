@@ -73,6 +73,15 @@ def test_nvidia_config_profile_loads_cleanly() -> None:
     assert config.providers["transcribe"].name == "nvidia"
 
 
+def test_local_9b_config_profile_loads_cleanly() -> None:
+    profile = Path(__file__).resolve().parent.parent / "config" / "local-9b.yaml"
+    config = load_config(profile)
+    assert config.providers["extract"].name == "ollama"
+    assert config.providers["extract"].model == "qwen2.5-coder:7b"
+    assert config.providers["verify"].model == "qwen3:8b"
+    assert config.providers["transcribe"].name == "nvidia"
+
+
 def test_invalid_env_name_rejected(tmp_path: Path) -> None:
     path = write_config(tmp_path, "providers:\n  extract:\n    api_key_env: llm7_api_key\n")
     with pytest.raises(ValidationError) as excinfo:
