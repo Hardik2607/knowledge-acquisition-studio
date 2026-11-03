@@ -308,19 +308,33 @@ class KasStudioHandler(BaseHTTPRequestHandler):
         pass
 
 
+def get_lan_ip() -> str:
+    import socket
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.connect(("8.8.8.8", 80))
+        ip = s.getsockname()[0]
+        s.close()
+        return ip
+    except Exception:
+        return "127.0.0.1"
+
+
 def run_server(
     workspace_root: Path,
     default_project: Path | None = None,
-    host: str = "127.0.0.1",
+    host: str = "0.0.0.0",
     port: int = 8765,
 ) -> None:
     def handler_factory(*args, **kwargs):
         return KasStudioHandler(*args, workspace_root=workspace_root, default_project=default_project, **kwargs)
 
     server = ThreadingHTTPServer((host, port), handler_factory)
+    lan_ip = get_lan_ip()
     print(f"\n==================================================================")
     print(f"🚀 Knowledge Acquisition Studio (KAS) Web Server running at:")
-    print(f"   👉 http://{host}:{port}/")
+    print(f"   👉 Local: http://localhost:{port}/")
+    print(f"   👉 LAN:   http://{lan_ip}:{port}/")
     print(f"==================================================================")
     if default_project:
         print(f"Default Project: {default_project}")

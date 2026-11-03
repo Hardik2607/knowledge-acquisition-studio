@@ -545,7 +545,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     p_serve = sub.add_parser("serve", help="launch local interactive web studio and agent skill server")
     p_serve.add_argument("--project", default="projects/claude-tutorial", help="default project directory to display")
-    p_serve.add_argument("--host", default="127.0.0.1", help="host address (default: 127.0.0.1)")
+    p_serve.add_argument("--host", default="0.0.0.0", help="host address (default: 0.0.0.0, binds to all interfaces for LAN access)")
     p_serve.add_argument("--port", type=int, default=8765, help="port to bind (default: 8765)")
     p_serve.set_defaults(func=cmd_serve)
 
