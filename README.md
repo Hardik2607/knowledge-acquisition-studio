@@ -142,6 +142,25 @@ kas daemon --project projects/claude-tutorial
 
 ---
 
+### 4. Running with Docker & Docker Compose
+
+Launch the entire studio in an isolated container with zero host setup:
+
+```bash
+# Build and run with Docker Compose
+docker compose up -d
+
+# Check live logs
+docker compose logs -f
+
+# Stop container
+docker compose down
+```
+
+The Web Studio will immediately be available at `http://localhost:8765/`. Projects, keyframe snapshots, and skill outputs are persisted to your local `./projects/` directory via volume mounts.
+
+---
+
 ## 🤖 Universal Agent Skill Output
 
 When you export a skill from KAS, it produces a clean, model-agnostic specification compatible with any LLM runner:
