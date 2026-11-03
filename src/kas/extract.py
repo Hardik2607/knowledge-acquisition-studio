@@ -414,6 +414,7 @@ def build_notes(client: ChatClient, source, transcript: Transcript) -> NoteBook:
     system = (
         "You extract timestamped study notes and actionable learning material from a transcript. "
         "State technical facts, workflows, concepts, and skills directly in clear declarative sentences without conversational dialogue or speaker tags (e.g., avoid 'the speaker says'). "
+        "Formulate learning points and procedures universally so they can be executed by any LLM or AI agent (e.g., Claude, GPT, Gemini, local models). "
         "Preserve exact technical terminology (tool names, prompt structures, API options, workflows). "
         "Return JSON: {\"notes\":[{\"start\":<timestamp like 'MM:SS' or seconds>,\"end\":<timestamp like 'MM:SS' or seconds>,\"text\":\"...\"}]}. "
         "Use the exact keys start, end and text. Every note must be supported by the transcript. No invention."
@@ -544,7 +545,8 @@ def extract_units(client: ChatClient, transcripts: list[Transcript], titles: dic
             )
             system = (
                 "You extract atomic, actionable knowledge units and skills from educational transcripts. "
-                "State technical facts, capabilities, rules, and workflows directly as concise, self-contained knowledge units for an agent skill library. "
+                "State technical facts, capabilities, rules, and workflows directly as concise, self-contained knowledge units for a universal agent skill library. "
+                "Formulate principles, prompting patterns, and capabilities generically so they apply across all modern LLMs (Claude, GPT, Gemini, open models). "
                 "Write in clear declarative sentences without conversational dialogue or narrator framing (e.g., avoid 'the speaker explains'). "
                 "Return JSON: "
                 "{\"units\":[{\"statement\":\"...\",\"source_refs\":[{\"source_id\":\"src-...\","
@@ -701,7 +703,7 @@ def build_procedures(client: ChatClient, units: list[KnowledgeUnit]) -> list[Pro
     catalogue = "\n".join(f"- {u.id}: {u.statement}" for u in units)
     system = (
         "You turn knowledge units into an ordered, executable procedure and skill workflow for an autonomous agent or practitioner. "
-        "Formulate each step as an active, imperative instruction (e.g., 'Configure...', 'Prompt Claude with...', 'Execute...', 'Verify...') without conversational narration. "
+        "Formulate each step as an active, imperative instruction (e.g., 'Configure...', 'Prompt the model with...', 'Execute...', 'Verify...') that is universally executable across any LLM (Claude, GPT, Gemini, local models) without conversational narration. "
         "Return JSON: "
         "{\"procedures\":[{\"title\":\"...\",\"steps\":[{\"text\":\"...\",\"unit_ids\":[\"k-...\"]}]}]}. "
         "Every step must cite at least one provided unit id. Do not invent units."

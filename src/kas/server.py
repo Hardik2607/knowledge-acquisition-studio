@@ -207,26 +207,37 @@ def export_as_antigravity_skill(project_data: dict[str, Any]) -> str:
         f"name: {pid}",
         f"description: {goal}",
         "version: 1.0.0",
-        "tags: [claude, workflow, agent-skill]",
+        "tags: [agent-skill, workflow, universal-llm, procedure]",
+        "compatibility: [claude, gpt-4, gemini, qwen, deepseek, llama, antigravity]",
         "---",
         "",
         f"# Skill: {pid}",
         "",
         f"> {goal}",
         "",
+        "## Agent Execution Contract",
+        "",
+        "This skill provides model-agnostic, executable procedures designed for any modern LLM or autonomous agent runner (Claude, GPT, Gemini, DeepSeek, or local models). When executing these procedures:",
+        "1. Adopt the Context-Task-Format prompting architecture for clear deliverables.",
+        "2. Execute tool integrations via standard Model Context Protocol (MCP) or tool-calling interfaces.",
+        "3. Follow the ordered, imperative steps sequentially and verify intermediate state.",
+        "",
         "## Core Procedures",
         "",
     ]
     for p in procedures:
-        doc.append(f"### {p['title']}")
+        clean_title = re.sub(r"\bClaude\s+AI\b|\bClaude\b", "LLM", p["title"], flags=re.IGNORECASE)
+        doc.append(f"### {clean_title}")
         for step in p.get("steps", []):
-            doc.append(f"- {step}")
+            gen_step = re.sub(r"\bClaude\s+AI\b|\bClaude\b", "the LLM", step, flags=re.IGNORECASE)
+            doc.append(f"- {gen_step}")
         doc.append("")
 
     doc.append("## Knowledge Primitives & Rules")
     doc.append("")
-    for uid, statement in sorted(units.items())[:25]:
-        doc.append(f"- **{uid}**: {statement}")
+    for uid, statement in sorted(units.items())[:35]:
+        gen_stmt = re.sub(r"\bClaude\s+AI\b|\bClaude\b", "the LLM", statement, flags=re.IGNORECASE)
+        doc.append(f"- **{uid}**: {gen_stmt}")
 
     return "\n".join(doc) + "\n"
 
