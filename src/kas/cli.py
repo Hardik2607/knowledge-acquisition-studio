@@ -78,7 +78,9 @@ def _report_env(config: Config) -> list[str]:
         {
             provider.api_key_env
             for provider in config.providers.values()
-            if provider.name != "local" and not os.environ.get(provider.api_key_env)
+            if provider.name not in ("local", "ollama")
+            and provider.api_key_env not in ("NONE", "")
+            and not os.environ.get(provider.api_key_env)
         }
     )
 

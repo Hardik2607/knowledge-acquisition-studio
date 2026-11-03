@@ -1,0 +1,82 @@
+# Knowledge Acquisition Studio — NVIDIA hardware-accelerated configuration
+# Utilizes local NVIDIA GeForce RTX 3060 12GB GPU:
+#   * Transcription: Local CUDA Whisper (openai-whisper on GPU)
+#   * Extraction: Mistral-NeMo-12B (NVIDIA & Mistral collaboration) via local Ollama
+#   * Verification: Qwen2.5-Coder-7B via local Ollama (distinct model family for AC-10)
+#   * Failover: LLM7 cloud fallback
+#
+# Schema: src/kas/config.py (strict; unknown keys are errors — AC-19)
+
+project:
+  version: 0.1.0
+  mode: local-first
+
+orchestrator:
+  auto_continue: true
+  max_retries: 3
+  lock_timeout_seconds: 600
+
+verification:
+  require_evidence: true
+  fail_on_missing_artifact: true
+  require_distinct_verify_model: true
+
+status:
+  update_after_each_task: true
+  write_markdown: true
+
+providers:
+  extract:
+    name: ollama
+    base_url: http://localhost:11434/v1
+    api_key_env: OLLAMA_API_KEY
+    model: mistral-nemo:12b
+    timeout_seconds: 300
+  verify:
+    name: ollama
+    base_url: http://localhost:11434/v1
+    api_key_env: OLLAMA_API_KEY
+    model: qwen2.5-coder:7b
+    timeout_seconds: 120
+  transcribe:
+    name: nvidia
+    base_url: http://localhost:11434/v1
+    api_key_env: NONE
+    model: base
+    timeout_seconds: 300
+  research:
+    name: tavily
+    base_url: https://api.tavily.com
+    api_key_env: TAVILY_API_KEY
+    model: search
+    timeout_seconds: 60
+  failover:
+    name: llm7
+    base_url: https://api.llm7.io/v1
+    api_key_env: LLM7_API_KEY
+    model: DeepSeek-V4-Flash-0731
+    timeout_seconds: 120
+
+network:
+  enabled: true
+
+retention:
+  keep_raw: true
+  purge_raw: false
+
+paths:
+  vault: ~/Obsidian/knowledge-vault
+  runtime: runtime
+
+daemon:
+  inbox: runtime/inbox
+  poll_seconds: 5
+  max_parallel: 1
+
+sources:
+  youtube:
+    prefer_subtitles: true
+    languages: [en, hi]
+  reels:
+    cookies_from_browser: firefox
+    cookies_file: null

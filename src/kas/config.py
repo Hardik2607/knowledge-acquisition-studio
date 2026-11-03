@@ -20,7 +20,7 @@ import yaml
 from .errors import FieldError, ValidationError, type_name
 
 ENV_NAME = re.compile(r"^[A-Z][A-Z0-9_]*$")
-SECRET_PREFIXES = ("sk-", "gsk_", "hf_", "xoxb-", "xoxp-", "glpat-", "ghp_")
+SECRET_PREFIXES = ("sk-", "gsk_", "hf_", "xoxb-", "xoxp-", "glpat-", "ghp_", "nvapi-")
 
 DEFAULTS: dict[str, Any] = {
     "project": {"version": "0.1.0", "mode": "local-first", "name": None},

@@ -5,6 +5,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import pytest
+
 from fakes import FakeAdapter, FakeTranscriber, Route
 
 from kas.adapters.video import parse_vtt
@@ -108,3 +110,112 @@ def test_existing_invalid_transcript_is_reported(tmp_path: Path) -> None:
 
     assert not transcripts
     assert failures and "existing transcript invalid" in failures[0]
+
+
+def test_local_whisper_transcriber_missing_file(tmp_path: Path) -> None:
+    from kas.config import Provider
+    from kas.transcribe import LocalWhisperTranscriber, TranscriptionError
+
+    provider = Provider(
+        stage="transcribe",
+        name="nvidia",
+        base_url="http://localhost:11434/v1",
+        api_key_env="NONE",
+        model="base",
+    )
+    transcriber = LocalWhisperTranscriber(provider)
+    with pytest.raises(TranscriptionError) as excinfo:
+        transcriber.transcribe(tmp_path / "nonexistent.mp3", "src-test")
+    assert excinfo.value.code == "file_not_found"
+
+
+def test_local_whisper_mock_cli(tmp_path: Path, monkeypatch) -> None:
+    import subprocess
+    from kas.config import Provider
+    from kas.transcribe import LocalWhisperTranscriber
+
+    audio = tmp_path / "test.mp3"
+    audio.write_bytes(b"mock audio")
+
+    provider = Provider(
+        stage="transcribe",
+        name="nvidia",
+        base_url="http://localhost:11434/v1",
+        api_key_env="NONE",
+        model="base",
+    )
+    transcriber = LocalWhisperTranscriber(provider)
+
+    def fake_run(cmd, *args, **kwargs):
+        # find --output_dir in cmd
+        out_idx = cmd.index("--output_dir")
+        out_dir = Path(cmd[out_idx + 1])
+        json_file = out_dir / "test.json"
+        json_file.write_text(
+            json.dumps({
+                "text": "Hello world",
+                "segments": [
+                    {"id": 0, "start": 0.0, "end": 2.5, "text": "Hello world"}
+                ],
+                "language": "en"
+            })
+        )
+        return subprocess.CompletedProcess(cmd, returncode=0, stdout="", stderr="")
+
+    monkeypatch.setattr("subprocess.run", fake_run)
+    monkeypatch.setattr("shutil.which", lambda _: "/usr/bin/whisper")
+
+    transcript = transcriber.transcribe(audio, "src-test")
+    assert transcript.provider == "nvidia"
+    assert transcript.model == "base"
+    assert len(transcript.segments) == 1
+    assert transcript.segments[0].text == "Hello world"
+    assert transcript.segments[0].end == 2.5
+
+
+def test_local_whisper_cuda_fallback_to_cpu(tmp_path: Path, monkeypatch) -> None:
+    import subprocess
+    from kas.config import Provider
+    from kas.transcribe import LocalWhisperTranscriber
+
+    audio = tmp_path / "test.mp3"
+    audio.write_bytes(b"mock audio")
+
+    provider = Provider(
+        stage="transcribe",
+        name="nvidia",
+        base_url="http://localhost:11434/v1",
+        api_key_env="NONE",
+        model="base",
+    )
+    transcriber = LocalWhisperTranscriber(provider)
+
+    call_count = 0
+
+    def fake_run(cmd, *args, **kwargs):
+        nonlocal call_count
+        call_count += 1
+        if "--device" in cmd and cmd[cmd.index("--device") + 1] == "cuda":
+            # fail on cuda
+            return subprocess.CompletedProcess(cmd, returncode=1, stdout="", stderr="CUDA error")
+
+        out_idx = cmd.index("--output_dir")
+        out_dir = Path(cmd[out_idx + 1])
+        json_file = out_dir / "test.json"
+        json_file.write_text(
+            json.dumps({
+                "text": "Fallback worked",
+                "segments": [
+                    {"id": 0, "start": 0.0, "end": 1.5, "text": "Fallback worked"}
+                ],
+                "language": "en"
+            })
+        )
+        return subprocess.CompletedProcess(cmd, returncode=0, stdout="", stderr="")
+
+    monkeypatch.setattr("subprocess.run", fake_run)
+    monkeypatch.setattr("shutil.which", lambda _: "/usr/bin/whisper")
+
+    transcript = transcriber.transcribe(audio, "src-test")
+    assert call_count == 2
+    assert transcript.segments[0].text == "Fallback worked"

@@ -17,6 +17,9 @@ from __future__ import annotations
 import json
 import os
 import re
+import shutil
+import subprocess
+import tempfile
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -235,6 +238,133 @@ def _parse_stamped_lines(text: str) -> list[Segment]:
     return segments
 
 
+class LocalWhisperTranscriber:
+    """Local offline Whisper transcriber supporting CUDA/CPU execution."""
+
+    def __init__(self, provider):
+        self.provider = provider
+        self.name = getattr(provider, "name", "nvidia")
+        self.model = getattr(provider, "model", "base") or "base"
+
+    def transcribe(self, audio: Path, source_id: str, language: str | None = None) -> Transcript:
+        audio = Path(audio).resolve()
+        if not audio.is_file():
+            raise TranscriptionError("file_not_found", f"audio file not found: {audio}")
+
+        # 1. In-process whisper library if available
+        try:
+            import torch  # type: ignore
+            import whisper  # type: ignore
+
+            device = "cuda" if torch.cuda.is_available() else "cpu"
+            model = whisper.load_model(self.model, device=device)
+            kwargs = {}
+            if language:
+                kwargs["language"] = language
+            result = model.transcribe(str(audio), **kwargs)
+            raw_segments = result.get("segments") or []
+            detected_language = result.get("language") or language
+            segments = [
+                Segment(
+                    start=float(s.get("start", 0.0)),
+                    end=float(s.get("end", 0.0)),
+                    text=str(s.get("text", "")),
+                    language=detected_language,
+                )
+                for s in raw_segments
+            ]
+            if not segments:
+                raise TranscriptionError("no_segments", "local whisper returned no segments")
+            return Transcript(
+                source_id=source_id,
+                provider=self.name,
+                model=self.model,
+                language=detected_language,
+                segments=normalize_segments(segments),
+            )
+        except ImportError:
+            pass
+        except Exception as exc:
+            raise TranscriptionError("provider_error", f"whisper python failed: {exc}") from exc
+
+        # 2. External CLI whisper executable or python3 -m whisper
+        whisper_bin = shutil.which("whisper")
+        if not whisper_bin:
+            user_bin = Path.home() / ".local" / "bin" / "whisper"
+            if user_bin.is_file() and os.access(user_bin, os.X_OK):
+                whisper_bin = str(user_bin)
+
+        if not whisper_bin:
+            try:
+                check = subprocess.run(
+                    ["python3", "-c", "import whisper"],
+                    capture_output=True,
+                    timeout=5,
+                )
+                if check.returncode == 0:
+                    whisper_bin = "python3"
+            except Exception:
+                pass
+
+        if not whisper_bin:
+            raise TranscriptionError(
+                "whisper_unavailable",
+                "Local whisper is not available (install openai-whisper or whisper CLI)",
+            )
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            base_cmd = (
+                [whisper_bin, str(audio)]
+                if whisper_bin != "python3"
+                else ["python3", "-m", "whisper", str(audio)]
+            )
+            base_cmd.extend(["--model", self.model, "--output_format", "json", "--output_dir", tmpdir])
+            if language:
+                base_cmd.extend(["--language", language])
+
+            cuda_cmd = list(base_cmd) + ["--device", "cuda"]
+            proc = subprocess.run(cuda_cmd, capture_output=True, text=True)
+            if proc.returncode != 0:
+                cpu_cmd = list(base_cmd) + ["--device", "cpu"]
+                proc = subprocess.run(cpu_cmd, capture_output=True, text=True)
+                if proc.returncode != 0:
+                    raise TranscriptionError(
+                        "provider_error",
+                        f"whisper CLI exited with {proc.returncode}: {proc.stderr[:200]}",
+                    )
+
+            json_files = list(Path(tmpdir).glob("*.json"))
+            if not json_files:
+                raise TranscriptionError("no_output", "whisper CLI did not produce a json output file")
+
+            try:
+                payload = json.loads(json_files[0].read_text(encoding="utf-8"))
+            except Exception as exc:
+                raise TranscriptionError("invalid_json", f"could not parse whisper json: {exc}") from exc
+
+            raw_segments = payload.get("segments") or []
+            detected_language = payload.get("language") or language
+            segments = [
+                Segment(
+                    start=float(s.get("start", 0.0)),
+                    end=float(s.get("end", 0.0)),
+                    text=str(s.get("text", "")),
+                    language=detected_language,
+                )
+                for s in raw_segments
+            ]
+            if not segments:
+                raise TranscriptionError("no_segments", "whisper returned no segments")
+
+            return Transcript(
+                source_id=source_id,
+                provider=self.name,
+                model=self.model,
+                language=detected_language,
+                segments=normalize_segments(segments),
+            )
+
+
 # --------------------------------------------------------------------- chain
 
 
@@ -248,23 +378,29 @@ def transcribe_source(
     """Transcribe with the configured provider, then Groq, recording what was tried."""
     attempts: list[str] = []
 
-    if not (config.get("network.enabled", True) if config is not None else True) and transcriber is None:
+    primary = config.providers.get("transcribe") if config and hasattr(config, "providers") else None
+    is_local = primary and primary.name in ("nvidia", "whisper", "local")
+
+    if not (config.get("network.enabled", True) if config is not None else True) and transcriber is None and not is_local:
         raise TranscriptionError("network_disabled", "network is disabled by configuration (AC-17)")
     if transcriber is not None:
         transcript = transcriber.transcribe(audio, source_id, language=language)
         attempts.append(getattr(transcriber, "name", "injected"))
         return _finalize(transcript, attempts), attempts
 
-    primary = config.providers["transcribe"]
     chain: list = []
-    if primary.name == "llm7":
-        chain.append(VoxtralTranscriber(primary))
-    elif primary.name == "groq":
-        chain.append(GroqTranscriber(primary))
+    if primary:
+        if primary.name in ("nvidia", "whisper", "local"):
+            chain.append(LocalWhisperTranscriber(primary))
+        elif primary.name == "llm7":
+            chain.append(VoxtralTranscriber(primary))
+        elif primary.name == "groq":
+            chain.append(GroqTranscriber(primary))
 
-    if primary.name != "groq":
+    if not primary or primary.name != "groq":
         from .config import Provider
 
+        timeout = primary.timeout_seconds if primary else 300
         chain.append(
             GroqTranscriber(
                 Provider(
@@ -273,7 +409,7 @@ def transcribe_source(
                     base_url="https://api.groq.com/openai/v1",
                     api_key_env="GROQ_API_KEY",
                     model="whisper-large-v3",
-                    timeout_seconds=max(primary.timeout_seconds, 300),
+                    timeout_seconds=max(timeout, 300),
                 )
             )
         )

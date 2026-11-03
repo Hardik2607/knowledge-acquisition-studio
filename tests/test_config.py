@@ -54,6 +54,25 @@ def test_literal_secret_rejected(tmp_path: Path) -> None:
     assert "looks like" in excinfo.value.render()
 
 
+def test_nvidia_literal_secret_rejected(tmp_path: Path) -> None:
+    path = write_config(
+        tmp_path,
+        "providers:\n  extract:\n    api_key_env: nvapi-abcdefghijklmnopqrstuvwxyz123456\n",
+    )
+    with pytest.raises(ValidationError) as excinfo:
+        load_config(path)
+    assert "looks like" in excinfo.value.render()
+
+
+def test_nvidia_config_profile_loads_cleanly() -> None:
+    profile = Path(__file__).resolve().parent.parent / "config" / "nvidia.yaml"
+    config = load_config(profile)
+    assert config.providers["extract"].name == "ollama"
+    assert config.providers["extract"].model == "mistral-nemo:12b"
+    assert config.providers["verify"].model == "qwen2.5-coder:7b"
+    assert config.providers["transcribe"].name == "nvidia"
+
+
 def test_invalid_env_name_rejected(tmp_path: Path) -> None:
     path = write_config(tmp_path, "providers:\n  extract:\n    api_key_env: llm7_api_key\n")
     with pytest.raises(ValidationError) as excinfo:
