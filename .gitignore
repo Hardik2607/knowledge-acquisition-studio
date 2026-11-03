@@ -4,20 +4,46 @@ __pycache__/
 *$py.class
 *.cover
 
-# Virtualenv
+# Virtual environment
 .venv/
 env/
 venv/
+ENV/
 
-# Testing
+# Testing & Coverage
 .pytest_cache/
 .coverage
+.coverage.*
 htmlcov/
+.nox/
+.tox/
 
-# Build artifacts
+# Build artifacts & distribution
 *.egg-info/
+*.egg
 dist/
 build/
+*.whl
 
-# Local temp
+# Local runtime workdir & temp
 .tmp/
+*.log
+runtime/queue/
+runtime/done/
+runtime/failed/
+
+# Secrets & Environment variables
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editor & OS artifacts
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
