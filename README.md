@@ -184,8 +184,11 @@ The server exposes HTTP endpoints for agent tool integrations:
 | `GET` | `/api/projects` | List all available knowledge projects with metadata |
 | `GET` | `/api/project?name=<id>` | Retrieve full project data (notes, units, procedures, keyframes) |
 | `POST` | `/api/project/create` | Create a new project workspace and optionally run auto-ingest |
+| `POST` | `/api/project/build` | Run full acquisition pipeline (transcription, unit extraction, procedures) |
+| `POST` | `/api/project/vault` | Project knowledge into Obsidian vault with hand-edit guards |
 | `GET` | `/api/skills?q=<query>` | Search procedures and atomic units by semantic query |
-| `GET` | `/api/export/skill?path=<path>` | Download the universal `*.skill.md` document |
+| `GET` | `/api/export/skill?path=<path>` | Download the universal `*.skill.md` agent skill contract |
+| `GET` | `/api/export/dossier?path=<path>` | Download the comprehensive Visual Knowledge Dossier (`*.md`) |
 | `POST` | `/api/keyframes/extract` | Trigger sub-second `ffmpeg` keyframe extraction for a project |
 | `GET` | `/media/<project>/<path>` | Serve visual keyframe screenshots and local media |
 
