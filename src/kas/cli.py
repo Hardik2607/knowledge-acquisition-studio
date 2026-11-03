@@ -470,6 +470,20 @@ def cmd_init(args: argparse.Namespace) -> int:
     return EXIT_OK
 
 
+def cmd_serve(args: argparse.Namespace) -> int:
+    from .server import run_server
+
+    workspace_root = Path.cwd().resolve()
+    default_proj = Path(args.project).resolve() if args.project else None
+    run_server(
+        workspace_root=workspace_root,
+        default_project=default_proj,
+        host=args.host,
+        port=args.port,
+    )
+    return EXIT_OK
+
+
 # --------------------------------------------------------------------------- parser
 
 
@@ -528,6 +542,12 @@ def build_parser() -> argparse.ArgumentParser:
     p_init.add_argument("--name", required=True)
     p_init.add_argument("--force", action="store_true")
     p_init.set_defaults(func=cmd_init)
+
+    p_serve = sub.add_parser("serve", help="launch local interactive web studio and agent skill server")
+    p_serve.add_argument("--project", default="projects/claude-tutorial", help="default project directory to display")
+    p_serve.add_argument("--host", default="127.0.0.1", help="host address (default: 127.0.0.1)")
+    p_serve.add_argument("--port", type=int, default=8765, help="port to bind (default: 8765)")
+    p_serve.set_defaults(func=cmd_serve)
 
     return parser
 
