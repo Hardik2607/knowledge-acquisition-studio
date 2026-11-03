@@ -82,6 +82,26 @@ def test_server_routes():
     content = res.read().decode("utf-8")
     assert "name: claude-tutorial" in content
 
+    # 6. GET /api/export/dossier
+    conn.request("GET", "/api/export/dossier?path=projects/claude-tutorial")
+    res = conn.getresponse()
+    assert res.status == 200
+    assert "attachment" in res.headers.get("Content-Disposition", "")
+    dossier_content = res.read().decode("utf-8")
+    assert "Visual Knowledge Dossier" in dossier_content
+    assert "claude-tutorial" in dossier_content
+
+    # 7. POST /api/project/vault
+    tmp_vault = workspace / ".tmp" / "test_vault"
+    vault_payload = {"path": "projects/claude-tutorial", "vault_path": str(tmp_vault)}
+    conn.request("POST", "/api/project/vault", body=json.dumps(vault_payload), headers={"Content-Type": "application/json"})
+    res = conn.getresponse()
+    assert res.status == 200
+    vault_data = json.loads(res.read().decode("utf-8"))
+    assert vault_data["status"] == "ok"
+    assert vault_data["written_count"] > 0
+    assert (tmp_vault / "Sources").is_dir()
+
     conn.close()
     server.shutdown()
     server.server_close()
@@ -119,12 +139,14 @@ def test_server_project_create(tmp_path):
     assert "Invalid project_id" in res_data["error"]
 
     # 3. Successful project creation (without auto_ingest)
+    sample_doc = workspace / "guide.md"
+    sample_doc.write_text("# Guide\n\nStep 1: Install.\nStep 2: Run.", encoding="utf-8")
     valid_payload = {
         "project_id": "demo-agent-skill",
-        "goal": "Extract agent skills from tutorial video",
-        "kind": "video",
+        "goal": "Extract agent skills from guide",
+        "kind": "text",
         "title": "Tutorial Demo",
-        "origin": "https://www.youtube.com/watch?v=9oJySubZRSA",
+        "origin": f"file://{sample_doc}",
         "auto_ingest": False,
     }
     conn.request("POST", "/api/project/create", body=json.dumps(valid_payload), headers={"Content-Type": "application/json"})
@@ -152,6 +174,15 @@ def test_server_project_create(tmp_path):
     p_list = json.loads(res.read().decode("utf-8"))
     p_ids = [p["project_id"] for p in p_list["projects"]]
     assert "demo-agent-skill" in p_ids
+
+    # 6. Test project build endpoint
+    build_payload = {"path": str(proj_dir)}
+    conn.request("POST", "/api/project/build", body=json.dumps(build_payload), headers={"Content-Type": "application/json"})
+    res = conn.getresponse()
+    assert res.status == 200
+    build_data = json.loads(res.read().decode("utf-8"))
+    assert build_data["status"] == "ok"
+    assert build_data["project_id"] == "demo-agent-skill"
 
     conn.close()
     server.shutdown()

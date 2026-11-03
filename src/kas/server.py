@@ -242,6 +242,74 @@ def export_as_antigravity_skill(project_data: dict[str, Any]) -> str:
     return "\n".join(doc) + "\n"
 
 
+def export_visual_dossier(project_data: dict[str, Any], host_url: str = "") -> str:
+    from datetime import datetime, timezone
+
+    pid = project_data.get("project_id", "project")
+    goal = (project_data.get("manifest") or {}).get("goal", "Visual Knowledge Dossier")
+    sources = project_data.get("sources", [])
+    src_title = sources[0].get("title", pid) if sources else pid
+    src_origin = sources[0].get("origin", "") if sources else ""
+    keyframes = project_data.get("keyframes", [])
+    notes = project_data.get("notes", [])
+    procedures = project_data.get("procedures", [])
+    units = project_data.get("units", [])
+    now_str = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
+
+    lines = [
+        f"# 📸 Visual Knowledge Dossier: {pid}",
+        "",
+        f"> **Acquisition Goal:** {goal}  ",
+        f"> **Primary Source:** {src_title}  ",
+        f"> **Origin:** `{src_origin}`  ",
+        f"> **Generated:** {now_str}  ",
+        "",
+        "---",
+        "",
+        "## 1. Visual Keyframe & Action Timeline",
+        "",
+        "High-resolution code blocks, terminal outputs, diagrams, and UI interactions captured during demonstrations:",
+        "",
+    ]
+
+    if keyframes:
+        for kf in keyframes:
+            ts = kf.get("timestamp", 0)
+            mins, secs = ts // 60, ts % 60
+            ts_str = f"{mins:02d}:{secs:02d}"
+            matching_notes = [n["text"] for n in notes if abs(float(n.get("start", 0)) - ts) <= 25]
+            note_summary = matching_notes[0] if matching_notes else "Visual demonstration"
+            img_url = f"{host_url}{kf.get('url', '')}" if host_url else kf.get("url", "")
+
+            lines.append(f"### ⏱️ Timestamp `{ts_str}` — `{kf.get('filename')}`")
+            lines.append("")
+            lines.append(f"![{kf.get('filename')}]({img_url})")
+            lines.append("")
+            lines.append(f"**Demonstration Context:** {note_summary}")
+            lines.append("")
+            lines.append("---")
+            lines.append("")
+    else:
+        lines.append("*No visual keyframes captured yet. Run keyframe extraction to generate snapshots.*")
+        lines.append("")
+
+    lines.append("## 2. Core Executable Procedures")
+    lines.append("")
+    for p in procedures:
+        lines.append(f"### {p.get('title')}")
+        for s in p.get("steps", []):
+            lines.append(f"- {s}")
+        lines.append("")
+
+    lines.append("## 3. Atomic Knowledge Primitives")
+    lines.append("")
+    for u in units[:40]:
+        lines.append(f"- **{u.get('id')}** ({u.get('confidence')}): {u.get('statement')}")
+    lines.append("")
+
+    return "\n".join(lines) + "\n"
+
+
 class KasStudioHandler(BaseHTTPRequestHandler):
     """Custom HTTP handler serving the KAS Single-Page Web Studio."""
 
@@ -323,6 +391,21 @@ class KasStudioHandler(BaseHTTPRequestHandler):
             self.send_header("Content-Length", str(len(skill_md.encode("utf-8"))))
             self.end_headers()
             self.wfile.write(skill_md.encode("utf-8"))
+            return
+
+        if path == "/api/export/dossier":
+            req_path = params.get("path", [""])[0]
+            target = Path(req_path) if req_path else (self.default_project or (self.workspace_root / "projects" / "claude-tutorial"))
+            data = load_project_data(target)
+            host_header = self.headers.get("Host", "localhost:8765")
+            base_url = f"http://{host_header}"
+            dossier_md = export_visual_dossier(data, host_url=base_url)
+            self.send_response(HTTPStatus.OK)
+            self.send_header("Content-Type", "text/markdown; charset=utf-8")
+            self.send_header("Content-Disposition", f"attachment; filename={data.get('project_id', 'project')}-visual-dossier.md")
+            self.send_header("Content-Length", str(len(dossier_md.encode("utf-8"))))
+            self.end_headers()
+            self.wfile.write(dossier_md.encode("utf-8"))
             return
 
         if path.startswith("/media/"):
@@ -471,6 +554,103 @@ class KasStudioHandler(BaseHTTPRequestHandler):
             self._send_json({"count": len(frames), "keyframes": frames})
             return
 
+        if path == "/api/project/build":
+            content_length = int(self.headers.get("Content-Length", 0))
+            body = self.rfile.read(content_length).decode("utf-8") if content_length > 0 else "{}"
+            try:
+                payload = json.loads(body)
+            except Exception:
+                payload = {}
+            target_path = payload.get("path") or payload.get("project_id") or "projects/claude-tutorial"
+            target = Path(target_path)
+            if not target.is_absolute():
+                if (self.workspace_root / target_path).is_dir():
+                    target = (self.workspace_root / target_path).resolve()
+                else:
+                    target = (self.workspace_root / "projects" / target_path).resolve()
+
+            if not target.is_dir() or not (target / "manifest.yaml").is_file():
+                self._send_json({"error": f"Project not found at {target}"}, status=HTTPStatus.NOT_FOUND)
+                return
+
+            try:
+                from .manifest import load_manifest
+                from .config import load_config
+                from .pipeline import build as run_build
+                from .adapters import default_registry
+                from .keyframes import extract_project_keyframes
+
+                manifest = load_manifest(target / "manifest.yaml")
+                config_path = target / "config" / "kas.yaml"
+                config = load_config(config_path if config_path.is_file() else None)
+
+                build_result = run_build(manifest, target, config, registry=default_registry())
+
+                kf_count = 0
+                try:
+                    kfs = extract_project_keyframes(target)
+                    kf_count = len(kfs)
+                except Exception:
+                    pass
+
+                self._send_json({
+                    "status": "ok",
+                    "project_id": manifest.project_id,
+                    "path": str(target),
+                    "units_count": len(build_result.units),
+                    "procedures_count": len(build_result.procedures),
+                    "notes_count": len(build_result.notebooks),
+                    "keyframes_count": kf_count,
+                    "failures": build_result.failures,
+                    "message": f"Pipeline built successfully for '{manifest.project_id}'.",
+                })
+            except Exception as exc:
+                self._send_json({"error": f"Pipeline execution failed: {exc}"}, status=HTTPStatus.INTERNAL_SERVER_ERROR)
+            return
+
+        if path == "/api/project/vault":
+            content_length = int(self.headers.get("Content-Length", 0))
+            body = self.rfile.read(content_length).decode("utf-8") if content_length > 0 else "{}"
+            try:
+                payload = json.loads(body)
+            except Exception:
+                payload = {}
+            target_path = payload.get("path") or payload.get("project_id") or "projects/claude-tutorial"
+            target = Path(target_path)
+            if not target.is_absolute():
+                if (self.workspace_root / target_path).is_dir():
+                    target = (self.workspace_root / target_path).resolve()
+                else:
+                    target = (self.workspace_root / "projects" / target_path).resolve()
+
+            if not target.is_dir() or not (target / "manifest.yaml").is_file():
+                self._send_json({"error": f"Project not found at {target}"}, status=HTTPStatus.NOT_FOUND)
+                return
+
+            try:
+                from .config import load_config
+                from .vault import load_and_project
+
+                config_path = target / "config" / "kas.yaml"
+                config = load_config(config_path if config_path.is_file() else None)
+                default_vault = config.get("paths.vault", "~/Documents/ObsidianVault")
+                vault_path_str = payload.get("vault_path") or default_vault
+                vault_dir = Path(vault_path_str).expanduser().resolve()
+
+                written, conflicts = load_and_project(target, vault_dir)
+
+                self._send_json({
+                    "status": "ok",
+                    "project_id": target.name,
+                    "vault_path": str(vault_dir),
+                    "written_count": len(written),
+                    "conflicts": conflicts,
+                    "message": f"Projected {len(written)} notes into Obsidian vault at {vault_dir}.",
+                })
+            except Exception as exc:
+                self._send_json({"error": f"Vault projection failed: {exc}"}, status=HTTPStatus.INTERNAL_SERVER_ERROR)
+            return
+
         self.send_response(HTTPStatus.NOT_FOUND)
         self.end_headers()
 
@@ -596,10 +776,20 @@ INDEX_HTML = """<!DOCTYPE html>
       </div>
 
       <!-- Right Actions -->
-      <div class="flex items-center space-x-3">
-        <a id="export-skill-btn" href="/api/export/skill" download class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-md bg-indigo-600 hover:bg-indigo-500 text-xs font-semibold text-white shadow transition">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-          <span>Export Agent Skill</span>
+      <div class="flex items-center space-x-2.5">
+        <button id="run-pipeline-btn" onclick="triggerRunPipeline()" title="Run full acquisition pipeline (transcribe + extract skills)" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-300 hover:text-white border border-emerald-500/40 text-xs font-semibold transition cursor-pointer shadow-sm">
+          <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <span id="run-pipeline-text">Run Pipeline</span>
+        </button>
+
+        <button id="sync-vault-btn" onclick="openVaultModal()" title="Project knowledge into Obsidian vault" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-purple-600/20 hover:bg-purple-600/30 text-purple-300 hover:text-white border border-purple-500/40 text-xs font-semibold transition cursor-pointer shadow-sm">
+          <svg class="w-3.5 h-3.5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"/></svg>
+          <span>Sync Vault</span>
+        </button>
+
+        <a id="export-skill-btn" href="/api/export/skill" download class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-xs font-semibold text-white shadow transition">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+          <span>Export Skill</span>
         </a>
         <span id="qa-badge" class="px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">25/25 QA PASS</span>
       </div>
@@ -721,8 +911,14 @@ INDEX_HTML = """<!DOCTYPE html>
         <!-- TAB 6: Visual Keyframes -->
         <div id="panel-keyframes" class="hidden space-y-4">
           <div class="flex items-center justify-between pb-2 border-b border-slate-800/80">
-            <p class="text-xs text-slate-400 italic">High-resolution keyframe snapshots captured at code, terminal, diagram, and UI demonstrations.</p>
-            <span class="text-[11px] font-mono text-indigo-400">Click any frame to zoom or seek video</span>
+            <div>
+              <p class="text-xs text-slate-300 font-medium">High-resolution keyframe snapshots captured at code, terminal, diagram, and UI demonstrations.</p>
+              <p class="text-[11px] text-slate-500">Click any frame to zoom in lightbox or seek video.</p>
+            </div>
+            <a id="export-dossier-btn" href="/api/export/dossier" download class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-amber-600/20 hover:bg-amber-600/30 text-amber-300 hover:text-white border border-amber-500/40 text-xs font-semibold transition cursor-pointer shadow-sm">
+              <svg class="w-3.5 h-3.5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              <span>Download Visual Dossier (.md)</span>
+            </a>
           </div>
           <div id="keyframes-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
         </div>
@@ -809,6 +1005,50 @@ INDEX_HTML = """<!DOCTYPE html>
     </div>
   </div>
 
+  <!-- Obsidian Vault Sync Modal -->
+  <div id="vault-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 hidden" onclick="closeVaultModal()">
+    <div class="relative max-w-lg w-full bg-slate-900 border border-slate-800 rounded-2xl shadow-2xl flex flex-col overflow-hidden" onclick="event.stopPropagation()">
+      <div class="p-4 border-b border-slate-800 flex items-center justify-between bg-slate-950/60">
+        <div class="flex items-center space-x-2.5">
+          <div class="w-8 h-8 rounded-lg bg-purple-600/20 text-purple-400 flex items-center justify-center border border-purple-500/30">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"/></svg>
+          </div>
+          <div>
+            <h3 class="text-sm font-bold text-white">Sync to Obsidian Vault</h3>
+            <p class="text-[11px] text-slate-400">Project atomic notes, Wikilinks & procedures with hand-edit guards</p>
+          </div>
+        </div>
+        <button onclick="closeVaultModal()" class="text-slate-400 hover:text-white p-1 rounded hover:bg-slate-800 transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <form id="vault-sync-form" onsubmit="submitVaultSync(event)" class="p-5 flex flex-col space-y-4 text-xs">
+        <div id="vault-error-alert" class="hidden p-3 rounded-lg bg-red-900/30 border border-red-500/50 text-red-200 text-xs"></div>
+
+        <div>
+          <label class="block font-semibold text-slate-300 mb-1">Obsidian Vault Directory Path *</label>
+          <input type="text" id="vault-target-path" required value="~/Documents/ObsidianVault" placeholder="~/Documents/ObsidianVault" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-purple-500 font-mono">
+          <p class="text-[10px] text-slate-500 mt-1">Local path to your Obsidian vault. Structured subfolders (Sources, Notes, Knowledge, Procedures) will be created automatically.</p>
+        </div>
+
+        <div class="bg-slate-950/50 p-3 rounded-lg border border-slate-800/80 text-[11px] text-slate-400 space-y-1">
+          <p class="text-slate-300 font-semibold">🔒 Hand-Edit Protection Guard (AC-24/25):</p>
+          <p>If you customize or write in a projected markdown note in Obsidian, KAS will never overwrite your manual edits.</p>
+        </div>
+
+        <div class="pt-3 border-t border-slate-800 flex items-center justify-end space-x-3">
+          <button type="button" onclick="closeVaultModal()" class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium transition cursor-pointer">
+            Cancel
+          </button>
+          <button type="submit" id="vault-submit-btn" class="px-4 py-2 rounded-lg bg-purple-600 hover:bg-purple-500 text-white font-semibold transition flex items-center space-x-2 shadow-lg shadow-purple-600/20 cursor-pointer">
+            <span id="vault-submit-text">Sync Notes to Vault</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <!-- Lightbox Modal -->
   <div id="lightbox" class="fixed inset-0 z-50 bg-black/90 backdrop-blur flex items-center justify-center p-4 hidden" onclick="closeLightbox()">
     <div class="relative max-w-4xl w-full bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl flex flex-col" onclick="event.stopPropagation()">
@@ -855,6 +1095,72 @@ INDEX_HTML = """<!DOCTYPE html>
 
     function closeNewProjectModal() {
       document.getElementById('new-project-modal').classList.add('hidden');
+    }
+
+    function openVaultModal() {
+      const alertEl = document.getElementById('vault-error-alert');
+      if (alertEl) {
+        alertEl.classList.add('hidden');
+        alertEl.textContent = '';
+      }
+      document.getElementById('vault-modal').classList.remove('hidden');
+    }
+
+    function closeVaultModal() {
+      document.getElementById('vault-modal').classList.add('hidden');
+    }
+
+    async function triggerRunPipeline() {
+      if (!currentData || !currentData.path) return;
+      const btn = document.getElementById('run-pipeline-btn');
+      const txt = document.getElementById('run-pipeline-text');
+      btn.disabled = true;
+      txt.textContent = 'Building...';
+      try {
+        const res = await fetch('/api/project/build', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ path: currentData.path })
+        });
+        const data = await res.json();
+        if (!res.ok || data.error) throw new Error(data.error || 'Pipeline build failed');
+        showToast(`Pipeline complete: ${data.units_count} units, ${data.procedures_count} procs!`);
+        await loadProject(currentData.path);
+      } catch (err) {
+        alert(`Pipeline build failed: ${err.message}`);
+      } finally {
+        btn.disabled = false;
+        txt.textContent = 'Run Pipeline';
+      }
+    }
+
+    async function submitVaultSync(e) {
+      e.preventDefault();
+      if (!currentData || !currentData.path) return;
+      const alertEl = document.getElementById('vault-error-alert');
+      const btn = document.getElementById('vault-submit-btn');
+      const txt = document.getElementById('vault-submit-text');
+      alertEl.classList.add('hidden');
+      btn.disabled = true;
+      txt.textContent = 'Syncing...';
+      const vaultPath = document.getElementById('vault-target-path').value.trim();
+      try {
+        const res = await fetch('/api/project/vault', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ path: currentData.path, vault_path: vaultPath })
+        });
+        const data = await res.json();
+        if (!res.ok || data.error) throw new Error(data.error || 'Vault sync failed');
+        closeVaultModal();
+        showToast(`Sync complete: ${data.written_count} notes projected into vault!`);
+      } catch (err) {
+        alertEl.textContent = err.message;
+        alertEl.classList.remove('hidden');
+      } finally {
+        btn.disabled = false;
+        txt.textContent = 'Sync Notes to Vault';
+      }
     }
 
     function updateKindPlaceholder(kind) {
@@ -968,6 +1274,8 @@ INDEX_HTML = """<!DOCTYPE html>
       document.getElementById('project-id-label').textContent = data.project_id;
       document.getElementById('project-goal').textContent = (data.manifest && data.manifest.goal) || 'No explicit goal documented';
       document.getElementById('export-skill-btn').href = `/api/export/skill?path=${encodeURIComponent(data.path)}`;
+      const dossierBtn = document.getElementById('export-dossier-btn');
+      if (dossierBtn) dossierBtn.href = `/api/export/dossier?path=${encodeURIComponent(data.path)}`;
 
       // Video Source setup
       const source = data.sources && data.sources[0] ? data.sources[0] : null;
@@ -1201,6 +1509,7 @@ INDEX_HTML = """<!DOCTYPE html>
       if (e.key === 'Escape') {
         closeLightbox();
         closeNewProjectModal();
+        closeVaultModal();
       }
     });
 
