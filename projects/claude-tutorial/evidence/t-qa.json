@@ -9,6 +9,6 @@
     "reports/qa-report.md"
   ],
   "command": "kas qa --project /home/hardik/ai-agent-ecosystem/projects/knowledge-acquisition-studio/projects/claude-tutorial",
-  "run_at": "2026-11-03T09:34:34Z",
+  "run_at": "2026-11-03T11:41:51Z",
   "notes": "QA report covering AC-01\u2026AC-25 and skill version check."
 }

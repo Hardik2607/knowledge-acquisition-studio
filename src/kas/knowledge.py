@@ -85,6 +85,10 @@ def build_procedures_stage(
     if not units:
         return [], ["procedures: no knowledge units available"]
 
+    # clear stale procedure files so re-runs do not leave orphans
+    for stale in procedures_dir.glob("*.md"):
+        stale.unlink()
+
     try:
         procedures = build_procedures(client, units)
     except ExtractionError as exc:
@@ -93,10 +97,6 @@ def build_procedures_stage(
     problems = validate_procedures(procedures, units)
     if problems:
         failures.extend(f"procedures: {problem}" for problem in problems)
-
-    # clear stale procedure files so re-runs do not leave orphans
-    for stale in procedures_dir.glob("*.md"):
-        stale.unlink()
 
     for procedure in procedures:
         path = procedures_dir / f"{procedure.id}.md"

@@ -26,6 +26,72 @@ from .models import KnowledgeUnit, Segment, Transcript
 
 CONFIDENCE = ("low", "medium", "high")
 
+ACTION_VERBS = {
+    "opens": "Open",
+    "pastes": "Paste",
+    "selects": "Select",
+    "answers": "Answer",
+    "skips": "Skip",
+    "presents": "Present",
+    "shares": "Share",
+    "provides": "Provide",
+    "creates": "Create",
+    "clicks": "Click",
+    "runs": "Run",
+    "sets": "Set",
+    "adds": "Add",
+    "uses": "Use",
+    "gives": "Give",
+    "turns": "Turn",
+    "builds": "Build",
+    "starts": "Start",
+    "downloads": "Download",
+    "installs": "Install",
+    "uploads": "Upload",
+    "connects": "Connect",
+    "organizes": "Organize",
+    "renames": "Rename",
+    "checks": "Check",
+    "searches": "Search",
+    "reviews": "Review",
+    "navigates": "Navigate",
+    "chooses": "Choose",
+    "types": "Type",
+    "completes": "Complete",
+    "saves": "Save",
+}
+
+REPORTING_PREFIX = re.compile(
+    r"^(?:"
+    r"(?:the\s+(?:narrator|speaker|video|author|presenter)|he|she)\s+(?:starts(?:\s+by)?|then|moves\s+on\s+to|explains(?:\s+that)?|demonstrates(?:\s+how)?|shows(?:\s+how)?|states(?:\s+that)?|discusses(?:\s+how)?|emphasizes(?:\s+that)?|describes(?:\s+how)?|points\s+out(?:\s+that)?|suggests(?:\s+that)?|notes(?:\s+that)?|recommends(?:\s+that)?|warns(?:\s+that)?|says(?:\s+that)?|mentions(?:\s+that)?|highlights(?:\s+that)?|illustrates(?:\s+how)?|is\s+described\s+as)"
+    r"|in\s+this\s+(?:video|tutorial|guide)[,\s]+(?:we\s+learn\s+that|the\s+speaker\s+shows\s+that|we\s+see\s+how)?"
+    r"|this\s+(?:video|tutorial|guide)\s+(?:provides(?:\s+a)?(?:\s+(?:comprehensive|detailed))?\s+guide(?:\s+to)?|covers|is\s+about|shows\s+how\s+to)?"
+    r"|we\s+learn\s+that"
+    r")\s*",
+    flags=re.IGNORECASE,
+)
+
+ACTION_PREFIX = re.compile(
+    r"^(?:the\s+(?:speaker|narrator|author|presenter|user)\s+|he\s+|she\s+)([a-z]+)\s+",
+    flags=re.IGNORECASE,
+)
+
+
+def _strip_narrative(text: str) -> str:
+    cleaned = REPORTING_PREFIX.sub("", text).strip()
+    m = ACTION_PREFIX.match(cleaned)
+    if m:
+        verb = m.group(1).lower()
+        if verb in ACTION_VERBS or verb.endswith("s"):
+            base = ACTION_VERBS.get(verb, verb[:-1] if verb.endswith("s") and not verb.endswith("ss") else verb).capitalize()
+            cleaned = f"{base} {cleaned[m.end():]}"
+    if not cleaned:
+        return text
+    if cleaned[0].islower():
+        cleaned = cleaned[0].upper() + cleaned[1:]
+    return cleaned
+
+
 def _coerce_unit_entry(entry, by_id) -> tuple[str, str, list[dict]]:
     """Accept the common shapes models return for a knowledge unit."""
     if not isinstance(entry, dict):
@@ -43,6 +109,7 @@ def _coerce_unit_entry(entry, by_id) -> tuple[str, str, list[dict]]:
     if statement is None:
         statement = entry.get("unit")
     statement = " ".join(str(statement or "").split())
+    statement = _strip_narrative(statement)
     if not statement:
         raise ExtractionError("bad_unit", "unit without a statement")
 
@@ -225,6 +292,7 @@ def _coerce_note(entry: dict, max_seconds: float | None = None) -> tuple[float, 
     if text is None:
         text = entry.get("content")
     text = " ".join(str(text or "").split())
+    text = _strip_narrative(text)
 
     start = _coerce_seconds(entry.get("start"), max_seconds)
     end = _coerce_seconds(entry.get("end"), max_seconds)
@@ -344,12 +412,14 @@ class NoteBook:
 
 def build_notes(client: ChatClient, source, transcript: Transcript) -> NoteBook:
     system = (
-        "You extract timestamped study notes from a transcript. "
+        "You extract timestamped study notes and actionable learning material from a transcript. "
+        "State technical facts, workflows, concepts, and skills directly in clear declarative sentences without conversational dialogue or speaker tags (e.g., avoid 'the speaker says'). "
+        "Preserve exact technical terminology (tool names, prompt structures, API options, workflows). "
         "Return JSON: {\"notes\":[{\"start\":<timestamp like 'MM:SS' or seconds>,\"end\":<timestamp like 'MM:SS' or seconds>,\"text\":\"...\"}]}. "
         "Use the exact keys start, end and text. Every note must be supported by the transcript. No invention."
     )
 
-    chunk_size = 60
+    chunk_size = 15
     segments = transcript.segments
     chunks = [segments[i:i + chunk_size] for i in range(0, len(segments), chunk_size)] or [[]]
 
@@ -461,7 +531,7 @@ def extract_units(client: ChatClient, transcripts: list[Transcript], titles: dic
 
     # Process in chunks so a long transcript does not exceed the provider's
     # context or time budget. Units are merged and de-duplicated by id.
-    chunk_size = 40
+    chunk_size = 15
     for transcript in transcripts:
         segments = transcript.segments
         chunks = [segments[i:i + chunk_size] for i in range(0, len(segments), chunk_size)] or [[]]
@@ -473,7 +543,10 @@ def extract_units(client: ChatClient, transcripts: list[Transcript], titles: dic
                 + "\n".join(f"{_format_range(s.start, s.end)} {s.text}" for s in chunk)
             )
             system = (
-                "You extract atomic, actionable knowledge units. Return JSON: "
+                "You extract atomic, actionable knowledge units and skills from educational transcripts. "
+                "State technical facts, capabilities, rules, and workflows directly as concise, self-contained knowledge units for an agent skill library. "
+                "Write in clear declarative sentences without conversational dialogue or narrator framing (e.g., avoid 'the speaker explains'). "
+                "Return JSON: "
                 "{\"units\":[{\"statement\":\"...\",\"source_refs\":[{\"source_id\":\"src-...\","
                 "\"start\":<seconds>,\"end\":<seconds>}],\"confidence\":\"low|medium|high\"}]}. "
                 "One claim per unit, short and self-contained. Every unit needs at least one source ref."
@@ -585,6 +658,7 @@ def _coerce_procedures(payload, known) -> list[dict]:
             if text is None:
                 text = step.get("step")
             text = " ".join(str(text or "").split())
+            text = _strip_narrative(text)
             refs_raw = step.get("unit_ids")
             if refs_raw is None:
                 refs_raw = step.get("unit_id")
@@ -614,10 +688,10 @@ def _coerce_procedures(payload, known) -> list[dict]:
             refs = expanded
             if not text or not refs:
                 continue
-            unknown = [r for r in refs if r not in known]
-            if unknown:
-                raise ExtractionError("bad_procedure", f"step cites unknown units {unknown}")
-            clean_steps.append({"text": text, "unit_ids": refs})
+            valid_refs = [r for r in refs if r in known]
+            if not valid_refs:
+                continue
+            clean_steps.append({"text": text, "unit_ids": valid_refs})
         if clean_steps:
             coerced.append({"title": title, "steps": clean_steps})
     return coerced
@@ -626,7 +700,9 @@ def _coerce_procedures(payload, known) -> list[dict]:
 def build_procedures(client: ChatClient, units: list[KnowledgeUnit]) -> list[Procedure]:
     catalogue = "\n".join(f"- {u.id}: {u.statement}" for u in units)
     system = (
-        "You turn knowledge units into an ordered, executable procedure. Return JSON: "
+        "You turn knowledge units into an ordered, executable procedure and skill workflow for an autonomous agent or practitioner. "
+        "Formulate each step as an active, imperative instruction (e.g., 'Configure...', 'Prompt Claude with...', 'Execute...', 'Verify...') without conversational narration. "
+        "Return JSON: "
         "{\"procedures\":[{\"title\":\"...\",\"steps\":[{\"text\":\"...\",\"unit_ids\":[\"k-...\"]}]}]}. "
         "Every step must cite at least one provided unit id. Do not invent units."
     )

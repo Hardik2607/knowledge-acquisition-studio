@@ -2,71 +2,904 @@
   "source_id": "src-1d87ab58a8ee",
   "provider": "ollama",
   "model": "qwen2.5-coder:7b",
-  "generated_at": "2026-11-03T09:33:56Z",
+  "generated_at": "2026-11-03T11:38:14Z",
   "schema_version": 1,
   "notes": [
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 24.0,
+      "end": 48.0,
+      "range": "00:24\u201300:48",
+      "text": "The guide covers six levels of using Claude AI."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 95.0,
+      "end": 120.0,
+      "range": "01:35\u201302:00",
+      "text": "The example used throughout the video is a small handmade candle shop."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 120.0,
+      "end": 144.0,
+      "range": "02:00\u201302:24",
+      "text": "A free account can be created at claude.ai or through the link in the description."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 144.0,
+      "end": 169.0,
+      "range": "02:24\u201302:49",
+      "text": "Claude is free to start, and most features work on the free plan."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 192.0,
+      "end": 217.0,
+      "range": "03:12\u201303:37",
+      "text": "The option to opt in or out of helping improve AI models by sharing data is available during onboarding."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 241.0,
+      "end": 266.0,
+      "range": "04:01\u201304:26",
+      "text": "A prompt is the message sent to Claude or any other AI."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 290.0,
+      "end": 315.0,
+      "range": "04:50\u201305:15",
+      "text": "The three-part prompt includes context, task, and format."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 338.0,
+      "end": 363.0,
+      "range": "05:38\u201306:03",
+      "text": "Context provides information about the user and their work, task specifies what is needed, and format dictates how the response should be structured."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 363.0,
+      "end": 388.0,
+      "range": "06:03\u201306:28",
+      "text": "AI gives a different result every time, even for the same question. Don't chase my exact results."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 412.0,
+      "end": 435.0,
+      "range": "06:52\u201307:15",
+      "text": "Reply and refine. Claude remembers everything in the conversation."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 460.0,
+      "end": 483.0,
+      "range": "07:40\u201308:03",
+      "text": "There's a fast model for everyday tasks and a more powerful model for complex work."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 508.0,
+      "end": 533.0,
+      "range": "08:28\u201308:53",
+      "text": "You can switch models at any time, even in the middle of a conversation."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 533.0,
+      "end": 557.0,
+      "range": "08:53\u201309:17",
+      "text": "Raise the effort level for problems with many steps where details have to be right."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 580.0,
+      "end": 605.0,
+      "range": "09:40\u201310:05",
+      "text": "New topic, new chat. Separate chats keep Claude focused and use less of your usage allowance."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 628.0,
+      "end": 652.0,
+      "range": "10:28\u201310:52",
+      "text": "Claude can read files like PDFs, Word documents, spreadsheets, and images."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 698.0,
+      "end": 721.0,
+      "range": "11:38\u201312:01",
+      "text": "Upload the most boring document in your life and ask Claude to explain it."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 721.0,
+      "end": 745.0,
+      "range": "12:01\u201312:25",
+      "text": "Claude can search the web for current information when needed."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 745.0,
+      "end": 769.0,
+      "range": "12:25\u201312:49",
+      "text": "To enable web search, click the plus icon and ensure a check mark is next to web search in the menu."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 769.0,
+      "end": 793.0,
+      "range": "12:49\u201313:13",
+      "text": "Claude can provide cited reports with sources for deeper research, available on the paid plan."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 793.0,
+      "end": 818.0,
+      "range": "13:13\u201313:38",
+      "text": "Upgrade to the pro plan by clicking the profile icon, selecting the pro plan, and subscribing through billing information."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 818.0,
+      "end": 843.0,
+      "range": "13:38\u201314:03",
+      "text": "The research feature allows Claude to read multiple sources for a detailed report on a specific topic."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 843.0,
+      "end": 866.0,
+      "range": "14:03\u201314:26",
+      "text": "Research uses up usage faster than normal chatting, so save it for questions that require deep research."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 891.0,
+      "end": 914.0,
+      "range": "14:51\u201315:14",
+      "text": "The document includes a high-level summary and detailed findings with sources."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 937.0,
+      "end": 960.0,
+      "range": "15:37\u201316:00",
+      "text": "Omnisend is an email and SMS platform for e-commerce, offering lower pricing and automated migration of lists and automations."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 984.0,
+      "end": 1009.0,
+      "range": "16:24\u201316:49",
+      "text": "Use the link provided to get 30% off any paid plan for your first 3 months with code MM30."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1009.0,
+      "end": 1032.0,
+      "range": "16:49\u201317:12",
+      "text": "Level three of Claude's capabilities involve building real things, including downloadable files and interactive builds."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1032.0,
+      "end": 1056.0,
+      "range": "17:12\u201317:36",
+      "text": "Claude can create an Excel spreadsheet to track candle inventory with specific columns and realistic numbers."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1080.0,
+      "end": 1105.0,
+      "range": "18:00\u201318:25",
+      "text": "Claude opens a window next to the chat and builds it live."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1105.0,
+      "end": 1129.0,
+      "range": "18:25\u201318:49",
+      "text": "Claude begins building an HTML page for Amber Light Candles with warm colors, a headline, three featured candles, and an email sign-up section."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1129.0,
+      "end": 1154.0,
+      "range": "18:49\u201319:14",
+      "text": "Claude changes the background to cream and makes the headline bigger in real-time."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1154.0,
+      "end": 1178.0,
+      "range": "19:14\u201319:38",
+      "text": "Claude turns the landing page into a scent quiz that recommends one of Amber Light Candles based on user preferences."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1178.0,
+      "end": 1203.0,
+      "range": "19:38\u201320:03",
+      "text": "Complete the scent quiz and is recommended a candle, which they can shop for."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1203.0,
+      "end": 1227.0,
+      "range": "20:03\u201320:27",
+      "text": "The challenge for this level is to ask Claude to build one small tool for the user's life, such as a budget calculator or workout planner."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1227.0,
+      "end": 1251.0,
+      "range": "20:27\u201320:51",
+      "text": "Level four introduces projects in Claude, allowing related chats to share knowledge and work together."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1251.0,
+      "end": 1276.0,
+      "range": "20:51\u201321:16",
+      "text": "Files added to a project are available in every chat within that project, avoiding the need to upload the same file twice."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1276.0,
+      "end": 1299.0,
+      "range": "21:16\u201321:39",
+      "text": "Project instructions describe the user's situation, making Claude aware of it without needing to be explicitly mentioned in every prompt."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1299.0,
+      "end": 1324.0,
+      "range": "21:39\u201322:04",
+      "text": "Claude uses project information and files to generate ideas for a newsletter based on the context provided."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1324.0,
+      "end": 1346.0,
+      "range": "22:04\u201322:26",
+      "text": "The challenge for this level is to create one project for the user's biggest topic and add two files to its knowledge."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1346.0,
+      "end": 1370.0,
+      "range": "22:26\u201322:50",
+      "text": "Claude remembers the user through personal instructions and memory, which can be accessed in settings under the general tab."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1370.0,
+      "end": 1395.0,
+      "range": "22:50\u201323:15",
+      "text": "Claude's memory includes a summary of the user's work, product line, brand details, and previous conversations."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1395.0,
+      "end": 1418.0,
+      "range": "23:15\u201323:38",
+      "text": "The user can read, edit, or delete Claude's memory as needed. Incognito mode allows for temporary chats without saving any information."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1418.0,
+      "end": 1442.0,
+      "range": "23:38\u201324:02",
+      "text": "To bring existing knowledge from Chat GPT into Claude, the user can reopen the chat and use Claude's memory feature."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1442.0,
+      "end": 1467.0,
+      "range": "24:02\u201324:27",
+      "text": "To import memory from another AI provider, open settings, go to memory, find the option 'import memory from other AI providers,' and click start import. Copy the provided prompt and paste it into a chat with your other provider."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1467.0,
+      "end": 1492.0,
+      "range": "24:27\u201324:52",
+      "text": "In ChatGPT, go to settings, personalization, and memory. Click on 'my account personalization,' scroll down to 'memory summary manage,' copy the information, return to Claude, paste it in, and click 'add to memory.'"
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1492.0,
+      "end": 1515.0,
+      "range": "24:52\u201325:15",
+      "text": "After importing, Claude updates your memories with information like AI tools, food, and pets. This feature is experimental."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1515.0,
+      "end": 1538.0,
+      "range": "25:15\u201325:38",
+      "text": "Turn on the 'search and reference chats toggle' setting to allow Claude to search past chats for relevant details."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1538.0,
+      "end": 1562.0,
+      "range": "25:38\u201326:02",
+      "text": "Claude has a mobile app available for iPhone and Android, syncing your account, chats, projects, and memory."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1562.0,
+      "end": 1586.0,
+      "range": "26:02\u201326:26",
+      "text": "To use the photo feature on the mobile app, take a picture of an item, select it, and hit the camera icon to snap a photo."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1586.0,
+      "end": 1610.0,
+      "range": "26:26\u201326:50",
+      "text": "You can also use voice mode by saying your question directly into the app after taking a photo."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1610.0,
+      "end": 1633.0,
+      "range": "26:50\u201327:13",
+      "text": "The mobile app allows you to receive notifications when tasks finish processing, enabling hands-free operation."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1633.0,
+      "end": 1658.0,
+      "range": "27:13\u201327:38",
+      "text": "Access previous chats by clicking the hamburger menu in the upper left and scrolling through your chat history."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1658.0,
+      "end": 1681.0,
+      "range": "27:38\u201328:01",
+      "text": "The desktop app for Mac and Windows is available for download on the web app, making Claude accessible all day long."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1681.0,
+      "end": 1705.0,
+      "range": "28:01\u201328:25",
+      "text": "Download the desktop app by clicking the 'download' button next to your name on the web app and following the installation instructions."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1705.0,
+      "end": 1729.0,
+      "range": "28:25\u201328:49",
+      "text": "Once installed, open the desktop app and log in to access Claude's features."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1729.0,
+      "end": 1752.0,
+      "range": "28:49\u201329:12",
+      "text": "At level five, Claude connects to other apps like Gmail, Google Drive, Slack, and your calendar to access real information from your life."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1752.0,
+      "end": 1776.0,
+      "range": "29:12\u201329:36",
+      "text": "Connectors allow Claude to securely plug into these apps, read data, and perform work on your behalf. Choose which apps to connect and disconnect at any time."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1800.0,
+      "end": 1824.0,
+      "range": "30:00\u201330:24",
+      "text": "Claude can view, edit, share, and delete content on connected calendars."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1824.0,
+      "end": 1848.0,
+      "range": "30:24\u201330:48",
+      "text": "After connecting a calendar, Claude can recommend free time for tasks based on the user's schedule."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1848.0,
+      "end": 1872.0,
+      "range": "30:48\u201331:12",
+      "text": "The pattern for connecting an app is always to connect once and then ask for specific actions."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1872.0,
+      "end": 1897.0,
+      "range": "31:12\u201331:37",
+      "text": "Challenge: Connect one regularly used app and ask it a question."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1897.0,
+      "end": 1921.0,
+      "range": "31:37\u201332:01",
+      "text": "Connecting to Omnisend for email marketing involves adding a custom connector with the MCP server URL."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1921.0,
+      "end": 1946.0,
+      "range": "32:01\u201332:26",
+      "text": "Sign up for Omnisend using a special link for 30% off on the first 3 months and no credit card required."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1946.0,
+      "end": 1970.0,
+      "range": "32:26\u201332:50",
+      "text": "After signing up, authorize access to all features in Omnisend for both reading and writing."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1970.0,
+      "end": 1994.0,
+      "range": "32:50\u201333:14",
+      "text": "Claude can help set up an email campaign by drafting a welcome email with specific details."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 1994.0,
+      "end": 2018.0,
+      "range": "33:14\u201333:38",
+      "text": "When connecting custom tools, Claude asks for permission to use various features within the tool."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2018.0,
+      "end": 2043.0,
+      "range": "33:38\u201334:03",
+      "text": "For the free Claude plan, only one custom connector can be added."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2043.0,
+      "end": 2066.0,
+      "range": "34:03\u201334:26",
+      "text": "Sometimes, custom connectors may not connect perfectly on the first attempt due to bugs."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2066.0,
+      "end": 2088.0,
+      "range": "34:26\u201334:48",
+      "text": "Claude can help draft an email campaign and handle any issues that arise during the process."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2088.0,
+      "end": 2113.0,
+      "range": "34:48\u201335:13",
+      "text": "Claude checks its own work before considering a task finished, ensuring accuracy."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2113.0,
+      "end": 2137.0,
+      "range": "35:13\u201335:37",
+      "text": "At level six, Claude can automatically approve actions without manual intervention."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2160.0,
+      "end": 2183.0,
+      "range": "36:00\u201336:23",
+      "text": "The email content is checked for accuracy and completeness."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2183.0,
+      "end": 2208.0,
+      "range": "36:23\u201336:48",
+      "text": "Claude automatically generates a campaign draft based on the business's description, including tags, buttons, and a welcome coupon code."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2208.0,
+      "end": 2231.0,
+      "range": "36:48\u201337:11",
+      "text": "Omnisend is highlighted as a platform with over 150,000 online stores using it, holding a 4.8 star average rating on Shopify."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2231.0,
+      "end": 2254.0,
+      "range": "37:11\u201337:34",
+      "text": "A skill is described as a recipe for Claude to perform specific tasks efficiently."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2254.0,
+      "end": 2279.0,
+      "range": "37:34\u201337:59",
+      "text": "Search for and installs the 'Theme Factory' skill from the skill library, which allows Claude to create styled artifacts like slides."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2279.0,
+      "end": 2303.0,
+      "range": "37:59\u201338:23",
+      "text": "Create a new chat and calls the installed 'Theme Factory' skill to generate a presentation for introducing Amber Light Candles to a local store owner."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2303.0,
+      "end": 2327.0,
+      "range": "38:23\u201338:47",
+      "text": "Claude selects a theme that matches the candle shop's aesthetic and adapts it to match an existing website."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2327.0,
+      "end": 2352.0,
+      "range": "38:47\u201339:12",
+      "text": "Review the generated presentation, which is described as beautiful with some minor adjustments needed for icons."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2352.0,
+      "end": 2375.0,
+      "range": "39:12\u201339:35",
+      "text": "Skills are noted to be reusable across different chats and can be called at any time."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2375.0,
+      "end": 2399.0,
+      "range": "39:35\u201339:59",
+      "text": "Claude's capabilities extend to automating tasks without human intervention, known as co-work."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2423.0,
+      "end": 2448.0,
+      "range": "40:23\u201340:48",
+      "text": "In co-work mode, Claude can only access and modify files in selected folders, with options for manual, automatic, or skip approval modes."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2448.0,
+      "end": 2473.0,
+      "range": "40:48\u201341:13",
+      "text": "Connect a project folder to Claude and sets the approval mode to automatically approve actions."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2473.0,
+      "end": 2497.0,
+      "range": "41:13\u201341:37",
+      "text": "The importance of selecting a high-quality model like Opus for tasks involving sensitive data is emphasized."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2497.0,
+      "end": 2520.0,
+      "range": "41:37\u201342:00",
+      "text": "Claude is given the task to organize receipt files, extract relevant information, and create a clean expense spreadsheet."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2520.0,
+      "end": 2543.0,
+      "range": "42:00\u201342:23",
+      "text": "Claude is opening files, reading them, and building a spreadsheet."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2543.0,
+      "end": 2567.0,
+      "range": "42:23\u201342:47",
+      "text": "Claude's run may vary from the speaker's due to its autonomous nature."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2567.0,
+      "end": 2592.0,
+      "range": "42:47\u201343:12",
+      "text": "The spreadsheet created by Claude is saved on the user's computer."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2592.0,
+      "end": 2617.0,
+      "range": "43:12\u201343:37",
+      "text": "Claude renames receipts based on their contents and updates the spreadsheet accordingly."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2617.0,
+      "end": 2642.0,
+      "range": "43:37\u201344:02",
+      "text": "I challenged to pick a folder with a boring task and give Claude a clear goal."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2642.0,
+      "end": 2665.0,
+      "range": "44:02\u201344:25",
+      "text": "Scheduled tasks can be created in Co-work's Scheduled section."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2665.0,
+      "end": 2690.0,
+      "range": "44:25\u201344:50",
+      "text": "Set up a scheduled task to search for candle and home fragrance trends weekly."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2690.0,
+      "end": 2715.0,
+      "range": "44:50\u201345:15",
+      "text": "Claude schedules the task to run every Monday at 6:30 AM local time."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2715.0,
+      "end": 2740.0,
+      "range": "45:15\u201345:40",
+      "text": "Run the scheduled task once as a test to ensure permissions are pre-approved."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2740.0,
+      "end": 2765.0,
+      "range": "45:40\u201346:05",
+      "text": "Permissions for future runs can be set to automatically approve in the Scheduled section."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2765.0,
+      "end": 2789.0,
+      "range": "46:05\u201346:29",
+      "text": "Save changes to ensure future runs work on auto mode."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2789.0,
+      "end": 2814.0,
+      "range": "46:29\u201346:54",
+      "text": "Scheduled tasks can run in the cloud, even when the computer is off."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2814.0,
+      "end": 2837.0,
+      "range": "46:54\u201347:17",
+      "text": "Claude Code extends Co-work's capabilities to build things and turn ideas into working software."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2837.0,
+      "end": 2861.0,
+      "range": "47:17\u201347:41",
+      "text": "Claude Code can write real code, run commands on the user's computer, and create websites."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 2861.0,
+      "end": 2884.0,
+      "range": "47:41\u201348:04",
+      "text": "Create a brief for Claude Design to understand their business needs."
+    },
     {
       "source_id": "src-1d87ab58a8ee",
       "start": 2884.0,
       "end": 2908.0,
       "range": "48:04\u201348:28",
-      "text": "The narrator starts by copying text and opening Claude Design to create a prompt for designing a warm, cozy website for Amber Light Candles."
+      "text": "Open Claude Design from the bottom left of the desktop app."
     },
     {
       "source_id": "src-1d87ab58a8ee",
       "start": 2908.0,
-      "end": 2930.0,
-      "range": "48:28\u201348:50",
-      "text": "Claude Design is used to create the initial design of the website based on plain language instructions."
+      "end": 2932.0,
+      "range": "48:28\u201348:52",
+      "text": "Paste a prompt into Claude Design to design a warm, cozy website for Amber Light Candles, including a homepage, shop page, and about page with the business details."
     },
     {
       "source_id": "src-1d87ab58a8ee",
-      "start": 2930.0,
-      "end": 2955.0,
-      "range": "48:50\u201349:15",
-      "text": "The narrator then moves on to using Claude Code for more advanced tasks, such as building a tool that reads inventory and creates product labels."
+      "start": 2932.0,
+      "end": 2957.0,
+      "range": "48:52\u201349:17",
+      "text": "Select 'UI mock-ups' as the relevant project type for the website design."
     },
     {
       "source_id": "src-1d87ab58a8ee",
-      "start": 2955.0,
-      "end": 2970.0,
-      "range": "49:15\u201349:30",
-      "text": "Claude Code is used to automate repetitive tasks and build tools that can be run independently on the user's computer."
+      "start": 2957.0,
+      "end": 2982.0,
+      "range": "49:17\u201349:42",
+      "text": "Answer questions about unconfirmed SKUs, showing prices, and shop page functionality in Claude Design."
     },
     {
       "source_id": "src-1d87ab58a8ee",
-      "start": 2970.0,
-      "end": 2985.0,
-      "range": "49:30\u201349:45",
-      "text": "The narrator demonstrates how Claude Code can be used to create a tool for generating product labels from an inventory spreadsheet."
+      "start": 2982.0,
+      "end": 3007.0,
+      "range": "49:42\u201350:07",
+      "text": "Skip to answering the remaining questions and clicks 'Continue' after filling out all prompts."
     },
     {
       "source_id": "src-1d87ab58a8ee",
-      "start": 2985.0,
-      "end": 3000.0,
-      "range": "49:45\u201350:00",
-      "text": "Claude Code is able to read the inventory file, generate labels based on the data, and save them as a PDF sheet."
+      "start": 3007.0,
+      "end": 3031.0,
+      "range": "50:07\u201350:31",
+      "text": "Why Claude Design is better for complex designs compared to the regular chat for building a full website."
     },
     {
       "source_id": "src-1d87ab58a8ee",
-      "start": 3000.0,
-      "end": 3015.0,
-      "range": "50:00\u201350:15",
-      "text": "The narrator explains that once the tool is created, it can be run independently without needing to interact with Claude Code again."
+      "start": 3031.0,
+      "end": 3055.0,
+      "range": "50:31\u201350:55",
+      "text": "Present a beautifully designed website with a hero section, scent quiz, product grid, and mailing list sign-up option in Claude Design."
     },
     {
       "source_id": "src-1d87ab58a8ee",
-      "start": 3015.0,
-      "end": 3030.0,
-      "range": "50:15\u201350:30",
-      "text": "Claude Code has built a machine that can perform the task of generating product labels automatically."
+      "start": 3055.0,
+      "end": 3078.0,
+      "range": "50:55\u201351:18",
+      "text": "The ability to make tweaks directly within the design interface of Claude Design."
     },
     {
       "source_id": "src-1d87ab58a8ee",
-      "start": 3030.0,
-      "end": 3045.0,
-      "range": "50:30\u201350:45",
-      "text": "The narrator emphasizes that this is just one example of how Claude Code can be used to build tools and automate tasks on a computer."
+      "start": 3078.0,
+      "end": 3102.0,
+      "range": "51:18\u201351:42",
+      "text": "To replace placeholder images with actual images in the design."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 3102.0,
+      "end": 3126.0,
+      "range": "51:42\u201352:06",
+      "text": "Interacting with the website design, such as adding items to a cart and viewing the shopping cart."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 3126.0,
+      "end": 3148.0,
+      "range": "52:06\u201352:28",
+      "text": "The current design is just a mock-up and needs to be converted into an actual functioning website using Claude Code."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 3148.0,
+      "end": 3172.0,
+      "range": "52:28\u201352:52",
+      "text": "Share the design with Claude Code, selecting 'Send to Claude Code' for local agent processing."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 3172.0,
+      "end": 3195.0,
+      "range": "52:52\u201353:15",
+      "text": "Provide additional instructions to Claude Code to turn the design into an actual functioning website."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 3195.0,
+      "end": 3219.0,
+      "range": "53:15\u201353:39",
+      "text": "Create a new folder in their documents for the project and selects it as the workspace for Claude Code."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 3219.0,
+      "end": 3243.0,
+      "range": "53:39\u201354:03",
+      "text": "Paste the prompt into Claude Code, including instructions on where to find the designs and custom instructions at the bottom."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 3243.0,
+      "end": 3268.0,
+      "range": "54:03\u201354:28",
+      "text": "Claude Code has two modes: 'anything' and 'auto'. The 'auto' mode decides if something is safe to do on its own or needs user approval."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 3268.0,
+      "end": 3290.0,
+      "range": "54:28\u201354:50",
+      "text": "For the first time using Claude Code, it's recommended to set it to a more restrictive mode to build trust with how the system works, especially if it modifies anything on your system."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 3290.0,
+      "end": 3314.0,
+      "range": "54:50\u201355:14",
+      "text": "To use Claude Code for building a website, change from Sonnet to the best model available (Opus 5) and set the effort level to high."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 3314.0,
+      "end": 3339.0,
+      "range": "55:14\u201355:39",
+      "text": "Claude Code can take a while to process larger projects like building an entire website."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 3339.0,
+      "end": 3363.0,
+      "range": "55:39\u201356:03",
+      "text": "If images don't come through, add them using the plus button and select all photos."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 3363.0,
+      "end": 3386.0,
+      "range": "56:03\u201356:26",
+      "text": "Fix email service issues by wiring up Omnisend using a message in Claude Code."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 3386.0,
+      "end": 3411.0,
+      "range": "56:26\u201356:51",
+      "text": "Claude Code can make judgment calls, such as converting large image files to JPEG format and providing instructions for finalizing the Omnisend connection with an API key."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 3411.0,
+      "end": 3436.0,
+      "range": "56:51\u201357:16",
+      "text": "Deploying a Claude AI website can be done through a full video linked in the description of the Ultimate Beginner's Guide to Claude AI."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 3436.0,
+      "end": 3460.0,
+      "range": "57:16\u201357:40",
+      "text": "Claude Code can build tools that continue to work forever, as demonstrated by organizing receipts and creating a tool for generating product labels."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 3460.0,
+      "end": 3483.0,
+      "range": "57:40\u201358:03",
+      "text": "Build a small tool using Claude Code that reads an inventory spreadsheet and creates print-ready PDF sheets of product labels."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 3483.0,
+      "end": 3508.0,
+      "range": "58:03\u201358:28",
+      "text": "Enable auto mode, attach relevant files (photo and inventory spreadsheet), and run the prompt to create a tool that can be run again with one click."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 3508.0,
+      "end": 3531.0,
+      "range": "58:28\u201358:51",
+      "text": "Claude Code builds a tool that continues to work after the initial setup, as demonstrated by updating inventory and running the app again."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 3604.0,
+      "end": 3628.0,
+      "range": "60:04\u201360:28",
+      "text": "Claude AI can run several sessions simultaneously, working on different parts of a project in parallel."
+    },
+    {
+      "source_id": "src-1d87ab58a8ee",
+      "start": 3628.0,
+      "end": 3649.0,
+      "range": "60:28\u201360:49",
+      "text": "Level one involves giving context and a task to Claude, while level six allows for larger results. Two follow-up videos are linked below: one where Claude builds a $10,000 website and another where the Claude website is put live on the internet."
     }
   ]
 }

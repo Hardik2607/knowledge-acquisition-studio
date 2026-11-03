@@ -10,9 +10,16 @@
   "artifacts": [
     "knowledge/units.json",
     "knowledge/source-map.json",
-    "knowledge/procedures/p-create-a-warm-and-cozy-website-for-amber.md"
+    "knowledge/procedures/p-building-interactive-elements.md",
+    "knowledge/procedures/p-connecting-apps-to-claude.md",
+    "knowledge/procedures/p-creating-downloadable-files.md",
+    "knowledge/procedures/p-mastering-advanced-claude-ai.md",
+    "knowledge/procedures/p-using-claude-code.md",
+    "knowledge/procedures/p-using-claude-for-basic-tasks.md",
+    "knowledge/procedures/p-using-projects-for-organizing-knowledge.md",
+    "knowledge/procedures/p-working-with-files-and-internet.md"
   ],
   "command": "kas build --project /home/hardik/ai-agent-ecosystem/projects/knowledge-acquisition-studio/projects/claude-tutorial",
-  "run_at": "2026-11-03T09:34:34Z",
+  "run_at": "2026-11-03T11:41:51Z",
   "notes": "Units, procedures and source map are valid and provenance-clean."
 }

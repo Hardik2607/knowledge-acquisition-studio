@@ -11,7 +11,7 @@ Phase 5 — QA, derived content, application report, vault projection complete
 - Ingested 1 source(s); 1 reused unchanged
 - Transcripts available for 1 source(s)
 - Notes written for 1 source(s) with timestamp provenance
-- Knowledge units: 2; procedures: 1; source map: 1 entries
+- Knowledge units: 95; procedures: 8; source map: 1 entries
 - Evidence written for AC-02, AC-03, AC-04, AC-05, AC-06, AC-07, AC-08, AC-09, AC-15
 - Phase 4 — Vault projected with frontmatter and hand-edit guards
 - Phase 5 — Derived content, application report and QA report generated
@@ -41,4 +41,4 @@ Phase 5 — QA, derived content, application report, vault projection complete
 none — all phases complete
 
 ## Last updated
-2026-11-03T09:34:34Z
+2026-11-03T11:41:51Z

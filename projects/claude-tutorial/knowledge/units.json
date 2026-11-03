@@ -1,32 +1,1148 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-03T09:34:30Z",
+  "generated_at": "2026-11-03T11:41:29Z",
   "provider": "ollama",
   "model": "qwen2.5-coder:7b",
   "units": [
     {
-      "id": "k-993fee7f4f30",
-      "statement": "Claude Design is used to create a warm, cozy website for Amber Light Candles.",
+      "id": "k-a6c68dc04a56",
+      "statement": "Claude is an AI assistant made by Anthropic.",
       "source_refs": [
         {
           "source_id": "src-1d87ab58a8ee",
-          "start": 2848.0,
-          "end": 2908.0
+          "start": 0.0,
+          "end": 24.0
         }
       ],
       "confidence": "high"
     },
     {
-      "id": "k-0357f61a7312",
-      "statement": "Claude Design uses a powerful model, such as Opus 5, for the best results.",
+      "id": "k-d35ec07b28f8",
+      "statement": "Claude writes like a human, handles documents and files well, and is built for real work.",
       "source_refs": [
         {
           "source_id": "src-1d87ab58a8ee",
-          "start": 3240.0,
-          "end": 3296.0
+          "start": 0.0,
+          "end": 24.0
         }
       ],
       "confidence": "high"
+    },
+    {
+      "id": "k-1ac1120265e1",
+      "statement": "There are six levels of using Claude: talking to Claude, giving it your world, making real things, remembering you, connecting apps, and having it work while you're away.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 24.0,
+          "end": 48.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-81089db278ff",
+      "statement": "Level one involves talking to Claude with a simple question.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 48.0,
+          "end": 60.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-587fecbffcf4",
+      "statement": "Claude can import knowledge from other AI tools like ChatGPT.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 60.0,
+          "end": 72.0
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "k-eea63db02462",
+      "statement": "The video uses a small handmade candle shop as an example throughout.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 72.0,
+          "end": 84.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-397b63d23a21",
+      "statement": "Claude is free to start, and most features work on the free plan.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 224.0,
+          "end": 249.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-f7c48e4ee82b",
+      "statement": "A prompt is a message sent to Claude or any other AI, and the quality of the response depends on the prompt.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 360.0,
+          "end": 384.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-64117949b0d9",
+      "statement": "A strong prompt includes context, task, and format to get a better response from Claude.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 384.0,
+          "end": 408.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-a70aaae74cb9",
+      "statement": "The example given is for writing a product description for a candle shop's new Autumn Cabin candle.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 408.0,
+          "end": 432.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-fa86f9bfd708",
+      "statement": "AI gives a different result every time for the same question.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 363.0,
+          "end": 392.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-a9a261bf5af5",
+      "statement": "Don't start over when the answer isn't right; reply and refine.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 392.0,
+          "end": 420.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-8bcf746827f2",
+      "statement": "Claude remembers everything in the conversation.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 420.0,
+          "end": 443.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-e5bdd182da38",
+      "statement": "There's a fast model for everyday tasks and a more powerful model for complex work.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 462.0,
+          "end": 490.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-984986fcdf9f",
+      "statement": "Switch models based on the job's complexity and result importance.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 490.0,
+          "end": 523.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-43aa420cabc0",
+      "statement": "Effort setting controls how long Claude thinks before answering.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 523.0,
+          "end": 546.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-a6962f2e8849",
+      "statement": "Free and paid plans have usage limits that refill on a schedule.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 546.0,
+          "end": 570.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-409da0fcd262",
+      "statement": "Start with the free plan and upgrade when usage limits annoy you.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 570.0,
+          "end": 593.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-d6a24fdbdc09",
+      "statement": "Level two allows Claude to work with files, images, and the internet.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 624.0,
+          "end": 650.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-654d20c2f82e",
+      "statement": "New topic, new chat to keep Claude focused and use less usage allowance.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 650.0,
+          "end": 683.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-dff341e49f4e",
+      "statement": "Claude reads files like PDFs, Word documents, spreadsheets, and images.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 683.0,
+          "end": 709.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-456c9ecd7c66",
+      "statement": "Upload boring documents to see Claude's capabilities with various types of content.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 726.0,
+          "end": 743.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-2c62653ed17a",
+      "statement": "Claude can search the web for current information when needed.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 1201.0,
+          "end": 1225.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-a128fa3af64c",
+      "statement": "To enable web search, click the plus icon and check the box for web search in the menu.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 1225.0,
+          "end": 1249.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-924a545915b1",
+      "statement": "Claude shows sources for information it provides to ensure accuracy and credibility.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 1249.0,
+          "end": 1313.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-658dc5f4d62f",
+      "statement": "The research feature allows Claude to read dozens or even hundreds of sources and provide a full cited report.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 1313.0,
+          "end": 1338.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-a9e16e7e8b5e",
+      "statement": "The research feature requires the paid plan to use.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 1313.0,
+          "end": 1338.0
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "k-ae164542ce1f",
+      "statement": "To upgrade to the pro plan, click the profile icon, select the pro plan, choose the monthly option, and provide billing information.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 1338.0,
+          "end": 1403.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-a3c3f5938063",
+      "statement": "Research uses up Claude's usage limit faster than normal chatting, so it should be used for questions that require deep research.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 1426.0,
+          "end": 1451.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-3f24a8e0ff89",
+      "statement": "Claude can create downloadable files like Word documents, Excel spreadsheets, PowerPoints, and PDFs.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 1649.0,
+          "end": 1712.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-f858051dc594",
+      "statement": "Claude can also create interactive builds like pages and mini apps directly in front of the user.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 1649.0,
+          "end": 1712.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-64e9882b3423",
+      "statement": "Claude AI opens a window next to the chat and builds web pages live.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 1080.0,
+          "end": 1290.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-b2bc6fa60254",
+      "statement": "Claude uses front-end design skills to build HTML pages.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 1320.0,
+          "end": 1440.0
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "k-51f56ebf5d98",
+      "statement": "Claude can dynamically update web page elements in real-time based on user input.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 1620.0,
+          "end": 1740.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-8e9a94cf019b",
+      "statement": "Claude can create complex web pages with features like animations and placeholder images.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 1620.0,
+          "end": 1740.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-3127b9585a89",
+      "statement": "Claude can build interactive elements such as scent quizzes on web pages.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 1938.0,
+          "end": 2003.0
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "k-fd9ea55c05cb",
+      "statement": "Users can challenge Claude to build tools like budget calculators, workout planners, or quizzes for friends.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 2003.0,
+          "end": 2027.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-3d56eb2ee4a0",
+      "statement": "Projects in Claude allow organizing related chats and sharing knowledge across them.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 2051.0,
+          "end": 2116.0
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "k-4e659ca10ed9",
+      "statement": "Files added to a project are available in all chats within that project.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 2094.0,
+          "end": 2116.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-d2b2bb740d06",
+      "statement": "Project instructions help Claude understand the context of user requests.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 2139.0,
+          "end": 2204.0
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "k-bf581f58191e",
+      "statement": "Claude can remember information about users through personal instructions and memory settings.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 2226.0,
+          "end": 2315.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-ce009865c0e5",
+      "statement": "Users can access their Claude memory by clicking on the 'Settings' tab and selecting 'Memory'.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 2290.0,
+          "end": 2315.0
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "k-89936871c955",
+      "statement": "Claude can be used in incognito mode to ensure no data is saved or used for training.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 2338.0,
+          "end": 2402.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-873e2b3ad775",
+      "statement": "To import memory from other AI providers into Claude, open settings, find the 'import memory from other AI providers' option, click start import, copy the prompt given, paste it in a chat with your other provider, and then go to Claude's settings to add the imported memory.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 2402.0,
+          "end": 2452.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-ef942d7144a9",
+      "statement": "To turn on the search and reference chats toggle in Claude, go to settings, personalization, memory, click on your account personalization, scroll down to 'search and reference chats toggle', and enable it.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 2515.0,
+          "end": 2538.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-487b237176fa",
+      "statement": "To use the mobile app for Claude, download it from the web app, follow the installation instructions, and log in to access your account, chats, projects, and memory.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 2602.0,
+          "end": 2650.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-24be5b96c4d2",
+      "statement": "To use the desktop app for Claude, download it from the web app, follow the installation instructions, and log in to access your account, chats, projects, and memory.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 2738.0,
+          "end": 2801.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-d5dc8d30c53e",
+      "statement": "To connect an app to Claude, click the plus button in a chat, go to connectors, add connector, browse connectors, select the desired app (e.g., Google Calendar), log into your account, and set permissions for what Claude has access to.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 2936.0,
+          "end": 3000.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-3505e1962fe9",
+      "statement": "Claude can view, edit, share, and delete content on Google Calendar.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 30.0,
+          "end": 30.24
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-317ab0ba4d62",
+      "statement": "Claude can read and analyze data from connected apps without manual intervention.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 30.24,
+          "end": 30.48
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-c97972e613be",
+      "statement": "The process for connecting an app involves granting access and then asking Claude to perform actions.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 30.48,
+          "end": 31.12
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-ae78f7647fff",
+      "statement": "Claude can automate tasks such as creating email campaigns in Omnisend.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 31.12,
+          "end": 31.37
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-2d2a34eaf0ee",
+      "statement": "Omnisend offers a 30% discount for new users signing up through a specific link.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 32.26,
+          "end": 32.5
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-709b1dc8d844",
+      "statement": "Claude can request permission to perform actions within connected apps.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 34.03,
+          "end": 34.26
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-e90986567a7a",
+      "statement": "Claude can diagnose and fix issues with its own work before completing a task.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 35.37,
+          "end": 36.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-2b3c6065ed67",
+      "statement": "Claude can automatically draft emails based on business descriptions.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 36.23,
+          "end": 36.48
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-8d0192e4c43a",
+      "statement": "Omnisend provides a platform for email marketing and automation.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 36.48,
+          "end": 37.11
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-ab42c80931f7",
+      "statement": "Skills in Claude are like recipes that automate specific tasks.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 37.11,
+          "end": 37.34
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-8b8b606bfd12",
+      "statement": "The Theme Factory skill allows for the creation of styled artifacts like slides.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 37.34,
+          "end": 37.59
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-46832bafd1b4",
+      "statement": "Claude can be used to create a presentation by providing a prompt.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 37.59,
+          "end": 38.23
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-57b3324900ff",
+      "statement": "Skills can be installed and used in any chat session with Claude.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 38.23,
+          "end": 38.47
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-934099cb0bca",
+      "statement": "Claude can be set to work autonomously on tasks through co-work.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 40.23,
+          "end": 40.48
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-5581f1139128",
+      "statement": "In co-work, Claude can only access and modify files in selected folders.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 40.48,
+          "end": 41.13
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-b785c997d9b8",
+      "statement": "Approval modes for co-work include manual, automatic, and skip all approvals.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 41.13,
+          "end": 41.37
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-41be9acdba09",
+      "statement": "Claude can be upgraded to a paid plan for co-work capabilities.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 40.23,
+          "end": 40.48
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-fbe478f1731b",
+      "statement": "AI can perform multi-step work on its own without human intervention.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 42.0,
+          "end": 43.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-5704a37ba8fd",
+      "statement": "AI can create and update spreadsheets based on file contents.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 42.0,
+          "end": 43.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-f8a930ece189",
+      "statement": "AI can rename files based on their content.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 42.0,
+          "end": 43.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-fb5bba89e359",
+      "statement": "AI can schedule tasks to run at specific times and intervals.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 44.0,
+          "end": 45.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-3516c2daa641",
+      "statement": "Scheduled tasks can be tested before running autonomously.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 45.0,
+          "end": 46.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-c6c75419adac",
+      "statement": "AI can run scheduled tasks in the cloud when the computer is off.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 46.0,
+          "end": 47.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-e39e477ba35a",
+      "statement": "Claude Code allows AI to write real code and turn ideas into working software.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 47.0,
+          "end": 48.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-abd9785bf7e2",
+      "statement": "AI can use tools like Claude Design to create visual designs from descriptions.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 48.0,
+          "end": 49.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-a62b631aadaa",
+      "statement": "AI can use tools like Claude Code to turn visual designs into real working websites.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 48.0,
+          "end": 49.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-431dc3ee6a62",
+      "statement": "To design a website using Claude Design, open the Claude Design app from the bottom left of the desktop app.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 48.04,
+          "end": 48.28
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-5c8f12f471f0",
+      "statement": "Provide a prompt to Claude Design, specifying the type of website (e.g., warm, cozy website for Amber Light Candles) and include relevant business details.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 48.28,
+          "end": 48.52
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-c0bed30f51ca",
+      "statement": "Switch Claude Design to the most powerful model available (e.g., Opus 5) and set the effort level to high for better results.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 48.52,
+          "end": 49.17
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-5ddc2d490370",
+      "statement": "Select a relevant project type (e.g., UI mock-ups) from the template drop-down menu in Claude Design.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 49.17,
+          "end": 49.42
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-02e9f072f8d4",
+      "statement": "Answer questions about the design requirements (e.g., shop page, about page) and provide relevant details.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 49.42,
+          "end": 50.07
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-cb7af392f288",
+      "statement": "Use Claude Design for complex designs that require a proper interface and the ability to review and modify designs.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 50.07,
+          "end": 50.31
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-2f84ca94f9c8",
+      "statement": "Upload actual images to replace placeholders in the design for a more realistic look.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 51.42,
+          "end": 52.06
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-8cabe44d8236",
+      "statement": "Test the functionality of the design by interacting with it using buttons and features.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 52.06,
+          "end": 52.28
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-ab0cd2c456e4",
+      "statement": "Publish the design as an artifact or export it as a PDF to share with others.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 52.28,
+          "end": 52.52
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-459510dba5b5",
+      "statement": "Send the design to Claude Code for further development into a functioning website.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 52.52,
+          "end": 53.15
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-41e71daa66d2",
+      "statement": "Create a folder in the Claude Code workspace to store the project files.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 53.15,
+          "end": 53.39
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-e63ac8233434",
+      "statement": "Paste the prompt into Claude Code, including instructions for turning the design into a functioning website.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 53.39,
+          "end": 54.03
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-2ecfe5110e8a",
+      "statement": "Claude AI can act on prompts and decide if actions are safe to perform automatically.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 327.0,
+          "end": 348.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-401c896c28cc",
+      "statement": "For the first time using Claude Code, it's recommended to set restrictions for building trust.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 349.0,
+          "end": 362.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-23d68d5b2727",
+      "statement": "Claude Code can build a website from plain language input, including images and email services.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 409.0,
+          "end": 426.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-db7f6f2fb611",
+      "statement": "Claude Code can automate tasks like organizing receipts and building tools for inventory management.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 539.0,
+          "end": 556.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-9633a455e03d",
+      "statement": "Claude Code can create a tool that reads an inventory spreadsheet and generates print-ready PDF labels.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 557.0,
+          "end": 574.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-b64e4472654a",
+      "statement": "The tool built by Claude Code can be used repeatedly without needing further interaction with Claude.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 575.0,
+          "end": 592.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-cf7de5294138",
+      "statement": "Claude Code can perform tasks like backing up photos and diagnosing computer issues.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 603.0,
+          "end": 620.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-92183c80c299",
+      "statement": "Claude AI can run multiple sessions simultaneously.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 3604.0,
+          "end": 3628.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-16c66676dc34",
+      "statement": "Mastering advanced Claude AI takes practice.",
+      "source_refs": [
+        {
+          "source_id": "src-1d87ab58a8ee",
+          "start": 3628.0,
+          "end": 3649.0
+        }
+      ],
+      "confidence": "medium"
     }
   ]
 }

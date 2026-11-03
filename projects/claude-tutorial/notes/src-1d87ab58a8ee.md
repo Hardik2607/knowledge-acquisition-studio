@@ -1,11 +1,130 @@
 # Notes — src-1d87ab58a8ee
 
-- [src-1d87ab58a8ee] 48:04–48:28 — The narrator starts by copying text and opening Claude Design to create a prompt for designing a warm, cozy website for Amber Light Candles.
-- [src-1d87ab58a8ee] 48:28–48:50 — Claude Design is used to create the initial design of the website based on plain language instructions.
-- [src-1d87ab58a8ee] 48:50–49:15 — The narrator then moves on to using Claude Code for more advanced tasks, such as building a tool that reads inventory and creates product labels.
-- [src-1d87ab58a8ee] 49:15–49:30 — Claude Code is used to automate repetitive tasks and build tools that can be run independently on the user's computer.
-- [src-1d87ab58a8ee] 49:30–49:45 — The narrator demonstrates how Claude Code can be used to create a tool for generating product labels from an inventory spreadsheet.
-- [src-1d87ab58a8ee] 49:45–50:00 — Claude Code is able to read the inventory file, generate labels based on the data, and save them as a PDF sheet.
-- [src-1d87ab58a8ee] 50:00–50:15 — The narrator explains that once the tool is created, it can be run independently without needing to interact with Claude Code again.
-- [src-1d87ab58a8ee] 50:15–50:30 — Claude Code has built a machine that can perform the task of generating product labels automatically.
-- [src-1d87ab58a8ee] 50:30–50:45 — The narrator emphasizes that this is just one example of how Claude Code can be used to build tools and automate tasks on a computer.
+- [src-1d87ab58a8ee] 00:24–00:48 — The guide covers six levels of using Claude AI.
+- [src-1d87ab58a8ee] 01:35–02:00 — The example used throughout the video is a small handmade candle shop.
+- [src-1d87ab58a8ee] 02:00–02:24 — A free account can be created at claude.ai or through the link in the description.
+- [src-1d87ab58a8ee] 02:24–02:49 — Claude is free to start, and most features work on the free plan.
+- [src-1d87ab58a8ee] 03:12–03:37 — The option to opt in or out of helping improve AI models by sharing data is available during onboarding.
+- [src-1d87ab58a8ee] 04:01–04:26 — A prompt is the message sent to Claude or any other AI.
+- [src-1d87ab58a8ee] 04:50–05:15 — The three-part prompt includes context, task, and format.
+- [src-1d87ab58a8ee] 05:38–06:03 — Context provides information about the user and their work, task specifies what is needed, and format dictates how the response should be structured.
+- [src-1d87ab58a8ee] 06:03–06:28 — AI gives a different result every time, even for the same question. Don't chase my exact results.
+- [src-1d87ab58a8ee] 06:52–07:15 — Reply and refine. Claude remembers everything in the conversation.
+- [src-1d87ab58a8ee] 07:40–08:03 — There's a fast model for everyday tasks and a more powerful model for complex work.
+- [src-1d87ab58a8ee] 08:28–08:53 — You can switch models at any time, even in the middle of a conversation.
+- [src-1d87ab58a8ee] 08:53–09:17 — Raise the effort level for problems with many steps where details have to be right.
+- [src-1d87ab58a8ee] 09:40–10:05 — New topic, new chat. Separate chats keep Claude focused and use less of your usage allowance.
+- [src-1d87ab58a8ee] 10:28–10:52 — Claude can read files like PDFs, Word documents, spreadsheets, and images.
+- [src-1d87ab58a8ee] 11:38–12:01 — Upload the most boring document in your life and ask Claude to explain it.
+- [src-1d87ab58a8ee] 12:01–12:25 — Claude can search the web for current information when needed.
+- [src-1d87ab58a8ee] 12:25–12:49 — To enable web search, click the plus icon and ensure a check mark is next to web search in the menu.
+- [src-1d87ab58a8ee] 12:49–13:13 — Claude can provide cited reports with sources for deeper research, available on the paid plan.
+- [src-1d87ab58a8ee] 13:13–13:38 — Upgrade to the pro plan by clicking the profile icon, selecting the pro plan, and subscribing through billing information.
+- [src-1d87ab58a8ee] 13:38–14:03 — The research feature allows Claude to read multiple sources for a detailed report on a specific topic.
+- [src-1d87ab58a8ee] 14:03–14:26 — Research uses up usage faster than normal chatting, so save it for questions that require deep research.
+- [src-1d87ab58a8ee] 14:51–15:14 — The document includes a high-level summary and detailed findings with sources.
+- [src-1d87ab58a8ee] 15:37–16:00 — Omnisend is an email and SMS platform for e-commerce, offering lower pricing and automated migration of lists and automations.
+- [src-1d87ab58a8ee] 16:24–16:49 — Use the link provided to get 30% off any paid plan for your first 3 months with code MM30.
+- [src-1d87ab58a8ee] 16:49–17:12 — Level three of Claude's capabilities involve building real things, including downloadable files and interactive builds.
+- [src-1d87ab58a8ee] 17:12–17:36 — Claude can create an Excel spreadsheet to track candle inventory with specific columns and realistic numbers.
+- [src-1d87ab58a8ee] 18:00–18:25 — Claude opens a window next to the chat and builds it live.
+- [src-1d87ab58a8ee] 18:25–18:49 — Claude begins building an HTML page for Amber Light Candles with warm colors, a headline, three featured candles, and an email sign-up section.
+- [src-1d87ab58a8ee] 18:49–19:14 — Claude changes the background to cream and makes the headline bigger in real-time.
+- [src-1d87ab58a8ee] 19:14–19:38 — Claude turns the landing page into a scent quiz that recommends one of Amber Light Candles based on user preferences.
+- [src-1d87ab58a8ee] 19:38–20:03 — Complete the scent quiz and is recommended a candle, which they can shop for.
+- [src-1d87ab58a8ee] 20:03–20:27 — The challenge for this level is to ask Claude to build one small tool for the user's life, such as a budget calculator or workout planner.
+- [src-1d87ab58a8ee] 20:27–20:51 — Level four introduces projects in Claude, allowing related chats to share knowledge and work together.
+- [src-1d87ab58a8ee] 20:51–21:16 — Files added to a project are available in every chat within that project, avoiding the need to upload the same file twice.
+- [src-1d87ab58a8ee] 21:16–21:39 — Project instructions describe the user's situation, making Claude aware of it without needing to be explicitly mentioned in every prompt.
+- [src-1d87ab58a8ee] 21:39–22:04 — Claude uses project information and files to generate ideas for a newsletter based on the context provided.
+- [src-1d87ab58a8ee] 22:04–22:26 — The challenge for this level is to create one project for the user's biggest topic and add two files to its knowledge.
+- [src-1d87ab58a8ee] 22:26–22:50 — Claude remembers the user through personal instructions and memory, which can be accessed in settings under the general tab.
+- [src-1d87ab58a8ee] 22:50–23:15 — Claude's memory includes a summary of the user's work, product line, brand details, and previous conversations.
+- [src-1d87ab58a8ee] 23:15–23:38 — The user can read, edit, or delete Claude's memory as needed. Incognito mode allows for temporary chats without saving any information.
+- [src-1d87ab58a8ee] 23:38–24:02 — To bring existing knowledge from Chat GPT into Claude, the user can reopen the chat and use Claude's memory feature.
+- [src-1d87ab58a8ee] 24:02–24:27 — To import memory from another AI provider, open settings, go to memory, find the option 'import memory from other AI providers,' and click start import. Copy the provided prompt and paste it into a chat with your other provider.
+- [src-1d87ab58a8ee] 24:27–24:52 — In ChatGPT, go to settings, personalization, and memory. Click on 'my account personalization,' scroll down to 'memory summary manage,' copy the information, return to Claude, paste it in, and click 'add to memory.'
+- [src-1d87ab58a8ee] 24:52–25:15 — After importing, Claude updates your memories with information like AI tools, food, and pets. This feature is experimental.
+- [src-1d87ab58a8ee] 25:15–25:38 — Turn on the 'search and reference chats toggle' setting to allow Claude to search past chats for relevant details.
+- [src-1d87ab58a8ee] 25:38–26:02 — Claude has a mobile app available for iPhone and Android, syncing your account, chats, projects, and memory.
+- [src-1d87ab58a8ee] 26:02–26:26 — To use the photo feature on the mobile app, take a picture of an item, select it, and hit the camera icon to snap a photo.
+- [src-1d87ab58a8ee] 26:26–26:50 — You can also use voice mode by saying your question directly into the app after taking a photo.
+- [src-1d87ab58a8ee] 26:50–27:13 — The mobile app allows you to receive notifications when tasks finish processing, enabling hands-free operation.
+- [src-1d87ab58a8ee] 27:13–27:38 — Access previous chats by clicking the hamburger menu in the upper left and scrolling through your chat history.
+- [src-1d87ab58a8ee] 27:38–28:01 — The desktop app for Mac and Windows is available for download on the web app, making Claude accessible all day long.
+- [src-1d87ab58a8ee] 28:01–28:25 — Download the desktop app by clicking the 'download' button next to your name on the web app and following the installation instructions.
+- [src-1d87ab58a8ee] 28:25–28:49 — Once installed, open the desktop app and log in to access Claude's features.
+- [src-1d87ab58a8ee] 28:49–29:12 — At level five, Claude connects to other apps like Gmail, Google Drive, Slack, and your calendar to access real information from your life.
+- [src-1d87ab58a8ee] 29:12–29:36 — Connectors allow Claude to securely plug into these apps, read data, and perform work on your behalf. Choose which apps to connect and disconnect at any time.
+- [src-1d87ab58a8ee] 30:00–30:24 — Claude can view, edit, share, and delete content on connected calendars.
+- [src-1d87ab58a8ee] 30:24–30:48 — After connecting a calendar, Claude can recommend free time for tasks based on the user's schedule.
+- [src-1d87ab58a8ee] 30:48–31:12 — The pattern for connecting an app is always to connect once and then ask for specific actions.
+- [src-1d87ab58a8ee] 31:12–31:37 — Challenge: Connect one regularly used app and ask it a question.
+- [src-1d87ab58a8ee] 31:37–32:01 — Connecting to Omnisend for email marketing involves adding a custom connector with the MCP server URL.
+- [src-1d87ab58a8ee] 32:01–32:26 — Sign up for Omnisend using a special link for 30% off on the first 3 months and no credit card required.
+- [src-1d87ab58a8ee] 32:26–32:50 — After signing up, authorize access to all features in Omnisend for both reading and writing.
+- [src-1d87ab58a8ee] 32:50–33:14 — Claude can help set up an email campaign by drafting a welcome email with specific details.
+- [src-1d87ab58a8ee] 33:14–33:38 — When connecting custom tools, Claude asks for permission to use various features within the tool.
+- [src-1d87ab58a8ee] 33:38–34:03 — For the free Claude plan, only one custom connector can be added.
+- [src-1d87ab58a8ee] 34:03–34:26 — Sometimes, custom connectors may not connect perfectly on the first attempt due to bugs.
+- [src-1d87ab58a8ee] 34:26–34:48 — Claude can help draft an email campaign and handle any issues that arise during the process.
+- [src-1d87ab58a8ee] 34:48–35:13 — Claude checks its own work before considering a task finished, ensuring accuracy.
+- [src-1d87ab58a8ee] 35:13–35:37 — At level six, Claude can automatically approve actions without manual intervention.
+- [src-1d87ab58a8ee] 36:00–36:23 — The email content is checked for accuracy and completeness.
+- [src-1d87ab58a8ee] 36:23–36:48 — Claude automatically generates a campaign draft based on the business's description, including tags, buttons, and a welcome coupon code.
+- [src-1d87ab58a8ee] 36:48–37:11 — Omnisend is highlighted as a platform with over 150,000 online stores using it, holding a 4.8 star average rating on Shopify.
+- [src-1d87ab58a8ee] 37:11–37:34 — A skill is described as a recipe for Claude to perform specific tasks efficiently.
+- [src-1d87ab58a8ee] 37:34–37:59 — Search for and installs the 'Theme Factory' skill from the skill library, which allows Claude to create styled artifacts like slides.
+- [src-1d87ab58a8ee] 37:59–38:23 — Create a new chat and calls the installed 'Theme Factory' skill to generate a presentation for introducing Amber Light Candles to a local store owner.
+- [src-1d87ab58a8ee] 38:23–38:47 — Claude selects a theme that matches the candle shop's aesthetic and adapts it to match an existing website.
+- [src-1d87ab58a8ee] 38:47–39:12 — Review the generated presentation, which is described as beautiful with some minor adjustments needed for icons.
+- [src-1d87ab58a8ee] 39:12–39:35 — Skills are noted to be reusable across different chats and can be called at any time.
+- [src-1d87ab58a8ee] 39:35–39:59 — Claude's capabilities extend to automating tasks without human intervention, known as co-work.
+- [src-1d87ab58a8ee] 40:23–40:48 — In co-work mode, Claude can only access and modify files in selected folders, with options for manual, automatic, or skip approval modes.
+- [src-1d87ab58a8ee] 40:48–41:13 — Connect a project folder to Claude and sets the approval mode to automatically approve actions.
+- [src-1d87ab58a8ee] 41:13–41:37 — The importance of selecting a high-quality model like Opus for tasks involving sensitive data is emphasized.
+- [src-1d87ab58a8ee] 41:37–42:00 — Claude is given the task to organize receipt files, extract relevant information, and create a clean expense spreadsheet.
+- [src-1d87ab58a8ee] 42:00–42:23 — Claude is opening files, reading them, and building a spreadsheet.
+- [src-1d87ab58a8ee] 42:23–42:47 — Claude's run may vary from the speaker's due to its autonomous nature.
+- [src-1d87ab58a8ee] 42:47–43:12 — The spreadsheet created by Claude is saved on the user's computer.
+- [src-1d87ab58a8ee] 43:12–43:37 — Claude renames receipts based on their contents and updates the spreadsheet accordingly.
+- [src-1d87ab58a8ee] 43:37–44:02 — I challenged to pick a folder with a boring task and give Claude a clear goal.
+- [src-1d87ab58a8ee] 44:02–44:25 — Scheduled tasks can be created in Co-work's Scheduled section.
+- [src-1d87ab58a8ee] 44:25–44:50 — Set up a scheduled task to search for candle and home fragrance trends weekly.
+- [src-1d87ab58a8ee] 44:50–45:15 — Claude schedules the task to run every Monday at 6:30 AM local time.
+- [src-1d87ab58a8ee] 45:15–45:40 — Run the scheduled task once as a test to ensure permissions are pre-approved.
+- [src-1d87ab58a8ee] 45:40–46:05 — Permissions for future runs can be set to automatically approve in the Scheduled section.
+- [src-1d87ab58a8ee] 46:05–46:29 — Save changes to ensure future runs work on auto mode.
+- [src-1d87ab58a8ee] 46:29–46:54 — Scheduled tasks can run in the cloud, even when the computer is off.
+- [src-1d87ab58a8ee] 46:54–47:17 — Claude Code extends Co-work's capabilities to build things and turn ideas into working software.
+- [src-1d87ab58a8ee] 47:17–47:41 — Claude Code can write real code, run commands on the user's computer, and create websites.
+- [src-1d87ab58a8ee] 47:41–48:04 — Create a brief for Claude Design to understand their business needs.
+- [src-1d87ab58a8ee] 48:04–48:28 — Open Claude Design from the bottom left of the desktop app.
+- [src-1d87ab58a8ee] 48:28–48:52 — Paste a prompt into Claude Design to design a warm, cozy website for Amber Light Candles, including a homepage, shop page, and about page with the business details.
+- [src-1d87ab58a8ee] 48:52–49:17 — Select 'UI mock-ups' as the relevant project type for the website design.
+- [src-1d87ab58a8ee] 49:17–49:42 — Answer questions about unconfirmed SKUs, showing prices, and shop page functionality in Claude Design.
+- [src-1d87ab58a8ee] 49:42–50:07 — Skip to answering the remaining questions and clicks 'Continue' after filling out all prompts.
+- [src-1d87ab58a8ee] 50:07–50:31 — Why Claude Design is better for complex designs compared to the regular chat for building a full website.
+- [src-1d87ab58a8ee] 50:31–50:55 — Present a beautifully designed website with a hero section, scent quiz, product grid, and mailing list sign-up option in Claude Design.
+- [src-1d87ab58a8ee] 50:55–51:18 — The ability to make tweaks directly within the design interface of Claude Design.
+- [src-1d87ab58a8ee] 51:18–51:42 — To replace placeholder images with actual images in the design.
+- [src-1d87ab58a8ee] 51:42–52:06 — Interacting with the website design, such as adding items to a cart and viewing the shopping cart.
+- [src-1d87ab58a8ee] 52:06–52:28 — The current design is just a mock-up and needs to be converted into an actual functioning website using Claude Code.
+- [src-1d87ab58a8ee] 52:28–52:52 — Share the design with Claude Code, selecting 'Send to Claude Code' for local agent processing.
+- [src-1d87ab58a8ee] 52:52–53:15 — Provide additional instructions to Claude Code to turn the design into an actual functioning website.
+- [src-1d87ab58a8ee] 53:15–53:39 — Create a new folder in their documents for the project and selects it as the workspace for Claude Code.
+- [src-1d87ab58a8ee] 53:39–54:03 — Paste the prompt into Claude Code, including instructions on where to find the designs and custom instructions at the bottom.
+- [src-1d87ab58a8ee] 54:03–54:28 — Claude Code has two modes: 'anything' and 'auto'. The 'auto' mode decides if something is safe to do on its own or needs user approval.
+- [src-1d87ab58a8ee] 54:28–54:50 — For the first time using Claude Code, it's recommended to set it to a more restrictive mode to build trust with how the system works, especially if it modifies anything on your system.
+- [src-1d87ab58a8ee] 54:50–55:14 — To use Claude Code for building a website, change from Sonnet to the best model available (Opus 5) and set the effort level to high.
+- [src-1d87ab58a8ee] 55:14–55:39 — Claude Code can take a while to process larger projects like building an entire website.
+- [src-1d87ab58a8ee] 55:39–56:03 — If images don't come through, add them using the plus button and select all photos.
+- [src-1d87ab58a8ee] 56:03–56:26 — Fix email service issues by wiring up Omnisend using a message in Claude Code.
+- [src-1d87ab58a8ee] 56:26–56:51 — Claude Code can make judgment calls, such as converting large image files to JPEG format and providing instructions for finalizing the Omnisend connection with an API key.
+- [src-1d87ab58a8ee] 56:51–57:16 — Deploying a Claude AI website can be done through a full video linked in the description of the Ultimate Beginner's Guide to Claude AI.
+- [src-1d87ab58a8ee] 57:16–57:40 — Claude Code can build tools that continue to work forever, as demonstrated by organizing receipts and creating a tool for generating product labels.
+- [src-1d87ab58a8ee] 57:40–58:03 — Build a small tool using Claude Code that reads an inventory spreadsheet and creates print-ready PDF sheets of product labels.
+- [src-1d87ab58a8ee] 58:03–58:28 — Enable auto mode, attach relevant files (photo and inventory spreadsheet), and run the prompt to create a tool that can be run again with one click.
+- [src-1d87ab58a8ee] 58:28–58:51 — Claude Code builds a tool that continues to work after the initial setup, as demonstrated by updating inventory and running the app again.
+- [src-1d87ab58a8ee] 60:04–60:28 — Claude AI can run several sessions simultaneously, working on different parts of a project in parallel.
+- [src-1d87ab58a8ee] 60:28–60:49 — Level one involves giving context and a task to Claude, while level six allows for larger results. Two follow-up videos are linked below: one where Claude builds a $10,000 website and another where the Claude website is put live on the internet.
