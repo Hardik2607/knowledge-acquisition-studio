@@ -1,0 +1,16 @@
+{
+  "author": null,
+  "checksum": "5fb805a2b5092943a3d40858bdddcf29df03949a56958ecd596f6806527d7fe2",
+  "kind": "git",
+  "language": "en",
+  "license": null,
+  "media_type": "application/x-git",
+  "origin": "file:///home/hardik/ai-agent-ecosystem/projects/knowledge-acquisition-studio",
+  "raw_path": "sources/src-5fb805a2b509/raw/repo_bundle.tar.gz",
+  "reason": null,
+  "retrieved_at": "2026-11-03T17:17:30Z",
+  "schema_version": 1,
+  "source_id": "src-5fb805a2b509",
+  "status": "ingested",
+  "title": "Knowledge Acquisition Studio Engine"
+}

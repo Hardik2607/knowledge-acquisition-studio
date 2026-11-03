@@ -21,7 +21,7 @@ import yaml
 from .errors import FieldError, ValidationError, type_name
 from .paths import confine_path, is_remote
 
-SOURCE_KINDS = ("video", "audio", "pdf", "epub", "html", "text", "image")
+SOURCE_KINDS = ("video", "audio", "pdf", "epub", "html", "text", "image", "git", "repo")
 
 PROJECT_REQUIRED = {
     "project_id": "string",

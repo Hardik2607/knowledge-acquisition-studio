@@ -1,0 +1,21 @@
+{
+  "project_id": "kas-core",
+  "phase": "Phase 2 \u2014 ingestion only",
+  "completed": [
+    "Ingested 1 source(s); 0 reused unchanged",
+    "Source Records written with content-addressed ids"
+  ],
+  "evidence": [
+    "evidence/t-ingest.json"
+  ],
+  "decisions": [],
+  "risks": [
+    "Transcription and notes not run"
+  ],
+  "remaining": [
+    "kas build \u2014 transcribe and generate notes"
+  ],
+  "next_task": "kas build",
+  "updated_at": "2026-11-03T17:17:30Z",
+  "schema_version": 1
+}

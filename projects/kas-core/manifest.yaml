@@ -1,0 +1,6 @@
+project_id: kas-core
+goal: Extract architecture, CLI commands, and autonomous skill procedures from Knowledge Acquisition Studio repository
+sources:
+  - kind: git
+    origin: file:///home/hardik/ai-agent-ecosystem/projects/knowledge-acquisition-studio
+    title: Knowledge Acquisition Studio Engine

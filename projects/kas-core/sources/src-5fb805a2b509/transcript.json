@@ -1,0 +1,1168 @@
+{
+  "source_id": "src-5fb805a2b509",
+  "provider": "git",
+  "model": "repo-ingest",
+  "language": "en",
+  "generated_at": "",
+  "schema_version": 1,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 10.0,
+      "text": "[README.md] # Knowledge Acquisition Studio",
+      "language": null
+    },
+    {
+      "start": 10.0,
+      "end": 20.0,
+      "text": "[README.md] ## Purpose Ingest tutorials, transcripts and learning sources, extract actionable knowledge, verify it, and apply it to projects.",
+      "language": null
+    },
+    {
+      "start": 20.0,
+      "end": 30.0,
+      "text": "[README.md] ## Expected outputs - source map - timestamped notes - knowledge base - step-by-step procedure - verification evidence - original educational content",
+      "language": null
+    },
+    {
+      "start": 30.0,
+      "end": 40.0,
+      "text": "[README.md] ## Autonomous execution The project follows: **Task -> Execute -> Verify -> Fix/Retry -> Complete -> Update Status -> Next Unblocked Task** See `docs/director/director-section.md` and `workflows/knowledge-acquisition-studio-workflow.md`.",
+      "language": null
+    },
+    {
+      "start": 40.0,
+      "end": 50.0,
+      "text": "[tests/README.md] # Tests Add unit, integration and end-to-end fixtures here.",
+      "language": null
+    },
+    {
+      "start": 50.0,
+      "end": 60.0,
+      "text": "[docs/architecture/architecture.md] # Architecture \u2014 Knowledge Acquisition Studio ```text User Goal | v Orchestrator | +--> Input / Validation +--> Specialist Agents +--> Research / Knowledge (when required) +--> Artifact Generation +--> QA / Verification | +--> PASS --> Status --> Next Task | +--> FAIL --> Diagnose --> Retry ``` The architecture is intentionally modular so individual agents can be replaced without redesigning the whole workflow.",
+      "language": null
+    },
+    {
+      "start": 60.0,
+      "end": 70.0,
+      "text": "[docs/operations/cookies.md] # Operations \u2014 Reels cookies Reels are served to logged-in sessions. Without a session, Instagram returns `empty media response`. This document records the tested options on this host (2026-11-02, `yt-dlp 2026.10.26`).",
+      "language": null
+    },
+    {
+      "start": 70.0,
+      "end": 80.0,
+      "text": "[docs/operations/cookies.md] ## Test results | Browser | Cookies found (instagram) | Extraction result | |---|---|---| | Firefox (`kvl29ev8.default-release`) | **0** | 342 cookies extracted, 0 undecryptable | | Brave (`Default`) | 9 | 126 extracted, **366 undecryptable** (keyring locked over SSH) | | Vivaldi (`Default`) | 7 | **0 extracted**, 9 undecryptable | Interpretation: - **Firefox is the only browser that decrypts cleanly** on this host, but it has no Instagram session yet. One login there is all that's needed. - Brave holds the Instagram session but its cookie encryption depends on the desktop keyring, which is un...",
+      "language": null
+    },
+    {
+      "start": 80.0,
+      "end": 90.0,
+      "text": "[docs/operations/cookies.md] ## Recommended path 1. Open Firefox on the machine and log into Instagram once (remember-me). 2. Keep using `--cookies-from-browser firefox` \u2014 no credential file is ever written. ```bash yt-dlp --cookies-from-browser firefox --simulate --print \"%(title)s\" \"<reel-url>\" ```",
+      "language": null
+    },
+    {
+      "start": 90.0,
+      "end": 100.0,
+      "text": "[docs/operations/cookies.md] ## Fallback path (exported cookies) Only if Firefox is unavailable: 1. Export Netscape-format `cookies.txt` from a logged-in browser. 2. Save as `~/.hermes/cookies/instagram.txt`, `chmod 600`. 3. Reference the **path** in config; never copy it into the repository or artifacts. ```yaml sources: reels: cookies_from_browser: firefox # preferred cookies_file: /home/hardik/.hermes/cookies/instagram.txt # fallback ```",
+      "language": null
+    },
+    {
+      "start": 100.0,
+      "end": 110.0,
+      "text": "[docs/operations/cookies.md] ## Expiry and failure behaviour - Auth failure is detected as `empty media response` / `login required`, **not** as a network error. - On detection the source is marked `quarantined` with reason `auth_expired`; the daemon does not retry it (retrying burns quota and can trip rate limits). - Quarantine is visible in `status.json` and in the daily run report.",
+      "language": null
+    },
+    {
+      "start": 110.0,
+      "end": 120.0,
+      "text": "[docs/operations/cookies.md] ## Security notes - `~/.hermes` is `700`, `.env` is `600` (verified 2026-11-02). - Cookies grant account access: treat `cookies.txt` as a password. Never commit, never include in `derived/`, never log the value (log only \"cookies loaded: N\"). - `--cookies-from-browser` copies the cookie DB to a temp file; it must be cleaned up by the tool. Do not point `--cookies` at the live browser database.",
+      "language": null
+    },
+    {
+      "start": 120.0,
+      "end": 130.0,
+      "text": "[docs/operations/operations.md] ## Runtime principles - Prefer local/open-source tools where practical. - Keep configuration outside code. - Persist task state. - Preserve logs and evidence. - Make failures recoverable.",
+      "language": null
+    },
+    {
+      "start": 130.0,
+      "end": 140.0,
+      "text": "[docs/operations/operations.md] ## Operational status The status agent should report the current phase, completed work, blockers, risks and next task.",
+      "language": null
+    },
+    {
+      "start": 140.0,
+      "end": 150.0,
+      "text": "[docs/director/director-section.md] # Director's Section \u2014 Knowledge Acquisition Studio",
+      "language": null
+    },
+    {
+      "start": 150.0,
+      "end": 160.0,
+      "text": "[docs/director/director-section.md] ## Intent Ingest tutorials, transcripts and learning sources, extract actionable knowledge, verify it, and apply it to projects.",
+      "language": null
+    },
+    {
+      "start": 160.0,
+      "end": 170.0,
+      "text": "[docs/director/director-section.md] ## Non-negotiables - Follow the approved project requirements. - Preserve source/provenance where applicable. - Do not silently invent missing inputs. - Do not mark work complete without verification. - Prefer free/open-source/local solutions where practical.",
+      "language": null
+    },
+    {
+      "start": 170.0,
+      "end": 180.0,
+      "text": "[docs/director/director-section.md] ## Continuity rules - Maintain consistent project state. - Do not contradict approved decisions without recording a new decision. - Preserve naming and artifact contracts.",
+      "language": null
+    },
+    {
+      "start": 180.0,
+      "end": 190.0,
+      "text": "[docs/director/director-section.md] ## Quality bar The output must be usable, testable, reproducible and clearly documented.",
+      "language": null
+    },
+    {
+      "start": 190.0,
+      "end": 200.0,
+      "text": "[docs/director/director-section.md] ## Prohibited deviations - Skipping QA to claim completion. - Hiding failed tasks. - Changing core requirements without a recorded decision. - Replacing evidence with assumptions.",
+      "language": null
+    },
+    {
+      "start": 200.0,
+      "end": 210.0,
+      "text": "[docs/director/director-section.md] ## Approval criteria A release is approved only when all required acceptance tests pass and status is updated.",
+      "language": null
+    },
+    {
+      "start": 210.0,
+      "end": 220.0,
+      "text": "[docs/director/director-section.md] ## Phase gates (v2.0) Phase transitions are exit tests, not opinions (`docs/testing/acceptance-criteria.md` \u00a74): | Gate | Exit condition | |---|---| | 0 \u2192 1 | Requirements v2.0 and acceptance criteria exist; blocking open questions answered or waived. | | 1 \u2192 2 | Manifest, config and status layers implemented; AC-01, AC-14, AC-19 pass. | | 2 \u2192 3 | Ingest, transcript and notes pipeline; AC-03\u2026AC-06, AC-18 pass. | | 3 \u2192 4 | Knowledge, procedures, source map, retry, idempotency; AC-07\u2026AC-13, AC-15\u2026AC-17 pass. | | 4 \u2192 5 | QA report, application, derived content, Skill packaging; AC-20\u2026AC-23 pass. ...",
+      "language": null
+    },
+    {
+      "start": 220.0,
+      "end": 230.0,
+      "text": "[docs/director/director-section.md] ## Assumption policy (v2.0) When an input is missing, the agent must do exactly one of: 1. Ask the Director and record the answer in `docs/requirements/open-questions.md`, or 2. Apply the documented default **only if** the Director explicitly waives the question, and record the waiver. An unrecorded assumption is a defect, not a shortcut.",
+      "language": null
+    },
+    {
+      "start": 230.0,
+      "end": 240.0,
+      "text": "[docs/director/director-section.md] ## Freeze policy (v2.0) Requirements are frozen at v2.0. Any behavioural change requires an ADR in `docs/decisions/`, a version bump in `docs/requirements/requirements.md`, and a matching `skills/knowledge-acquisition-studio/VERSION`.",
+      "language": null
+    },
+    {
+      "start": 240.0,
+      "end": 250.0,
+      "text": "[docs/director/director-section.md] ## Sign-off Phase 0 is signed off when the Director resolves or waives OQ-1, OQ-2, OQ-3, OQ-4 and OQ-7.",
+      "language": null
+    },
+    {
+      "start": 250.0,
+      "end": 260.0,
+      "text": "[docs/status/status.md] # Project Status",
+      "language": null
+    },
+    {
+      "start": 260.0,
+      "end": 270.0,
+      "text": "[docs/status/status.md] ## Current phase Phase 5 \u2014 QA, derived content, application report, vault projection, daemon \u2014 **implemented, all Must criteria pass**",
+      "language": null
+    },
+    {
+      "start": 270.0,
+      "end": 280.0,
+      "text": "[docs/status/status.md] ## Completed - Phase 0 frozen: requirements v2.1 (22 FRs), acceptance criteria AC-01\u2026AC-25, ADR-004/005/006. - Phase 1: manifest, config, status, CLI (38 tests). - Phase 2: ingest, transcript, notes (62 tests). - Phase 3: knowledge units, procedures, source map, verification gate, retry, offline guards (73 tests). - Phase 4: vault projection with frontmatter, `[[k-\u2026]]` links, content hashes, hand-edit detection; `kas vault` command; `kas daemon` (foreground watcher + systemd --user unit writer). - Phase 5: derived content, application report, QA report; `kas qa` command; `skills/knowledge-acqu...",
+      "language": null
+    },
+    {
+      "start": 280.0,
+      "end": 290.0,
+      "text": "[docs/status/status.md] ## Evidence - `pytest -q` \u2192 73 passed (host, 2026-11-03). - QA report `projects/live-youtube/reports/qa-report.md`: **Overall result: pass** (AC-01\u2026AC-25 all pass). - Vault projection: 7 notes, hand-edit of one note detected and not overwritten (exit 1). - Daemon unit written to `~/.config/systemd/user/kas-daemon.service`.",
+      "language": null
+    },
+    {
+      "start": 290.0,
+      "end": 300.0,
+      "text": "[docs/status/status.md] ## Decisions - ADR-004, ADR-005, ADR-006 (see docs/decisions/). - Obsidian is the delivery surface; no web frontend (ADR-006). - No local model fallback; provider exhaustion fails loudly.",
+      "language": null
+    },
+    {
+      "start": 300.0,
+      "end": 310.0,
+      "text": "[docs/status/status.md] ## Risks / issues - OQ-5, OQ-6, OQ-8 remain open with documented defaults. - LLM7 audio returns 402 on this account; Groq is the validated STT path. - Firefox must hold the Instagram session for Reels. - `/home` at ~79% used.",
+      "language": null
+    },
+    {
+      "start": 310.0,
+      "end": 320.0,
+      "text": "[docs/status/status.md] ## Remaining work - None for the Must criteria. Optional: apply the systemd daemon, run on additional sources, tune OQ-5/6/8.",
+      "language": null
+    },
+    {
+      "start": 320.0,
+      "end": 330.0,
+      "text": "[docs/status/status.md] ## Next executable task None \u2014 project complete for AC-01\u2026AC-25. Optional: `systemctl --user daemon-reload && systemctl --user enable --now kas-daemon`.",
+      "language": null
+    },
+    {
+      "start": 330.0,
+      "end": 340.0,
+      "text": "[docs/status/status.md] ## Last updated 2026-11-03",
+      "language": null
+    },
+    {
+      "start": 340.0,
+      "end": 350.0,
+      "text": "[docs/testing/acceptance-criteria.md] # Acceptance Criteria \u2014 Knowledge Acquisition Studio - **Version:** 1.0 (Phase 0 freeze) - **Frozen on:** 2026-11-02 - **Applies to:** requirements v2.1 - **Gate rule:** a criterion is *passed* only when the stated evidence exists and is reproducible.",
+      "language": null
+    },
+    {
+      "start": 350.0,
+      "end": 360.0,
+      "text": "[docs/testing/acceptance-criteria.md] ## 1. Conventions - `PASS` requires a command, fixture or artifact path that a second person can re-run. - Every criterion is verified by the **verification agent** and recorded as `evidence/<task_id>.json`. - Evidence record shape: ```json { \"task_id\": \"t-0007\", \"criteria\": [\"AC-03\"], \"result\": \"pass\", \"artifacts\": [\"sources/src-1a2b3c4d5e6f/source.json\"], \"command\": \"pytest tests/test_ingest.py -k checksum\", \"run_at\": \"2026-11-02T18:40:00Z\", \"notes\": null } ``` - Manual review is allowed only for AC marked `review`; everything else must be automated.",
+      "language": null
+    },
+    {
+      "start": 360.0,
+      "end": 370.0,
+      "text": "[docs/testing/acceptance-criteria.md] ### AC-01 \u2014 Manifest validation (FR-01) \u00b7 automated Given a manifest missing a required field or containing an unknown field When the orchestrator starts Then it exits non-zero, prints the field path and the expected type, and writes no files under `sources/`, `notes/`, `knowledge/` or `evidence/`.",
+      "language": null
+    },
+    {
+      "start": 370.0,
+      "end": 380.0,
+      "text": "[docs/testing/acceptance-criteria.md] ### AC-02 \u2014 Unsupported source kind (FR-02) \u00b7 automated Given a manifest declaring `kind: epub` and no registered epub adapter When ingestion runs Then the task is marked `failed`, the reason names the unsupported kind, and remaining sources still ingest.",
+      "language": null
+    },
+    {
+      "start": 380.0,
+      "end": 390.0,
+      "text": "[docs/testing/acceptance-criteria.md] ### AC-03 \u2014 Source Record completeness (FR-02) \u00b7 automated Given a successfully ingested source When `sources/<source_id>/source.json` is read Then all fields in requirements \u00a74 are present, `checksum` equals the sha256 recomputed from `raw/`, and `source_id` equals `src-<checksum[0:12]>`.",
+      "language": null
+    },
+    {
+      "start": 390.0,
+      "end": 400.0,
+      "text": "[docs/testing/acceptance-criteria.md] ### AC-04 \u2014 Raw immutability (FR-03) \u00b7 automated Given a source already ingested When ingestion runs again with identical bytes Then the raw file hash and mtime are unchanged and no duplicate record is created. When ingestion runs with different bytes under the same `source_id` Then it fails with a checksum-conflict error and does not overwrite `raw/`.",
+      "language": null
+    },
+    {
+      "start": 400.0,
+      "end": 410.0,
+      "text": "[docs/testing/acceptance-criteria.md] ### AC-05 \u2014 Transcript normalization (FR-04) \u00b7 automated Given a completed transcription When `transcript.json` is read Then segments are ordered, `start < end`, `start[n] >= end[n-1]` (no overlap), no segment exceeds 30 s, and every segment has non-empty `text`.",
+      "language": null
+    },
+    {
+      "start": 410.0,
+      "end": 420.0,
+      "text": "[docs/testing/acceptance-criteria.md] ### AC-06 \u2014 Note provenance (FR-05) \u00b7 automated Given generated notes for a source When each note bullet is checked Then it carries `source_id` and a timestamp range that exists within a transcript segment of that source; any bullet failing this fails the criterion.",
+      "language": null
+    },
+    {
+      "start": 420.0,
+      "end": 430.0,
+      "text": "[docs/testing/acceptance-criteria.md] ### AC-07 \u2014 Knowledge unit integrity (FR-06) \u00b7 automated Given `knowledge/units.json` When validated Then every unit has `id`, `statement`, `source_refs` (\u22651), `confidence` \u2208 {`low`,`medium`,`high`}, ids are unique and equal to `k-<sha256(statement)[0:12]>`.",
+      "language": null
+    },
+    {
+      "start": 430.0,
+      "end": 440.0,
+      "text": "[docs/testing/acceptance-criteria.md] ### AC-08 \u2014 Procedural executability (FR-07) \u00b7 automated Given `knowledge/procedures/*.md` When parsed Then each procedure has an ordered list of numbered steps, every step references \u22651 knowledge unit id that exists, and no step is empty or a restatement of a section heading.",
+      "language": null
+    },
+    {
+      "start": 440.0,
+      "end": 450.0,
+      "text": "[docs/testing/acceptance-criteria.md] ### AC-09 \u2014 Source map coverage (FR-08) \u00b7 automated Given N ingested sources When `knowledge/source-map.json` is read Then it contains exactly N entries, each `source_id` appears once, and no entry references a missing Source Record.",
+      "language": null
+    },
+    {
+      "start": 450.0,
+      "end": 460.0,
+      "text": "[docs/testing/acceptance-criteria.md] ### AC-10 \u2014 Verification gate (FR-09) \u00b7 automated Given a task whose evidence artifact is absent or has `result: \"fail\"` When completion is attempted Then the task stays `in_progress`/`failed`, the orchestrator reports a gate violation, and `status.json` is not advanced.",
+      "language": null
+    },
+    {
+      "start": 460.0,
+      "end": 470.0,
+      "text": "[docs/testing/acceptance-criteria.md] ### AC-11 \u2014 Bounded retry and escalation (FR-10) \u00b7 automated Given an agent that raises on every attempt and `max_retries: 3` When the task runs Then exactly 4 attempts are recorded (1 + 3), each with diagnostics, the task ends `failed` with `escalated: true`, and no further tasks from that branch run.",
+      "language": null
+    },
+    {
+      "start": 470.0,
+      "end": 480.0,
+      "text": "[docs/testing/acceptance-criteria.md] ### AC-12 \u2014 Idempotent re-run (FR-11) \u00b7 automated Given a completed task When the same task is executed again with unchanged inputs Then artifact count is unchanged, file contents are byte-identical except `generated_at`, and `status.json` records no duplicate completions.",
+      "language": null
+    },
+    {
+      "start": 480.0,
+      "end": 490.0,
+      "text": "[docs/testing/acceptance-criteria.md] ### AC-13 \u2014 Deterministic ids (FR-11) \u00b7 automated Given two independent runs over the same source set on different dates When unit and source ids are compared Then the id sets are identical.",
+      "language": null
+    },
+    {
+      "start": 490.0,
+      "end": 500.0,
+      "text": "[docs/testing/acceptance-criteria.md] ### AC-14 \u2014 Status contract (FR-12) \u00b7 automated Given any completed or failed task When `status.json` and `docs/status/status.md` are read Then both contain current phase, completed items, evidence references, risks, remaining work, next executable task and an ISO-8601 timestamp; `status.md` matches `status.json`.",
+      "language": null
+    },
+    {
+      "start": 500.0,
+      "end": 510.0,
+      "text": "[docs/testing/acceptance-criteria.md] ### AC-15 \u2014 Provenance resolution (FR-13) \u00b7 automated Given every artifact under `notes/`, `knowledge/`, `derived/` and `application/` When all `source_ids` are resolved Then every id maps to an existing `sources/<source_id>/source.json`; zero dangling references.",
+      "language": null
+    },
+    {
+      "start": 510.0,
+      "end": 520.0,
+      "text": "[docs/testing/acceptance-criteria.md] ### AC-16 \u2014 Offline operation (FR-14) \u00b7 automated Given `network.enabled: false` and only local file sources When the full pipeline runs with the network interface disabled Then it completes and all Must criteria pass.",
+      "language": null
+    },
+    {
+      "start": 520.0,
+      "end": 530.0,
+      "text": "[docs/testing/acceptance-criteria.md] ### AC-17 \u2014 Network opt-in (FR-14) \u00b7 automated Given `network.enabled: false` When any adapter or agent attempts an outbound connection Then the attempt is blocked, logged with the target, and the run fails loudly rather than degrading silently.",
+      "language": null
+    },
+    {
+      "start": 530.0,
+      "end": 540.0,
+      "text": "[docs/testing/acceptance-criteria.md] ### AC-18 \u2014 Path confinement (FR-15) \u00b7 automated Given a manifest value containing `../` or an absolute path outside the project root When processed Then it is rejected before any write, and no file outside the root is created or modified.",
+      "language": null
+    },
+    {
+      "start": 540.0,
+      "end": 550.0,
+      "text": "[docs/testing/acceptance-criteria.md] ### AC-19 \u2014 Unknown key rejection (FR-16) \u00b7 automated Given a manifest or config with an unknown key When loaded Then loading fails with the unknown key path; it does not warn-and-continue.",
+      "language": null
+    },
+    {
+      "start": 550.0,
+      "end": 560.0,
+      "text": "[docs/testing/acceptance-criteria.md] ### AC-20 \u2014 Application report (FR-17) \u00b7 review Given a completed knowledge base When knowledge is applied to a downstream project Then `application/report.md` names the target project, lists the applied units with their ids, and states the observable change made.",
+      "language": null
+    },
+    {
+      "start": 560.0,
+      "end": 570.0,
+      "text": "[docs/testing/acceptance-criteria.md] ### AC-21 \u2014 Original content separation (FR-18) \u00b7 review Given `derived/` content When reviewed Then quoted source material is clearly marked with source and timestamp, and original writing is distinguishable from quotes.",
+      "language": null
+    },
+    {
+      "start": 570.0,
+      "end": 580.0,
+      "text": "[docs/testing/test-plan.md] ## Required gates - Input validation - Agent contract validation - Artifact existence - Output schema validation - Error handling - Retry behavior - End-to-end execution - Reproducibility",
+      "language": null
+    },
+    {
+      "start": 580.0,
+      "end": 590.0,
+      "text": "[docs/testing/test-plan.md] ## Definition of done A task is complete only when its acceptance criteria have passed and evidence is recorded.",
+      "language": null
+    },
+    {
+      "start": 590.0,
+      "end": 600.0,
+      "text": "[docs/testing/test-plan.md] ## Acceptance criteria Behavioural gates are defined in `acceptance-criteria.md` (AC-01\u2026AC-23), with Given/When/Then form, evidence shape and the phase-gate table. This plan covers the *mechanism*; the criteria cover the *assertions*.",
+      "language": null
+    },
+    {
+      "start": 600.0,
+      "end": 610.0,
+      "text": "[docs/implementation/phase3.md] # Phase 3 \u2014 Knowledge, procedures, source map, verification, retry, offline - **Status:** complete - **Date:** 2026-11-03 - **Exit criteria:** AC-07, AC-08, AC-09, AC-10, AC-11, AC-12, AC-13, AC-15, AC-16, AC-17 pass - **Tests:** 73 passed (`pytest -q`)",
+      "language": null
+    },
+    {
+      "start": 610.0,
+      "end": 620.0,
+      "text": "[docs/implementation/phase3.md] ## What exists now Added to `src/kas/`: - `knowledge.py` \u2014 `build_units`, `build_procedures_stage`, `build_source_map`, `validate_knowledge` (AC-07\u2026AC-09, AC-15). - `verify.py` \u2014 `check_evidence`, `gate`, `VerificationError` (AC-10). - `retry.py` \u2014 `run_with_retry`, `RetryResult`, `Attempt` (AC-11). - Offline guards in `http.py`, `adapters/video.py`, `extract.ChatClient`, `transcribe.transcribe_source` (AC-16, AC-17).",
+      "language": null
+    },
+    {
+      "start": 620.0,
+      "end": 630.0,
+      "text": "[docs/implementation/phase3.md] ## Commands Same as Phase 2; `kas build` now also writes: - `knowledge/units.json` \u2014 atomic knowledge units with content-addressed ids (`k-<sha256[0:12]>`). - `knowledge/procedures/*.md` \u2014 ordered, numbered procedures whose steps cite unit ids. - `knowledge/source-map.json` \u2014 one entry per ingested source. - `evidence/t-knowledge.json` \u2014 AC-07, AC-08, AC-09, AC-15.",
+      "language": null
+    },
+    {
+      "start": 630.0,
+      "end": 640.0,
+      "text": "[docs/implementation/phase3.md] ## Evidence (host, 2026-11-03) ```text $ .venv/bin/python -m pytest -q 73 passed in 0.10s $ .venv/bin/kas build --project projects/live-youtube ... phase 3 complete: Phase 3 \u2014 knowledge, procedures, source map, verification and retry exit=0 ``` Live project `projects/live-youtube` now contains 4 knowledge units, 1 procedure (4 steps) and a 1-entry source map; `validate_knowledge` returns `[]`.",
+      "language": null
+    },
+    {
+      "start": 640.0,
+      "end": 650.0,
+      "text": "[docs/implementation/phase3.md] ## Provider findings (continued) - Unorouter `gemini-2.5-flash` requires provider consent; failover model switched to `mistral-small-3.2:free`, which answers without consent. - DeepSeek returns `claim`/`source_ref` (string) shapes for units and a flat `procedure` list for procedures; `extract._coerce_*` now accepts these, plus the documented shapes.",
+      "language": null
+    },
+    {
+      "start": 650.0,
+      "end": 660.0,
+      "text": "[docs/implementation/phase3.md] ## Deliberate limits - **No vault projection or hand-edit detection** (AC-24, AC-25) \u2014 Phase 4. - **No daemon trigger** (ADR-006 D18) \u2014 Phase 4. - **No QA report, application report, derived content or Skill packaging** (AC-20\u2026AC-23) \u2014 Phase 5. - **No local model fallback** (ADR-006 D20).",
+      "language": null
+    },
+    {
+      "start": 660.0,
+      "end": 670.0,
+      "text": "[docs/implementation/phase3.md] ## Next Phase 4: vault projection (`vault.py`) with frontmatter and hand-edit detection, daemon trigger, publishable content.",
+      "language": null
+    },
+    {
+      "start": 670.0,
+      "end": 680.0,
+      "text": "[docs/implementation/implementation-plan.md] # Implementation Plan",
+      "language": null
+    },
+    {
+      "start": 680.0,
+      "end": 690.0,
+      "text": "[docs/implementation/implementation-plan.md] ## Phase 0 \u2014 Freeze - Requirements - Director's Section - Acceptance criteria",
+      "language": null
+    },
+    {
+      "start": 690.0,
+      "end": 700.0,
+      "text": "[docs/implementation/implementation-plan.md] ## Phase 1 \u2014 Foundation - Project manifest - Configuration - Agent contracts - Logging/status format",
+      "language": null
+    },
+    {
+      "start": 700.0,
+      "end": 710.0,
+      "text": "[docs/implementation/implementation-plan.md] ## Phase 2 \u2014 Core pipeline - Implement specialist agents - Implement orchestration - Implement artifact storage",
+      "language": null
+    },
+    {
+      "start": 710.0,
+      "end": 720.0,
+      "text": "[docs/implementation/implementation-plan.md] ## Phase 3 \u2014 Verification - Unit tests - Integration tests - End-to-end test fixture - Failure/retry tests",
+      "language": null
+    },
+    {
+      "start": 720.0,
+      "end": 730.0,
+      "text": "[docs/implementation/implementation-plan.md] ## Phase 4 \u2014 Release - Documentation - Example - QA report - Versioned Skill",
+      "language": null
+    },
+    {
+      "start": 730.0,
+      "end": 740.0,
+      "text": "[docs/implementation/implementation-plan.md] ## Phase 5 \u2014 Automation - Automatically select next unblocked task - Update status after every task - Resume from persisted state",
+      "language": null
+    },
+    {
+      "start": 740.0,
+      "end": 750.0,
+      "text": "[docs/implementation/phase2.md] # Phase 2 \u2014 Ingest, transcript and notes (implemented) - **Status:** complete - **Date:** 2026-11-03 - **Exit criteria:** AC-02, AC-03, AC-04, AC-05, AC-06, AC-18 pass - **Tests:** 62 passed (`pytest -q`)",
+      "language": null
+    },
+    {
+      "start": 750.0,
+      "end": 760.0,
+      "text": "[docs/implementation/phase2.md] ## What exists now",
+      "language": null
+    },
+    {
+      "start": 760.0,
+      "end": 770.0,
+      "text": "[docs/implementation/phase2.md] ```text knowledge-acquisition-studio/ \u251c\u2500\u2500 src/kas/ \u2502 \u251c\u2500\u2500 ids.py # content-addressed ids: src-<sha256[0:12]>, k-<sha256[0:12]> \u2502 \u251c\u2500\u2500 models.py # SourceRecord, Segment, Transcript, KnowledgeUnit, Evidence \u2502 \u251c\u2500\u2500 paths.py # AC-18 path confinement \u2502 \u251c\u2500\u2500 adapters/ \u2502 \u2502 \u251c\u2500\u2500 base.py # SourceAdapter protocol + AdapterError (auth_expired, \u2026) \u2502 \u2502 \u2514\u2500\u2500 video.py # yt-dlp: subtitles first, audio fallback, VTT parser \u2502 \u251c\u2500\u2500 ingest.py # immutable raw, checksum conflict, unsupported kind \u2502 \u251c\u2500\u2500 http.py # stdlib JSON/multipart, Cloudflare-safe User-Agent \u2502 \u251c\u2500\u2500 transcribe.py # Voxtral (LLM7) \u2192 Groq Whisper fallback,...",
+      "language": null
+    },
+    {
+      "start": 770.0,
+      "end": 780.0,
+      "text": "[docs/implementation/phase2.md] ## Commands ```bash .venv/bin/kas validate --project projects/<id> .venv/bin/kas ingest --project projects/<id> # raw bytes + Source Records only .venv/bin/kas build --project projects/<id> # ingest + transcribe + notes .venv/bin/kas run --project projects/<id> # alias for build .venv/bin/kas status --project projects/<id> ``` Exit codes: `0` ok, `1` pipeline completed with a failed/quarantined source, `2` validation error, `3` environment/IO error.",
+      "language": null
+    },
+    {
+      "start": 780.0,
+      "end": 790.0,
+      "text": "[docs/implementation/phase2.md] ## Design decisions realised",
+      "language": null
+    },
+    {
+      "start": 790.0,
+      "end": 800.0,
+      "text": "[docs/implementation/phase2.md] | Decision | Where | |---|---| | Content-addressed source ids (D3) | `ids.source_id_for` (sha256 of raw bytes) | | Immutable raw; checksum conflict on change (FR-03, AC-04) | `ingest.ingest` (`IntegrityError` \u2192 `checksum_conflict`) | | Unsupported kind fails that source only (AC-02) | `ingest.ingest` | | Auth failure \u2192 `quarantined` (ADR-006 D19) | `adapters.video.VideoAdapter._raise_for_stderr` | | Subtitles first, audio fallback (cost) | `VideoAdapter.fetch` | | Transcript invariants (AC-05) | `transcribe.normalize_segments`, `validate_segments` | | Note range must exist in a transcript segm...",
+      "language": null
+    },
+    {
+      "start": 800.0,
+      "end": 810.0,
+      "text": "[docs/implementation/phase2.md] ## Evidence (run on the host, 2026-11-03)",
+      "language": null
+    },
+    {
+      "start": 810.0,
+      "end": 820.0,
+      "text": "[docs/implementation/phase2.md] ```text $ .venv/bin/python -m pytest -q .............................................................. [100%] 62 passed",
+      "language": null
+    },
+    {
+      "start": 820.0,
+      "end": 830.0,
+      "text": "[docs/implementation/phase2.md] $ .venv/bin/kas build --project projects/live-youtube ingested: 1 source record(s) reused: 1 unchanged failed: 0 \u2713 src-8e18a126899c sources/src-8e18a126899c/raw/jNQXAC9IVRw.webm transcripts: 1 notes: 1 evidence: t-ingest.json, t-transcribe.json, t-notes.json",
+      "language": null
+    },
+    {
+      "start": 830.0,
+      "end": 840.0,
+      "text": "[docs/implementation/phase2.md] phase 2 complete: Phase 2 \u2014 ingest, transcript and notes implemented exit=0 ```",
+      "language": null
+    },
+    {
+      "start": 840.0,
+      "end": 850.0,
+      "text": "[docs/implementation/phase2.md] Live source: `https://www.youtube.com/watch?v=jNQXAC9IVRw` (\"Me at the zoo\", 19 s). Resulting notes (`projects/live-youtube/notes/src-8e18a126899c.md`):",
+      "language": null
+    },
+    {
+      "start": 850.0,
+      "end": 860.0,
+      "text": "[docs/implementation/phase2.md] ``` - [src-8e18a126899c] 00:00\u201300:04 \u2014 The speaker is in front of the elephants at the zoo. - [src-8e18a126899c] 00:04\u201300:13 \u2014 The elephants have really, really, really long trunks, which is highlighted as a cool feature. - [src-8e18a126899c] 00:13\u201300:15 \u2014 The speaker reiterates that the long trunks are cool. - [src-8e18a126899c] 00:17\u201300:19 \u2014 The speaker concludes that this is pretty much all there is to say. ```",
+      "language": null
+    },
+    {
+      "start": 860.0,
+      "end": 870.0,
+      "text": "[docs/implementation/phase2.md] Re-running the build left the raw file mtime and `source.json` byte-identical (`reused: 1 unchanged`).",
+      "language": null
+    },
+    {
+      "start": 870.0,
+      "end": 880.0,
+      "text": "[docs/implementation/phase2.md] ## Provider findings (recorded, not silently worked around)",
+      "language": null
+    },
+    {
+      "start": 880.0,
+      "end": 890.0,
+      "text": "[docs/implementation/phase2.md] - LLM7 audio (`Voxtral-Small-24B-2507`) calls `/audio/transcriptions` but returns `402 insufficient_balance` on this account. The chain falls through to Groq Whisper, which is validated end to end. - LLM7 chat (`DeepSeek-V4-Flash-0731`) is the validated extraction model. Its note JSON used an alternate key shape (`timestamp`/`note`); `extract._coerce_note` now accepts both, so a chatty model cannot break the pipeline. - Groq's Cloudflare layer rejects the default `Python-urllib` agent with HTTP 403 / error 1010. `http.USER_AGENT` identifies `kas/0.1` and is sent on every request. - Unorouter's...",
+      "language": null
+    },
+    {
+      "start": 890.0,
+      "end": 900.0,
+      "text": "[docs/implementation/phase2.md] ## Deliberate limits - **No knowledge units, procedures or source map.** Those are Phase 3 (AC-07, AC-08, AC-09). - **No retry/escalation or idempotency harness** beyond raw immutability (AC-10\u2026AC-13) \u2014 Phase 3. - **No vault projection or hand-edit detection** (AC-24, AC-25) \u2014 Phase 4/5. - **No daemon trigger** (ADR-006 D18) \u2014 Phase 4. - **No local model fallback.** Provider exhaustion fails loudly with the provider's error body (ADR-006 D20).",
+      "language": null
+    },
+    {
+      "start": 900.0,
+      "end": 910.0,
+      "text": "[docs/implementation/phase2.md] ## Next Phase 3, in order: 1. `extract_units` \u2192 `knowledge/units.json` with content-addressed ids (AC-07, AC-13). 2. `build_procedures` \u2192 `knowledge/procedures/*.md` (AC-08). 3. `source-map.json` covering every ingested source (AC-09). 4. Verification gate + bounded retry/escalation (AC-10, AC-11) and idempotent re-run harness (AC-12). 5. Provenance sweep across `notes/`, `knowledge/`, `derived/`, `application/` (AC-15). 6. Offline mode enforcement (`network.enabled: false`) (AC-16, AC-17).",
+      "language": null
+    },
+    {
+      "start": 910.0,
+      "end": 920.0,
+      "text": "[docs/implementation/phase1.md] # Phase 1 \u2014 Foundation (implemented) - **Status:** complete - **Date:** 2026-11-02 - **Exit criteria:** AC-01, AC-14, AC-19 pass",
+      "language": null
+    },
+    {
+      "start": 920.0,
+      "end": 930.0,
+      "text": "[docs/implementation/phase1.md] ## What exists now ```text knowledge-acquisition-studio/ \u251c\u2500\u2500 pyproject.toml # package `kas`, console script `kas` \u251c\u2500\u2500 config/default.yaml # strict schema, providers pinned (ADR-005) \u251c\u2500\u2500 examples/example-manifest.yaml \u251c\u2500\u2500 src/kas/ \u2502 \u251c\u2500\u2500 errors.py # FieldError / ValidationError \u2014 dotted paths \u2502 \u251c\u2500\u2500 manifest.py # manifest schema + loader (AC-01, AC-19) \u2502 \u251c\u2500\u2500 config.py # config schema, defaults, secret-name enforcement (AC-19) \u2502 \u251c\u2500\u2500 status.py # status.json + docs/status/status.md (AC-14) \u2502 \u251c\u2500\u2500 cli.py # validate | status | run | init \u2502 \u2514\u2500\u2500 __main__.py \u2514\u2500\u2500 tests/ # 38 tests, pytest ```",
+      "language": null
+    },
+    {
+      "start": 930.0,
+      "end": 940.0,
+      "text": "[docs/implementation/phase1.md] ## Commands ```bash .venv/bin/kas validate --project projects/<id> # schema check, exit 2 on problems .venv/bin/kas status --project projects/<id> # print + verify md/json agreement .venv/bin/kas status --project projects/<id> --write .venv/bin/kas run --project projects/<id> # validate, prepare, report plan .venv/bin/kas run --project projects/<id> --dry-run .venv/bin/kas init --project <dir> --name <slug> ``` Exit codes: `0` ok, `2` validation error, `3` environment/IO error.",
+      "language": null
+    },
+    {
+      "start": 940.0,
+      "end": 950.0,
+      "text": "[docs/implementation/phase1.md] ## Design decisions realised | Decision | Where | |---|---| | Unknown keys are errors (D6) | `manifest._validate_source`, `config._walk` | | Secrets by env-var name only (D15) | `config._is_secret_like`, `ENV_NAME` | | Verification model \u2260 extraction model (D11) | `config.load_config` distinct-model check | | Content-addressed ids (D3) | reserved for Phase 2 (`src-<sha256[0:12]>`, `k-<sha256[0:12]>`) | | Status is dual-form and must agree (D5, AC-14) | `status.StatusRecord`, `is_consistent` | | No writes on invalid input (AC-01) | `cli.cmd_run` validates before `_prepare` |",
+      "language": null
+    },
+    {
+      "start": 950.0,
+      "end": 960.0,
+      "text": "[docs/implementation/phase1.md] ## Evidence (run on the host, 2026-11-02)",
+      "language": null
+    },
+    {
+      "start": 960.0,
+      "end": 970.0,
+      "text": "[docs/implementation/phase1.md] ```text $ .venv/bin/python -m pytest -q ...................................... [100%] 38 passed",
+      "language": null
+    },
+    {
+      "start": 970.0,
+      "end": 980.0,
+      "text": "[docs/implementation/phase1.md] $ .venv/bin/kas validate --project /tmp --manifest /tmp/bad-manifest.yaml error: invalid manifest: 2 problem(s) - goal: expected string, got missing - sources: expected list, got missing exit=2 # and no artifact directories were created",
+      "language": null
+    },
+    {
+      "start": 980.0,
+      "end": 990.0,
+      "text": "[docs/implementation/phase1.md] $ .venv/bin/kas validate --project projects/demo-reels --config /tmp/bad-config.yaml error: invalid config: 1 problem(s) - orchestrator.max_retry: expected a known configuration key, got unknown key 'max_retry' exit=2",
+      "language": null
+    },
+    {
+      "start": 990.0,
+      "end": 1000.0,
+      "text": "[docs/implementation/phase1.md] $ .venv/bin/kas run --project projects/demo-reels project: reels-notes-demo sources: 2 extract: llm7/DeepSeek-V4-Flash-0731 verify: llm7/GLM-5.3-Flash transcribe: llm7/Voxtral-Small-24B-2507 exit=0 # status.json + docs/status/status.md written, consistent",
+      "language": null
+    },
+    {
+      "start": 1000.0,
+      "end": 1010.0,
+      "text": "[docs/implementation/phase1.md] $ .venv/bin/kas status --project projects/demo-reels # exit 0 = files agree ```",
+      "language": null
+    },
+    {
+      "start": 1010.0,
+      "end": 1020.0,
+      "text": "[docs/implementation/phase1.md] ## Deliberate limits - **No pipeline.** `run` validates, prepares directories and writes status. It does not ingest, transcribe or extract. Claiming otherwise would violate the verification gate. - **No network calls.** No provider is contacted in Phase 1. Model ids are configuration, not proof: Phase 2 must validate them against `/v1/models` (ADR-005 D14). - **No id hashing yet.** Content-addressing lands with ingestion, where it can be tested against real bytes. - **Credentials are not loaded.** `validate` only warns about missing environment variables by name; it never reads or prints a val...",
+      "language": null
+    },
+    {
+      "start": 1020.0,
+      "end": 1030.0,
+      "text": "[docs/implementation/phase1.md] ## Next Phase 2, in order: 1. `youtube` adapter: `yt-dlp` \u2192 `sources/<id>/raw/` + Source Record (AC-03, AC-04). 2. Transcript: Voxtral via LLM7, Groq Whisper fallback, normalized segments (AC-05). 3. Notes with timestamp provenance (AC-06). 4. `reels` adapter behind cookies (quarantine on `auth_expired`).",
+      "language": null
+    },
+    {
+      "start": 1030.0,
+      "end": 1040.0,
+      "text": "[docs/roadmap/roadmap.md] # Roadmap 1. Requirements freeze 2. Architecture freeze 3. Agent contracts 4. Core implementation 5. Tests 6. End-to-end pipeline 7. QA automation 8. Versioned Skill 9. Autonomous task loop 10. Production hardening",
+      "language": null
+    },
+    {
+      "start": 1040.0,
+      "end": 1050.0,
+      "text": "[docs/requirements/requirements.md] # Requirements \u2014 Knowledge Acquisition Studio - **Version:** 2.1 (Phase 0 freeze; ADR-006 applied) - **Status:** Frozen \u2014 conditional on the blocking questions in `docs/requirements/open-questions.md` - **Frozen on:** 2026-11-02 (rev 2.1: 2026-11-02) - **Owner:** Director - **Supersedes:** v1.0 (2026-09-06)",
+      "language": null
+    },
+    {
+      "start": 1050.0,
+      "end": 1060.0,
+      "text": "[docs/requirements/requirements.md] ## 1. Purpose Ingest tutorials, transcripts and learning sources, extract actionable knowledge, verify it, and apply it to projects. The system converts untrusted, unstructured learning material into **traceable, verifiable, reusable knowledge artifacts**.",
+      "language": null
+    },
+    {
+      "start": 1060.0,
+      "end": 1070.0,
+      "text": "[docs/requirements/requirements.md] ### 2.1 In scope - Ingest a declared set of sources described by a project manifest. - Preserve the original bytes and full provenance of every source. - Produce timestamped notes, a knowledge base, and step-by-step procedures. - Verify every produced artifact against a written acceptance criterion. - Apply extracted knowledge to a downstream project and record the application. - Persist status, decisions and evidence for every task. - Package the stable workflow as a versioned Skill.",
+      "language": null
+    },
+    {
+      "start": 1070.0,
+      "end": 1080.0,
+      "text": "[docs/requirements/requirements.md] ### 2.2 Out of scope (v0.x) - Publishing or redistributing ingested material. - Copyright circumvention, DRM removal, or scraping behind authentication without explicit consent recorded in the manifest. - Real-time / streaming ingestion. - Multi-user accounts, roles or hosted service. - Fine-tuning or training models on ingested content. - Automatic purchase or download of paid sources.",
+      "language": null
+    },
+    {
+      "start": 1080.0,
+      "end": 1090.0,
+      "text": "[docs/requirements/requirements.md] ## 3. Actors | Actor | Responsibility | |---|---| | Director (human) | Approves scope, resolves open questions, signs off releases | | Orchestrator | Decomposes goal into tasks, selects next unblocked task, enforces gates | | Ingestion adapters | Normalize one source origin into a Source Record | | Specialist agents | Transcribe, research, extract, compose, apply | | Verification agent | Executes acceptance criteria, emits evidence | | Status agent | Persists status, decisions, risks, next task |",
+      "language": null
+    },
+    {
+      "start": 1090.0,
+      "end": 1100.0,
+      "text": "[docs/requirements/requirements.md] ## 4. Source model",
+      "language": null
+    },
+    {
+      "start": 1100.0,
+      "end": 1110.0,
+      "text": "[docs/requirements/requirements.md] Every input is normalized into a **Source Record** regardless of origin. Support for an origin is provided by an *ingestion adapter*. Adapters are pluggable and **must not** alter the Source Record contract.",
+      "language": null
+    },
+    {
+      "start": 1110.0,
+      "end": 1120.0,
+      "text": "[docs/requirements/requirements.md] Required Source Record fields:",
+      "language": null
+    },
+    {
+      "start": 1120.0,
+      "end": 1130.0,
+      "text": "[docs/requirements/requirements.md] | Field | Type | Rule | |---|---|---| | `source_id` | string | stable, derived from checksum; `src-<sha256[0:12]>` | | `kind` | enum | `video`, `audio`, `pdf`, `epub`, `html`, `text`, `image` | | `origin` | string | original URI, path, or user-supplied identifier | | `title` | string | non-empty | | `author` | string \\| null | attribution if known | | `retrieved_at` | ISO-8601 | UTC | | `checksum` | string | sha256 of raw bytes | | `raw_path` | string | path under `sources/<source_id>/raw/` | | `license` | string \\| null | declared license/consent; `unknown` allowed but surfaced in QA | | `sta...",
+      "language": null
+    },
+    {
+      "start": 1130.0,
+      "end": 1140.0,
+      "text": "[docs/requirements/requirements.md] The concrete adapter set is **not** frozen \u2014 see OQ-1. FR-02 only requires that every source kind in a manifest has a declared adapter.",
+      "language": null
+    },
+    {
+      "start": 1140.0,
+      "end": 1150.0,
+      "text": "[docs/requirements/requirements.md] ## 5. Functional requirements",
+      "language": null
+    },
+    {
+      "start": 1150.0,
+      "end": 1160.0,
+      "text": "[docs/requirements/requirements.md] | ID | Requirement | Priority | Acceptance | |---|---|---|---| | FR-01 | Validate a project manifest before any work starts. Invalid manifests produce field-level errors and write no artifacts. | Must | AC-01 | | FR-02 | Ingest every source declared in the manifest via an adapter matching its kind. Unsupported kinds fail the task with a named reason. | Must | AC-02, AC-03 | | FR-03 | Preserve raw source bytes immutably; never overwrite differing bytes. | Must | AC-04 | | FR-04 | Produce a normalized transcript with monotonic, non-overlapping timestamped segments. | Must | AC-05 | | FR-05 | Pro...",
+      "language": null
+    },
+    {
+      "start": 1160.0,
+      "end": 1170.0,
+      "text": "[docs/requirements/requirements.md] ## 6. Artifact contract",
+      "language": null
+    },
+    {
+      "start": 1170.0,
+      "end": 1180.0,
+      "text": "[docs/requirements/requirements.md] ```text projects/<project_id>/ manifest.yaml # frozen input contract status.json # machine-readable status sources/ <source_id>/ source.json # Source Record raw/ # original bytes, immutable transcript.json # normalized segments notes/ <source_id>.md # timestamped notes knowledge/ units.json # atomic knowledge units procedures/*.md # step-by-step procedures source-map.json # source coverage derived/ # original educational content application/ report.md # how knowledge was applied evidence/ <task_id>.json # verification evidence reports/ qa-report.md ```",
+      "language": null
+    },
+    {
+      "start": 1180.0,
+      "end": 1190.0,
+      "text": "[docs/requirements/requirements.md] - `raw/` is immutable after ingest. A checksum mismatch is a hard error, never a silent overwrite. - Every derived artifact records `source_ids`, `generator`, `generated_at` and `schema_version`. - Knowledge unit ids are content-addressed: `k-<sha256[0:12]>` over normalized statement text. - No artifact may reference a `source_id` that has no Source Record. - Artifacts are inspectable plain text (JSON/Markdown); no opaque binaries in derived output.",
+      "language": null
+    },
+    {
+      "start": 1190.0,
+      "end": 1200.0,
+      "text": "[docs/requirements/requirements.md] ## 6.1 Delivery projection (ADR-006) Canonical output lives in the project directory (\u00a76). A projection step mirrors it into an Obsidian vault so the knowledge is readable and linkable: ```text ~/Obsidian/knowledge-vault/ Sources/ Notes/ Knowledge/ Procedures/ Content/ Attachments/ Templates/ ``` - Markdown is generated, never authored by hand as the source of truth. - Each note carries `source_id`, `source_uri`, `provider`, `model`, `generated_at`, `schema_version`, `content_hash`. - `Knowledge/` notes are cross-linked with `[[k-<id>]]` so the vault graph mirrors the knowledge graph. - Obsidi...",
+      "language": null
+    },
+    {
+      "start": 1200.0,
+      "end": 1210.0,
+      "text": "[docs/requirements/requirements.md] ## 7. Quality requirements",
+      "language": null
+    },
+    {
+      "start": 1210.0,
+      "end": 1220.0,
+      "text": "[docs/requirements/requirements.md] Retained from v1.0:",
+      "language": null
+    },
+    {
+      "start": 1220.0,
+      "end": 1230.0,
+      "text": "[docs/requirements/requirements.md] - No silent failures. - No unverified completion. - Configuration must be explicit. - Intermediate artifacts must be inspectable. - Manual approval is required only where defined by the Director's Section.",
+      "language": null
+    },
+    {
+      "start": 1230.0,
+      "end": 1240.0,
+      "text": "[docs/requirements/open-questions.md] # Open Questions Register \u2014 Knowledge Acquisition Studio - **Version:** 1.4 - **Opened:** 2026-11-02 (Phase 0 freeze) - **Rule:** the pipeline must never answer these by guessing. Unanswered **blocking** questions halt the phase that depends on them. Status values: `open`, `answered`, `waived`.",
+      "language": null
+    },
+    {
+      "start": 1240.0,
+      "end": 1250.0,
+      "text": "[docs/requirements/open-questions.md] ## 1. Resolution state",
+      "language": null
+    },
+    {
+      "start": 1250.0,
+      "end": 1260.0,
+      "text": "[docs/requirements/open-questions.md] | ID | Question | Blocks | Default if waived | Status | |---|---|---|---|---| | OQ-1 | Which source kinds must the first release ingest? | Phase 2 adapters | Video + local audio + PDF | **answered** | | OQ-2 | Where does knowledge output go? | Phase 2 artifact store | Plain folder | **answered** | | OQ-3 | Which model provider runs extraction/verification? | Phase 2 extraction | Local-only, pluggable | **answered** | | OQ-4 | What counts as \"actionable knowledge\" \u2014 the primary output? | Phase 2 knowledge schema | Notes + procedures | **answered** | | OQ-5 | Which languages must transcription a...",
+      "language": null
+    },
+    {
+      "start": 1260.0,
+      "end": 1270.0,
+      "text": "[docs/requirements/open-questions.md] **Open: 3** (OQ-5, OQ-6, OQ-8) \u2014 none block Phase 1 or 2 start. OQ-6 blocks Phase 4.",
+      "language": null
+    },
+    {
+      "start": 1270.0,
+      "end": 1280.0,
+      "text": "[docs/requirements/open-questions.md] ## 2. Resolution log",
+      "language": null
+    },
+    {
+      "start": 1280.0,
+      "end": 1290.0,
+      "text": "[docs/requirements/open-questions.md] ```text OQ-1 answered 2026-11-02 \u2014 Short-form video first: YouTube videos/Shorts and Instagram/Facebook Reels. Adapters: `youtube`, `reels`. PDFs, ebooks and web articles deferred. (answered by: Director)",
+      "language": null
+    },
+    {
+      "start": 1290.0,
+      "end": 1300.0,
+      "text": "[docs/requirements/open-questions.md] OQ-2 answered 2026-11-02 \u2014 Obsidian vault as the delivery surface, with JSON kept canonical in the project directory and Markdown projected into the vault. Vault: ~/Obsidian/knowledge-vault/. Details and rules: ADR-006 D16. (answered by: Director)",
+      "language": null
+    },
+    {
+      "start": 1300.0,
+      "end": 1310.0,
+      "text": "[docs/requirements/open-questions.md] OQ-3 answered 2026-11-02, revised twice (v1.3) \u2014 Remote APIs allowed, credentials read from ~/.hermes/.env by variable name only. Provider order: 1. LLM7 \u2014 extraction, verification, transcription (LLM7_API_KEY) 2. Unorouter \u2014 failover for the same roles (UNOROUTER_API_KEY) 3. Groq \u2014 Whisper STT fallback (GROQ_API_KEY) 4. Tavily \u2014 research (TAVILY_API_KEY) Pinned models and rationale: ADR-005. (answered by: Director)",
+      "language": null
+    },
+    {
+      "start": 1310.0,
+      "end": 1320.0,
+      "text": "[docs/requirements/open-questions.md] OQ-4 answered 2026-11-02 \u2014 Publishable content (reel/blog scripts) is the primary output. Notes, knowledge units and procedures become intermediate artifacts whose job is to support content drafts that cite them. ADR-006 D17. (answered by: Director)",
+      "language": null
+    },
+    {
+      "start": 1320.0,
+      "end": 1330.0,
+      "text": "[docs/requirements/open-questions.md] OQ-7 answered 2026-11-02 \u2014 Daemon: `systemd --user` service watching an inbox, with a CLI for one-shot runs and tests. Directories and locking fixed in ADR-006 D18. (answered by: Director)",
+      "language": null
+    },
+    {
+      "start": 1330.0,
+      "end": 1340.0,
+      "text": "[docs/requirements/open-questions.md] OQ-9 answered 2026-11-02 \u2014 Cookies required. Preferred extraction via `yt-dlp --cookies-from-browser firefox`; fallback exported `~/.hermes/cookies/instagram.txt` (mode 600). Public-only quarantine when cookies are missing or expired. ADR-006 D19. (answered by: Director)",
+      "language": null
+    },
+    {
+      "start": 1340.0,
+      "end": 1350.0,
+      "text": "[docs/requirements/open-questions.md] OQ-10 answered 2026-11-02 \u2014 No local model runtime exists on the host, so there is no local fallback. All providers failing means the job fails and escalates; no degraded output. ADR-006 D20. (answered by: Director) ```",
+      "language": null
+    },
+    {
+      "start": 1350.0,
+      "end": 1360.0,
+      "text": "[docs/requirements/open-questions.md] ## 3. Provider verification (for OQ-3) Both endpoints respond and are OpenAI-compatible: | Provider | Base URL | Models | Auth | |---|---|---|---| | LLM7 | `https://api.llm7.io/v1` | 12+ | `LLM7_API_KEY` | | Unorouter | `https://api.unorouter.com/v1` | 325 | `UNOROUTER_API_KEY` | Confirmed LLM7 models: | Model | Input | Context | $ / 1M in\u00b7out | |---|---|---|---| | `DeepSeek-V4-Flash-0731` | text | 400 k | 0.02 \u00b7 0.04 | | `GLM-5.3-Flash` | text | 400 k | 0.02 \u00b7 0.04 | | `Inkling-Small` | text | 512 k | 0.50 \u00b7 1.20 | | `Voxtral-Mini-3B-2507` | **audio** | \u2014 | \u2014 | | `Voxtral-Small-24B-2507` | **...",
+      "language": null
+    },
+    {
+      "start": 1360.0,
+      "end": 1370.0,
+      "text": "[docs/requirements/open-questions.md] ## 4. Environment facts recorded during resolution - `~/.hermes/.env` holds 37 variables; `LLM7_API_KEY`, `UNOROUTER_API_KEY`, `GROQ_API_KEY`, `TAVILY_API_KEY` are present. No ElevenLabs/Deepgram/AssemblyAI key. - That file is mode `644` (world-readable). Recommend `chmod 600 ~/.hermes/.env` and `chmod 700 ~/.hermes`. **Still outstanding.** - Host has `flatpak` + flathub, `yay`, `pamac`, Firefox / Brave / Vivaldi profiles. No `uv`, no `yt-dlp` yet. Python 3.14.6. - Obsidian was not installed at the time OQ-2 was answered; installation is part of fulfilling D16.",
+      "language": null
+    },
+    {
+      "start": 1370.0,
+      "end": 1380.0,
+      "text": "[docs/requirements/open-questions.md] ## 5. Still open | ID | Why it matters | Default in use until answered | |---|---|---| | OQ-5 | Reels are often Hindi/Hinglish; transcription + extraction quality depends on it | Accept any language, store `language` per segment | | OQ-6 | **Publishable output over copyrighted material.** Must synthesise, not reproduce | Attributed quotes only, no verbatim long-form reproduction | | OQ-8 | Raw reels/YouTube audio can be large; disk is at 79% | Keep raw, `retention.purge_raw` opt-in |",
+      "language": null
+    },
+    {
+      "start": 1380.0,
+      "end": 1390.0,
+      "text": "[docs/decisions/ADR-005-model-providers.md] # ADR-005 \u2014 Model provider selection (LLM7 primary, Unorouter failover) - **Date:** 2026-11-02 - **Status:** Accepted - **Deciders:** Director - **Related:** OQ-3, requirements \u00a75 FR-06/FR-09, acceptance-criteria AC-07/AC-23",
+      "language": null
+    },
+    {
+      "start": 1390.0,
+      "end": 1400.0,
+      "text": "[docs/decisions/ADR-005-model-providers.md] OQ-3 asked which runtime performs extraction and verification. The Director chose LLM7 over OpenRouter, with Unorouter as an alternative. Both endpoints were probed from the host:",
+      "language": null
+    },
+    {
+      "start": 1400.0,
+      "end": 1410.0,
+      "text": "[docs/decisions/ADR-005-model-providers.md] | Provider | Base URL | Auth | Models | Notes | |---|---|---|---|---| | LLM7 | `https://api.llm7.io/v1` | `LLM7_API_KEY` | 12+ | OpenAI-compatible; text and audio models | | Unorouter | `https://api.unorouter.com/v1` | `UNOROUTER_API_KEY` | **325** | OpenAI-compatible; many `:free`, plus `claude-*`/`gpt-*` |",
+      "language": null
+    },
+    {
+      "start": 1410.0,
+      "end": 1420.0,
+      "text": "[docs/decisions/ADR-005-model-providers.md] Verified LLM7 entries:",
+      "language": null
+    },
+    {
+      "start": 1420.0,
+      "end": 1430.0,
+      "text": "[docs/decisions/ADR-005-model-providers.md] | Model | Input | Context | Price / 1M in\u00b7out | Tools | |---|---|---|---|---| | `DeepSeek-V4-Flash-0731` | text | 400 k | $0.02 \u00b7 $0.04 | yes | | `GLM-5.3-Flash` | text | 400 k | $0.02 \u00b7 $0.04 | yes | | `Inkling-Small` | text | 512 k | $0.50 \u00b7 $1.20 | yes | | `Voxtral-Mini-3B-2507` | **audio** | \u2014 | \u2014 | yes | | `Voxtral-Small-24B-2507` | **audio** | \u2014 | \u2014 | yes |",
+      "language": null
+    },
+    {
+      "start": 1430.0,
+      "end": 1440.0,
+      "text": "[docs/decisions/ADR-005-model-providers.md] **D11 \u2014 LLM7 is the primary provider.** - Extraction, notes and procedure generation: `DeepSeek-V4-Flash-0731`. - Verification: `GLM-5.3-Flash` \u2014 a different model family from the generator, so a pass is not the generator agreeing with itself. This directly strengthens AC-10. - Transcription: `Voxtral-Small-24B-2507` (audio \u2192 text), with Groq `whisper-large-v3` as fallback.",
+      "language": null
+    },
+    {
+      "start": 1440.0,
+      "end": 1450.0,
+      "text": "[docs/decisions/ADR-005-model-providers.md] **D12 \u2014 Unorouter is failover, not primary.** Used when LLM7 returns errors/timeouts beyond the retry budget. Model id is pinned in `config/default.yaml`, never resolved dynamically at runtime.",
+      "language": null
+    },
+    {
+      "start": 1450.0,
+      "end": 1460.0,
+      "text": "[docs/decisions/ADR-005-model-providers.md] **D13 \u2014 Every artifact records its producer.** `provider`, `model`, `base_url` and `request_id` go into artifact metadata and into `evidence/<task_id>.json`. A run with an unknown producer is invalid.",
+      "language": null
+    },
+    {
+      "start": 1460.0,
+      "end": 1470.0,
+      "text": "[docs/decisions/ADR-005-model-providers.md] **D14 \u2014 Model ids are validated before a run.** The orchestrator checks the configured model id appears in the provider's `/v1/models` and aborts with a named error otherwise. Cheap check, prevents silent 404-to-fallback.",
+      "language": null
+    },
+    {
+      "start": 1470.0,
+      "end": 1480.0,
+      "text": "[docs/decisions/ADR-005-model-providers.md] **D15 \u2014 Secrets stay in `~/.hermes/.env`.** Config references environment variable names only (`api_key_env: LLM7_API_KEY`).",
+      "language": null
+    },
+    {
+      "start": 1480.0,
+      "end": 1490.0,
+      "text": "[docs/decisions/ADR-005-model-providers.md] ## Consequences - Cost is negligible for the chosen models (~$0.02/1M in, $0.04/1M out). - Two model families means extraction and verification failures are less correlated. - LLM7 is a small provider: an outage blocks the pipeline unless Unorouter is configured. OQ-10 records whether a fully local fallback is required. - Voxtral removes the hard dependency on Groq for transcription, but its timestamp behaviour is unproven \u2014 AC-05 must be tested against it, and Groq Whisper must remain validated as the fallback path. - Unorouter's 325-model catalogue is a moving target; pinning ids (D12) keeps...",
+      "language": null
+    },
+    {
+      "start": 1490.0,
+      "end": 1500.0,
+      "text": "[docs/decisions/ADR-005-model-providers.md] ## Open items - OQ-10: behaviour when LLM7 **and** Unorouter both fail (fail loudly vs local model). - Confirm Voxtral emits segment timestamps; if it only returns plain text, word-level timing must come from Groq Whisper or an alignment pass (lyrical-video already uses forced alignment, which can be reused).",
+      "language": null
+    },
+    {
+      "start": 1500.0,
+      "end": 1510.0,
+      "text": "[docs/decisions/decisions.md] # Architecture Decisions",
+      "language": null
+    },
+    {
+      "start": 1510.0,
+      "end": 1520.0,
+      "text": "[docs/decisions/decisions.md] ## ADR-001 \u2014 Documentation as source of truth Project requirements, architecture, decisions and status live in version control.",
+      "language": null
+    },
+    {
+      "start": 1520.0,
+      "end": 1530.0,
+      "text": "[docs/decisions/decisions.md] ## ADR-002 \u2014 Verification before completion No agent may mark a task complete without evidence.",
+      "language": null
+    },
+    {
+      "start": 1530.0,
+      "end": 1540.0,
+      "text": "[docs/decisions/decisions.md] ## ADR-003 \u2014 Reusable Skill A stable workflow is packaged as a versioned Skill rather than recreated from scratch.",
+      "language": null
+    },
+    {
+      "start": 1540.0,
+      "end": 1550.0,
+      "text": "[docs/decisions/decisions.md] ## ADR-004 \u2014 Phase 0 requirements freeze Requirements v2.0, acceptance criteria AC-01\u2026AC-23, the open-questions register and phase gates are frozen. Key decisions: - Adapter-based source model with one fixed Source Record contract. - Fixed project-root artifact layout; no agent may invent directories. - Content-addressed ids (`src-<sha256>`, `k-<sha256>`) for determinism and idempotency. - Raw sources immutable; checksum conflict is a hard failure. - Completion blocked without passing evidence. - Fail-fast configuration: unknown keys are errors. - Bounded retries (default 3) with escalation. -...",
+      "language": null
+    },
+    {
+      "start": 1550.0,
+      "end": 1560.0,
+      "text": "[docs/decisions/decisions.md] ## ADR-005 \u2014 Model provider selection (LLM7 primary, Unorouter failover) - Primary: LLM7 (`https://api.llm7.io/v1`) \u2014 `DeepSeek-V4-Flash-0731` for extraction, `GLM-5.3-Flash` for verification (different family), `Voxtral-Small-24B-2507` for audio \u2192 text. - Failover: Unorouter (`https://api.unorouter.com/v1`), pinned model id. - Groq Whisper remains the validated transcription fallback; Tavily for research. - Every artifact records `provider`, `model`, `base_url`, `request_id`. - Model ids validated against `/v1/models` before a run; secrets referenced by env name only. Full record: `ADR-005-mo...",
+      "language": null
+    },
+    {
+      "start": 1560.0,
+      "end": 1570.0,
+      "text": "[docs/decisions/decisions.md] ## ADR-006 \u2014 Output to Obsidian, publishable content, daemon trigger - `~/Obsidian/knowledge-vault/` is the delivery surface; JSON stays canonical, Markdown is projected. - Publishable content is the **primary** output; notes/knowledge/procedures are intermediate. - `systemd --user` daemon watches `runtime/inbox/`; CLI retained for one-shot runs and tests. - Reels need cookies: `yt-dlp --cookies-from-browser firefox`, fallback exported `cookies.txt` (mode 600); quarantine when absent/expired. - No local model runtime \u2192 all providers failing means the job fails and escalates. Full record: `ADR-...",
+      "language": null
+    },
+    {
+      "start": 1570.0,
+      "end": 1580.0,
+      "text": "[docs/decisions/ADR-006-output-trigger-sources.md] # ADR-006 \u2014 Output to Obsidian, publishable content, daemon trigger - **Date:** 2026-11-02 - **Status:** Accepted - **Deciders:** Director - **Resolves:** OQ-2, OQ-4, OQ-7, OQ-9, OQ-10 - **Related:** ADR-004 (artifact contract), ADR-005 (providers)",
+      "language": null
+    },
+    {
+      "start": 1580.0,
+      "end": 1590.0,
+      "text": "[docs/decisions/ADR-006-output-trigger-sources.md] ## Context Phase 0 needed five answers before Phase 2 could start: where output goes, what the primary artifact is, how runs are triggered, how Instagram Reels are accessed, and what happens when every remote provider fails.",
+      "language": null
+    },
+    {
+      "start": 1590.0,
+      "end": 1600.0,
+      "text": "[docs/decisions/ADR-006-output-trigger-sources.md] **D16 \u2014 Obsidian vault is the delivery surface (OQ-2).** The canonical store stays the project directory (JSON, per ADR-004 D2). A **projection step** writes human-facing Markdown into an Obsidian vault:",
+      "language": null
+    },
+    {
+      "start": 1600.0,
+      "end": 1610.0,
+      "text": "[docs/decisions/ADR-006-output-trigger-sources.md] ```text ~/Obsidian/knowledge-vault/ Sources/ # one note per source, frontmatter + timestamped claims Notes/ # per-source distilled notes Knowledge/ # atomic knowledge units as notes, [[wikilinks]] between them Procedures/ # step-by-step procedures Content/ # publishable drafts Attachments/ # audio/frames only if retention allows (OQ-8) Templates/ # source.md, knowledge.md, procedure.md, content.md ```",
+      "language": null
+    },
+    {
+      "start": 1610.0,
+      "end": 1620.0,
+      "text": "[docs/decisions/ADR-006-output-trigger-sources.md] Rules: - JSON is canonical; Markdown is generated and **never hand-edited as source of truth** (a hand-edit is detected by hash and reported, not silently overwritten). - Every projected note carries frontmatter: `source_id`, `source_uri`, `provider`, `model`, `generated_at`, `schema_version`, `content_hash`. - Wikilinks use knowledge-unit ids (`[[k-1a2b3c4d5e6f]]`), so the vault graph mirrors the knowledge graph. - Obsidian is a *viewer*: no plugin is required for correctness. Dataview is optional.",
+      "language": null
+    },
+    {
+      "start": 1620.0,
+      "end": 1630.0,
+      "text": "[docs/decisions/ADR-006-output-trigger-sources.md] **D17 \u2014 Publishable content is the primary output (OQ-4).** Notes, knowledge units and procedures are **intermediate** artifacts whose purpose is to support publishable drafts in `Content/`. Consequences: - Content drafts must cite the knowledge units they use, and those units must cite sources + timestamps (keeps AC-06/AC-15 meaningful end-to-end). - A draft with no resolvable unit citations fails verification. - FR-18 (original content separation) becomes a `Must` for release, not a `Should`.",
+      "language": null
+    },
+    {
+      "start": 1630.0,
+      "end": 1640.0,
+      "text": "[docs/decisions/ADR-006-output-trigger-sources.md] **D18 \u2014 Daemon trigger (OQ-7).** A `systemd --user` service (`kas-daemon`) watches an inbox and runs the pipeline:",
+      "language": null
+    },
+    {
+      "start": 1640.0,
+      "end": 1650.0,
+      "text": "[docs/decisions/ADR-006-output-trigger-sources.md] ```text ~/ai-agent-ecosystem/runtime/inbox/ # drop a job file (yaml) here ~/ai-agent-ecosystem/runtime/queue/ # claimed jobs ~/ai-agent-ecosystem/runtime/done/ # completed, with evidence pointer ~/ai-agent-ecosystem/runtime/failed/ # escalated, with diagnostics ```",
+      "language": null
+    },
+    {
+      "start": 1650.0,
+      "end": 1660.0,
+      "text": "[docs/decisions/ADR-006-output-trigger-sources.md] - One worker at a time per project (lockfile), jobs processed FIFO. - CLI remains available (`kas run --project <dir>`) for one-shot work and tests. - The daemon is a thin shell around the same orchestrator; no logic lives only in it.",
+      "language": null
+    },
+    {
+      "start": 1660.0,
+      "end": 1670.0,
+      "text": "[docs/decisions/ADR-006-output-trigger-sources.md] **D19 \u2014 Reels access requires cookies (OQ-9).** Instagram/Facebook Reels need an authenticated session. Plan: - Preferred: `yt-dlp --cookies-from-browser firefox` (Firefox profile exists on the host), so no credential file is written by us. - Fallback: an exported Netscape `cookies.txt` at `~/.hermes/cookies/instagram.txt`, mode `600`, referenced by path in config \u2014 never copied into the repo or artifacts. - Public-only mode is the default when cookies are absent: login-gated reels are `quarantined` with a named reason, not silently skipped. - Cookies expire. The daemon must detect auth failur...",
+      "language": null
+    },
+    {
+      "start": 1670.0,
+      "end": 1680.0,
+      "text": "[docs/decisions/ADR-006-output-trigger-sources.md] **D20 \u2014 No local fallback (OQ-10).** There is no local model runtime on the host, so D8's offline mode cannot cover extraction. If LLM7 and Unorouter both fail beyond the retry budget, the job is marked `failed` with `escalated: true` and the run stops. No degraded output is produced. Ingestion, checksumming and transcript storage still work offline.",
+      "language": null
+    },
+    {
+      "start": 1680.0,
+      "end": 1690.0,
+      "text": "[docs/decisions/ADR-006-output-trigger-sources.md] ## Consequences - A markdown projection layer and its tests are added to Phase 2 scope. - Obsidian must be installed on the host (flatpak, user scope, no root needed). - The daemon is Phase 5 work, but its directories and locking rules are fixed now. - Because content is the primary output, OQ-6 (copyright/consent) becomes urgent: publishable drafts over copyrighted reels must synthesise, not reproduce, source text. - Cookie handling becomes a documented operational task with an expiry failure mode.",
+      "language": null
+    },
+    {
+      "start": 1690.0,
+      "end": 1700.0,
+      "text": "[docs/decisions/ADR-004-phase0-freeze.md] # ADR-004 \u2014 Phase 0 requirements freeze - **Date:** 2026-11-02 - **Status:** Accepted (pending Director sign-off on blocking open questions) - **Deciders:** Director, Orchestrator - **Supersedes:** none - **Related:** requirements v2.0, acceptance-criteria v1.0, open-questions v1.0",
+      "language": null
+    },
+    {
+      "start": 1700.0,
+      "end": 1710.0,
+      "text": "[docs/decisions/ADR-004-phase0-freeze.md] ## Context The project shipped as a documentation scaffold (v1.0): structure, contracts and prompts existed, but no requirement was testable and no artifact contract was defined. Phase 0 of the implementation plan requires frozen requirements, a Director's Section and acceptance criteria before any code is written.",
+      "language": null
+    },
+    {
+      "start": 1710.0,
+      "end": 1720.0,
+      "text": "[docs/decisions/ADR-004-phase0-freeze.md] **D1 \u2014 Adapter-based source model.** Every origin is normalized into one Source Record (requirements \u00a74). Adapters are pluggable and may not change the record. *Consequence:* new origins are additive; the core pipeline never branches on source kind.",
+      "language": null
+    },
+    {
+      "start": 1720.0,
+      "end": 1730.0,
+      "text": "[docs/decisions/ADR-004-phase0-freeze.md] **D2 \u2014 Fixed artifact layout.** The project-root directory contract in requirements \u00a76 is frozen. *Consequence:* tests and agents can assert paths; no agent may invent directories.",
+      "language": null
+    },
+    {
+      "start": 1730.0,
+      "end": 1740.0,
+      "text": "[docs/decisions/ADR-004-phase0-freeze.md] **D3 \u2014 Content-addressed identifiers.** `source_id = src-<sha256[0:12]>`, `knowledge unit id = k-<sha256(statement)[0:12]>`. *Consequence:* determinism and idempotency (AC-12, AC-13) fall out of the design instead of being bolted on.",
+      "language": null
+    },
+    {
+      "start": 1740.0,
+      "end": 1750.0,
+      "text": "[docs/decisions/ADR-004-phase0-freeze.md] **D4 \u2014 Raw sources are immutable.** A checksum conflict is a hard failure, never an overwrite. *Consequence:* provenance is trustworthy; re-ingest is safe.",
+      "language": null
+    },
+    {
+      "start": 1750.0,
+      "end": 1760.0,
+      "text": "[docs/decisions/ADR-004-phase0-freeze.md] **D5 \u2014 Verification is a gate, not a report.** Completion without an `evidence/<task_id>.json` with `result: \"pass\"` is rejected by the orchestrator (AC-10). *Consequence:* \"done\" is falsifiable.",
+      "language": null
+    },
+    {
+      "start": 1760.0,
+      "end": 1770.0,
+      "text": "[docs/decisions/ADR-004-phase0-freeze.md] **D6 \u2014 Fail-fast configuration.** Unknown manifest or config keys are errors (AC-19). *Consequence:* typos surface immediately instead of producing silently degraded runs.",
+      "language": null
+    },
+    {
+      "start": 1770.0,
+      "end": 1780.0,
+      "text": "[docs/decisions/ADR-004-phase0-freeze.md] **D7 \u2014 Bounded retries with escalation.** `max_retries` (default 3) then stop the branch and record `escalated: true` (AC-11). *Consequence:* no infinite loops, no hidden repeated failures.",
+      "language": null
+    },
+    {
+      "start": 1780.0,
+      "end": 1790.0,
+      "text": "[docs/decisions/ADR-004-phase0-freeze.md] **D8 \u2014 Offline-first, network opt-in.** `network.enabled: false` is the default; egress attempts are blocked and logged (AC-16, AC-17). *Consequence:* reproducible and privacy-preserving by default.",
+      "language": null
+    },
+    {
+      "start": 1790.0,
+      "end": 1800.0,
+      "text": "[docs/decisions/ADR-004-phase0-freeze.md] **D9 \u2014 Phase gates are exit tests.** Phase transitions require the named criteria to pass (acceptance-criteria \u00a74), not a verbal claim. *Consequence:* the roadmap becomes mechanically checkable.",
+      "language": null
+    },
+    {
+      "start": 1800.0,
+      "end": 1810.0,
+      "text": "[docs/decisions/ADR-004-phase0-freeze.md] **D10 \u2014 Unanswered questions are recorded, not guessed.** Blocking questions live in `open-questions.md` with an explicit default used only if the Director waives them. *Consequence:* satisfies the Director's \"do not silently invent missing inputs\" non-negotiable.",
+      "language": null
+    },
+    {
+      "start": 1810.0,
+      "end": 1820.0,
+      "text": "[docs/decisions/ADR-004-phase0-freeze.md] ## Consequences - Phase 1 can start on manifest/config/status without resolving OQ-1\u2026OQ-4, but **Phase 2 cannot**. - Every later behaviour change requires a new ADR and a version bump (requirements \u00a710). - The `VERSION` field in the packaged Skill must track the requirements version (AC-22).",
+      "language": null
+    },
+    {
+      "start": 1820.0,
+      "end": 1830.0,
+      "text": "[docs/decisions/ADR-004-phase0-freeze.md] ## Open items OQ-1 (source kinds), OQ-2 (output destination), OQ-3 (model runtime), OQ-4 (knowledge definition), OQ-7 (trigger) are blocking for their phase. OQ-5, OQ-6, OQ-8 have safe defaults.",
+      "language": null
+    },
+    {
+      "start": 1830.0,
+      "end": 1840.0,
+      "text": "[pyproject.toml] [build-system] requires = [\"setuptools>=68\"] build-backend = \"setuptools.build_meta\" [project] name = \"kas\" version = \"0.1.0\" description = \"Knowledge Acquisition Studio \u2014 ingest, extract, verify, publish\" requires-python = \">=3.11\" dependencies = [\"PyYAML>=6.0\"] [project.optional-dependencies] dev = [\"pytest>=8.0\"] [project.scripts] kas = \"kas.cli:main\" [tool.setuptools.packages.find] where = [\"src\"] [tool.pytest.ini_options] testpaths = [\"tests\"] addopts = \"-q\"",
+      "language": null
+    },
+    {
+      "start": 1840.0,
+      "end": 1850.0,
+      "text": "[skills/knowledge-acquisition-studio/SKILL.md] --- name: knowledge-acquisition-studio description: Ingest tutorials, transcripts and learning sources, extract actionable knowledge, verify it, and apply it to projects. ---",
+      "language": null
+    },
+    {
+      "start": 1850.0,
+      "end": 1860.0,
+      "text": "[skills/knowledge-acquisition-studio/SKILL.md] # Skill: knowledge-acquisition-studio",
+      "language": null
+    },
+    {
+      "start": 1860.0,
+      "end": 1870.0,
+      "text": "[skills/knowledge-acquisition-studio/SKILL.md] ## Version 0.1.0",
+      "language": null
+    },
+    {
+      "start": 1870.0,
+      "end": 1880.0,
+      "text": "[skills/knowledge-acquisition-studio/SKILL.md] ## Purpose Ingest tutorials, transcripts and learning sources, extract actionable knowledge, verify it, and apply it to projects.",
+      "language": null
+    },
+    {
+      "start": 1880.0,
+      "end": 1890.0,
+      "text": "[skills/knowledge-acquisition-studio/SKILL.md] ## Inputs Project-specific source materials and configuration.",
+      "language": null
+    },
+    {
+      "start": 1890.0,
+      "end": 1900.0,
+      "text": "[skills/knowledge-acquisition-studio/SKILL.md] ## Outputs - source map - timestamped notes - knowledge base - step-by-step procedure - verification evidence - original educational content",
+      "language": null
+    },
+    {
+      "start": 1900.0,
+      "end": 1910.0,
+      "text": "[skills/knowledge-acquisition-studio/SKILL.md] ## Execution Invoke the project orchestrator, execute the workflow, verify every stage, update status, and continue automatically to the next unblocked task.",
+      "language": null
+    },
+    {
+      "start": 1910.0,
+      "end": 1920.0,
+      "text": "[skills/knowledge-acquisition-studio/SKILL.md] ## Failure policy Do not silently skip failures. Diagnose, retry within configured limits, and escalate only when blocked.",
+      "language": null
+    },
+    {
+      "start": 1920.0,
+      "end": 1930.0,
+      "text": "[skills/knowledge-acquisition-studio/SKILL.md] ## Quality gate All mandatory acceptance tests must pass before release.",
+      "language": null
+    }
+  ]
+}

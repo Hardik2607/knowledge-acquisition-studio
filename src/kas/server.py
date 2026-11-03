@@ -139,6 +139,37 @@ def load_project_data(project_dir: Path) -> dict[str, Any]:
         except Exception:
             pass
 
+    # Discover keyframe screenshots
+    data["keyframes"] = []
+    if sources_dir.is_dir():
+        for sdir in sorted(sources_dir.glob("src-*")):
+            kdir = sdir / "keyframes"
+            if kdir.is_dir():
+                for kf in sorted(kdir.glob("*.jpg")):
+                    m = re.search(r"frame_(\d+)s\.jpg", kf.name)
+                    sec = int(m.group(1)) if m else 0
+                    rel_p = str(kf.relative_to(project_dir))
+                    mins = sec // 60
+                    secs = sec % 60
+                    kf_entry = {
+                        "filename": kf.name,
+                        "timestamp": sec,
+                        "range": f"{mins:02d}:{secs:02d}",
+                        "source_id": sdir.name,
+                        "url": f"/media/{project_dir.name}/{rel_p}",
+                    }
+                    data["keyframes"].append(kf_entry)
+
+    # Link keyframes to notes
+    if data["keyframes"]:
+        for note in data["notes"]:
+            n_start = float(note.get("start", 0))
+            n_end = float(note.get("end", n_start + 24))
+            for kf in data["keyframes"]:
+                if n_start - 3 <= kf["timestamp"] <= n_end + 3:
+                    note["keyframe_url"] = kf["url"]
+                    break
+
     return data
 
 
@@ -281,6 +312,47 @@ class KasStudioHandler(BaseHTTPRequestHandler):
             self.send_header("Content-Length", str(len(skill_md.encode("utf-8"))))
             self.end_headers()
             self.wfile.write(skill_md.encode("utf-8"))
+            return
+
+        if path.startswith("/media/"):
+            rel = urllib.parse.unquote(path[len("/media/"):])
+            parts = rel.split("/", 1)
+            if len(parts) == 2:
+                proj_name, file_rel = parts
+                full = (self.workspace_root / "projects" / proj_name / file_rel).resolve()
+                if full.is_file():
+                    mime, _ = mimetypes.guess_type(str(full))
+                    content = full.read_bytes()
+                    self.send_response(HTTPStatus.OK)
+                    self.send_header("Content-Type", mime or "image/jpeg")
+                    self.send_header("Content-Length", str(len(content)))
+                    self.send_header("Cache-Control", "public, max-age=86400")
+                    self.end_headers()
+                    self.wfile.write(content)
+                    return
+            self.send_response(HTTPStatus.NOT_FOUND)
+            self.end_headers()
+            return
+
+        self.send_response(HTTPStatus.NOT_FOUND)
+        self.end_headers()
+
+    def do_POST(self) -> None:
+        parsed = urllib.parse.urlparse(self.path)
+        path = parsed.path
+        if path == "/api/keyframes/extract":
+            from .keyframes import extract_project_keyframes
+
+            content_length = int(self.headers.get("Content-Length", 0))
+            body = self.rfile.read(content_length).decode("utf-8") if content_length > 0 else "{}"
+            try:
+                payload = json.loads(body)
+            except Exception:
+                payload = {}
+            target_path = payload.get("path") or "projects/claude-tutorial"
+            target = (self.workspace_root / target_path).resolve()
+            frames = extract_project_keyframes(target)
+            self._send_json({"count": len(frames), "keyframes": frames})
             return
 
         self.send_response(HTTPStatus.NOT_FOUND)
@@ -480,6 +552,10 @@ INDEX_HTML = """<!DOCTYPE html>
           <span>Agent Procedures</span>
           <span id="tab-count-procedures" class="bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded-full text-[10px]">0</span>
         </button>
+        <button onclick="switchTab('keyframes')" id="tab-btn-keyframes" class="px-4 py-2 text-xs font-semibold rounded-t-lg border-b-2 border-transparent text-slate-400 hover:text-slate-200 transition flex items-center space-x-1.5">
+          <span>📸 Visual Keyframes</span>
+          <span id="tab-count-keyframes" class="bg-amber-500/20 text-amber-300 px-1.5 py-0.5 rounded-full text-[10px]">0</span>
+        </button>
         <button onclick="switchTab('qa')" id="tab-btn-qa" class="px-4 py-2 text-xs font-semibold rounded-t-lg border-b-2 border-transparent text-slate-400 hover:text-slate-200 transition flex items-center space-x-1.5">
           <span>QA Matrix</span>
         </button>
@@ -520,11 +596,41 @@ INDEX_HTML = """<!DOCTYPE html>
           <div id="report-rendered" class="text-slate-300 text-sm leading-relaxed"></div>
         </div>
 
+        <!-- TAB 6: Visual Keyframes -->
+        <div id="panel-keyframes" class="hidden space-y-4">
+          <div class="flex items-center justify-between pb-2 border-b border-slate-800/80">
+            <p class="text-xs text-slate-400 italic">High-resolution keyframe snapshots captured at code, terminal, diagram, and UI demonstrations.</p>
+            <span class="text-[11px] font-mono text-indigo-400">Click any frame to zoom or seek video</span>
+          </div>
+          <div id="keyframes-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+        </div>
+
       </div>
 
     </div>
 
   </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="fixed inset-0 z-50 bg-black/90 backdrop-blur flex items-center justify-center p-4 hidden" onclick="closeLightbox()">
+    <div class="relative max-w-4xl w-full bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl flex flex-col" onclick="event.stopPropagation()">
+      <div class="p-3 border-b border-slate-800 flex items-center justify-between">
+        <span id="lightbox-title" class="text-xs font-mono text-indigo-400 font-semibold"></span>
+        <button onclick="closeLightbox()" class="text-slate-400 hover:text-white p-1">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="aspect-video w-full bg-black flex items-center justify-center">
+        <img id="lightbox-img" src="" alt="Snapshot" class="max-w-full max-h-[70vh] object-contain">
+      </div>
+      <div class="p-3 border-t border-slate-800 flex items-center justify-between text-xs text-slate-300">
+        <button id="lightbox-jump" class="px-3 py-1 rounded bg-indigo-600 hover:bg-indigo-500 text-white font-medium flex items-center space-x-1.5 transition">
+          <span>▶ Jump Video to This Scene</span>
+        </button>
+        <span class="text-slate-500 text-[11px]">Click outside or press ESC to close</span>
+      </div>
+    </div>
+  </div>
 
   <!-- Notification Toast -->
   <div id="toast" class="fixed bottom-6 right-6 bg-slate-900 border border-slate-700 text-slate-200 text-xs px-4 py-2.5 rounded-lg shadow-2xl opacity-0 pointer-events-none transition-opacity duration-300 z-50 flex items-center space-x-2">
@@ -605,10 +711,19 @@ INDEX_HTML = """<!DOCTYPE html>
       data.notes.forEach(note => {
         const div = document.createElement('div');
         div.className = 'group p-2.5 rounded-lg bg-slate-950/60 hover:bg-slate-950 border border-slate-800/80 hover:border-indigo-500/40 transition flex items-start space-x-3 text-xs';
-        div.innerHTML = `
-          <button onclick="seekVideo(${note.start})" title="Jump video to this timestamp" class="font-mono text-indigo-400 hover:text-indigo-300 bg-indigo-500/10 px-2 py-0.5 rounded border border-indigo-500/20 whitespace-nowrap cursor-pointer transition">
-            ▶ ${note.range}
+        const kfBtn = note.keyframe_url ? `
+          <button onclick="openLightbox('${note.keyframe_url}', 'Timestamp: ${note.range} — ${escapeHtml(note.text)}', ${note.start})" title="View code/UI snapshot" class="inline-flex items-center space-x-1 px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/30 text-[10px] font-medium hover:bg-amber-500/20 transition cursor-pointer">
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span>Snapshot</span>
           </button>
+        ` : '';
+        div.innerHTML = `
+          <div class="flex items-center space-x-1.5 flex-shrink-0">
+            <button onclick="seekVideo(${note.start})" title="Jump video to this timestamp" class="font-mono text-indigo-400 hover:text-indigo-300 bg-indigo-500/10 px-2 py-0.5 rounded border border-indigo-500/20 whitespace-nowrap cursor-pointer transition">
+              ▶ ${note.range}
+            </button>
+            ${kfBtn}
+          </div>
           <div class="flex-1 text-slate-300 leading-relaxed">${escapeHtml(note.text)}</div>
           <button onclick="copyText('${escapeHtml(note.text)}')" title="Copy note" class="opacity-0 group-hover:opacity-100 text-slate-500 hover:text-slate-300 transition">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
@@ -677,6 +792,30 @@ INDEX_HTML = """<!DOCTYPE html>
         qaContainer.appendChild(row);
       }
 
+      // Render Keyframes
+      const kfGrid = document.getElementById('keyframes-grid');
+      kfGrid.innerHTML = '';
+      const keyframes = data.keyframes || [];
+      document.getElementById('tab-count-keyframes').textContent = keyframes.length;
+      keyframes.forEach(kf => {
+        const card = document.createElement('div');
+        card.className = 'group rounded-xl overflow-hidden bg-slate-950 border border-slate-800 hover:border-indigo-500/50 transition flex flex-col shadow-lg';
+        card.innerHTML = `
+          <div class="aspect-video w-full bg-black relative overflow-hidden cursor-pointer" onclick="openLightbox('${kf.url}', '${kf.range}', ${kf.timestamp})">
+            <img src="${kf.url}" alt="Keyframe" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition"></div>
+            <button onclick="event.stopPropagation(); seekVideo(${kf.timestamp})" class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-indigo-600/90 hover:bg-indigo-500 text-white font-mono text-[11px] font-semibold flex items-center space-x-1 shadow">
+              <span>▶</span><span>${kf.range}</span>
+            </button>
+          </div>
+          <div class="p-2.5 flex items-center justify-between text-[11px] text-slate-400">
+            <span class="truncate pr-2 font-mono text-slate-400">${kf.filename}</span>
+            <button onclick="seekVideo(${kf.timestamp})" class="text-indigo-400 hover:underline whitespace-nowrap">Jump Video</button>
+          </div>
+        `;
+        kfGrid.appendChild(card);
+      });
+
       // Render Application Report
       const repContainer = document.getElementById('report-rendered');
       if (data.application_report && window.marked) {
@@ -687,16 +826,37 @@ INDEX_HTML = """<!DOCTYPE html>
     }
 
     function switchTab(tab) {
-      ['notes', 'units', 'procedures', 'qa', 'report'].forEach(t => {
-        document.getElementById(`panel-${t}`).classList.add('hidden');
+      ['notes', 'units', 'procedures', 'keyframes', 'qa', 'report'].forEach(t => {
+        const panel = document.getElementById(`panel-${t}`);
+        if (panel) panel.classList.add('hidden');
         const btn = document.getElementById(`tab-btn-${t}`);
-        btn.classList.remove('border-indigo-500', 'text-indigo-400', 'bg-slate-900');
-        btn.classList.add('border-transparent', 'text-slate-400');
+        if (btn) {
+          btn.classList.remove('border-indigo-500', 'text-indigo-400', 'bg-slate-900');
+          btn.classList.add('border-transparent', 'text-slate-400');
+        }
       });
-      document.getElementById(`panel-${tab}`).classList.remove('hidden');
+      const activePanel = document.getElementById(`panel-${tab}`);
+      if (activePanel) activePanel.classList.remove('hidden');
       const activeBtn = document.getElementById(`tab-btn-${tab}`);
-      activeBtn.classList.remove('border-transparent', 'text-slate-400');
-      activeBtn.classList.add('border-indigo-500', 'text-indigo-400', 'bg-slate-900');
+      if (activeBtn) {
+        activeBtn.classList.remove('border-transparent', 'text-slate-400');
+        activeBtn.classList.add('border-indigo-500', 'text-indigo-400', 'bg-slate-900');
+      }
+    }
+
+    function openLightbox(url, title, timestamp) {
+      document.getElementById('lightbox-img').src = url;
+      document.getElementById('lightbox-title').textContent = title || 'Snapshot';
+      const jumpBtn = document.getElementById('lightbox-jump');
+      jumpBtn.onclick = () => {
+        closeLightbox();
+        seekVideo(timestamp);
+      };
+      document.getElementById('lightbox').classList.remove('hidden');
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.add('hidden');
     }
 
     function seekVideo(seconds) {
