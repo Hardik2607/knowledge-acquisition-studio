@@ -1,0 +1,16 @@
+{
+  "task_id": "t-knowledge",
+  "criteria": [
+    "AC-07",
+    "AC-08",
+    "AC-09",
+    "AC-15"
+  ],
+  "result": "fail",
+  "artifacts": [
+    "knowledge/source-map.json"
+  ],
+  "command": "kas build --project /home/hardik/ai-agent-ecosystem/projects/knowledge-acquisition-studio/projects/test-yt2",
+  "run_at": "2026-11-02T20:13:03Z",
+  "notes": "units: invalid_json: model did not return JSON: Expecting value: line 1 column 1 (char 0); procedures: no knowledge units available; provenance: knowledge/units.json is missing"
+}

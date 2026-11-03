@@ -1,0 +1,18 @@
+{
+  "task_id": "t-knowledge",
+  "criteria": [
+    "AC-07",
+    "AC-08",
+    "AC-09",
+    "AC-15"
+  ],
+  "result": "pass",
+  "artifacts": [
+    "knowledge/units.json",
+    "knowledge/source-map.json",
+    "knowledge/procedures/p-assessing-the-risks-and-implications-of-.md"
+  ],
+  "command": "kas build --project /home/hardik/ai-agent-ecosystem/projects/knowledge-acquisition-studio/projects/live-reel",
+  "run_at": "2026-11-02T18:51:25Z",
+  "notes": "Units, procedures and source map are valid and provenance-clean."
+}

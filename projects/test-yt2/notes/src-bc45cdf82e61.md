@@ -1,0 +1,279 @@
+# Notes — src-bc45cdf82e61
+
+- [src-bc45cdf82e61] 00:00–00:03 — Many of you want to become a content creator or a YouTuber
+- [src-bc45cdf82e61] 00:03–00:05 — but we get stuck because we don't know how to edit.
+- [src-bc45cdf82e61] 00:05–00:07 — If we want to do it ourselves, we can't do it that well.
+- [src-bc45cdf82e61] 00:07–00:10 — If we get it done by people, we charge up to 2000, 5000, or 10000 rupees.
+- [src-bc45cdf82e61] 00:08–00:08 — And he completed it himself
+- [src-bc45cdf82e61] 00:08–00:08 — When I went to make YouTube videos for the first time in 2017, I failed many times.
+- [src-bc45cdf82e61] 00:08–00:08 — I tried but failed many times.
+- [src-bc45cdf82e61] 00:08–00:08 — I used to make videos by asking my friend for a phone call.
+- [src-bc45cdf82e61] 00:08–00:08 — I made the first video, then I made 10, then 100, then 1000 videos.
+- [src-bc45cdf82e61] 00:08–00:08 — And today we have 1 million subscribers.
+- [src-bc45cdf82e61] 00:08–00:08 — So here comes the quote of Maya Motu Moshashi which you should remember.
+- [src-bc45cdf82e61] 00:08–00:08 — It may be difficult at first, but everything is difficult at first.
+- [src-bc45cdf82e61] 00:08–00:08 — Crazy, people easily take 500 to 1000 rupees to do this thing and you learned it quickly.
+- [src-bc45cdf82e61] 00:08–00:08 — You can do this crazy part through cloud.
+- [src-bc45cdf82e61] 00:08–00:09 — Are you still enjoying it or not? If you want more such AI updates, then all the prompts I have put are on our WhatsApp channel.
+- [src-bc45cdf82e61] 00:09–00:09 — So by doing my AI tutorials, you will get the link below, go there and join quickly because you should not miss all this.
+- [src-bc45cdf82e61] 00:09–00:09 — Let's move on to step 3.
+- [src-bc45cdf82e61] 00:09–00:09 — Step 3 is,
+- [src-bc45cdf82e61] 00:09–00:09 — this is just a normal thing.
+- [src-bc45cdf82e61] 00:09–00:09 — If you want to earn real money,
+- [src-bc45cdf82e61] 00:09–00:09 — you can earn money when the top players of the industry,
+- [src-bc45cdf82e61] 00:09–00:09 — like Ankur Warikoo,
+- [src-bc45cdf82e61] 00:09–00:09 — when you can edit the reels of such people,
+- [src-bc45cdf82e61] 00:09–00:09 — at their level,
+- [src-bc45cdf82e61] 00:09–00:09 — then people will recognize you.
+- [src-bc45cdf82e61] 00:09–00:09 — If you are able to make 3D videos,
+- [src-bc45cdf82e61] 00:09–00:09 — then people will give you money.
+- [src-bc45cdf82e61] 00:09–00:09 — So the next thing we are learning is how we can do that.
+- [src-bc45cdf82e61] 00:09–00:09 — So let's go to step 3.
+- [src-bc45cdf82e61] 00:09–00:09 — So let's start step 3.
+- [src-bc45cdf82e61] 00:09–00:09 — If you want to edit a video, you have to do it yourself.
+- [src-bc45cdf82e61] 00:09–00:09 — What will you have to do first?
+- [src-bc45cdf82e61] 00:09–00:09 — You have to give videos like them in your AI.
+- [src-bc45cdf82e61] 00:09–00:09 — You have to train your AI.
+- [src-bc45cdf82e61] 00:09–00:09 — Which is not difficult.
+- [src-bc45cdf82e61] 00:09–00:09 — I will tell you a prompt.
+- [src-bc45cdf82e61] 00:09–00:09 — You can use the same prompt to edit any video.
+- [src-bc45cdf82e61] 00:09–00:09 — Is it clear? Ok.
+- [src-bc45cdf82e61] 00:09–00:09 — I will tell you.
+- [src-bc45cdf82e61] 00:09–00:09 — There was a video on Ankur Wari.
+- [src-bc45cdf82e61] 00:09–00:10 — He was telling that if you buy a house in Mumbai, you will get a lot of money.
+- [src-bc45cdf82e61] 00:10–00:15 — Today I will tell you how you can use Plod to edit your complete video
+- [src-bc45cdf82e61] 00:10–00:12 — Take this Ankur Wari's YouTube shot. and decode its editing style what is motion graphics, what is cuts, what is pacing, what is caption, what is transition, music and sound effects you should read all these things, understand why, how, what is made after that now use what you learn to edit my raw videos in the same style with the same energy is it right? keep my content original but the editing, motion and sound effects equally engaging and professional and I gave my raw video clip you can also write this, yes you can write it easily You will get the prompt on my WhatsApp channel. There is no problem.
+- [src-bc45cdf82e61] 00:10–00:10 — Is it clear?
+- [src-bc45cdf82e61] 00:12–00:21 — So what did he do? He learned from himself and I will tell you he made the video. If you want to buy 1 BHK in Mumbai, then how much will it cost? Let's see. If you buy in Vasai Virar, then it will cost from 35 lakhs to 50 lakhs. If you buy in Navi Mumbai, then it will cost from 50 lakhs to 75 lakhs. If you buy in Thani then it will cost from 65 lakhs to 90 lakhs In the central suburbs this price is from 70 lakhs to 2 crores And if you buy in the western suburbs then it will go you 1 crore to 2 crore South Mumbai will cost you 2 cr to 4 cr So this is Ankur Varaki's video, same level of editing that we have done.
+- [src-bc45cdf82e61] 00:12–00:12 — You police have to tell yourself that which cave the thief is in. Clear? You can check two caves in a day. And what can the thief do? He can either stay in his cave or go to the cave on the left or on the right. And it is also understood that when the police check the cave, the thief cannot come out because he will be caught and his cave cannot be changed.
+- [src-bc45cdf82e61] 00:12–00:12 — You have to tell me in how many days the police will find the thief.
+- [src-bc45cdf82e61] 00:12–00:13 — I will tell you the answer in the next second, but before that, if you tell me, then definitely comment in the comment. Crazy or not, you enjoyed it, you enjoyed it. And you can make this thing in thousands of questions, you can get millions of views in it, this thing is going on.
+- [src-bc45cdf82e61] 00:13–00:13 — Huge respect to the one who is working on it, doing research, it is his hard work. But you can also do this. It is so clear. You have to do better, you have to make better, you have to make 3D animation.
+- [src-bc45cdf82e61] 00:13–00:13 — If you watch the videos of Nitish Rajput, then we will make that too. But I will teach him at the end of the video. Before that, I will teach you the intro of my channel. So now let's come to step 4, where we are seeing how to make intro videos.
+- [src-bc45cdf82e61] 00:13–00:13 — You will see that our intro was very strong. So to make that, we will have to increase our prompting skill a little. I will explain to you how to do it. Nothing, see I have written a prompt, but it is a very long and big prompt.
+- [src-bc45cdf82e61] 00:13–00:13 — I also picked it up from somewhere, but I will explain to you. I have explained it in a simple way. I need you to edit this to be super engaging.
+- [src-bc45cdf82e61] 00:13–00:13 — and clean with hyperframes. you know the hyperframes that we have added. we need apple style super clean motion graphics and animation. apple is the best so we need apple style.
+- [src-bc45cdf82e61] 00:13–00:14 — after that first transition my video so you know exactly when each animation text image or effect should appear. as I speak add relevant b-rolls, screenshots. screen recording, images or generated visuals.
+- [src-bc45cdf82e61] 00:14–00:14 — with smooth animation from the right and the left. That's all I said. This was our main prompt.
+- [src-bc45cdf82e61] 00:14–00:14 — Now what is he saying? He is saying that you can do it, you have potential.
+- [src-bc45cdf82e61] 00:14–00:14 — Then it says, put B roll, put screenshot, put recording, do it according to you but make it best.
+- [src-bc45cdf82e61] 00:14–00:14 — One thing that you can use in every prompt of yours, its last line, keep my face clearly visible at all the time after editing, review the frame and make sure no graphic, B roll or animation comes over my face or important content.
+- [src-bc45cdf82e61] 00:15–00:18 — without using any software.
+- [src-bc45cdf82e61] 00:15–00:15 — after putting out, I will tell you that in the beginning, the first result is not necessary that you get the best result in the first problem
+- [src-bc45cdf82e61] 00:15–00:15 — it is not necessary that you fall from every stone, some efforts are prepared, Zakir Khan says
+- [src-bc45cdf82e61] 00:15–00:15 — Today I will tell you how you can use Plod to edit your complete video without using any software.
+- [src-bc45cdf82e61] 00:15–00:15 — So, do watch this video.
+- [src-bc45cdf82e61] 00:15–00:15 — So, let's move on to step 5.
+- [src-bc45cdf82e61] 00:15–00:15 — How to make this strong channel intro?
+- [src-bc45cdf82e61] 00:15–00:15 — If you go to make this outside, people take thousands of rupees.
+- [src-bc45cdf82e61] 00:15–00:15 — I will tell you my channel intro.
+- [src-bc45cdf82e61] 00:16–00:16 — What is the problem? Analyze the attached video made by Opus 5.5.
+- [src-bc45cdf82e61] 00:16–00:16 — He also made it from 5.5. What makes design, pacing, frame types and energy so good?
+- [src-bc45cdf82e61] 00:16–00:17 — so good, analyze it. After that, turn this into a reusable motion design skill. Use the skill to make a 15 second YouTube video in 16 landscape, which is YouTube. Research YouTube and collect B-rolls and assets and make it unmistakably YouTube branded color typography and design language.
+- [src-bc45cdf82e61] 00:17–00:17 — so he did youtube youtube and also put my channel
+- [src-bc45cdf82e61] 00:17–00:17 — LMT last moment juices
+- [src-bc45cdf82e61] 00:17–00:17 — I put this much prompt
+- [src-bc45cdf82e61] 00:17–00:17 — did nothing at last he made me
+- [src-bc45cdf82e61] 00:17–00:17 — if you see then here it is
+- [src-bc45cdf82e61] 00:17–00:17 — this is my proper channel intro
+- [src-bc45cdf82e61] 00:17–00:17 — which we will play now
+- [src-bc45cdf82e61] 00:17–00:17 — Let's come to our last lesson today, how to make 3D animation videos.
+- [src-bc45cdf82e61] 00:17–00:17 — But before teaching that, I want to tell you a small thing.
+- [src-bc45cdf82e61] 00:17–00:17 — No matter how many AI tools come, any software comes, any hack happens, your life will not change until you take action.
+- [src-bc45cdf82e61] 00:17–00:17 — You want to be a YouTuber, you want to be a content creator, you want to do personal branding.
+- [src-bc45cdf82e61] 00:17–00:18 — So my simple tip is, take a video of yourself, use cloud and edit a video on it.
+- [src-bc45cdf82e61] 00:18–00:22 — I will explain it to you step by step, so do watch this video till the end.
+- [src-bc45cdf82e61] 00:18–00:18 — After editing, put it on Twitter, put it on LinkedIn, tag me.
+- [src-bc45cdf82e61] 00:18–00:18 — I will repost it and shoutout the best video in my next video
+- [src-bc45cdf82e61] 00:18–00:18 — So this is my challenge to you, make at least one video with cloud and upload it
+- [src-bc45cdf82e61] 00:18–00:18 — Is it clear? Let's see how to make 3D animation
+- [src-bc45cdf82e61] 00:18–00:18 — 3D animation, Nitish Rajput, they get millions of views, they make very good things but they have 3D animation
+- [src-bc45cdf82e61] 00:18–00:18 — If you go to make this outside, people can take up to 5000-10000 rupees
+- [src-bc45cdf82e61] 00:18–00:18 — It will start from 2000 minimum and it takes a lot of time
+- [src-bc45cdf82e61] 00:18–00:18 — So I made it and I said if I make it, it will be fun.
+- [src-bc45cdf82e61] 00:18–00:18 — You also have fun, but my PC, my MacBook Air, he raised his hand.
+- [src-bc45cdf82e61] 00:18–00:18 — We can't do it, why can't we?
+- [src-bc45cdf82e61] 00:18–00:18 — He says that it is 3D rendering, it has a blender, it is clear.
+- [src-bc45cdf82e61] 00:18–00:18 — I don't know the blender, he says you don't need to come, but to host everything, you need a server.
+- [src-bc45cdf82e61] 00:18–00:18 — You need good RAM, you have it.
+- [src-bc45cdf82e61] 00:18–00:18 — Then what to do?
+- [src-bc45cdf82e61] 00:18–00:19 — He says you will have a high-end PC, so I have an editing PC.
+- [src-bc45cdf82e61] 00:19–00:19 — So I sent it to him.
+- [src-bc45cdf82e61] 00:19–00:19 — So he edited it very well.
+- [src-bc45cdf82e61] 00:19–00:19 — It took 2 to 2.5 hours.
+- [src-bc45cdf82e61] 00:19–00:19 — But then the result he gave me.
+- [src-bc45cdf82e61] 00:19–00:19 — First time he gave me a perfect result.
+- [src-bc45cdf82e61] 00:19–00:19 — But second time, it took 2 or 3 prompts
+- [src-bc45cdf82e61] 00:19–00:19 — but he made a very good animation.
+- [src-bc45cdf82e61] 00:19–00:19 — Is it clear? But before that I will tell you the prompt.
+- [src-bc45cdf82e61] 00:19–00:19 — What was the prompt we put?
+- [src-bc45cdf82e61] 00:19–00:19 — This was my prompt.
+- [src-bc45cdf82e61] 00:19–00:19 — Watch this Nitish Rajput YouTube shot.
+- [src-bc45cdf82e61] 00:19–00:19 — Break down its editing style.
+- [src-bc45cdf82e61] 00:19–00:19 — 2D animation, motion graphic, which was our own.
+- [src-bc45cdf82e61] 00:19–00:19 — Caption, transition, music, sound effect.
+- [src-bc45cdf82e61] 00:19–00:19 — effect if you can't open the link tell me before continuing then edit my raw video in the same
+- [src-bc45cdf82e61] 00:19–00:20 — If you have a good GPU and good RAM in your laptop, then it is very strong. You will not be able to do everything on a small laptop. You will need a good laptop. But if you are watching, in the beginning it took 2.5 hours. But later he said that it takes time to set up for the first time. But I will give you these things in 45 minutes to 1 hour.
+- [src-bc45cdf82e61] 00:20–00:21 — For an astronaut, sleeping on the earth and sleeping in space is very different. But in space, there is no sleep. Let me tell you how. Earth completes one rotation in 24 hours. That's why we see a sunset and a sunrise in one day. But the International Space Center it goes around the Earth very fast. It completes one rotation in 90 minutes. So in one day, it goes into the shadow of the Earth many times and comes out. 16 times there is a sunrise and a sunset in one day.
+- [src-bc45cdf82e61] 00:20–00:21 — Now the International Space Center, the cabin here, is very pressurized. The air in it is the same that we breathe on Earth. but it has microgravity in space that's why you can't sleep with mattress or mattress you will feel weightless you will also fly but the mattress will also fly so what happens often is their sleeping bed is attached to the wall, floor and ceiling because of microgravity there is no space between the bed and the mattress so you will feel like you are floating and sleeping
+- [src-bc45cdf82e61] 00:21–00:35 — If you want to do better, I will give you an idea that you will get unlimited video ideas and millions of views. Clear? Which is called interview questions. interview questions. If you see this, then it is a YouTube channel of Geek4Geeks. If you see one of the popular shots here, then can you solve this Google interview questions? 25 million views have gone. If you go to the same thing on your college page, Shraddha did very well, then you will go to the top popular of them too.
+- [src-bc45cdf82e61] 00:21–00:21 — along with this if it is 16 times day and night then many times astronauts don't get sleep
+- [src-bc45cdf82e61] 00:21–00:21 — so this was today's video I tried to research for you for 3-4 days and made a video for you I gave you ideas, editing, everything Now it's your turn, accept this challenge that I told you
+- [src-bc45cdf82e61] 00:21–00:21 — Go and edit your video and tag me on Twitter and LinkedIn
+- [src-bc45cdf82e61] 00:21–00:21 — If you are stuck anywhere with this, then comment and tell me
+- [src-bc45cdf82e61] 00:21–00:21 — Or connect me on Twitter, LinkedIn
+- [src-bc45cdf82e61] 00:21–00:21 — Wherever you are stuck, I will solve your problem
+- [src-bc45cdf82e61] 00:21–00:21 — And tell me in the comments which video you want next regarding AI
+- [src-bc45cdf82e61] 00:21–00:21 — Thank you so much for watching this video, share it with your friends
+- [src-bc45cdf82e61] 00:21–00:21 — Have a nice day
+- [src-bc45cdf82e61] 00:21–00:21 — you
+- [src-bc45cdf82e61] 00:30–00:37 — So, how are you friends?
+- [src-bc45cdf82e61] 00:35–00:49 — So 20 million, the question asked in Google is a puzzle question. If you see, then there are puzzle questions, there are a lot of puzzle questions that you will get, which have millions of views. But the problem is that you will also find it from Google. But the problem is that we cannot edit it. So let me tell you how to do that.
+- [src-bc45cdf82e61] 00:37–00:38 — Welcome to last moment tuitions.
+- [src-bc45cdf82e61] 00:38–00:39 — My name is Sumay Singh Rajput.
+- [src-bc45cdf82e61] 00:39–00:45 — In today's video, I will teach you to do complete video editing with just cloud, that too as a complete beginner.
+- [src-bc45cdf82e61] 00:45–00:46 — You do not need any AI knowledge, nor do you need video editing, still you can do it easily.
+- [src-bc45cdf82e61] 00:46–00:51 — The video you saw in the beginning, after that you saw the channel intro, I edited it completely with cloud, you can also do it.
+- [src-bc45cdf82e61] 00:49–01:02 — Same funda, no rocket science, you gave the path And you said take this youtube shot And that too, and decor this editing style, motion graphic, cut, pacing, caption, transition, music and sound effects which we got from Ankur Now use what you learned to edit my raw video in the same style with the same energy Keep my content original but make the editing, motion, sound feel engaging and professional You gave your path on raw clip You understand, the better you give it the editing video, the better it will make you
+- [src-bc45cdf82e61] 00:51–00:55 — Along with this, how to put captions, background music, b-rolls in your video
+- [src-bc45cdf82e61] 00:55–00:57 — At the end of the video, I will teach you how to do 3D animation
+- [src-bc45cdf82e61] 00:57–01:02 — That too with just Clod
+- [src-bc45cdf82e61] 01:02–01:05 — So, I have a small request from you, watch the video till the end
+- [src-bc45cdf82e61] 01:02–01:14 — Let's see how he made it. This is my video. This question was asked in Google interview. Let's see if you can solve it or not. There is a circle with 13 caves. There is a thief hidden in one of the caves.
+- [src-bc45cdf82e61] 01:05–01:07 — And if you are new to the channel, then subscribe
+- [src-bc45cdf82e61] 01:07–01:08 — Let's start the video
+- [src-bc45cdf82e61] 01:08–01:10 — So, let's start video editing through Clod
+- [src-bc45cdf82e61] 01:10–01:14 — Look, if you are a complete beginner, then I will not tell you any technical things
+- [src-bc45cdf82e61] 01:14–01:18 — Prompt is not complex, it will be easy to do, you will also be able to do it
+- [src-bc45cdf82e61] 01:18–01:22 — You just need to install a cloud on your PC
+- [src-bc45cdf82e61] 01:22–01:25 — This is how you can see some cloud on your screen
+- [src-bc45cdf82e61] 01:25–01:27 — This is the cloud chat section
+- [src-bc45cdf82e61] 01:27–01:28 — You understood
+- [src-bc45cdf82e61] 01:28–01:30 — This is the chat section
+- [src-bc45cdf82e61] 01:30–01:33 — This is called the cloud code section
+- [src-bc45cdf82e61] 01:33–01:35 — We will do it on cloud code
+- [src-bc45cdf82e61] 01:35–01:38 — You can click on new and your new will start
+- [src-bc45cdf82e61] 01:38–01:40 — Is it clear? Yes, I understood
+- [src-bc45cdf82e61] 01:40–01:45 — Now let's come to how to edit my video and what to prompt
+- [src-bc45cdf82e61] 01:45–01:47 — We will start with basics
+- [src-bc45cdf82e61] 01:47–01:53 — So basically I have a video, if you see, then the salary of this software engineer is CTC explained
+- [src-bc45cdf82e61] 01:53–01:54 — See
+- [src-bc45cdf82e61] 01:54–01:59 — So the salary of this software engineer is 20 lakhs, 40 lakhs, 20 crores, so does he really get so much money?
+- [src-bc45cdf82e61] 01:59–02:00 — So let me tell you
+- [src-bc45cdf82e61] 02:00–02:05 — So here is my raw video, there is no editing in it, so what I did to my raw video
+- [src-bc45cdf82e61] 02:10–02:13 — So I drag and drop my video
+- [src-bc45cdf82e61] 02:13–02:16 — I did not write any complex prompt, I said simple
+- [src-bc45cdf82e61] 02:16–02:19 — I want to edit this video. This is an explainer video. Add some motion graphic. What is motion graphic?
+- [src-bc45cdf82e61] 02:19–02:22 — When you have boxes in your video, designs, it is basically called motion graphic.
+- [src-bc45cdf82e61] 02:22–02:26 — We need proper text, captions and required sound effects.
+- [src-bc45cdf82e61] 02:26–02:31 — Also before edit, go through video, understand it and tell me what can be done better.
+- [src-bc45cdf82e61] 02:31–02:34 — You can write this too. Yes, you can write it easily.
+- [src-bc45cdf82e61] 02:34–02:37 — So he did things according to his own. Then I didn't say anything to him.
+- [src-bc45cdf82e61] 02:37–02:39 — that change this, change that, nothing.
+- [src-bc45cdf82e61] 02:39–02:42 — He gave me a lot of recommendations, I just said do it.
+- [src-bc45cdf82e61] 02:42–02:45 — And after doing it, I will tell you the result.
+- [src-bc45cdf82e61] 02:45–02:48 — See this, he gave me his result.
+- [src-bc45cdf82e61] 02:48–02:50 — And we are seeing the first edit, the basic one.
+- [src-bc45cdf82e61] 02:50–02:52 — You can also do it, okay.
+- [src-bc45cdf82e61] 02:52–02:54 — Here is the result.
+- [src-bc45cdf82e61] 02:54–02:56 — So the salary of a software engineer,
+- [src-bc45cdf82e61] 02:56–02:58 — 20 lakhs, 40 lakhs, 1.5 crore,
+- [src-bc45cdf82e61] 02:58–02:59 — does he really get so much money?
+- [src-bc45cdf82e61] 02:59–03:00 — Let me tell you.
+- [src-bc45cdf82e61] 03:00–03:03 — So basically, this salary is called CTC,
+- [src-bc45cdf82e61] 03:03–03:04 — Cost to the Company.
+- [src-bc45cdf82e61] 03:04–03:06 — The company invests so much on you every year.
+- [src-bc45cdf82e61] 03:06–03:08 — But exactly, it is not that much money
+- [src-bc45cdf82e61] 03:08–03:10 — you don't get that much money
+- [src-bc45cdf82e61] 03:10–03:13 — suppose your salary from your C.T. is 12 lakhs
+- [src-bc45cdf82e61] 03:13–03:15 — then you don't get 1 lakhs every month
+- [src-bc45cdf82e61] 03:15–03:16 — there are different variables in this
+- [src-bc45cdf82e61] 03:16–03:19 — first variable is called base pay or fixed pay
+- [src-bc45cdf82e61] 03:19–03:22 — if your 9.6 lakhs out of 12 lakhs is fixed pay
+- [src-bc45cdf82e61] 03:22–03:24 — that means you will get that much
+- [src-bc45cdf82e61] 03:24–03:25 — that's it
+- [src-bc45cdf82e61] 03:25–03:28 — all these boxes and this crazy edit
+- [src-bc45cdf82e61] 03:28–03:30 — you can do with one prompt
+- [src-bc45cdf82e61] 03:30–03:32 — I didn't teach it anything separately
+- [src-bc45cdf82e61] 03:32–03:34 — and it made a crazy video for me
+- [src-bc45cdf82e61] 03:34–03:35 — it's fun
+- [src-bc45cdf82e61] 03:35–03:37 — if you are enjoying it then first of all like this video
+- [src-bc45cdf82e61] 03:37–03:41 — and put it on the hype button because I want this video to reach a lot of people.
+- [src-bc45cdf82e61] 03:41–03:46 — Now understand my point, you can do such a powerful edit with a simple prompt or a clause.
+- [src-bc45cdf82e61] 05:38–05:39 — He did all this
+- [src-bc45cdf82e61] 05:48–05:52 — Before doing this, he told me that when he needed the YouTube library to download it, it requires sign in
+- [src-bc45cdf82e61] 05:52–05:55 — No editor has opened and you are seeing what quality it is.
+- [src-bc45cdf82e61] 05:54–05:57 — because obviously, he asked me to sign in
+- [src-bc45cdf82e61] 05:55–05:56 — Is it powerful or not?
+- [src-bc45cdf82e61] 05:56–05:57 — Do you want to do it better?
+- [src-bc45cdf82e61] 05:57–05:59 — Yes, brother Sumer, you want to do it better.
+- [src-bc45cdf82e61] 05:57–06:00 — so I signed in with my gmail
+- [src-bc45cdf82e61] 05:59–06:43 — So now let's go to the next step where we will put B-rolls.
+- [src-bc45cdf82e61] 06:00–06:03 — and nothing else, I just signed in
+- [src-bc45cdf82e61] 06:03–06:06 — when I went to make youtube videos for the first time in 2017, I failed many times
+- [src-bc45cdf82e61] 06:06–06:09 — I tried a lot, but nothing happened
+- [src-bc45cdf82e61] 06:09–06:12 — I made videos asking my friend for a phone
+- [src-bc45cdf82e61] 06:12–06:15 — how I made the first video, then I made 10, then 100
+- [src-bc45cdf82e61] 06:15–06:18 — then 1000 videos and today we are at 1 million subscribers
+- [src-bc45cdf82e61] 06:18–06:21 — so here comes the quote of Maya Motu Moshashi
+- [src-bc45cdf82e61] 06:21–06:24 — which you should remember
+- [src-bc45cdf82e61] 06:24–06:27 — first but everything is difficult at first.
+- [src-bc45cdf82e61] 06:43–06:47 — It will find B-rolls from the internet itself, will find background music, will put it in its video.
+- [src-bc45cdf82e61] 06:47–06:49 — So let's go to step number 2.
+- [src-bc45cdf82e61] 06:49–06:52 — So before starting step 2, you have to do a small work.
+- [src-bc45cdf82e61] 06:52–06:54 — If you want my video to be better
+- [src-bc45cdf82e61] 06:54–06:56 — Simply go to google and search hyperframe
+- [src-bc45cdf82e61] 06:54–06:58 — If you see my videos in this folder, then see all the videos. This is my photo. I look like this.
+- [src-bc45cdf82e61] 06:56–07:01 — If you search you will see the website and the Github repo
+- [src-bc45cdf82e61] 06:58–07:02 — In those videos, wherever I am, give them proper naming.
+- [src-bc45cdf82e61] 07:01–07:03 — You don't have to do any technical work
+- [src-bc45cdf82e61] 07:02–07:05 — That there is walking, dancing, what I am doing, tell me all about me.
+- [src-bc45cdf82e61] 07:03–07:04 — You don't have to sign in
+- [src-bc45cdf82e61] 07:04–07:08 — Just copy the link and go to your cloud
+- [src-bc45cdf82e61] 07:05–07:08 — So that when I get a B-roll, and make a list of it and give it.
+- [src-bc45cdf82e61] 07:08–07:10 — And paste this link here and say
+- [src-bc45cdf82e61] 07:08–07:12 — So that next time I get my own B-rolls, then I can use it.
+- [src-bc45cdf82e61] 07:10–07:13 — Set up hyperframe so we can use to edit the video
+- [src-bc45cdf82e61] 07:12–07:15 — Clear? So he has properly arranged all my videos.
+- [src-bc45cdf82e61] 07:13–07:15 — You can write this much easily
+- [src-bc45cdf82e61] 07:15–07:17 — There is no complex or terminal
+- [src-bc45cdf82e61] 07:15–07:18 — I would like to show you that. I am going to the documents.
+- [src-bc45cdf82e61] 07:17–07:18 — That's it
+- [src-bc45cdf82e61] 07:18–07:22 — Now let's move forward and see the video we had to make.
+- [src-bc45cdf82e61] 07:18–07:20 — And if I see, this is my B-roll.
+- [src-bc45cdf82e61] 07:20–07:26 — all the family, selfies, editing, montage, work, snow, travel, talking, walking
+- [src-bc45cdf82e61] 07:22–07:28 — I have told you a small story about how I failed in making a video in the beginning.
+- [src-bc45cdf82e61] 07:26–07:30 — everything and it made a list so that my AI can use it
+- [src-bc45cdf82e61] 07:28–07:30 — Then how I became a million subscriber.
+- [src-bc45cdf82e61] 07:30–07:32 — Now I didn't put a direct video here.
+- [src-bc45cdf82e61] 07:30–07:34 — you can also do it, it's not difficult, it's easy, your videos are arranged by itself
+- [src-bc45cdf82e61] 07:32–07:34 — I put its path.
+- [src-bc45cdf82e61] 07:34–07:36 — How to put a path?
+- [src-bc45cdf82e61] 07:34–07:35 — ok bro, ok
+- [src-bc45cdf82e61] 07:35–07:39 — now what I did, I took this as a prompt, what was my prompt?
+- [src-bc45cdf82e61] 07:36–07:38 — See here my video is there.
+- [src-bc45cdf82e61] 07:38–08:20 — I go to its information.
+- [src-bc45cdf82e61] 07:39–07:40 — I will tell you
+- [src-bc45cdf82e61] 07:40–07:42 — in this video, captions are coming on the face, solve this
+- [src-bc45cdf82e61] 07:42–07:46 — so in the last video, the captions were coming on my face, I was like, first solve this
+- [src-bc45cdf82e61] 07:46–07:49 — after that also this time use my own behold
+- [src-bc45cdf82e61] 07:49–07:53 — From the path given below, use the clip list for the select relevant b-roll
+- [src-bc45cdf82e61] 07:53–07:56 — We had made a list and asked him to make a list
+- [src-bc45cdf82e61] 07:56–08:00 — So for that, we have a list in our folder, if you see
+- [src-bc45cdf82e61] 08:00–08:01 — You understand
+- [src-bc45cdf82e61] 08:01–08:03 — I went to this document
+- [src-bc45cdf82e61] 08:03–08:07 — In b-rolls, this is a complete list, so it becomes easy to find for it
+- [src-bc45cdf82e61] 08:07–08:08 — Because he has arranged it
+- [src-bc45cdf82e61] 08:20–08:22 — So I know its path.
+- [src-bc45cdf82e61] 08:22–08:24 — Here is my video.
+- [src-bc45cdf82e61] 08:24–08:26 — If you do this normally.
+- [src-bc45cdf82e61] 08:26–08:31 — So you can see this in your windows too, that where my video is, you have to give the path of that.
+- [src-bc45cdf82e61] 08:31–08:33 — So I gave the path of my video in this way.
+- [src-bc45cdf82e61] 08:33–08:35 — So that I don't upload it again and again.
+- [src-bc45cdf82e61] 08:35–08:37 — Is it clear? Now I said, edit this,
+- [src-bc45cdf82e61] 08:37–08:39 — put proper caption,
+- [src-bc45cdf82e61] 08:39–08:41 — put b-rolls, use the free
+- [src-bc45cdf82e61] 08:41–08:43 — version from internet.
+- [src-bc45cdf82e61] 08:43–08:55 — I download b from internet But copyright should not be there Upload it on youtube copyright is there Keep the license free Along with that put background music from YouTube library You can download background music from YouTube library and use it in your video
+- [src-bc45cdf82e61] 08:55–08:56 — It does not require copyright
+- [src-bc45cdf82e61] 08:56–08:58 — That too is non copyright, simple

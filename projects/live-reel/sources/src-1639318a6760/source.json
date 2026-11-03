@@ -1,0 +1,16 @@
+{
+  "author": null,
+  "checksum": "1639318a676004ba5dd5e58855445e3bb37fb80b2e7e855e611e1b204467e0a3",
+  "kind": "video",
+  "language": "en",
+  "license": null,
+  "media_type": "audio",
+  "origin": "https://www.instagram.com/reel/De9qbt5tH34",
+  "raw_path": "sources/src-1639318a6760/raw/De9qbt5tH34.m4a",
+  "reason": null,
+  "retrieved_at": "2026-11-02T18:50:18Z",
+  "schema_version": 1,
+  "source_id": "src-1639318a6760",
+  "status": "ingested",
+  "title": "test reel"
+}

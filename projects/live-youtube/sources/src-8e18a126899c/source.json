@@ -1,0 +1,16 @@
+{
+  "author": "jawed",
+  "checksum": "8e18a126899cfb98cfd10f5e1dcdeabfa97e368ca9645f52fd802ba24b07e4f9",
+  "kind": "video",
+  "language": "en",
+  "license": "standard-youtube",
+  "media_type": "audio",
+  "origin": "https://www.youtube.com/watch?v=jNQXAC9IVRw",
+  "raw_path": "sources/src-8e18a126899c/raw/jNQXAC9IVRw.webm",
+  "reason": null,
+  "retrieved_at": "2026-11-02T18:16:33Z",
+  "schema_version": 1,
+  "source_id": "src-8e18a126899c",
+  "status": "ingested",
+  "title": "Me at the zoo"
+}

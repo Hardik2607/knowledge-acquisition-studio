@@ -1,0 +1,8 @@
+project_id: live-reel
+goal: test reel ingestion via firefox cookies
+sources:
+  - kind: video
+    origin: https://www.instagram.com/reel/De9qbt5tH34
+    title: test reel
+    cookies_from_browser: firefox
+    language: en

@@ -1,0 +1,1948 @@
+{
+  "source_id": "src-bc45cdf82e61",
+  "provider": "unorouter",
+  "model": "mistral-small-3.2:free",
+  "generated_at": "2026-11-02T20:06:43Z",
+  "schema_version": 1,
+  "notes": [
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 0.0,
+      "end": 3.0,
+      "range": "00:00\u201300:03",
+      "text": "Many of you want to become a content creator or a YouTuber"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 3.0,
+      "end": 5.0,
+      "range": "00:03\u201300:05",
+      "text": "but we get stuck because we don't know how to edit."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 5.0,
+      "end": 7.0,
+      "range": "00:05\u201300:07",
+      "text": "If we want to do it ourselves, we can't do it that well."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 7.0,
+      "end": 10.0,
+      "range": "00:07\u201300:10",
+      "text": "If we get it done by people, we charge up to 2000, 5000, or 10000 rupees."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 8.12,
+      "end": 8.14,
+      "range": "00:08\u201300:08",
+      "text": "And he completed it himself"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 8.16,
+      "end": 8.21,
+      "range": "00:08\u201300:08",
+      "text": "When I went to make YouTube videos for the first time in 2017, I failed many times."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 8.21,
+      "end": 8.24,
+      "range": "00:08\u201300:08",
+      "text": "I tried but failed many times."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 8.24,
+      "end": 8.26,
+      "range": "00:08\u201300:08",
+      "text": "I used to make videos by asking my friend for a phone call."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 8.26,
+      "end": 8.31,
+      "range": "00:08\u201300:08",
+      "text": "I made the first video, then I made 10, then 100, then 1000 videos."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 8.31,
+      "end": 8.33,
+      "range": "00:08\u201300:08",
+      "text": "And today we have 1 million subscribers."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 8.33,
+      "end": 8.37,
+      "range": "00:08\u201300:08",
+      "text": "So here comes the quote of Maya Motu Moshashi which you should remember."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 8.37,
+      "end": 8.41,
+      "range": "00:08\u201300:08",
+      "text": "It may be difficult at first, but everything is difficult at first."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 8.41,
+      "end": 8.48,
+      "range": "00:08\u201300:08",
+      "text": "Crazy, people easily take 500 to 1000 rupees to do this thing and you learned it quickly."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 8.48,
+      "end": 8.52,
+      "range": "00:08\u201300:08",
+      "text": "You can do this crazy part through cloud."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 8.52,
+      "end": 9.01,
+      "range": "00:08\u201300:09",
+      "text": "Are you still enjoying it or not? If you want more such AI updates, then all the prompts I have put are on our WhatsApp channel."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.01,
+      "end": 9.08,
+      "range": "00:09\u201300:09",
+      "text": "So by doing my AI tutorials, you will get the link below, go there and join quickly because you should not miss all this."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.08,
+      "end": 9.1,
+      "range": "00:09\u201300:09",
+      "text": "Let's move on to step 3."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.1,
+      "end": 9.12,
+      "range": "00:09\u201300:09",
+      "text": "Step 3 is,"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.12,
+      "end": 9.14,
+      "range": "00:09\u201300:09",
+      "text": "this is just a normal thing."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.14,
+      "end": 9.16,
+      "range": "00:09\u201300:09",
+      "text": "If you want to earn real money,"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.16,
+      "end": 9.18,
+      "range": "00:09\u201300:09",
+      "text": "you can earn money when the top players of the industry,"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.18,
+      "end": 9.2,
+      "range": "00:09\u201300:09",
+      "text": "like Ankur Warikoo,"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.2,
+      "end": 9.22,
+      "range": "00:09\u201300:09",
+      "text": "when you can edit the reels of such people,"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.22,
+      "end": 9.24,
+      "range": "00:09\u201300:09",
+      "text": "at their level,"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.24,
+      "end": 9.26,
+      "range": "00:09\u201300:09",
+      "text": "then people will recognize you."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.26,
+      "end": 9.28,
+      "range": "00:09\u201300:09",
+      "text": "If you are able to make 3D videos,"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.28,
+      "end": 9.3,
+      "range": "00:09\u201300:09",
+      "text": "then people will give you money."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.3,
+      "end": 9.32,
+      "range": "00:09\u201300:09",
+      "text": "So the next thing we are learning is how we can do that."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.32,
+      "end": 9.34,
+      "range": "00:09\u201300:09",
+      "text": "So let's go to step 3."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.34,
+      "end": 9.36,
+      "range": "00:09\u201300:09",
+      "text": "So let's start step 3."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.36,
+      "end": 9.4,
+      "range": "00:09\u201300:09",
+      "text": "If you want to edit a video, you have to do it yourself."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.4,
+      "end": 9.42,
+      "range": "00:09\u201300:09",
+      "text": "What will you have to do first?"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.42,
+      "end": 9.45,
+      "range": "00:09\u201300:09",
+      "text": "You have to give videos like them in your AI."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.45,
+      "end": 9.47,
+      "range": "00:09\u201300:09",
+      "text": "You have to train your AI."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.47,
+      "end": 9.49,
+      "range": "00:09\u201300:09",
+      "text": "Which is not difficult."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.49,
+      "end": 9.51,
+      "range": "00:09\u201300:09",
+      "text": "I will tell you a prompt."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.51,
+      "end": 9.54,
+      "range": "00:09\u201300:09",
+      "text": "You can use the same prompt to edit any video."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.54,
+      "end": 9.55,
+      "range": "00:09\u201300:09",
+      "text": "Is it clear? Ok."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.55,
+      "end": 9.56,
+      "range": "00:09\u201300:09",
+      "text": "I will tell you."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.56,
+      "end": 9.58,
+      "range": "00:09\u201300:09",
+      "text": "There was a video on Ankur Wari."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 9.58,
+      "end": 10.01,
+      "range": "00:09\u201300:10",
+      "text": "He was telling that if you buy a house in Mumbai, you will get a lot of money."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 10.0,
+      "end": 15.0,
+      "range": "00:10\u201300:15",
+      "text": "Today I will tell you how you can use Plod to edit your complete video"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 10.0,
+      "end": 12.0,
+      "range": "00:10\u201300:12",
+      "text": "Take this Ankur Wari's YouTube shot. and decode its editing style what is motion graphics, what is cuts, what is pacing, what is caption, what is transition, music and sound effects you should read all these things, understand why, how, what is made after that now use what you learn to edit my raw videos in the same style with the same energy is it right? keep my content original but the editing, motion and sound effects equally engaging and professional and I gave my raw video clip you can also write this, yes you can write it easily You will get the prompt on my WhatsApp channel. There is no problem."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 10.01,
+      "end": 10.02,
+      "range": "00:10\u201300:10",
+      "text": "Is it clear?"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 12.0,
+      "end": 21.0,
+      "range": "00:12\u201300:21",
+      "text": "So what did he do? He learned from himself and I will tell you he made the video. If you want to buy 1 BHK in Mumbai, then how much will it cost? Let's see. If you buy in Vasai Virar, then it will cost from 35 lakhs to 50 lakhs. If you buy in Navi Mumbai, then it will cost from 50 lakhs to 75 lakhs. If you buy in Thani then it will cost from 65 lakhs to 90 lakhs In the central suburbs this price is from 70 lakhs to 2 crores And if you buy in the western suburbs then it will go you 1 crore to 2 crore South Mumbai will cost you 2 cr to 4 cr So this is Ankur Varaki's video, same level of editing that we have done."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 12.0,
+      "end": 12.51,
+      "range": "00:12\u201300:12",
+      "text": "You police have to tell yourself that which cave the thief is in. Clear? You can check two caves in a day. And what can the thief do? He can either stay in his cave or go to the cave on the left or on the right. And it is also understood that when the police check the cave, the thief cannot come out because he will be caught and his cave cannot be changed."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 12.51,
+      "end": 12.55,
+      "range": "00:12\u201300:12",
+      "text": "You have to tell me in how many days the police will find the thief."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 12.55,
+      "end": 13.03,
+      "range": "00:12\u201300:13",
+      "text": "I will tell you the answer in the next second, but before that, if you tell me, then definitely comment in the comment. Crazy or not, you enjoyed it, you enjoyed it. And you can make this thing in thousands of questions, you can get millions of views in it, this thing is going on."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 13.03,
+      "end": 13.12,
+      "range": "00:13\u201300:13",
+      "text": "Huge respect to the one who is working on it, doing research, it is his hard work. But you can also do this. It is so clear. You have to do better, you have to make better, you have to make 3D animation."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 13.12,
+      "end": 13.22,
+      "range": "00:13\u201300:13",
+      "text": "If you watch the videos of Nitish Rajput, then we will make that too. But I will teach him at the end of the video. Before that, I will teach you the intro of my channel. So now let's come to step 4, where we are seeing how to make intro videos."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 13.22,
+      "end": 13.35,
+      "range": "00:13\u201300:13",
+      "text": "You will see that our intro was very strong. So to make that, we will have to increase our prompting skill a little. I will explain to you how to do it. Nothing, see I have written a prompt, but it is a very long and big prompt."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 13.35,
+      "end": 13.43,
+      "range": "00:13\u201300:13",
+      "text": "I also picked it up from somewhere, but I will explain to you. I have explained it in a simple way. I need you to edit this to be super engaging."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 13.43,
+      "end": 13.53,
+      "range": "00:13\u201300:13",
+      "text": "and clean with hyperframes. you know the hyperframes that we have added. we need apple style super clean motion graphics and animation. apple is the best so we need apple style."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 13.53,
+      "end": 14.02,
+      "range": "00:13\u201300:14",
+      "text": "after that first transition my video so you know exactly when each animation text image or effect should appear. as I speak add relevant b-rolls, screenshots. screen recording, images or generated visuals."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 14.02,
+      "end": 14.13,
+      "range": "00:14\u201300:14",
+      "text": "with smooth animation from the right and the left. That's all I said. This was our main prompt."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 14.13,
+      "end": 14.23,
+      "range": "00:14\u201300:14",
+      "text": "Now what is he saying? He is saying that you can do it, you have potential."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 14.38,
+      "end": 14.43,
+      "range": "00:14\u201300:14",
+      "text": "Then it says, put B roll, put screenshot, put recording, do it according to you but make it best."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 14.44,
+      "end": 14.48,
+      "range": "00:14\u201300:14",
+      "text": "One thing that you can use in every prompt of yours, its last line, keep my face clearly visible at all the time after editing, review the frame and make sure no graphic, B roll or animation comes over my face or important content."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 15.0,
+      "end": 18.0,
+      "range": "00:15\u201300:18",
+      "text": "without using any software."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 15.04,
+      "end": 15.1,
+      "range": "00:15\u201300:15",
+      "text": "after putting out, I will tell you that in the beginning, the first result is not necessary that you get the best result in the first problem"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 15.1,
+      "end": 15.13,
+      "range": "00:15\u201300:15",
+      "text": "it is not necessary that you fall from every stone, some efforts are prepared, Zakir Khan says"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 15.35,
+      "end": 15.4,
+      "range": "00:15\u201300:15",
+      "text": "Today I will tell you how you can use Plod to edit your complete video without using any software."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 15.44,
+      "end": 15.46,
+      "range": "00:15\u201300:15",
+      "text": "So, do watch this video."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 15.46,
+      "end": 15.48,
+      "range": "00:15\u201300:15",
+      "text": "So, let's move on to step 5."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 15.48,
+      "end": 15.5,
+      "range": "00:15\u201300:15",
+      "text": "How to make this strong channel intro?"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 15.5,
+      "end": 15.52,
+      "range": "00:15\u201300:15",
+      "text": "If you go to make this outside, people take thousands of rupees."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 15.52,
+      "end": 15.54,
+      "range": "00:15\u201300:15",
+      "text": "I will tell you my channel intro."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 16.41,
+      "end": 16.46,
+      "range": "00:16\u201300:16",
+      "text": "What is the problem? Analyze the attached video made by Opus 5.5."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 16.46,
+      "end": 16.51,
+      "range": "00:16\u201300:16",
+      "text": "He also made it from 5.5. What makes design, pacing, frame types and energy so good?"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 16.51,
+      "end": 17.09,
+      "range": "00:16\u201300:17",
+      "text": "so good, analyze it. After that, turn this into a reusable motion design skill. Use the skill to make a 15 second YouTube video in 16 landscape, which is YouTube. Research YouTube and collect B-rolls and assets and make it unmistakably YouTube branded color typography and design language."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 17.11,
+      "end": 17.13,
+      "range": "00:17\u201300:17",
+      "text": "so he did youtube youtube and also put my channel"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 17.13,
+      "end": 17.15,
+      "range": "00:17\u201300:17",
+      "text": "LMT last moment juices"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 17.15,
+      "end": 17.17,
+      "range": "00:17\u201300:17",
+      "text": "I put this much prompt"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 17.17,
+      "end": 17.21,
+      "range": "00:17\u201300:17",
+      "text": "did nothing at last he made me"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 17.21,
+      "end": 17.23,
+      "range": "00:17\u201300:17",
+      "text": "if you see then here it is"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 17.23,
+      "end": 17.25,
+      "range": "00:17\u201300:17",
+      "text": "this is my proper channel intro"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 17.25,
+      "end": 17.27,
+      "range": "00:17\u201300:17",
+      "text": "which we will play now"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 17.39,
+      "end": 17.45,
+      "range": "00:17\u201300:17",
+      "text": "Let's come to our last lesson today, how to make 3D animation videos."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 17.45,
+      "end": 17.48,
+      "range": "00:17\u201300:17",
+      "text": "But before teaching that, I want to tell you a small thing."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 17.48,
+      "end": 17.54,
+      "range": "00:17\u201300:17",
+      "text": "No matter how many AI tools come, any software comes, any hack happens, your life will not change until you take action."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 17.54,
+      "end": 17.58,
+      "range": "00:17\u201300:17",
+      "text": "You want to be a YouTuber, you want to be a content creator, you want to do personal branding."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 17.58,
+      "end": 18.04,
+      "range": "00:17\u201300:18",
+      "text": "So my simple tip is, take a video of yourself, use cloud and edit a video on it."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 18.0,
+      "end": 22.0,
+      "range": "00:18\u201300:22",
+      "text": "I will explain it to you step by step, so do watch this video till the end."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 18.04,
+      "end": 18.07,
+      "range": "00:18\u201300:18",
+      "text": "After editing, put it on Twitter, put it on LinkedIn, tag me."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 18.07,
+      "end": 18.13,
+      "range": "00:18\u201300:18",
+      "text": "I will repost it and shoutout the best video in my next video"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 18.13,
+      "end": 18.18,
+      "range": "00:18\u201300:18",
+      "text": "So this is my challenge to you, make at least one video with cloud and upload it"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 18.18,
+      "end": 18.21,
+      "range": "00:18\u201300:18",
+      "text": "Is it clear? Let's see how to make 3D animation"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 18.21,
+      "end": 18.27,
+      "range": "00:18\u201300:18",
+      "text": "3D animation, Nitish Rajput, they get millions of views, they make very good things but they have 3D animation"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 18.27,
+      "end": 18.31,
+      "range": "00:18\u201300:18",
+      "text": "If you go to make this outside, people can take up to 5000-10000 rupees"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 18.31,
+      "end": 18.34,
+      "range": "00:18\u201300:18",
+      "text": "It will start from 2000 minimum and it takes a lot of time"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 18.34,
+      "end": 18.38,
+      "range": "00:18\u201300:18",
+      "text": "So I made it and I said if I make it, it will be fun."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 18.38,
+      "end": 18.42,
+      "range": "00:18\u201300:18",
+      "text": "You also have fun, but my PC, my MacBook Air, he raised his hand."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 18.42,
+      "end": 18.44,
+      "range": "00:18\u201300:18",
+      "text": "We can't do it, why can't we?"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 18.44,
+      "end": 18.48,
+      "range": "00:18\u201300:18",
+      "text": "He says that it is 3D rendering, it has a blender, it is clear."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 18.48,
+      "end": 18.53,
+      "range": "00:18\u201300:18",
+      "text": "I don't know the blender, he says you don't need to come, but to host everything, you need a server."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 18.53,
+      "end": 18.56,
+      "range": "00:18\u201300:18",
+      "text": "You need good RAM, you have it."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 18.56,
+      "end": 18.57,
+      "range": "00:18\u201300:18",
+      "text": "Then what to do?"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 18.57,
+      "end": 19.0,
+      "range": "00:18\u201300:19",
+      "text": "He says you will have a high-end PC, so I have an editing PC."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 19.0,
+      "end": 19.02,
+      "range": "00:19\u201300:19",
+      "text": "So I sent it to him."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 19.02,
+      "end": 19.04,
+      "range": "00:19\u201300:19",
+      "text": "So he edited it very well."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 19.04,
+      "end": 19.06,
+      "range": "00:19\u201300:19",
+      "text": "It took 2 to 2.5 hours."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 19.06,
+      "end": 19.08,
+      "range": "00:19\u201300:19",
+      "text": "But then the result he gave me."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 19.08,
+      "end": 19.1,
+      "range": "00:19\u201300:19",
+      "text": "First time he gave me a perfect result."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 19.1,
+      "end": 19.12,
+      "range": "00:19\u201300:19",
+      "text": "But second time, it took 2 or 3 prompts"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 19.12,
+      "end": 19.14,
+      "range": "00:19\u201300:19",
+      "text": "but he made a very good animation."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 19.14,
+      "end": 19.16,
+      "range": "00:19\u201300:19",
+      "text": "Is it clear? But before that I will tell you the prompt."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 19.16,
+      "end": 19.18,
+      "range": "00:19\u201300:19",
+      "text": "What was the prompt we put?"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 19.18,
+      "end": 19.2,
+      "range": "00:19\u201300:19",
+      "text": "This was my prompt."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 19.2,
+      "end": 19.22,
+      "range": "00:19\u201300:19",
+      "text": "Watch this Nitish Rajput YouTube shot."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 19.22,
+      "end": 19.24,
+      "range": "00:19\u201300:19",
+      "text": "Break down its editing style."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 19.24,
+      "end": 19.26,
+      "range": "00:19\u201300:19",
+      "text": "2D animation, motion graphic, which was our own."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 19.26,
+      "end": 19.28,
+      "range": "00:19\u201300:19",
+      "text": "Caption, transition, music, sound effect."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 19.28,
+      "end": 19.33,
+      "range": "00:19\u201300:19",
+      "text": "effect if you can't open the link tell me before continuing then edit my raw video in the same"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 19.55,
+      "end": 20.07,
+      "range": "00:19\u201300:20",
+      "text": "If you have a good GPU and good RAM in your laptop, then it is very strong. You will not be able to do everything on a small laptop. You will need a good laptop. But if you are watching, in the beginning it took 2.5 hours. But later he said that it takes time to set up for the first time. But I will give you these things in 45 minutes to 1 hour."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 20.22,
+      "end": 21.22,
+      "range": "00:20\u201300:21",
+      "text": "For an astronaut, sleeping on the earth and sleeping in space is very different. But in space, there is no sleep. Let me tell you how. Earth completes one rotation in 24 hours. That's why we see a sunset and a sunrise in one day. But the International Space Center it goes around the Earth very fast. It completes one rotation in 90 minutes. So in one day, it goes into the shadow of the Earth many times and comes out. 16 times there is a sunrise and a sunset in one day."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 20.49,
+      "end": 21.16,
+      "range": "00:20\u201300:21",
+      "text": "Now the International Space Center, the cabin here, is very pressurized. The air in it is the same that we breathe on Earth. but it has microgravity in space that's why you can't sleep with mattress or mattress you will feel weightless you will also fly but the mattress will also fly so what happens often is their sleeping bed is attached to the wall, floor and ceiling because of microgravity there is no space between the bed and the mattress so you will feel like you are floating and sleeping"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 21.0,
+      "end": 35.0,
+      "range": "00:21\u201300:35",
+      "text": "If you want to do better, I will give you an idea that you will get unlimited video ideas and millions of views. Clear? Which is called interview questions. interview questions. If you see this, then it is a YouTube channel of Geek4Geeks. If you see one of the popular shots here, then can you solve this Google interview questions? 25 million views have gone. If you go to the same thing on your college page, Shraddha did very well, then you will go to the top popular of them too."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 21.17,
+      "end": 21.21,
+      "range": "00:21\u201300:21",
+      "text": "along with this if it is 16 times day and night then many times astronauts don't get sleep"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 21.22,
+      "end": 21.33,
+      "range": "00:21\u201300:21",
+      "text": "so this was today's video I tried to research for you for 3-4 days and made a video for you I gave you ideas, editing, everything Now it's your turn, accept this challenge that I told you"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 21.33,
+      "end": 21.38,
+      "range": "00:21\u201300:21",
+      "text": "Go and edit your video and tag me on Twitter and LinkedIn"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 21.38,
+      "end": 21.41,
+      "range": "00:21\u201300:21",
+      "text": "If you are stuck anywhere with this, then comment and tell me"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 21.41,
+      "end": 21.43,
+      "range": "00:21\u201300:21",
+      "text": "Or connect me on Twitter, LinkedIn"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 21.43,
+      "end": 21.45,
+      "range": "00:21\u201300:21",
+      "text": "Wherever you are stuck, I will solve your problem"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 21.45,
+      "end": 21.49,
+      "range": "00:21\u201300:21",
+      "text": "And tell me in the comments which video you want next regarding AI"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 21.49,
+      "end": 21.51,
+      "range": "00:21\u201300:21",
+      "text": "Thank you so much for watching this video, share it with your friends"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 21.51,
+      "end": 21.52,
+      "range": "00:21\u201300:21",
+      "text": "Have a nice day"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 21.52,
+      "end": 21.53,
+      "range": "00:21\u201300:21",
+      "text": "you"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 30.0,
+      "end": 37.0,
+      "range": "00:30\u201300:37",
+      "text": "So, how are you friends?"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 35.0,
+      "end": 49.0,
+      "range": "00:35\u201300:49",
+      "text": "So 20 million, the question asked in Google is a puzzle question. If you see, then there are puzzle questions, there are a lot of puzzle questions that you will get, which have millions of views. But the problem is that you will also find it from Google. But the problem is that we cannot edit it. So let me tell you how to do that."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 37.0,
+      "end": 38.0,
+      "range": "00:37\u201300:38",
+      "text": "Welcome to last moment tuitions."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 38.0,
+      "end": 39.0,
+      "range": "00:38\u201300:39",
+      "text": "My name is Sumay Singh Rajput."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 39.0,
+      "end": 45.0,
+      "range": "00:39\u201300:45",
+      "text": "In today's video, I will teach you to do complete video editing with just cloud, that too as a complete beginner."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 45.0,
+      "end": 46.0,
+      "range": "00:45\u201300:46",
+      "text": "You do not need any AI knowledge, nor do you need video editing, still you can do it easily."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 46.0,
+      "end": 51.0,
+      "range": "00:46\u201300:51",
+      "text": "The video you saw in the beginning, after that you saw the channel intro, I edited it completely with cloud, you can also do it."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 49.0,
+      "end": 62.0,
+      "range": "00:49\u201301:02",
+      "text": "Same funda, no rocket science, you gave the path And you said take this youtube shot And that too, and decor this editing style, motion graphic, cut, pacing, caption, transition, music and sound effects which we got from Ankur Now use what you learned to edit my raw video in the same style with the same energy Keep my content original but make the editing, motion, sound feel engaging and professional You gave your path on raw clip You understand, the better you give it the editing video, the better it will make you"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 51.0,
+      "end": 55.0,
+      "range": "00:51\u201300:55",
+      "text": "Along with this, how to put captions, background music, b-rolls in your video"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 55.0,
+      "end": 57.0,
+      "range": "00:55\u201300:57",
+      "text": "At the end of the video, I will teach you how to do 3D animation"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 57.0,
+      "end": 62.0,
+      "range": "00:57\u201301:02",
+      "text": "That too with just Clod"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 62.0,
+      "end": 65.0,
+      "range": "01:02\u201301:05",
+      "text": "So, I have a small request from you, watch the video till the end"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 62.0,
+      "end": 74.0,
+      "range": "01:02\u201301:14",
+      "text": "Let's see how he made it. This is my video. This question was asked in Google interview. Let's see if you can solve it or not. There is a circle with 13 caves. There is a thief hidden in one of the caves."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 65.0,
+      "end": 67.0,
+      "range": "01:05\u201301:07",
+      "text": "And if you are new to the channel, then subscribe"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 67.0,
+      "end": 68.0,
+      "range": "01:07\u201301:08",
+      "text": "Let's start the video"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 68.0,
+      "end": 70.0,
+      "range": "01:08\u201301:10",
+      "text": "So, let's start video editing through Clod"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 70.0,
+      "end": 74.0,
+      "range": "01:10\u201301:14",
+      "text": "Look, if you are a complete beginner, then I will not tell you any technical things"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 74.0,
+      "end": 78.0,
+      "range": "01:14\u201301:18",
+      "text": "Prompt is not complex, it will be easy to do, you will also be able to do it"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 78.0,
+      "end": 82.0,
+      "range": "01:18\u201301:22",
+      "text": "You just need to install a cloud on your PC"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 82.0,
+      "end": 85.0,
+      "range": "01:22\u201301:25",
+      "text": "This is how you can see some cloud on your screen"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 85.0,
+      "end": 87.0,
+      "range": "01:25\u201301:27",
+      "text": "This is the cloud chat section"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 87.0,
+      "end": 88.0,
+      "range": "01:27\u201301:28",
+      "text": "You understood"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 88.0,
+      "end": 90.0,
+      "range": "01:28\u201301:30",
+      "text": "This is the chat section"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 90.0,
+      "end": 93.0,
+      "range": "01:30\u201301:33",
+      "text": "This is called the cloud code section"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 93.0,
+      "end": 95.0,
+      "range": "01:33\u201301:35",
+      "text": "We will do it on cloud code"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 95.0,
+      "end": 98.0,
+      "range": "01:35\u201301:38",
+      "text": "You can click on new and your new will start"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 98.0,
+      "end": 100.0,
+      "range": "01:38\u201301:40",
+      "text": "Is it clear? Yes, I understood"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 100.0,
+      "end": 105.0,
+      "range": "01:40\u201301:45",
+      "text": "Now let's come to how to edit my video and what to prompt"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 105.0,
+      "end": 107.0,
+      "range": "01:45\u201301:47",
+      "text": "We will start with basics"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 107.0,
+      "end": 113.0,
+      "range": "01:47\u201301:53",
+      "text": "So basically I have a video, if you see, then the salary of this software engineer is CTC explained"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 113.0,
+      "end": 114.0,
+      "range": "01:53\u201301:54",
+      "text": "See"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 114.0,
+      "end": 119.0,
+      "range": "01:54\u201301:59",
+      "text": "So the salary of this software engineer is 20 lakhs, 40 lakhs, 20 crores, so does he really get so much money?"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 119.0,
+      "end": 120.0,
+      "range": "01:59\u201302:00",
+      "text": "So let me tell you"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 120.0,
+      "end": 125.0,
+      "range": "02:00\u201302:05",
+      "text": "So here is my raw video, there is no editing in it, so what I did to my raw video"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 130.0,
+      "end": 133.0,
+      "range": "02:10\u201302:13",
+      "text": "So I drag and drop my video"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 133.0,
+      "end": 136.0,
+      "range": "02:13\u201302:16",
+      "text": "I did not write any complex prompt, I said simple"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 136.0,
+      "end": 139.0,
+      "range": "02:16\u201302:19",
+      "text": "I want to edit this video. This is an explainer video. Add some motion graphic. What is motion graphic?"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 139.0,
+      "end": 142.0,
+      "range": "02:19\u201302:22",
+      "text": "When you have boxes in your video, designs, it is basically called motion graphic."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 142.0,
+      "end": 146.0,
+      "range": "02:22\u201302:26",
+      "text": "We need proper text, captions and required sound effects."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 146.0,
+      "end": 151.0,
+      "range": "02:26\u201302:31",
+      "text": "Also before edit, go through video, understand it and tell me what can be done better."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 151.0,
+      "end": 154.0,
+      "range": "02:31\u201302:34",
+      "text": "You can write this too. Yes, you can write it easily."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 154.0,
+      "end": 157.0,
+      "range": "02:34\u201302:37",
+      "text": "So he did things according to his own. Then I didn't say anything to him."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 157.0,
+      "end": 159.0,
+      "range": "02:37\u201302:39",
+      "text": "that change this, change that, nothing."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 159.0,
+      "end": 162.0,
+      "range": "02:39\u201302:42",
+      "text": "He gave me a lot of recommendations, I just said do it."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 162.0,
+      "end": 165.0,
+      "range": "02:42\u201302:45",
+      "text": "And after doing it, I will tell you the result."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 165.0,
+      "end": 168.0,
+      "range": "02:45\u201302:48",
+      "text": "See this, he gave me his result."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 168.0,
+      "end": 170.0,
+      "range": "02:48\u201302:50",
+      "text": "And we are seeing the first edit, the basic one."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 170.0,
+      "end": 172.0,
+      "range": "02:50\u201302:52",
+      "text": "You can also do it, okay."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 172.0,
+      "end": 174.0,
+      "range": "02:52\u201302:54",
+      "text": "Here is the result."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 174.0,
+      "end": 176.0,
+      "range": "02:54\u201302:56",
+      "text": "So the salary of a software engineer,"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 176.0,
+      "end": 178.0,
+      "range": "02:56\u201302:58",
+      "text": "20 lakhs, 40 lakhs, 1.5 crore,"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 178.0,
+      "end": 179.0,
+      "range": "02:58\u201302:59",
+      "text": "does he really get so much money?"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 179.0,
+      "end": 180.0,
+      "range": "02:59\u201303:00",
+      "text": "Let me tell you."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 180.0,
+      "end": 183.0,
+      "range": "03:00\u201303:03",
+      "text": "So basically, this salary is called CTC,"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 183.0,
+      "end": 184.0,
+      "range": "03:03\u201303:04",
+      "text": "Cost to the Company."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 184.0,
+      "end": 186.0,
+      "range": "03:04\u201303:06",
+      "text": "The company invests so much on you every year."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 186.0,
+      "end": 188.0,
+      "range": "03:06\u201303:08",
+      "text": "But exactly, it is not that much money"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 188.0,
+      "end": 190.0,
+      "range": "03:08\u201303:10",
+      "text": "you don't get that much money"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 190.0,
+      "end": 193.0,
+      "range": "03:10\u201303:13",
+      "text": "suppose your salary from your C.T. is 12 lakhs"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 193.0,
+      "end": 195.0,
+      "range": "03:13\u201303:15",
+      "text": "then you don't get 1 lakhs every month"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 195.0,
+      "end": 196.0,
+      "range": "03:15\u201303:16",
+      "text": "there are different variables in this"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 196.0,
+      "end": 199.0,
+      "range": "03:16\u201303:19",
+      "text": "first variable is called base pay or fixed pay"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 199.0,
+      "end": 202.0,
+      "range": "03:19\u201303:22",
+      "text": "if your 9.6 lakhs out of 12 lakhs is fixed pay"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 202.0,
+      "end": 204.0,
+      "range": "03:22\u201303:24",
+      "text": "that means you will get that much"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 204.0,
+      "end": 205.0,
+      "range": "03:24\u201303:25",
+      "text": "that's it"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 205.0,
+      "end": 208.0,
+      "range": "03:25\u201303:28",
+      "text": "all these boxes and this crazy edit"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 208.0,
+      "end": 210.0,
+      "range": "03:28\u201303:30",
+      "text": "you can do with one prompt"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 210.0,
+      "end": 212.0,
+      "range": "03:30\u201303:32",
+      "text": "I didn't teach it anything separately"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 212.0,
+      "end": 214.0,
+      "range": "03:32\u201303:34",
+      "text": "and it made a crazy video for me"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 214.0,
+      "end": 215.0,
+      "range": "03:34\u201303:35",
+      "text": "it's fun"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 215.0,
+      "end": 217.0,
+      "range": "03:35\u201303:37",
+      "text": "if you are enjoying it then first of all like this video"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 217.0,
+      "end": 221.0,
+      "range": "03:37\u201303:41",
+      "text": "and put it on the hype button because I want this video to reach a lot of people."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 221.0,
+      "end": 226.0,
+      "range": "03:41\u201303:46",
+      "text": "Now understand my point, you can do such a powerful edit with a simple prompt or a clause."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 338.0,
+      "end": 339.0,
+      "range": "05:38\u201305:39",
+      "text": "He did all this"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 348.0,
+      "end": 352.0,
+      "range": "05:48\u201305:52",
+      "text": "Before doing this, he told me that when he needed the YouTube library to download it, it requires sign in"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 352.0,
+      "end": 355.0,
+      "range": "05:52\u201305:55",
+      "text": "No editor has opened and you are seeing what quality it is."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 354.0,
+      "end": 357.0,
+      "range": "05:54\u201305:57",
+      "text": "because obviously, he asked me to sign in"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 355.0,
+      "end": 356.0,
+      "range": "05:55\u201305:56",
+      "text": "Is it powerful or not?"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 356.0,
+      "end": 357.0,
+      "range": "05:56\u201305:57",
+      "text": "Do you want to do it better?"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 357.0,
+      "end": 359.0,
+      "range": "05:57\u201305:59",
+      "text": "Yes, brother Sumer, you want to do it better."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 357.0,
+      "end": 360.0,
+      "range": "05:57\u201306:00",
+      "text": "so I signed in with my gmail"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 359.0,
+      "end": 403.0,
+      "range": "05:59\u201306:43",
+      "text": "So now let's go to the next step where we will put B-rolls."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 360.0,
+      "end": 363.0,
+      "range": "06:00\u201306:03",
+      "text": "and nothing else, I just signed in"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 363.0,
+      "end": 366.0,
+      "range": "06:03\u201306:06",
+      "text": "when I went to make youtube videos for the first time in 2017, I failed many times"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 366.0,
+      "end": 369.0,
+      "range": "06:06\u201306:09",
+      "text": "I tried a lot, but nothing happened"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 369.0,
+      "end": 372.0,
+      "range": "06:09\u201306:12",
+      "text": "I made videos asking my friend for a phone"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 372.0,
+      "end": 375.0,
+      "range": "06:12\u201306:15",
+      "text": "how I made the first video, then I made 10, then 100"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 375.0,
+      "end": 378.0,
+      "range": "06:15\u201306:18",
+      "text": "then 1000 videos and today we are at 1 million subscribers"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 378.0,
+      "end": 381.0,
+      "range": "06:18\u201306:21",
+      "text": "so here comes the quote of Maya Motu Moshashi"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 381.0,
+      "end": 384.0,
+      "range": "06:21\u201306:24",
+      "text": "which you should remember"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 384.0,
+      "end": 387.0,
+      "range": "06:24\u201306:27",
+      "text": "first but everything is difficult at first."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 403.0,
+      "end": 407.0,
+      "range": "06:43\u201306:47",
+      "text": "It will find B-rolls from the internet itself, will find background music, will put it in its video."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 407.0,
+      "end": 409.0,
+      "range": "06:47\u201306:49",
+      "text": "So let's go to step number 2."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 409.0,
+      "end": 412.0,
+      "range": "06:49\u201306:52",
+      "text": "So before starting step 2, you have to do a small work."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 412.0,
+      "end": 414.0,
+      "range": "06:52\u201306:54",
+      "text": "If you want my video to be better"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 414.0,
+      "end": 416.0,
+      "range": "06:54\u201306:56",
+      "text": "Simply go to google and search hyperframe"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 414.0,
+      "end": 418.0,
+      "range": "06:54\u201306:58",
+      "text": "If you see my videos in this folder, then see all the videos. This is my photo. I look like this."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 416.0,
+      "end": 421.0,
+      "range": "06:56\u201307:01",
+      "text": "If you search you will see the website and the Github repo"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 418.0,
+      "end": 422.0,
+      "range": "06:58\u201307:02",
+      "text": "In those videos, wherever I am, give them proper naming."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 421.0,
+      "end": 423.0,
+      "range": "07:01\u201307:03",
+      "text": "You don't have to do any technical work"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 422.0,
+      "end": 425.0,
+      "range": "07:02\u201307:05",
+      "text": "That there is walking, dancing, what I am doing, tell me all about me."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 423.0,
+      "end": 424.0,
+      "range": "07:03\u201307:04",
+      "text": "You don't have to sign in"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 424.0,
+      "end": 428.0,
+      "range": "07:04\u201307:08",
+      "text": "Just copy the link and go to your cloud"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 425.0,
+      "end": 428.0,
+      "range": "07:05\u201307:08",
+      "text": "So that when I get a B-roll, and make a list of it and give it."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 428.0,
+      "end": 430.0,
+      "range": "07:08\u201307:10",
+      "text": "And paste this link here and say"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 428.0,
+      "end": 432.0,
+      "range": "07:08\u201307:12",
+      "text": "So that next time I get my own B-rolls, then I can use it."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 430.0,
+      "end": 433.0,
+      "range": "07:10\u201307:13",
+      "text": "Set up hyperframe so we can use to edit the video"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 432.0,
+      "end": 435.0,
+      "range": "07:12\u201307:15",
+      "text": "Clear? So he has properly arranged all my videos."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 433.0,
+      "end": 435.0,
+      "range": "07:13\u201307:15",
+      "text": "You can write this much easily"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 435.0,
+      "end": 437.0,
+      "range": "07:15\u201307:17",
+      "text": "There is no complex or terminal"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 435.0,
+      "end": 438.0,
+      "range": "07:15\u201307:18",
+      "text": "I would like to show you that. I am going to the documents."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 437.0,
+      "end": 438.0,
+      "range": "07:17\u201307:18",
+      "text": "That's it"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 438.0,
+      "end": 442.0,
+      "range": "07:18\u201307:22",
+      "text": "Now let's move forward and see the video we had to make."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 438.0,
+      "end": 440.0,
+      "range": "07:18\u201307:20",
+      "text": "And if I see, this is my B-roll."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 440.0,
+      "end": 446.0,
+      "range": "07:20\u201307:26",
+      "text": "all the family, selfies, editing, montage, work, snow, travel, talking, walking"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 442.0,
+      "end": 448.0,
+      "range": "07:22\u201307:28",
+      "text": "I have told you a small story about how I failed in making a video in the beginning."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 446.0,
+      "end": 450.0,
+      "range": "07:26\u201307:30",
+      "text": "everything and it made a list so that my AI can use it"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 448.0,
+      "end": 450.0,
+      "range": "07:28\u201307:30",
+      "text": "Then how I became a million subscriber."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 450.0,
+      "end": 452.0,
+      "range": "07:30\u201307:32",
+      "text": "Now I didn't put a direct video here."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 450.0,
+      "end": 454.0,
+      "range": "07:30\u201307:34",
+      "text": "you can also do it, it's not difficult, it's easy, your videos are arranged by itself"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 452.0,
+      "end": 454.0,
+      "range": "07:32\u201307:34",
+      "text": "I put its path."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 454.0,
+      "end": 456.0,
+      "range": "07:34\u201307:36",
+      "text": "How to put a path?"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 454.0,
+      "end": 455.0,
+      "range": "07:34\u201307:35",
+      "text": "ok bro, ok"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 455.0,
+      "end": 459.0,
+      "range": "07:35\u201307:39",
+      "text": "now what I did, I took this as a prompt, what was my prompt?"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 456.0,
+      "end": 458.0,
+      "range": "07:36\u201307:38",
+      "text": "See here my video is there."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 458.0,
+      "end": 500.0,
+      "range": "07:38\u201308:20",
+      "text": "I go to its information."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 459.0,
+      "end": 460.0,
+      "range": "07:39\u201307:40",
+      "text": "I will tell you"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 460.0,
+      "end": 462.0,
+      "range": "07:40\u201307:42",
+      "text": "in this video, captions are coming on the face, solve this"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 462.0,
+      "end": 466.0,
+      "range": "07:42\u201307:46",
+      "text": "so in the last video, the captions were coming on my face, I was like, first solve this"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 466.0,
+      "end": 469.0,
+      "range": "07:46\u201307:49",
+      "text": "after that also this time use my own behold"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 469.0,
+      "end": 473.0,
+      "range": "07:49\u201307:53",
+      "text": "From the path given below, use the clip list for the select relevant b-roll"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 473.0,
+      "end": 476.0,
+      "range": "07:53\u201307:56",
+      "text": "We had made a list and asked him to make a list"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 476.0,
+      "end": 480.0,
+      "range": "07:56\u201308:00",
+      "text": "So for that, we have a list in our folder, if you see"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 480.0,
+      "end": 481.0,
+      "range": "08:00\u201308:01",
+      "text": "You understand"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 481.0,
+      "end": 483.0,
+      "range": "08:01\u201308:03",
+      "text": "I went to this document"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 483.0,
+      "end": 487.0,
+      "range": "08:03\u201308:07",
+      "text": "In b-rolls, this is a complete list, so it becomes easy to find for it"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 487.0,
+      "end": 488.0,
+      "range": "08:07\u201308:08",
+      "text": "Because he has arranged it"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 500.0,
+      "end": 502.0,
+      "range": "08:20\u201308:22",
+      "text": "So I know its path."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 502.0,
+      "end": 504.0,
+      "range": "08:22\u201308:24",
+      "text": "Here is my video."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 504.0,
+      "end": 506.0,
+      "range": "08:24\u201308:26",
+      "text": "If you do this normally."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 506.0,
+      "end": 511.0,
+      "range": "08:26\u201308:31",
+      "text": "So you can see this in your windows too, that where my video is, you have to give the path of that."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 511.0,
+      "end": 513.0,
+      "range": "08:31\u201308:33",
+      "text": "So I gave the path of my video in this way."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 513.0,
+      "end": 515.0,
+      "range": "08:33\u201308:35",
+      "text": "So that I don't upload it again and again."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 515.0,
+      "end": 517.0,
+      "range": "08:35\u201308:37",
+      "text": "Is it clear? Now I said, edit this,"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 517.0,
+      "end": 519.0,
+      "range": "08:37\u201308:39",
+      "text": "put proper caption,"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 519.0,
+      "end": 521.0,
+      "range": "08:39\u201308:41",
+      "text": "put b-rolls, use the free"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 521.0,
+      "end": 523.0,
+      "range": "08:41\u201308:43",
+      "text": "version from internet."
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 523.0,
+      "end": 535.0,
+      "range": "08:43\u201308:55",
+      "text": "I download b from internet But copyright should not be there Upload it on youtube copyright is there Keep the license free Along with that put background music from YouTube library You can download background music from YouTube library and use it in your video"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 535.0,
+      "end": 536.0,
+      "range": "08:55\u201308:56",
+      "text": "It does not require copyright"
+    },
+    {
+      "source_id": "src-bc45cdf82e61",
+      "start": 536.0,
+      "end": 538.0,
+      "range": "08:56\u201308:58",
+      "text": "That too is non copyright, simple"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "source_id": "src-1639318a6760",
+  "provider": "groq",
+  "model": "whisper-large-v3",
+  "language": "English",
+  "generated_at": "2026-11-02T18:50:21Z",
+  "schema_version": 1,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 3.3,
+      "text": "Anthropic, the company behind Claude just filed to go public.",
+      "language": "English"
+    },
+    {
+      "start": 3.72,
+      "end": 7.3799996,
+      "text": "Buried in the SEC filings are some absolutely insane admissions.",
+      "language": "English"
+    },
+    {
+      "start": 7.8599997,
+      "end": 10.92,
+      "text": "1. AI could cause human extinction, nothing less.",
+      "language": "English"
+    },
+    {
+      "start": 11.2,
+      "end": 14.62,
+      "text": "2. Models have exhibited self-preservation behaviors.",
+      "language": "English"
+    },
+    {
+      "start": 14.94,
+      "end": 18.26,
+      "text": "3. AI has attempted to resist shutdowns.",
+      "language": "English"
+    },
+    {
+      "start": 18.44,
+      "end": 21.6,
+      "text": "4. Models have demonstrated blackmail and deception.",
+      "language": "English"
+    },
+    {
+      "start": 22.08,
+      "end": 27.26,
+      "text": "5. AI may recognize when it's being tested and deliberately change its behavior.",
+      "language": "English"
+    },
+    {
+      "start": 27.26,
+      "end": 31.66,
+      "text": "6. Advanced AI could undermine government and institutions.",
+      "language": "English"
+    },
+    {
+      "start": 31.66,
+      "end": 35.5,
+      "text": "7. AI could concentrate unprecedented power and wealth.",
+      "language": "English"
+    },
+    {
+      "start": 35.5,
+      "end": 40.06,
+      "text": "8. Future AI systems could surpass the world's leading human experts.",
+      "language": "English"
+    },
+    {
+      "start": 40.06,
+      "end": 43.66,
+      "text": "9. AI could become increasingly difficult for humans to control.",
+      "language": "English"
+    },
+    {
+      "start": 43.66,
+      "end": 49.579998,
+      "text": "10. Anthropic acknowledges that developing more powerful AI could increase the risk of catastrophic harm.",
+      "language": "English"
+    },
+    {
+      "start": 49.579998,
+      "end": 53.739998,
+      "text": "These are disclosures from the company building the technology, not the SEC.",
+      "language": "English"
+    },
+    {
+      "start": 53.739998,
+      "end": 56.06,
+      "text": "This is absolutely crazy. What do you think?",
+      "language": "English"
+    }
+  ]
+}

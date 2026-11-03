@@ -1,0 +1,22 @@
+# Example manifest — Knowledge Acquisition Studio
+# Copy to <project>/manifest.yaml and edit. Unknown keys are rejected (AC-19).
+
+project_id: reels-notes-demo
+goal: Turn saved short-form videos into publishable scripts with traceable sources
+language: en
+
+sources:
+  - kind: video
+    origin: https://www.youtube.com/watch?v=EXAMPLE123
+    title: How to take notes that survive a week
+    author: Example Channel
+    license: standard-youtube
+    language: en
+
+  - kind: video
+    origin: https://www.instagram.com/reel/EXAMPLE_REEL_ID/
+    title: Three note-taking tricks in 40 seconds
+    author: example_creator
+    license: unknown
+    cookies_from_browser: firefox
+    notes: Reel is Hinglish; transcription should keep the language tag.

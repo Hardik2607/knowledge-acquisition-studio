@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-02T19:50:32Z",
+  "provider": "llm7",
+  "model": "DeepSeek-V4-Flash-0731",
+  "units": [
+    {
+      "id": "k-cfda9286fc8a",
+      "statement": "Elephants have really long trunks.",
+      "source_refs": [
+        {
+          "source_id": "src-8e18a126899c",
+          "start": 4.0,
+          "end": 13.0
+        }
+      ],
+      "confidence": "high"
+    }
+  ]
+}

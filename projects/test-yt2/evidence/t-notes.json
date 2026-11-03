@@ -1,0 +1,13 @@
+{
+  "task_id": "t-notes",
+  "criteria": [
+    "AC-06"
+  ],
+  "result": "pass",
+  "artifacts": [
+    "notes/src-bc45cdf82e61.json"
+  ],
+  "command": "kas build --project /home/hardik/ai-agent-ecosystem/projects/knowledge-acquisition-studio/projects/test-yt2",
+  "run_at": "2026-11-02T20:13:03Z",
+  "notes": "Every note carries source_id and a range inside that source's transcript."
+}

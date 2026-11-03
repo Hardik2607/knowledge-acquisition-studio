@@ -1,0 +1,16 @@
+{
+  "author": null,
+  "checksum": "d758feb19fffc6260a5321bcf33bc1ef6d60f10789e2f19f83aff79c5e1a8957",
+  "kind": "video",
+  "language": "en",
+  "license": null,
+  "media_type": "audio",
+  "origin": "https://www.youtube.com/watch?v=lTXeZSgOJLY",
+  "raw_path": "sources/src-d758feb19fff/raw/lTXeZSgOJLY.webm",
+  "reason": null,
+  "retrieved_at": "2026-11-02T19:24:27Z",
+  "schema_version": 1,
+  "source_id": "src-d758feb19fff",
+  "status": "ingested",
+  "title": "test youtube"
+}

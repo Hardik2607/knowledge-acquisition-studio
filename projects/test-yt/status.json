@@ -1,0 +1,29 @@
+{
+  "project_id": "test-yt",
+  "phase": "Phase 1 \u2014 Foundation implemented (manifest, config, status, CLI)",
+  "completed": [
+    "Manifest validated: 1 source(s), kinds: video",
+    "Configuration validated (strict keys, env-name-only secrets)",
+    "Status contract written to status.json and docs/status/status.md",
+    "Phase 0 frozen: requirements v2.1, acceptance criteria AC-01\u2026AC-25"
+  ],
+  "evidence": [
+    "manifest: /home/hardik/ai-agent-ecosystem/projects/knowledge-acquisition-studio/projects/test-yt/manifest.yaml",
+    "config: built-in defaults",
+    "pytest: tests/test_manifest.py, tests/test_config.py, tests/test_status.py, tests/test_cli.py"
+  ],
+  "decisions": [
+    "ADR-004 \u2014 requirements freeze, content-addressed ids, verification gate",
+    "ADR-005 \u2014 LLM7 primary, Unorouter failover, Groq Whisper fallback",
+    "ADR-006 \u2014 Obsidian projection, publishable content, daemon, cookies"
+  ],
+  "risks": [
+    "Pipeline not run yet in this project"
+  ],
+  "remaining": [
+    "Phase 2 \u2014 ingest, transcribe, notes"
+  ],
+  "next_task": "kas build",
+  "updated_at": "2026-11-02T19:24:15Z",
+  "schema_version": 1
+}

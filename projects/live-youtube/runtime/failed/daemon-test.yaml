@@ -1,0 +1,7 @@
+project_id: daemon-test
+goal: daemon smoke test
+sources:
+  - kind: video
+    origin: https://www.youtube.com/watch?v=jNQXAC9IVRw
+    title: Me at the zoo
+    language: en

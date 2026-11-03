@@ -1,0 +1,7 @@
+project_id: test-yt2
+goal: test youtube pipeline
+sources:
+  - kind: video
+    origin: https://www.youtube.com/watch?v=hffQ4UleKUU
+    title: test youtube 2
+    language: en

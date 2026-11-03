@@ -1,0 +1,18 @@
+{
+  "task_id": "t-knowledge",
+  "criteria": [
+    "AC-07",
+    "AC-08",
+    "AC-09",
+    "AC-15"
+  ],
+  "result": "pass",
+  "artifacts": [
+    "knowledge/units.json",
+    "knowledge/source-map.json",
+    "knowledge/procedures/p-identifying-an-elephant.md"
+  ],
+  "command": "kas build --project /home/hardik/ai-agent-ecosystem/projects/knowledge-acquisition-studio/projects/live-youtube",
+  "run_at": "2026-11-02T19:50:37Z",
+  "notes": "Units, procedures and source map are valid and provenance-clean."
+}

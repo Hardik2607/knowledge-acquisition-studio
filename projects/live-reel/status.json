@@ -1,0 +1,34 @@
+{
+  "project_id": "live-reel",
+  "phase": "Phase 3 \u2014 knowledge, procedures, source map, verification and retry",
+  "completed": [
+    "Ingested 1 source(s); 0 reused unchanged",
+    "Transcripts available for 1 source(s)",
+    "Notes written for 1 source(s) with timestamp provenance",
+    "Knowledge units: 12; procedures: 1; source map: 1 entries",
+    "Evidence written for AC-02, AC-03, AC-04, AC-05, AC-06, AC-07, AC-08, AC-09, AC-15"
+  ],
+  "evidence": [
+    "evidence/t-ingest.json",
+    "evidence/t-transcribe.json",
+    "evidence/t-notes.json",
+    "evidence/t-knowledge.json"
+  ],
+  "decisions": [
+    "ADR-004 \u2014 content-addressed ids, immutable raw, verification gate",
+    "ADR-005 \u2014 LLM7 primary with Groq Whisper fallback for timestamps",
+    "ADR-006 \u2014 cookies via browser profile for reels; no local model fallback"
+  ],
+  "risks": [
+    "OQ-6 (copyright) remains open; notes quote the source and are not publishable drafts"
+  ],
+  "remaining": [
+    "Phase 4 \u2014 vault projection and hand-edit detection (AC-24, AC-25)",
+    "Phase 4 \u2014 daemon trigger and publishable content (ADR-006)",
+    "Phase 5 \u2014 QA report, application, derived content, Skill packaging (AC-20\u2026AC-23)",
+    "OQ-5/6/8 remain open with documented defaults"
+  ],
+  "next_task": "Implement knowledge units and the source map (AC-07, AC-09)",
+  "updated_at": "2026-11-02T18:51:25Z",
+  "schema_version": 1
+}

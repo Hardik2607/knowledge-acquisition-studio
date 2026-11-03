@@ -1,0 +1,33 @@
+{
+  "project_id": "reels-notes-demo",
+  "phase": "Phase 1 \u2014 Foundation implemented (manifest, config, status, CLI)",
+  "completed": [
+    "Manifest validated: 2 source(s), kinds: video",
+    "Configuration validated (strict keys, env-name-only secrets)",
+    "Status contract written to status.json and docs/status/status.md",
+    "Phase 0 frozen: requirements v2.1, acceptance criteria AC-01\u2026AC-25"
+  ],
+  "evidence": [
+    "manifest: /home/hardik/ai-agent-ecosystem/projects/knowledge-acquisition-studio/projects/demo-reels/manifest.yaml",
+    "config: built-in defaults",
+    "pytest: tests/test_manifest.py, tests/test_config.py, tests/test_status.py, tests/test_cli.py"
+  ],
+  "decisions": [
+    "ADR-004 \u2014 requirements freeze, content-addressed ids, verification gate",
+    "ADR-005 \u2014 LLM7 primary, Unorouter failover, Groq Whisper fallback",
+    "ADR-006 \u2014 Obsidian projection, publishable content, daemon, cookies"
+  ],
+  "risks": [
+    "Pipeline stages are not implemented; no ingestion or extraction has run",
+    "Firefox has no Instagram session; login-gated reels will quarantine as auth_expired",
+    "OQ-6 (copyright for publishable output) remains open"
+  ],
+  "remaining": [
+    "Phase 2 \u2014 adapters (youtube, reels), transcription, notes",
+    "Phase 2 \u2014 knowledge units, procedures, source map, vault projection",
+    "Phase 3 \u2014 verification automation and fixtures"
+  ],
+  "next_task": "Implement the youtube adapter (yt-dlp \u2192 Source Record \u2192 transcript) behind the adapter interface",
+  "updated_at": "2026-11-02T18:06:58Z",
+  "schema_version": 1
+}

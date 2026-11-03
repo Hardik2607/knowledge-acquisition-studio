@@ -1,0 +1,13 @@
+{
+  "task_id": "t-transcribe",
+  "criteria": [
+    "AC-05"
+  ],
+  "result": "pass",
+  "artifacts": [
+    "sources/src-bc45cdf82e61/transcript.json"
+  ],
+  "command": "kas build --project /home/hardik/ai-agent-ecosystem/projects/knowledge-acquisition-studio/projects/test-yt2",
+  "run_at": "2026-11-02T20:13:03Z",
+  "notes": "Segments ordered, start < end, no overlap, none over 30s, all non-empty."
+}

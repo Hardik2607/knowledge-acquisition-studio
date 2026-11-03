@@ -1,0 +1,77 @@
+# Knowledge Acquisition Studio — default configuration
+# Schema: src/kas/config.py (strict; unknown keys are errors — AC-19)
+# Secrets are referenced by environment-variable NAME, never by value (ADR-005 D15).
+
+project:
+  version: 0.1.0
+  mode: local-first
+
+orchestrator:
+  auto_continue: true
+  max_retries: 3
+  lock_timeout_seconds: 600
+
+verification:
+  require_evidence: true
+  fail_on_missing_artifact: true
+  require_distinct_verify_model: true
+
+status:
+  update_after_each_task: true
+  write_markdown: true
+
+providers:
+  extract:
+    name: llm7
+    base_url: https://api.llm7.io/v1
+    api_key_env: LLM7_API_KEY
+    model: DeepSeek-V4-Flash-0731
+    timeout_seconds: 300
+  verify:
+    name: llm7
+    base_url: https://api.llm7.io/v1
+    api_key_env: LLM7_API_KEY
+    model: GLM-5.3-Flash
+    timeout_seconds: 120
+  transcribe:
+    name: llm7
+    base_url: https://api.llm7.io/v1
+    api_key_env: LLM7_API_KEY
+    model: Voxtral-Small-24B-2507
+    timeout_seconds: 300
+  research:
+    name: tavily
+    base_url: https://api.tavily.com
+    api_key_env: TAVILY_API_KEY
+    model: search
+    timeout_seconds: 60
+  failover:
+    name: unorouter
+    base_url: https://api.unorouter.com/v1
+    api_key_env: UNOROUTER_API_KEY
+    model: mistral-small-3.2:free
+    timeout_seconds: 120
+
+network:
+  enabled: true
+
+retention:
+  keep_raw: true
+  purge_raw: false
+
+paths:
+  vault: ~/Obsidian/knowledge-vault
+  runtime: runtime
+
+daemon:
+  inbox: runtime/inbox
+  poll_seconds: 5
+  max_parallel: 1
+
+sources:
+  youtube:
+    prefer_subtitles: true
+    languages: [en, hi]
+  reels:
+    cookies_from_browser: firefox
+    cookies_file: null

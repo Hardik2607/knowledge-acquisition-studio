@@ -1,0 +1,34 @@
+{
+  "source_id": "src-8e18a126899c",
+  "provider": "groq",
+  "model": "whisper-large-v3",
+  "language": "English",
+  "generated_at": "2026-11-02T18:32:09Z",
+  "schema_version": 1,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.0,
+      "text": "Alright, so here we are in front of the elephants.",
+      "language": "English"
+    },
+    {
+      "start": 4.0,
+      "end": 13.0,
+      "text": "The cool thing about these guys is that they have really, really, really long trunks.",
+      "language": "English"
+    },
+    {
+      "start": 13.0,
+      "end": 15.0,
+      "text": "And that's cool.",
+      "language": "English"
+    },
+    {
+      "start": 17.0,
+      "end": 19.0,
+      "text": "And that's pretty much all there is to say.",
+      "language": "English"
+    }
+  ]
+}

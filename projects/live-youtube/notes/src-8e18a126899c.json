@@ -1,0 +1,37 @@
+{
+  "source_id": "src-8e18a126899c",
+  "provider": "unorouter",
+  "model": "mistral-small-3.2:free",
+  "generated_at": "2026-11-02T19:50:27Z",
+  "schema_version": 1,
+  "notes": [
+    {
+      "source_id": "src-8e18a126899c",
+      "start": 0.0,
+      "end": 4.0,
+      "range": "00:00\u201300:04",
+      "text": "Alright, so here we are in front of the elephants."
+    },
+    {
+      "source_id": "src-8e18a126899c",
+      "start": 4.0,
+      "end": 13.0,
+      "range": "00:04\u201300:13",
+      "text": "The cool thing about these guys is that they have really, really, really long trunks."
+    },
+    {
+      "source_id": "src-8e18a126899c",
+      "start": 13.0,
+      "end": 15.0,
+      "range": "00:13\u201300:15",
+      "text": "And that's cool."
+    },
+    {
+      "source_id": "src-8e18a126899c",
+      "start": 17.0,
+      "end": 19.0,
+      "range": "00:17\u201300:19",
+      "text": "And that's pretty much all there is to say."
+    }
+  ]
+}

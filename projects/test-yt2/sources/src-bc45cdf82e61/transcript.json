@@ -1,0 +1,2458 @@
+{
+  "source_id": "src-bc45cdf82e61",
+  "provider": "groq",
+  "model": "whisper-large-v3",
+  "language": "English",
+  "generated_at": "2026-11-02T19:58:51Z",
+  "schema_version": 1,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 3.32,
+      "text": "Many of you want to become a content creator or a YouTuber",
+      "language": "English"
+    },
+    {
+      "start": 3.32,
+      "end": 5.6,
+      "text": "but we get stuck because we don't know how to edit.",
+      "language": "English"
+    },
+    {
+      "start": 5.6,
+      "end": 7.52,
+      "text": "If we want to do it ourselves, we can't do it that well.",
+      "language": "English"
+    },
+    {
+      "start": 7.52,
+      "end": 10.88,
+      "text": "If we get it done by people, we charge up to 2000, 5000, or 10000 rupees.",
+      "language": "English"
+    },
+    {
+      "start": 10.88,
+      "end": 15.96,
+      "text": "Today I will tell you how you can use Plod to edit your complete video",
+      "language": "English"
+    },
+    {
+      "start": 15.96,
+      "end": 18.199999,
+      "text": "without using any software.",
+      "language": "English"
+    },
+    {
+      "start": 18.199999,
+      "end": 22.0,
+      "text": "I will explain it to you step by step, so do watch this video till the end.",
+      "language": "English"
+    },
+    {
+      "start": 30.0,
+      "end": 37.88,
+      "text": "So, how are you friends?",
+      "language": "English"
+    },
+    {
+      "start": 37.88,
+      "end": 38.88,
+      "text": "Welcome to last moment tuitions.",
+      "language": "English"
+    },
+    {
+      "start": 38.88,
+      "end": 39.88,
+      "text": "My name is Sumay Singh Rajput.",
+      "language": "English"
+    },
+    {
+      "start": 39.88,
+      "end": 45.36,
+      "text": "In today's video, I will teach you to do complete video editing with just cloud, that too as",
+      "language": "English"
+    },
+    {
+      "start": 45.36,
+      "end": 46.36,
+      "text": "a complete beginner.",
+      "language": "English"
+    },
+    {
+      "start": 46.36,
+      "end": 51.44,
+      "text": "You do not need any AI knowledge, nor do you need video editing, still you can do it easily.",
+      "language": "English"
+    },
+    {
+      "start": 51.44,
+      "end": 55.68,
+      "text": "The video you saw in the beginning, after that you saw the channel intro, I edited it",
+      "language": "English"
+    },
+    {
+      "start": 55.68,
+      "end": 57.44,
+      "text": "completely with cloud, you can also do it.",
+      "language": "English"
+    },
+    {
+      "start": 57.44,
+      "end": 62.14,
+      "text": "Along with this, how to put captions, background music, b-rolls in your video",
+      "language": "English"
+    },
+    {
+      "start": 62.14,
+      "end": 66.26,
+      "text": "At the end of the video, I will teach you how to do 3D animation",
+      "language": "English"
+    },
+    {
+      "start": 66.26,
+      "end": 67.88,
+      "text": "That too with just Clod",
+      "language": "English"
+    },
+    {
+      "start": 67.88,
+      "end": 70.64,
+      "text": "So, I have a small request from you, watch the video till the end",
+      "language": "English"
+    },
+    {
+      "start": 70.64,
+      "end": 72.119995,
+      "text": "And if you are new to the channel, then subscribe",
+      "language": "English"
+    },
+    {
+      "start": 72.119995,
+      "end": 73.159996,
+      "text": "Let's start the video",
+      "language": "English"
+    },
+    {
+      "start": 73.159996,
+      "end": 75.7,
+      "text": "So, let's start video editing through Clod",
+      "language": "English"
+    },
+    {
+      "start": 75.7,
+      "end": 79.939995,
+      "text": "Look, if you are a complete beginner, then I will not tell you any technical things",
+      "language": "English"
+    },
+    {
+      "start": 79.939995,
+      "end": 83.799995,
+      "text": "Prompt is not complex, it will be easy to do, you will also be able to do it",
+      "language": "English"
+    },
+    {
+      "start": 83.799995,
+      "end": 87.99999,
+      "text": "You just need to install a cloud on your PC",
+      "language": "English"
+    },
+    {
+      "start": 87.99999,
+      "end": 90.67999,
+      "text": "This is how you can see some cloud on your screen",
+      "language": "English"
+    },
+    {
+      "start": 90.67999,
+      "end": 92.92,
+      "text": "This is the cloud chat section",
+      "language": "English"
+    },
+    {
+      "start": 92.92,
+      "end": 93.759995,
+      "text": "You understood",
+      "language": "English"
+    },
+    {
+      "start": 93.759995,
+      "end": 95.119995,
+      "text": "This is the chat section",
+      "language": "English"
+    },
+    {
+      "start": 95.119995,
+      "end": 98.799995,
+      "text": "This is called the cloud code section",
+      "language": "English"
+    },
+    {
+      "start": 98.799995,
+      "end": 100.2,
+      "text": "We will do it on cloud code",
+      "language": "English"
+    },
+    {
+      "start": 100.2,
+      "end": 103.479996,
+      "text": "You can click on new and your new will start",
+      "language": "English"
+    },
+    {
+      "start": 103.479996,
+      "end": 105.92,
+      "text": "Is it clear? Yes, I understood",
+      "language": "English"
+    },
+    {
+      "start": 105.92,
+      "end": 110.2,
+      "text": "Now let's come to how to edit my video and what to prompt",
+      "language": "English"
+    },
+    {
+      "start": 110.2,
+      "end": 112.119995,
+      "text": "We will start with basics",
+      "language": "English"
+    },
+    {
+      "start": 112.119995,
+      "end": 118.119995,
+      "text": "So basically I have a video, if you see, then the salary of this software engineer is CTC explained",
+      "language": "English"
+    },
+    {
+      "start": 118.119995,
+      "end": 119.119995,
+      "text": "See",
+      "language": "English"
+    },
+    {
+      "start": 119.119995,
+      "end": 124.71999,
+      "text": "So the salary of this software engineer is 20 lakhs, 40 lakhs, 20 crores, so does he really get so much money?",
+      "language": "English"
+    },
+    {
+      "start": 124.71999,
+      "end": 125.71999,
+      "text": "So let me tell you",
+      "language": "English"
+    },
+    {
+      "start": 125.71999,
+      "end": 130.31999,
+      "text": "So here is my raw video, there is no editing in it, so what I did to my raw video",
+      "language": "English"
+    },
+    {
+      "start": 130.31999,
+      "end": 133.92,
+      "text": "Basically I can drag and drop it here, see",
+      "language": "English"
+    },
+    {
+      "start": 133.92,
+      "end": 136.12,
+      "text": "So I drag and drop my video",
+      "language": "English"
+    },
+    {
+      "start": 136.12,
+      "end": 139.92,
+      "text": "I did not write any complex prompt, I said simple",
+      "language": "English"
+    },
+    {
+      "start": 139.92,
+      "end": 146.14,
+      "text": "I want to edit this video. This is an explainer video. Add some motion graphic. What is motion graphic?",
+      "language": "English"
+    },
+    {
+      "start": 146.14,
+      "end": 150.14,
+      "text": "When you have boxes in your video, designs, it is basically called motion graphic.",
+      "language": "English"
+    },
+    {
+      "start": 150.14,
+      "end": 154.94,
+      "text": "We need proper text, captions and required sound effects.",
+      "language": "English"
+    },
+    {
+      "start": 154.94,
+      "end": 159.78,
+      "text": "Also before edit, go through video, understand it and tell me what can be done better.",
+      "language": "English"
+    },
+    {
+      "start": 159.78,
+      "end": 162.06,
+      "text": "You can write this too. Yes, you can write it easily.",
+      "language": "English"
+    },
+    {
+      "start": 162.06,
+      "end": 165.94,
+      "text": "So he did things according to his own. Then I didn't say anything to him.",
+      "language": "English"
+    },
+    {
+      "start": 165.94,
+      "end": 167.94,
+      "text": "that change this, change that, nothing.",
+      "language": "English"
+    },
+    {
+      "start": 167.94,
+      "end": 170.32,
+      "text": "He gave me a lot of recommendations, I just said do it.",
+      "language": "English"
+    },
+    {
+      "start": 170.32,
+      "end": 172.94,
+      "text": "And after doing it, I will tell you the result.",
+      "language": "English"
+    },
+    {
+      "start": 172.94,
+      "end": 175.94,
+      "text": "See this, he gave me his result.",
+      "language": "English"
+    },
+    {
+      "start": 175.94,
+      "end": 177.94,
+      "text": "And we are seeing the first edit, the basic one.",
+      "language": "English"
+    },
+    {
+      "start": 177.94,
+      "end": 179.94,
+      "text": "You can also do it, okay.",
+      "language": "English"
+    },
+    {
+      "start": 179.94,
+      "end": 180.94,
+      "text": "Here is the result.",
+      "language": "English"
+    },
+    {
+      "start": 180.94,
+      "end": 182.94,
+      "text": "So the salary of a software engineer,",
+      "language": "English"
+    },
+    {
+      "start": 182.94,
+      "end": 184.94,
+      "text": "20 lakhs, 40 lakhs, 1.5 crore,",
+      "language": "English"
+    },
+    {
+      "start": 184.94,
+      "end": 185.94,
+      "text": "does he really get so much money?",
+      "language": "English"
+    },
+    {
+      "start": 185.94,
+      "end": 186.94,
+      "text": "Let me tell you.",
+      "language": "English"
+    },
+    {
+      "start": 186.94,
+      "end": 189.94,
+      "text": "So basically, this salary is called CTC,",
+      "language": "English"
+    },
+    {
+      "start": 189.94,
+      "end": 190.94,
+      "text": "Cost to the Company.",
+      "language": "English"
+    },
+    {
+      "start": 190.94,
+      "end": 192.94,
+      "text": "The company invests so much on you every year.",
+      "language": "English"
+    },
+    {
+      "start": 192.94,
+      "end": 194.94,
+      "text": "But exactly, it is not that much money",
+      "language": "English"
+    },
+    {
+      "start": 194.94,
+      "end": 196.38,
+      "text": "you don't get that much money",
+      "language": "English"
+    },
+    {
+      "start": 196.38,
+      "end": 199.34,
+      "text": "suppose your salary from your C.T. is 12 lakhs",
+      "language": "English"
+    },
+    {
+      "start": 199.34,
+      "end": 201.18001,
+      "text": "then you don't get 1 lakhs every month",
+      "language": "English"
+    },
+    {
+      "start": 201.18001,
+      "end": 202.54001,
+      "text": "there are different variables in this",
+      "language": "English"
+    },
+    {
+      "start": 202.54001,
+      "end": 205.18001,
+      "text": "first variable is called base pay or fixed pay",
+      "language": "English"
+    },
+    {
+      "start": 205.18001,
+      "end": 208.54001,
+      "text": "if your 9.6 lakhs out of 12 lakhs is fixed pay",
+      "language": "English"
+    },
+    {
+      "start": 208.54001,
+      "end": 210.14,
+      "text": "that means you will get that much",
+      "language": "English"
+    },
+    {
+      "start": 210.14,
+      "end": 211.1,
+      "text": "that's it",
+      "language": "English"
+    },
+    {
+      "start": 211.1,
+      "end": 214.22,
+      "text": "all these boxes and this crazy edit",
+      "language": "English"
+    },
+    {
+      "start": 214.22,
+      "end": 216.38,
+      "text": "you can do with one prompt",
+      "language": "English"
+    },
+    {
+      "start": 216.38,
+      "end": 218.22,
+      "text": "I didn't teach it anything separately",
+      "language": "English"
+    },
+    {
+      "start": 218.22,
+      "end": 220.7,
+      "text": "and it made a crazy video for me",
+      "language": "English"
+    },
+    {
+      "start": 220.7,
+      "end": 221.58,
+      "text": "it's fun",
+      "language": "English"
+    },
+    {
+      "start": 221.58,
+      "end": 223.58,
+      "text": "if you are enjoying it then first of all like this video",
+      "language": "English"
+    },
+    {
+      "start": 223.58,
+      "end": 227.58,
+      "text": "and put it on the hype button because I want this video to reach a lot of people.",
+      "language": "English"
+    },
+    {
+      "start": 227.58,
+      "end": 232.58,
+      "text": "Now understand my point, you can do such a powerful edit with a simple prompt or a clause.",
+      "language": "English"
+    },
+    {
+      "start": 232.58,
+      "end": 235.58,
+      "text": "No editor has opened and you are seeing what quality it is.",
+      "language": "English"
+    },
+    {
+      "start": 235.58,
+      "end": 236.58,
+      "text": "Is it powerful or not?",
+      "language": "English"
+    },
+    {
+      "start": 236.58,
+      "end": 237.58,
+      "text": "Do you want to do it better?",
+      "language": "English"
+    },
+    {
+      "start": 237.58,
+      "end": 239.58,
+      "text": "Yes, brother Sumer, you want to do it better.",
+      "language": "English"
+    },
+    {
+      "start": 239.58,
+      "end": 243.58,
+      "text": "So now let's go to the next step where we will put B-rolls.",
+      "language": "English"
+    },
+    {
+      "start": 243.58,
+      "end": 247.58,
+      "text": "It will find B-rolls from the internet itself, will find background music, will put it in its video.",
+      "language": "English"
+    },
+    {
+      "start": 247.58,
+      "end": 249.58,
+      "text": "So let's go to step number 2.",
+      "language": "English"
+    },
+    {
+      "start": 249.58,
+      "end": 252.58,
+      "text": "So before starting step 2, you have to do a small work.",
+      "language": "English"
+    },
+    {
+      "start": 252.58,
+      "end": 254.58,
+      "text": "If you want my video to be better",
+      "language": "English"
+    },
+    {
+      "start": 254.58,
+      "end": 256.58,
+      "text": "Simply go to google and search hyperframe",
+      "language": "English"
+    },
+    {
+      "start": 256.58,
+      "end": 261.58,
+      "text": "If you search you will see the website and the Github repo",
+      "language": "English"
+    },
+    {
+      "start": 261.58,
+      "end": 263.58,
+      "text": "You don't have to do any technical work",
+      "language": "English"
+    },
+    {
+      "start": 263.58,
+      "end": 264.58,
+      "text": "You don't have to sign in",
+      "language": "English"
+    },
+    {
+      "start": 264.58,
+      "end": 268.58,
+      "text": "Just copy the link and go to your cloud",
+      "language": "English"
+    },
+    {
+      "start": 268.58,
+      "end": 270.58,
+      "text": "And paste this link here and say",
+      "language": "English"
+    },
+    {
+      "start": 270.58,
+      "end": 273.58,
+      "text": "Set up hyperframe so we can use to edit the video",
+      "language": "English"
+    },
+    {
+      "start": 273.58,
+      "end": 275.58,
+      "text": "You can write this much easily",
+      "language": "English"
+    },
+    {
+      "start": 275.58,
+      "end": 277.58,
+      "text": "There is no complex or terminal",
+      "language": "English"
+    },
+    {
+      "start": 277.58,
+      "end": 278.58,
+      "text": "That's it",
+      "language": "English"
+    },
+    {
+      "start": 278.58,
+      "end": 282.58,
+      "text": "Now let's move forward and see the video we had to make.",
+      "language": "English"
+    },
+    {
+      "start": 282.58,
+      "end": 288.58,
+      "text": "I have told you a small story about how I failed in making a video in the beginning.",
+      "language": "English"
+    },
+    {
+      "start": 288.58,
+      "end": 290.58,
+      "text": "Then how I became a million subscriber.",
+      "language": "English"
+    },
+    {
+      "start": 290.58,
+      "end": 292.58,
+      "text": "Now I didn't put a direct video here.",
+      "language": "English"
+    },
+    {
+      "start": 292.58,
+      "end": 294.58,
+      "text": "I put its path.",
+      "language": "English"
+    },
+    {
+      "start": 294.58,
+      "end": 296.58,
+      "text": "How to put a path?",
+      "language": "English"
+    },
+    {
+      "start": 296.58,
+      "end": 298.58,
+      "text": "See here my video is there.",
+      "language": "English"
+    },
+    {
+      "start": 298.58,
+      "end": 300.58,
+      "text": "I go to its information.",
+      "language": "English"
+    },
+    {
+      "start": 300.58,
+      "end": 302.58,
+      "text": "So I know its path.",
+      "language": "English"
+    },
+    {
+      "start": 302.58,
+      "end": 304.58,
+      "text": "Here is my video.",
+      "language": "English"
+    },
+    {
+      "start": 304.58,
+      "end": 306.58,
+      "text": "If you do this normally.",
+      "language": "English"
+    },
+    {
+      "start": 306.58,
+      "end": 311.13998,
+      "text": "So you can see this in your windows too, that where my video is, you have to give the path of that.",
+      "language": "English"
+    },
+    {
+      "start": 311.13998,
+      "end": 313.13998,
+      "text": "So I gave the path of my video in this way.",
+      "language": "English"
+    },
+    {
+      "start": 313.13998,
+      "end": 315.13998,
+      "text": "So that I don't upload it again and again.",
+      "language": "English"
+    },
+    {
+      "start": 315.13998,
+      "end": 317.13998,
+      "text": "Is it clear? Now I said, edit this,",
+      "language": "English"
+    },
+    {
+      "start": 317.13998,
+      "end": 319.13998,
+      "text": "put proper caption,",
+      "language": "English"
+    },
+    {
+      "start": 319.13998,
+      "end": 321.13998,
+      "text": "put b-rolls, use the free",
+      "language": "English"
+    },
+    {
+      "start": 321.13998,
+      "end": 323.13998,
+      "text": "version from internet.",
+      "language": "English"
+    },
+    {
+      "start": 323.13998,
+      "end": 335.13843,
+      "text": "I download b from internet But copyright should not be there Upload it on youtube copyright is there Keep the license free Along with that put background music from YouTube library You can download background music from YouTube library and use it in your video",
+      "language": "English"
+    },
+    {
+      "start": 335.13843,
+      "end": 336.63843,
+      "text": "It does not require copyright",
+      "language": "English"
+    },
+    {
+      "start": 336.63843,
+      "end": 338.63843,
+      "text": "That too is non copyright, simple",
+      "language": "English"
+    },
+    {
+      "start": 338.63843,
+      "end": 342.63843,
+      "text": "So he did everything and gave me the first version, let's see",
+      "language": "English"
+    },
+    {
+      "start": 344.13843,
+      "end": 345.13843,
+      "text": "He did all this",
+      "language": "English"
+    },
+    {
+      "start": 345.13843,
+      "end": 348.13843,
+      "text": "Oh man, tell me the video",
+      "language": "English"
+    },
+    {
+      "start": 348.13843,
+      "end": 352.13843,
+      "text": "Before doing this, he told me that when he needed the YouTube library",
+      "language": "English"
+    },
+    {
+      "start": 352.13843,
+      "end": 354.63843,
+      "text": "To download it, it requires sign in",
+      "language": "English"
+    },
+    {
+      "start": 354.63843,
+      "end": 357.51843,
+      "text": "because obviously, he asked me to sign in",
+      "language": "English"
+    },
+    {
+      "start": 357.51843,
+      "end": 360.51843,
+      "text": "so I signed in with my gmail",
+      "language": "English"
+    },
+    {
+      "start": 360.51843,
+      "end": 363.51843,
+      "text": "and nothing else, I just signed in",
+      "language": "English"
+    },
+    {
+      "start": 363.51843,
+      "end": 366.51843,
+      "text": "when I went to make youtube videos for the first time in 2017, I failed many times",
+      "language": "English"
+    },
+    {
+      "start": 366.63843,
+      "end": 369.51843,
+      "text": "I tried a lot, but nothing happened",
+      "language": "English"
+    },
+    {
+      "start": 369.51843,
+      "end": 372.51843,
+      "text": "I made videos asking my friend for a phone",
+      "language": "English"
+    },
+    {
+      "start": 372.51843,
+      "end": 375.51843,
+      "text": "how I made the first video, then I made 10, then 100",
+      "language": "English"
+    },
+    {
+      "start": 375.51843,
+      "end": 378.51843,
+      "text": "then 1000 videos and today we are at 1 million subscribers",
+      "language": "English"
+    },
+    {
+      "start": 378.51843,
+      "end": 381.51843,
+      "text": "so here comes the quote of Maya Motu Moshashi",
+      "language": "English"
+    },
+    {
+      "start": 381.51843,
+      "end": 384.51843,
+      "text": "which you should remember",
+      "language": "English"
+    },
+    {
+      "start": 384.51843,
+      "end": 387.5584,
+      "text": "first but everything is difficult at first.",
+      "language": "English"
+    },
+    {
+      "start": 414.51843,
+      "end": 418.75842,
+      "text": "If you see my videos in this folder, then see all the videos. This is my photo. I look like this.",
+      "language": "English"
+    },
+    {
+      "start": 418.75842,
+      "end": 422.07843,
+      "text": "In those videos, wherever I am, give them proper naming.",
+      "language": "English"
+    },
+    {
+      "start": 422.07843,
+      "end": 425.63843,
+      "text": "That there is walking, dancing, what I am doing, tell me all about me.",
+      "language": "English"
+    },
+    {
+      "start": 425.63843,
+      "end": 428.59842,
+      "text": "So that when I get a B-roll, and make a list of it and give it.",
+      "language": "English"
+    },
+    {
+      "start": 428.59842,
+      "end": 432.1184,
+      "text": "So that next time I get my own B-rolls, then I can use it.",
+      "language": "English"
+    },
+    {
+      "start": 432.1184,
+      "end": 435.19843,
+      "text": "Clear? So he has properly arranged all my videos.",
+      "language": "English"
+    },
+    {
+      "start": 435.19843,
+      "end": 438.27844,
+      "text": "I would like to show you that. I am going to the documents.",
+      "language": "English"
+    },
+    {
+      "start": 438.27844,
+      "end": 440.7184,
+      "text": "And if I see, this is my B-roll.",
+      "language": "English"
+    },
+    {
+      "start": 440.7184,
+      "end": 446.59842,
+      "text": "all the family, selfies, editing, montage, work, snow, travel, talking, walking",
+      "language": "English"
+    },
+    {
+      "start": 446.59842,
+      "end": 450.1184,
+      "text": "everything and it made a list so that my AI can use it",
+      "language": "English"
+    },
+    {
+      "start": 450.1184,
+      "end": 454.27844,
+      "text": "you can also do it, it's not difficult, it's easy, your videos are arranged by itself",
+      "language": "English"
+    },
+    {
+      "start": 454.27844,
+      "end": 455.77844,
+      "text": "ok bro, ok",
+      "language": "English"
+    },
+    {
+      "start": 455.77844,
+      "end": 459.09842,
+      "text": "now what I did, I took this as a prompt, what was my prompt?",
+      "language": "English"
+    },
+    {
+      "start": 459.09842,
+      "end": 460.1184,
+      "text": "I will tell you",
+      "language": "English"
+    },
+    {
+      "start": 460.1184,
+      "end": 462.89844,
+      "text": "in this video, captions are coming on the face, solve this",
+      "language": "English"
+    },
+    {
+      "start": 462.89844,
+      "end": 466.57843,
+      "text": "so in the last video, the captions were coming on my face, I was like, first solve this",
+      "language": "English"
+    },
+    {
+      "start": 466.57843,
+      "end": 469.65842,
+      "text": "after that also this time use my own behold",
+      "language": "English"
+    },
+    {
+      "start": 469.65845,
+      "end": 473.97845,
+      "text": "From the path given below, use the clip list for the select relevant b-roll",
+      "language": "English"
+    },
+    {
+      "start": 473.97845,
+      "end": 476.97845,
+      "text": "We had made a list and asked him to make a list",
+      "language": "English"
+    },
+    {
+      "start": 476.97845,
+      "end": 480.0584,
+      "text": "So for that, we have a list in our folder, if you see",
+      "language": "English"
+    },
+    {
+      "start": 480.0584,
+      "end": 481.93842,
+      "text": "You understand",
+      "language": "English"
+    },
+    {
+      "start": 481.93842,
+      "end": 483.77844,
+      "text": "I went to this document",
+      "language": "English"
+    },
+    {
+      "start": 483.77844,
+      "end": 487.03845,
+      "text": "In b-rolls, this is a complete list, so it becomes easy to find for it",
+      "language": "English"
+    },
+    {
+      "start": 487.03845,
+      "end": 488.73843,
+      "text": "Because he has arranged it",
+      "language": "English"
+    },
+    {
+      "start": 488.73843,
+      "end": 492.15845,
+      "text": "I gave this much and I gave the path of my b-roll folder",
+      "language": "English"
+    },
+    {
+      "start": 492.15845,
+      "end": 494.15845,
+      "text": "And he completed it himself",
+      "language": "English"
+    },
+    {
+      "start": 494.15845,
+      "end": 496.77844,
+      "text": "And in the end, he made a reel, let's see",
+      "language": "English"
+    },
+    {
+      "start": 496.77844,
+      "end": 501.33844,
+      "text": "When I went to make YouTube videos for the first time in 2017, I failed many times.",
+      "language": "English"
+    },
+    {
+      "start": 501.33844,
+      "end": 504.33844,
+      "text": "I tried but failed many times.",
+      "language": "English"
+    },
+    {
+      "start": 504.33844,
+      "end": 506.93842,
+      "text": "I used to make videos by asking my friend for a phone call.",
+      "language": "English"
+    },
+    {
+      "start": 506.93842,
+      "end": 511.93842,
+      "text": "I made the first video, then I made 10, then 100, then 1000 videos.",
+      "language": "English"
+    },
+    {
+      "start": 511.93842,
+      "end": 513.9384,
+      "text": "And today we have 1 million subscribers.",
+      "language": "English"
+    },
+    {
+      "start": 513.9384,
+      "end": 517.9384,
+      "text": "So here comes the quote of Maya Motu Moshashi which you should remember.",
+      "language": "English"
+    },
+    {
+      "start": 517.9384,
+      "end": 521.9384,
+      "text": "It may be difficult at first, but everything is difficult at first.",
+      "language": "English"
+    },
+    {
+      "start": 521.9384,
+      "end": 528.9384,
+      "text": "Crazy, people easily take 500 to 1000 rupees to do this thing and you learned it quickly.",
+      "language": "English"
+    },
+    {
+      "start": 528.9384,
+      "end": 532.9384,
+      "text": "You can do this crazy part through cloud.",
+      "language": "English"
+    },
+    {
+      "start": 532.9384,
+      "end": 541.9384,
+      "text": "Are you still enjoying it or not? If you want more such AI updates, then all the prompts I have put are on our WhatsApp channel.",
+      "language": "English"
+    },
+    {
+      "start": 541.9384,
+      "end": 548.9384,
+      "text": "So by doing my AI tutorials, you will get the link below, go there and join quickly because you should not miss all this.",
+      "language": "English"
+    },
+    {
+      "start": 548.9384,
+      "end": 550.9384,
+      "text": "Let's move on to step 3.",
+      "language": "English"
+    },
+    {
+      "start": 550.9384,
+      "end": 552.9384,
+      "text": "Step 3 is,",
+      "language": "English"
+    },
+    {
+      "start": 552.9384,
+      "end": 554.9384,
+      "text": "this is just a normal thing.",
+      "language": "English"
+    },
+    {
+      "start": 554.9384,
+      "end": 556.9384,
+      "text": "If you want to earn real money,",
+      "language": "English"
+    },
+    {
+      "start": 556.9384,
+      "end": 558.9384,
+      "text": "you can earn money when the top players of the industry,",
+      "language": "English"
+    },
+    {
+      "start": 558.9384,
+      "end": 560.9384,
+      "text": "like Ankur Warikoo,",
+      "language": "English"
+    },
+    {
+      "start": 560.9384,
+      "end": 562.9384,
+      "text": "when you can edit the reels of such people,",
+      "language": "English"
+    },
+    {
+      "start": 562.9384,
+      "end": 564.9384,
+      "text": "at their level,",
+      "language": "English"
+    },
+    {
+      "start": 564.9384,
+      "end": 566.9384,
+      "text": "then people will recognize you.",
+      "language": "English"
+    },
+    {
+      "start": 566.9384,
+      "end": 568.9384,
+      "text": "If you are able to make 3D videos,",
+      "language": "English"
+    },
+    {
+      "start": 568.9384,
+      "end": 570.9384,
+      "text": "then people will give you money.",
+      "language": "English"
+    },
+    {
+      "start": 570.9384,
+      "end": 572.9384,
+      "text": "So the next thing we are learning is how we can do that.",
+      "language": "English"
+    },
+    {
+      "start": 572.9384,
+      "end": 574.9384,
+      "text": "So let's go to step 3.",
+      "language": "English"
+    },
+    {
+      "start": 574.9384,
+      "end": 576.9384,
+      "text": "So let's start step 3.",
+      "language": "English"
+    },
+    {
+      "start": 576.9384,
+      "end": 580.9384,
+      "text": "If you want to edit a video, you have to do it yourself.",
+      "language": "English"
+    },
+    {
+      "start": 580.9384,
+      "end": 582.9384,
+      "text": "What will you have to do first?",
+      "language": "English"
+    },
+    {
+      "start": 582.9384,
+      "end": 585.9384,
+      "text": "You have to give videos like them in your AI.",
+      "language": "English"
+    },
+    {
+      "start": 585.9384,
+      "end": 587.9384,
+      "text": "You have to train your AI.",
+      "language": "English"
+    },
+    {
+      "start": 587.9384,
+      "end": 589.9384,
+      "text": "Which is not difficult.",
+      "language": "English"
+    },
+    {
+      "start": 589.9384,
+      "end": 591.9384,
+      "text": "I will tell you a prompt.",
+      "language": "English"
+    },
+    {
+      "start": 591.9384,
+      "end": 594.9384,
+      "text": "You can use the same prompt to edit any video.",
+      "language": "English"
+    },
+    {
+      "start": 594.9384,
+      "end": 595.9384,
+      "text": "Is it clear? Ok.",
+      "language": "English"
+    },
+    {
+      "start": 595.9384,
+      "end": 596.9384,
+      "text": "I will tell you.",
+      "language": "English"
+    },
+    {
+      "start": 596.9384,
+      "end": 598.9384,
+      "text": "There was a video on Ankur Wari.",
+      "language": "English"
+    },
+    {
+      "start": 598.9384,
+      "end": 601.9384,
+      "text": "He was telling that if you buy a house in Mumbai, you will get a lot of money.",
+      "language": "English"
+    },
+    {
+      "start": 601.9384,
+      "end": 602.9384,
+      "text": "Is it clear?",
+      "language": "English"
+    },
+    {
+      "start": 602.9384,
+      "end": 604.9384,
+      "text": "Take this Ankur Wari's YouTube shot.",
+      "language": "English"
+    },
+    {
+      "start": 604.9384,
+      "end": 606.9384,
+      "text": "and decode its editing style",
+      "language": "English"
+    },
+    {
+      "start": 606.9384,
+      "end": 612.3784,
+      "text": "what is motion graphics, what is cuts, what is pacing, what is caption, what is transition, music and sound effects",
+      "language": "English"
+    },
+    {
+      "start": 612.3784,
+      "end": 616.2984,
+      "text": "you should read all these things, understand why, how, what is made",
+      "language": "English"
+    },
+    {
+      "start": 616.2984,
+      "end": 619.89844,
+      "text": "after that now use what you learn to edit my raw videos",
+      "language": "English"
+    },
+    {
+      "start": 619.89844,
+      "end": 621.89844,
+      "text": "in the same style with the same energy",
+      "language": "English"
+    },
+    {
+      "start": 621.89844,
+      "end": 622.89844,
+      "text": "is it right?",
+      "language": "English"
+    },
+    {
+      "start": 622.89844,
+      "end": 624.89844,
+      "text": "keep my content original",
+      "language": "English"
+    },
+    {
+      "start": 624.89844,
+      "end": 629.4584,
+      "text": "but the editing, motion and sound effects equally engaging and professional",
+      "language": "English"
+    },
+    {
+      "start": 629.4584,
+      "end": 631.4584,
+      "text": "and I gave my raw video clip",
+      "language": "English"
+    },
+    {
+      "start": 631.4584,
+      "end": 633.4584,
+      "text": "you can also write this, yes you can write it easily",
+      "language": "English"
+    },
+    {
+      "start": 633.45844,
+      "end": 635.45844,
+      "text": "You will get the prompt on my WhatsApp channel.",
+      "language": "English"
+    },
+    {
+      "start": 635.45844,
+      "end": 637.45844,
+      "text": "There is no problem.",
+      "language": "English"
+    },
+    {
+      "start": 637.45844,
+      "end": 639.45844,
+      "text": "So what did he do?",
+      "language": "English"
+    },
+    {
+      "start": 639.45844,
+      "end": 641.45844,
+      "text": "He learned from himself and I will tell you",
+      "language": "English"
+    },
+    {
+      "start": 641.45844,
+      "end": 643.45844,
+      "text": "he made the video.",
+      "language": "English"
+    },
+    {
+      "start": 643.45844,
+      "end": 645.45844,
+      "text": "If you want to buy 1 BHK in Mumbai, then how much will it cost?",
+      "language": "English"
+    },
+    {
+      "start": 645.45844,
+      "end": 647.45844,
+      "text": "Let's see. If you buy in Vasai Virar,",
+      "language": "English"
+    },
+    {
+      "start": 647.45844,
+      "end": 649.45844,
+      "text": "then it will cost from 35 lakhs to 50 lakhs.",
+      "language": "English"
+    },
+    {
+      "start": 649.45844,
+      "end": 651.45844,
+      "text": "If you buy in Navi Mumbai,",
+      "language": "English"
+    },
+    {
+      "start": 651.45844,
+      "end": 653.45844,
+      "text": "then it will cost from 50 lakhs to 75 lakhs.",
+      "language": "English"
+    },
+    {
+      "start": 653.45844,
+      "end": 667.27686,
+      "text": "If you buy in Thani then it will cost from 65 lakhs to 90 lakhs In the central suburbs this price is from 70 lakhs to 2 crores And if you buy in the western suburbs then it will go you 1 crore to 2 crore South Mumbai will cost you 2 cr to 4 cr",
+      "language": "English"
+    },
+    {
+      "start": 667.27686,
+      "end": 670.27686,
+      "text": "So this is Ankur Varaki's video, same level of editing that we have done.",
+      "language": "English"
+    },
+    {
+      "start": 670.27686,
+      "end": 678.27686,
+      "text": "If you want to do better, I will give you an idea that you will get unlimited video ideas and millions of views.",
+      "language": "English"
+    },
+    {
+      "start": 678.27686,
+      "end": 680.27686,
+      "text": "Clear? Which is called interview questions.",
+      "language": "English"
+    },
+    {
+      "start": 680.27686,
+      "end": 687.6769,
+      "text": "interview questions. If you see this, then it is a YouTube channel of Geek4Geeks. If you see one of the popular shots here, then can you solve this Google interview questions?",
+      "language": "English"
+    },
+    {
+      "start": 688.07684,
+      "end": 695.09686,
+      "text": "25 million views have gone. If you go to the same thing on your college page, Shraddha did very well, then you will go to the top popular of them too.",
+      "language": "English"
+    },
+    {
+      "start": 695.09686,
+      "end": 702.27686,
+      "text": "So 20 million, the question asked in Google is a puzzle question. If you see, then there are puzzle questions, there are a lot of puzzle questions that you will get,",
+      "language": "English"
+    },
+    {
+      "start": 702.27686,
+      "end": 709.09686,
+      "text": "which have millions of views. But the problem is that you will also find it from Google. But the problem is that we cannot edit it. So let me tell you how to do that.",
+      "language": "English"
+    },
+    {
+      "start": 709.09686,
+      "end": 712.89685,
+      "text": "Same funda, no rocket science, you gave the path",
+      "language": "English"
+    },
+    {
+      "start": 712.89685,
+      "end": 715.2969,
+      "text": "And you said take this youtube shot",
+      "language": "English"
+    },
+    {
+      "start": 715.2969,
+      "end": 722.69684,
+      "text": "And that too, and decor this editing style, motion graphic, cut, pacing, caption, transition, music and sound effects which we got from Ankur",
+      "language": "English"
+    },
+    {
+      "start": 722.69684,
+      "end": 726.9968,
+      "text": "Now use what you learned to edit my raw video in the same style with the same energy",
+      "language": "English"
+    },
+    {
+      "start": 726.9968,
+      "end": 731.39685,
+      "text": "Keep my content original but make the editing, motion, sound feel engaging and professional",
+      "language": "English"
+    },
+    {
+      "start": 731.39685,
+      "end": 732.9968,
+      "text": "You gave your path on raw clip",
+      "language": "English"
+    },
+    {
+      "start": 732.9968,
+      "end": 737.7969,
+      "text": "You understand, the better you give it the editing video, the better it will make you",
+      "language": "English"
+    },
+    {
+      "start": 737.7969,
+      "end": 741.2969,
+      "text": "Let's see how he made it. This is my video.",
+      "language": "English"
+    },
+    {
+      "start": 741.2969,
+      "end": 744.7969,
+      "text": "This question was asked in Google interview. Let's see if you can solve it or not.",
+      "language": "English"
+    },
+    {
+      "start": 744.7969,
+      "end": 746.7969,
+      "text": "There is a circle with 13 caves.",
+      "language": "English"
+    },
+    {
+      "start": 746.7969,
+      "end": 748.2969,
+      "text": "There is a thief hidden in one of the caves.",
+      "language": "English"
+    },
+    {
+      "start": 748.2969,
+      "end": 751.7969,
+      "text": "You police have to tell yourself that which cave the thief is in.",
+      "language": "English"
+    },
+    {
+      "start": 751.7969,
+      "end": 752.2969,
+      "text": "Clear?",
+      "language": "English"
+    },
+    {
+      "start": 752.2969,
+      "end": 755.2969,
+      "text": "You can check two caves in a day.",
+      "language": "English"
+    },
+    {
+      "start": 755.2969,
+      "end": 756.7969,
+      "text": "And what can the thief do?",
+      "language": "English"
+    },
+    {
+      "start": 756.7969,
+      "end": 761.2969,
+      "text": "He can either stay in his cave or go to the cave on the left or on the right.",
+      "language": "English"
+    },
+    {
+      "start": 761.2969,
+      "end": 763.7969,
+      "text": "And it is also understood that when the police check the cave,",
+      "language": "English"
+    },
+    {
+      "start": 763.7969,
+      "end": 766.7969,
+      "text": "the thief cannot come out because he will be caught and his cave cannot be changed.",
+      "language": "English"
+    },
+    {
+      "start": 766.7969,
+      "end": 771.51685,
+      "text": "You have to tell me in how many days the police will find the thief",
+      "language": "English"
+    },
+    {
+      "start": 771.51685,
+      "end": 775.5569,
+      "text": "I will tell you the answer in the next second, but before that, if you tell me, then definitely comment in the comment",
+      "language": "English"
+    },
+    {
+      "start": 775.5569,
+      "end": 778.3569,
+      "text": "Crazy or not, you enjoyed it, you enjoyed it",
+      "language": "English"
+    },
+    {
+      "start": 778.3569,
+      "end": 783.19684,
+      "text": "And you can make this thing in thousands of questions, you can get millions of views in it, this thing is going on",
+      "language": "English"
+    },
+    {
+      "start": 783.19684,
+      "end": 786.9169,
+      "text": "Huge respect to the one who is working on it, doing research, it is his hard work",
+      "language": "English"
+    },
+    {
+      "start": 786.9169,
+      "end": 788.3569,
+      "text": "But you can also do this",
+      "language": "English"
+    },
+    {
+      "start": 788.3569,
+      "end": 789.5569,
+      "text": "It is so clear",
+      "language": "English"
+    },
+    {
+      "start": 789.5569,
+      "end": 792.9169,
+      "text": "You have to do better, you have to make better, you have to make 3D animation",
+      "language": "English"
+    },
+    {
+      "start": 792.9169,
+      "end": 796.75684,
+      "text": "If you watch the videos of Nitish Rajput, then we will make that too.",
+      "language": "English"
+    },
+    {
+      "start": 796.75684,
+      "end": 798.75684,
+      "text": "But I will teach him at the end of the video.",
+      "language": "English"
+    },
+    {
+      "start": 798.75684,
+      "end": 802.75684,
+      "text": "Before that, I will teach you the intro of my channel.",
+      "language": "English"
+    },
+    {
+      "start": 802.75684,
+      "end": 807.5569,
+      "text": "So now let's come to step 4, where we are seeing how to make intro videos.",
+      "language": "English"
+    },
+    {
+      "start": 807.5569,
+      "end": 809.5569,
+      "text": "You will see that our intro was very strong.",
+      "language": "English"
+    },
+    {
+      "start": 809.5569,
+      "end": 814.01685,
+      "text": "So to make that, we will have to increase our prompting skill a little.",
+      "language": "English"
+    },
+    {
+      "start": 814.01685,
+      "end": 815.51685,
+      "text": "I will explain to you how to do it.",
+      "language": "English"
+    },
+    {
+      "start": 815.51685,
+      "end": 818.31683,
+      "text": "Nothing, see I have written a prompt, but it is a very long and big prompt.",
+      "language": "English"
+    },
+    {
+      "start": 818.31683,
+      "end": 820.8569,
+      "text": "I also picked it up from somewhere, but I will explain to you.",
+      "language": "English"
+    },
+    {
+      "start": 820.8569,
+      "end": 823.63684,
+      "text": "I have explained it in a simple way",
+      "language": "English"
+    },
+    {
+      "start": 823.63684,
+      "end": 826.6168,
+      "text": "I need you to edit this to be super engaging",
+      "language": "English"
+    },
+    {
+      "start": 826.6168,
+      "end": 828.97687,
+      "text": "and clean with hyperframes",
+      "language": "English"
+    },
+    {
+      "start": 828.97687,
+      "end": 830.8169,
+      "text": "you know the hyperframes that we have added",
+      "language": "English"
+    },
+    {
+      "start": 830.8169,
+      "end": 833.77686,
+      "text": "we need apple style super clean motion graphics and animation",
+      "language": "English"
+    },
+    {
+      "start": 833.77686,
+      "end": 836.47687,
+      "text": "apple is the best so we need apple style",
+      "language": "English"
+    },
+    {
+      "start": 836.47687,
+      "end": 839.45685,
+      "text": "after that first transition my video so you know exactly",
+      "language": "English"
+    },
+    {
+      "start": 839.45685,
+      "end": 842.6168,
+      "text": "when each animation text image or effect should appear",
+      "language": "English"
+    },
+    {
+      "start": 842.6168,
+      "end": 845.33685,
+      "text": "as I speak add relevant b-rolls, screenshots",
+      "language": "English"
+    },
+    {
+      "start": 845.33685,
+      "end": 847.89685,
+      "text": "screen recording, images or generated visuals",
+      "language": "English"
+    },
+    {
+      "start": 847.89685,
+      "end": 851.09686,
+      "text": "with smooth animation from the right and the left.",
+      "language": "English"
+    },
+    {
+      "start": 851.09686,
+      "end": 853.09686,
+      "text": "That's all I said.",
+      "language": "English"
+    },
+    {
+      "start": 853.09686,
+      "end": 855.09686,
+      "text": "This was our main prompt.",
+      "language": "English"
+    },
+    {
+      "start": 855.09686,
+      "end": 857.09686,
+      "text": "Now what is he saying?",
+      "language": "English"
+    },
+    {
+      "start": 857.09686,
+      "end": 859.09686,
+      "text": "He is saying that you can do it, you have potential.",
+      "language": "English"
+    },
+    {
+      "start": 859.09686,
+      "end": 863.09686,
+      "text": "I wanted to actually go off and do the b-roll screen recording,",
+      "language": "English"
+    },
+    {
+      "start": 863.09686,
+      "end": 866.09686,
+      "text": "grab a screenshot and pull in AI generated image, AI generated video,",
+      "language": "English"
+    },
+    {
+      "start": 866.09686,
+      "end": 870.09686,
+      "text": "it doesn't matter what it is, but just prove to the viewers that you are capable of doing this.",
+      "language": "English"
+    },
+    {
+      "start": 870.09686,
+      "end": 874.09686,
+      "text": "The whole part here is I am explaining what Opus 5.5 is capable of.",
+      "language": "English"
+    },
+    {
+      "start": 874.09686,
+      "end": 876.09686,
+      "text": "I am telling the world.",
+      "language": "English"
+    },
+    {
+      "start": 876.09686,
+      "end": 878.7969,
+      "text": "all the things so you need to actually prove it in the real time.",
+      "language": "English"
+    },
+    {
+      "start": 878.7969,
+      "end": 883.15686,
+      "text": "Then it says, put B roll, put screenshot, put recording, do it according to you but",
+      "language": "English"
+    },
+    {
+      "start": 883.15686,
+      "end": 884.15686,
+      "text": "make it best.",
+      "language": "English"
+    },
+    {
+      "start": 884.15686,
+      "end": 888.95685,
+      "text": "One thing that you can use in every prompt of yours, its last line, keep my face clearly",
+      "language": "English"
+    },
+    {
+      "start": 888.95685,
+      "end": 893.7969,
+      "text": "visible at all the time after editing, review the frame and make sure no graphic, B roll",
+      "language": "English"
+    },
+    {
+      "start": 893.7969,
+      "end": 897.33685,
+      "text": "or animation comes over my face or important content.",
+      "language": "English"
+    },
+    {
+      "start": 897.33685,
+      "end": 898.33685,
+      "text": "How lovely it is.",
+      "language": "English"
+    },
+    {
+      "start": 898.33685,
+      "end": 902.03687,
+      "text": "If you read this prompt 2-3 times, you will understand, it is not that difficult.",
+      "language": "English"
+    },
+    {
+      "start": 902.03687,
+      "end": 904.25684,
+      "text": "So after doing this, we put out.",
+      "language": "English"
+    },
+    {
+      "start": 904.25684,
+      "end": 910.01685,
+      "text": "after putting out, I will tell you that in the beginning, the first result is not necessary that you get the best result in the first problem",
+      "language": "English"
+    },
+    {
+      "start": 910.01685,
+      "end": 913.87683,
+      "text": "it is not necessary that you fall from every stone, some efforts are prepared, Zakir Khan says",
+      "language": "English"
+    },
+    {
+      "start": 913.87683,
+      "end": 916.71686,
+      "text": "so I didn't like it a little bit, this and that",
+      "language": "English"
+    },
+    {
+      "start": 916.71686,
+      "end": 922.13684,
+      "text": "so in the last, in version 7, how much is it? in version 7, I got a better",
+      "language": "English"
+    },
+    {
+      "start": 922.13684,
+      "end": 925.0569,
+      "text": "I said, this is what he made, let me play and tell you",
+      "language": "English"
+    },
+    {
+      "start": 925.0569,
+      "end": 930.53687,
+      "text": "many of you want to become a content creator, a youtuber, but we get stuck because we don't know editing",
+      "language": "English"
+    },
+    {
+      "start": 930.53687,
+      "end": 932.53687,
+      "text": "If you want to do it yourself, you can't do it that well.",
+      "language": "English"
+    },
+    {
+      "start": 932.53687,
+      "end": 935.53687,
+      "text": "If you get it done by people, they charge you 2000, 5000, 10000 rupees.",
+      "language": "English"
+    },
+    {
+      "start": 935.53687,
+      "end": 940.53687,
+      "text": "Today I will tell you how you can use Plod to edit your complete video",
+      "language": "English"
+    },
+    {
+      "start": 940.53687,
+      "end": 942.53687,
+      "text": "without using any software.",
+      "language": "English"
+    },
+    {
+      "start": 942.53687,
+      "end": 944.53687,
+      "text": "I will explain you step by step.",
+      "language": "English"
+    },
+    {
+      "start": 944.53687,
+      "end": 946.53687,
+      "text": "So, do watch this video.",
+      "language": "English"
+    },
+    {
+      "start": 946.53687,
+      "end": 948.53687,
+      "text": "So, let's move on to step 5.",
+      "language": "English"
+    },
+    {
+      "start": 948.53687,
+      "end": 950.53687,
+      "text": "How to make this strong channel intro?",
+      "language": "English"
+    },
+    {
+      "start": 950.53687,
+      "end": 952.53687,
+      "text": "If you go to make this outside, people take thousands of rupees.",
+      "language": "English"
+    },
+    {
+      "start": 952.53687,
+      "end": 954.53687,
+      "text": "I will tell you my channel intro.",
+      "language": "English"
+    },
+    {
+      "start": 960.53687,
+      "end": 976.25684,
+      "text": "Hi, sir, it's very easy, I'll tell you how it is, we are watching reference videos to",
+      "language": "English"
+    },
+    {
+      "start": 976.25684,
+      "end": 981.77686,
+      "text": "all of them, so we went to Google, a guy on Google made an intro on top of it.",
+      "language": "English"
+    },
+    {
+      "start": 981.77686,
+      "end": 995.4153,
+      "text": "So I have made this thing for you so that I can teach you",
+      "language": "English"
+    },
+    {
+      "start": 995.4153,
+      "end": 1001.4153,
+      "text": "So you can download the video and I have kept it on the goal that this is the goal, you have to make it like this.",
+      "language": "English"
+    },
+    {
+      "start": 1001.4153,
+      "end": 1006.4153,
+      "text": "What is the problem? Analyze the attached video made by Opus 5.5.",
+      "language": "English"
+    },
+    {
+      "start": 1006.4153,
+      "end": 1011.4153,
+      "text": "He also made it from 5.5. What makes design, pacing, frame types and energy so good?",
+      "language": "English"
+    },
+    {
+      "start": 1011.4153,
+      "end": 1029.0753,
+      "text": "so good, analyze it. After that, turn this into a reusable motion design skill. Use the skill to make a 15 second YouTube video in 16 landscape, which is YouTube. Research YouTube and collect B-rolls and assets and make it unmistakably YouTube branded color typography and design language.",
+      "language": "English"
+    },
+    {
+      "start": 1029.0753,
+      "end": 1031.0753,
+      "text": "and also featured my channel",
+      "language": "English"
+    },
+    {
+      "start": 1031.0753,
+      "end": 1033.0753,
+      "text": "so he did youtube youtube and also put my channel",
+      "language": "English"
+    },
+    {
+      "start": 1033.0753,
+      "end": 1035.0753,
+      "text": "LMT last moment juices",
+      "language": "English"
+    },
+    {
+      "start": 1035.0753,
+      "end": 1037.0753,
+      "text": "I put this much prompt",
+      "language": "English"
+    },
+    {
+      "start": 1037.0753,
+      "end": 1039.0753,
+      "text": "did nothing",
+      "language": "English"
+    },
+    {
+      "start": 1039.0753,
+      "end": 1041.0753,
+      "text": "at last he made me",
+      "language": "English"
+    },
+    {
+      "start": 1041.0753,
+      "end": 1043.0753,
+      "text": "if you see then here it is",
+      "language": "English"
+    },
+    {
+      "start": 1043.0753,
+      "end": 1045.0753,
+      "text": "this is my proper channel intro",
+      "language": "English"
+    },
+    {
+      "start": 1045.0753,
+      "end": 1047.0753,
+      "text": "which we will play now",
+      "language": "English"
+    },
+    {
+      "start": 1059.0753,
+      "end": 1065.3953,
+      "text": "Let's come to our last lesson today, how to make 3D animation videos.",
+      "language": "English"
+    },
+    {
+      "start": 1065.3953,
+      "end": 1068.1152,
+      "text": "But before teaching that, I want to tell you a small thing.",
+      "language": "English"
+    },
+    {
+      "start": 1068.1152,
+      "end": 1074.5952,
+      "text": "No matter how many AI tools come, any software comes, any hack happens, your life will not change until you take action.",
+      "language": "English"
+    },
+    {
+      "start": 1074.5952,
+      "end": 1078.5153,
+      "text": "You want to be a YouTuber, you want to be a content creator, you want to do personal branding.",
+      "language": "English"
+    },
+    {
+      "start": 1078.5153,
+      "end": 1084.0353,
+      "text": "So my simple tip is, take a video of yourself, use cloud and edit a video on it.",
+      "language": "English"
+    },
+    {
+      "start": 1084.0353,
+      "end": 1087.5553,
+      "text": "After editing, put it on Twitter, put it on LinkedIn, tag me.",
+      "language": "English"
+    },
+    {
+      "start": 1087.5553,
+      "end": 1093.0153,
+      "text": "I will repost it and shoutout the best video in my next video",
+      "language": "English"
+    },
+    {
+      "start": 1093.0153,
+      "end": 1098.7552,
+      "text": "So this is my challenge to you, make at least one video with cloud and upload it",
+      "language": "English"
+    },
+    {
+      "start": 1098.7552,
+      "end": 1101.6553,
+      "text": "Is it clear? Let's see how to make 3D animation",
+      "language": "English"
+    },
+    {
+      "start": 1101.6553,
+      "end": 1107.9553,
+      "text": "3D animation, Nitish Rajput, they get millions of views, they make very good things but they have 3D animation",
+      "language": "English"
+    },
+    {
+      "start": 1107.9553,
+      "end": 1111.8752,
+      "text": "If you go to make this outside, people can take up to 5000-10000 rupees",
+      "language": "English"
+    },
+    {
+      "start": 1111.8752,
+      "end": 1114.4553,
+      "text": "It will start from 2000 minimum and it takes a lot of time",
+      "language": "English"
+    },
+    {
+      "start": 1114.4553,
+      "end": 1118.4553,
+      "text": "So I made it and I said if I make it, it will be fun.",
+      "language": "English"
+    },
+    {
+      "start": 1118.4553,
+      "end": 1122.4553,
+      "text": "You also have fun, but my PC, my MacBook Air, he raised his hand.",
+      "language": "English"
+    },
+    {
+      "start": 1122.4553,
+      "end": 1124.4553,
+      "text": "We can't do it, why can't we?",
+      "language": "English"
+    },
+    {
+      "start": 1124.4553,
+      "end": 1128.4553,
+      "text": "He says that it is 3D rendering, it has a blender, it is clear.",
+      "language": "English"
+    },
+    {
+      "start": 1128.4553,
+      "end": 1133.4553,
+      "text": "I don't know the blender, he says you don't need to come, but to host everything, you need a server.",
+      "language": "English"
+    },
+    {
+      "start": 1133.4553,
+      "end": 1136.4553,
+      "text": "You need good RAM, you have it.",
+      "language": "English"
+    },
+    {
+      "start": 1136.4553,
+      "end": 1137.4553,
+      "text": "Then what to do?",
+      "language": "English"
+    },
+    {
+      "start": 1137.4553,
+      "end": 1140.4553,
+      "text": "He says you will have a high-end PC, so I have an editing PC.",
+      "language": "English"
+    },
+    {
+      "start": 1140.4553,
+      "end": 1142.4553,
+      "text": "So I sent it to him.",
+      "language": "English"
+    },
+    {
+      "start": 1142.4553,
+      "end": 1144.4553,
+      "text": "So he edited it very well.",
+      "language": "English"
+    },
+    {
+      "start": 1144.4553,
+      "end": 1146.4553,
+      "text": "It took 2 to 2.5 hours.",
+      "language": "English"
+    },
+    {
+      "start": 1146.4553,
+      "end": 1148.4553,
+      "text": "But then the result he gave me.",
+      "language": "English"
+    },
+    {
+      "start": 1148.4553,
+      "end": 1150.4553,
+      "text": "First time he gave me a perfect result.",
+      "language": "English"
+    },
+    {
+      "start": 1150.4553,
+      "end": 1152.4553,
+      "text": "But second time, it took 2 or 3 prompts",
+      "language": "English"
+    },
+    {
+      "start": 1152.4553,
+      "end": 1154.4553,
+      "text": "but he made a very good animation.",
+      "language": "English"
+    },
+    {
+      "start": 1154.4553,
+      "end": 1156.4553,
+      "text": "Is it clear? But before that I will tell you the prompt.",
+      "language": "English"
+    },
+    {
+      "start": 1156.4553,
+      "end": 1158.4553,
+      "text": "What was the prompt we put?",
+      "language": "English"
+    },
+    {
+      "start": 1158.4553,
+      "end": 1160.4553,
+      "text": "This was my prompt.",
+      "language": "English"
+    },
+    {
+      "start": 1160.4553,
+      "end": 1162.4553,
+      "text": "Watch this Nitish Rajput YouTube shot.",
+      "language": "English"
+    },
+    {
+      "start": 1162.4553,
+      "end": 1164.4553,
+      "text": "Break down its editing style.",
+      "language": "English"
+    },
+    {
+      "start": 1164.4553,
+      "end": 1166.4553,
+      "text": "2D animation, motion graphic, which was our own.",
+      "language": "English"
+    },
+    {
+      "start": 1166.4553,
+      "end": 1168.4553,
+      "text": "Caption, transition, music, sound effect.",
+      "language": "English"
+    },
+    {
+      "start": 1168.4553,
+      "end": 1173.4153,
+      "text": "effect if you can't open the link tell me before continuing then edit my raw video in the same",
+      "language": "English"
+    },
+    {
+      "start": 1173.4153,
+      "end": 1179.0952,
+      "text": "style same energy build all the 3d animation yourself render everything on the laptop install",
+      "language": "English"
+    },
+    {
+      "start": 1179.0952,
+      "end": 1186.2953,
+      "text": "any tools you need such as blender ffcg it's clear keep my content original but make the editing",
+      "language": "English"
+    },
+    {
+      "start": 1186.2953,
+      "end": 1191.6553,
+      "text": "motion and sound just as engaging and professional and i gave my path it was my first one i just",
+      "language": "English"
+    },
+    {
+      "start": 1191.6553,
+      "end": 1197.2552,
+      "text": "told it that the rendering you are doing do it in my laptop i told my laptop that this is mine",
+      "language": "English"
+    },
+    {
+      "start": 1197.2552,
+      "end": 1201.2552,
+      "text": "If you have a good GPU and good RAM in your laptop, then it is very strong.",
+      "language": "English"
+    },
+    {
+      "start": 1201.2552,
+      "end": 1203.2552,
+      "text": "You will not be able to do everything on a small laptop.",
+      "language": "English"
+    },
+    {
+      "start": 1203.2552,
+      "end": 1205.2552,
+      "text": "You will need a good laptop.",
+      "language": "English"
+    },
+    {
+      "start": 1205.2552,
+      "end": 1207.2552,
+      "text": "But if you are watching, in the beginning it took 2.5 hours.",
+      "language": "English"
+    },
+    {
+      "start": 1207.2552,
+      "end": 1210.2552,
+      "text": "But later he said that it takes time to set up for the first time.",
+      "language": "English"
+    },
+    {
+      "start": 1210.2552,
+      "end": 1213.2552,
+      "text": "But I will give you these things in 45 minutes to 1 hour.",
+      "language": "English"
+    },
+    {
+      "start": 1213.2552,
+      "end": 1217.2552,
+      "text": "Normal video editors will take you a whole day to edit a video.",
+      "language": "English"
+    },
+    {
+      "start": 1217.2552,
+      "end": 1221.2552,
+      "text": "Or if it is doing such hi-fi editing in 2 hours, then what is the problem?",
+      "language": "English"
+    },
+    {
+      "start": 1221.2552,
+      "end": 1222.2552,
+      "text": "Let's see the results.",
+      "language": "English"
+    },
+    {
+      "start": 1222.2552,
+      "end": 1226.2552,
+      "text": "For an astronaut, sleeping on the earth and sleeping in space is very different.",
+      "language": "English"
+    },
+    {
+      "start": 1226.2552,
+      "end": 1228.2552,
+      "text": "But in space, there is no sleep.",
+      "language": "English"
+    },
+    {
+      "start": 1228.2552,
+      "end": 1230.2552,
+      "text": "Let me tell you how.",
+      "language": "English"
+    },
+    {
+      "start": 1230.2552,
+      "end": 1232.2552,
+      "text": "Earth completes one rotation in 24 hours.",
+      "language": "English"
+    },
+    {
+      "start": 1232.2552,
+      "end": 1236.2552,
+      "text": "That's why we see a sunset and a sunrise in one day.",
+      "language": "English"
+    },
+    {
+      "start": 1236.2552,
+      "end": 1238.2552,
+      "text": "But the International Space Center",
+      "language": "English"
+    },
+    {
+      "start": 1238.2552,
+      "end": 1240.2552,
+      "text": "it goes around the Earth very fast.",
+      "language": "English"
+    },
+    {
+      "start": 1240.2552,
+      "end": 1242.2552,
+      "text": "It completes one rotation in 90 minutes.",
+      "language": "English"
+    },
+    {
+      "start": 1242.2552,
+      "end": 1246.2552,
+      "text": "So in one day, it goes into the shadow of the Earth many times and comes out.",
+      "language": "English"
+    },
+    {
+      "start": 1246.2552,
+      "end": 1249.2552,
+      "text": "16 times there is a sunrise and a sunset in one day.",
+      "language": "English"
+    },
+    {
+      "start": 1249.2552,
+      "end": 1252.2552,
+      "text": "Now the International Space Center, the cabin here, is very pressurized.",
+      "language": "English"
+    },
+    {
+      "start": 1252.2552,
+      "end": 1255.2552,
+      "text": "The air in it is the same that we breathe on Earth.",
+      "language": "English"
+    },
+    {
+      "start": 1255.2552,
+      "end": 1258.0153,
+      "text": "but it has microgravity in space",
+      "language": "English"
+    },
+    {
+      "start": 1258.0153,
+      "end": 1261.5952,
+      "text": "that's why you can't sleep with mattress or mattress",
+      "language": "English"
+    },
+    {
+      "start": 1261.5952,
+      "end": 1262.7953,
+      "text": "you will feel weightless",
+      "language": "English"
+    },
+    {
+      "start": 1262.7953,
+      "end": 1264.4952,
+      "text": "you will also fly but the mattress will also fly",
+      "language": "English"
+    },
+    {
+      "start": 1264.4952,
+      "end": 1265.5952,
+      "text": "so what happens often is",
+      "language": "English"
+    },
+    {
+      "start": 1265.5952,
+      "end": 1270.4952,
+      "text": "their sleeping bed is attached to the wall, floor and ceiling",
+      "language": "English"
+    },
+    {
+      "start": 1270.4952,
+      "end": 1273.2953,
+      "text": "because of microgravity there is no space between the bed and the mattress",
+      "language": "English"
+    },
+    {
+      "start": 1273.2953,
+      "end": 1276.0153,
+      "text": "so you will feel like you are floating and sleeping",
+      "language": "English"
+    },
+    {
+      "start": 1276.0153,
+      "end": 1277.2153,
+      "text": "along with this",
+      "language": "English"
+    },
+    {
+      "start": 1277.2153,
+      "end": 1278.9952,
+      "text": "if it is 16 times day and night",
+      "language": "English"
+    },
+    {
+      "start": 1278.9952,
+      "end": 1281.2953,
+      "text": "then many times astronauts don't get sleep",
+      "language": "English"
+    },
+    {
+      "start": 1281.2953,
+      "end": 1282.7953,
+      "text": "so this was today's video",
+      "language": "English"
+    },
+    {
+      "start": 1282.7953,
+      "end": 1287.3752,
+      "text": "I tried to research for you for 3-4 days and made a video for you",
+      "language": "English"
+    },
+    {
+      "start": 1287.3752,
+      "end": 1290.3752,
+      "text": "I gave you ideas, editing, everything",
+      "language": "English"
+    },
+    {
+      "start": 1290.3752,
+      "end": 1293.6553,
+      "text": "Now it's your turn, accept this challenge that I told you",
+      "language": "English"
+    },
+    {
+      "start": 1293.6553,
+      "end": 1298.3552,
+      "text": "Go and edit your video and tag me on Twitter and LinkedIn",
+      "language": "English"
+    },
+    {
+      "start": 1298.3552,
+      "end": 1301.2552,
+      "text": "If you are stuck anywhere with this, then comment and tell me",
+      "language": "English"
+    },
+    {
+      "start": 1301.2552,
+      "end": 1303.5952,
+      "text": "Or connect me on Twitter, LinkedIn",
+      "language": "English"
+    },
+    {
+      "start": 1303.5952,
+      "end": 1305.8552,
+      "text": "Wherever you are stuck, I will solve your problem",
+      "language": "English"
+    },
+    {
+      "start": 1305.8552,
+      "end": 1309.0153,
+      "text": "And tell me in the comments which video you want next regarding AI",
+      "language": "English"
+    },
+    {
+      "start": 1309.0153,
+      "end": 1311.2953,
+      "text": "Thank you so much for watching this video, share it with your friends",
+      "language": "English"
+    },
+    {
+      "start": 1311.2953,
+      "end": 1312.0153,
+      "text": "Have a nice day",
+      "language": "English"
+    },
+    {
+      "start": 1312.7953,
+      "end": 1313.2953,
+      "text": "you",
+      "language": "English"
+    }
+  ]
+}

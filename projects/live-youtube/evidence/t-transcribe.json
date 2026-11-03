@@ -1,0 +1,13 @@
+{
+  "task_id": "t-transcribe",
+  "criteria": [
+    "AC-05"
+  ],
+  "result": "pass",
+  "artifacts": [
+    "sources/src-8e18a126899c/transcript.json"
+  ],
+  "command": "kas build --project /home/hardik/ai-agent-ecosystem/projects/knowledge-acquisition-studio/projects/live-youtube",
+  "run_at": "2026-11-02T19:50:37Z",
+  "notes": "Segments ordered, start < end, no overlap, none over 30s, all non-empty."
+}

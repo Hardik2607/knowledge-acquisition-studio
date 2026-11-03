@@ -1,0 +1,16 @@
+{
+  "author": null,
+  "checksum": "bc45cdf82e61fc066ff9e9291bd53ced47afd907bf1aefe49c10a2103665532e",
+  "kind": "video",
+  "language": "en",
+  "license": null,
+  "media_type": "audio",
+  "origin": "https://www.youtube.com/watch?v=hffQ4UleKUU",
+  "raw_path": "sources/src-bc45cdf82e61/raw/hffQ4UleKUU.webm",
+  "reason": null,
+  "retrieved_at": "2026-11-02T19:58:35Z",
+  "schema_version": 1,
+  "source_id": "src-bc45cdf82e61",
+  "status": "ingested",
+  "title": "test youtube 2"
+}

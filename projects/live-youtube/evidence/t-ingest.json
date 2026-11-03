@@ -1,0 +1,15 @@
+{
+  "task_id": "t-ingest",
+  "criteria": [
+    "AC-02",
+    "AC-03",
+    "AC-04"
+  ],
+  "result": "pass",
+  "artifacts": [
+    "sources/src-8e18a126899c/source.json"
+  ],
+  "command": "kas build --project /home/hardik/ai-agent-ecosystem/projects/knowledge-acquisition-studio/projects/live-youtube",
+  "run_at": "2026-11-02T19:50:37Z",
+  "notes": "Source Records written and checksums recomputed from raw bytes."
+}

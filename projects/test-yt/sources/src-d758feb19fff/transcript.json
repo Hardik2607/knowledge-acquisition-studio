@@ -1,0 +1,1546 @@
+{
+  "source_id": "src-d758feb19fff",
+  "provider": "groq",
+  "model": "whisper-large-v3",
+  "language": "English",
+  "generated_at": "2026-11-02T19:24:52Z",
+  "schema_version": 1,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 5.7599998,
+      "text": "Claude's free model now scores within two points of Opus on a test built from real work across 44",
+      "language": "English"
+    },
+    {
+      "start": 5.7599998,
+      "end": 14.58,
+      "text": "jobs. On the benchmark test, Sonnet 5.5 scores 1844 and Opus 5.5 scores 1846, up about 400 points",
+      "language": "English"
+    },
+    {
+      "start": 14.58,
+      "end": 21.3,
+      "text": "from Sonnet 5. Anthropic also says Opus 5.5 costs 40% less to run than Opus 5. So let's test them",
+      "language": "English"
+    },
+    {
+      "start": 21.3,
+      "end": 25.9,
+      "text": "on real tasks, starting with the free plan. I'm on a free account right now. Let's start with a",
+      "language": "English"
+    },
+    {
+      "start": 25.9,
+      "end": 30.82,
+      "text": "task that has real stakes. Most people sign a lease without reading all of it. So I'm uploading",
+      "language": "English"
+    },
+    {
+      "start": 30.82,
+      "end": 36.12,
+      "text": "a rental agreement. I'm asking Claude to find the clauses that could cost me money. Two things in",
+      "language": "English"
+    },
+    {
+      "start": 36.12,
+      "end": 42.12,
+      "text": "that prompt do the heavy lifting. I asked for exact quotes and to flag anything unclear. Both",
+      "language": "English"
+    },
+    {
+      "start": 42.12,
+      "end": 48.1,
+      "text": "make the answer easy to check. A summary can hide a mistake, but a quote can't. So I take two quotes",
+      "language": "English"
+    },
+    {
+      "start": 48.1,
+      "end": 53.82,
+      "text": "and search for them in the PDF. If both are there word for word, the rest deserves more trust. If",
+      "language": "English"
+    },
+    {
+      "start": 53.82,
+      "end": 56.92,
+      "text": "If one isn't, I tell Claude it invented a clause.",
+      "language": "English"
+    },
+    {
+      "start": 56.92,
+      "end": 58.78,
+      "text": "Then I ask for a corrected list.",
+      "language": "English"
+    },
+    {
+      "start": 58.78,
+      "end": 62.3,
+      "text": "Then one follow-up turns the list into something I can send.",
+      "language": "English"
+    },
+    {
+      "start": 62.3,
+      "end": 66.72,
+      "text": "The email quotes clauses you already checked, so a quick look is enough.",
+      "language": "English"
+    },
+    {
+      "start": 66.72,
+      "end": 72.08,
+      "text": "Anthropix says Sonnet 5.5 is strongest on well-scoped tasks.",
+      "language": "English"
+    },
+    {
+      "start": 72.08,
+      "end": 74.82,
+      "text": "That means you know what a good result looks like.",
+      "language": "English"
+    },
+    {
+      "start": 74.82,
+      "end": 78.54,
+      "text": "A lease check fits, because you can verify every line yourself.",
+      "language": "English"
+    },
+    {
+      "start": 78.54,
+      "end": 82.88,
+      "text": "This isn't legal advice, of course, but it shows you what to ask before you sign.",
+      "language": "English"
+    },
+    {
+      "start": 82.88,
+      "end": 88.079994,
+      "text": "next task can find you real money. Here's a screenshot of three months of card statements.",
+      "language": "English"
+    },
+    {
+      "start": 88.079994,
+      "end": 93.439995,
+      "text": "Some lines are tiny and a few are blurry on purpose. That last sentence is the most important",
+      "language": "English"
+    },
+    {
+      "start": 93.439995,
+      "end": 98.56,
+      "text": "part. A confident wrong number is worse than an honest blank. When the answer comes back,",
+      "language": "English"
+    },
+    {
+      "start": 98.56,
+      "end": 104.0,
+      "text": "I look at how many charges it found and whether it flagged a duplicate. Then, I check the yearly",
+      "language": "English"
+    },
+    {
+      "start": 104.0,
+      "end": 109.119995,
+      "text": "total myself. I compare two lines against the image and re-add one total on a calculator.",
+      "language": "English"
+    },
+    {
+      "start": 109.119995,
+      "end": 112.24,
+      "text": "That takes 30 seconds and it tells you whether to trust the rest.",
+      "language": "English"
+    },
+    {
+      "start": 112.24,
+      "end": 114.479996,
+      "text": "If it holds up, I ask for one more thing.",
+      "language": "English"
+    },
+    {
+      "start": 114.479996,
+      "end": 117.2,
+      "text": "Now it's a to-do list instead of a pile of numbers.",
+      "language": "English"
+    },
+    {
+      "start": 117.2,
+      "end": 121.2,
+      "text": "The review dates also stop subscriptions from quietly piling up again.",
+      "language": "English"
+    },
+    {
+      "start": 121.2,
+      "end": 125.92,
+      "text": "Anthropic highlights stronger image understanding in Sonnet 5.5.",
+      "language": "English"
+    },
+    {
+      "start": 125.92,
+      "end": 129.92,
+      "text": "Its showcase is finishing Pok\u00e9mon Red from screenshots alone.",
+      "language": "English"
+    },
+    {
+      "start": 129.92,
+      "end": 133.84,
+      "text": "That doesn't guarantee perfect charts, but it shows it can follow a screen.",
+      "language": "English"
+    },
+    {
+      "start": 133.84,
+      "end": 136.4,
+      "text": "And the 30-second check covers the rest.",
+      "language": "English"
+    },
+    {
+      "start": 136.4,
+      "end": 142.07999,
+      "text": "Reading documents and screenshots is one thing. Making Claude act inside another app is where",
+      "language": "English"
+    },
+    {
+      "start": 142.07999,
+      "end": 147.43999,
+      "text": "it usually stops. That's the problem our sponsor works on. Claude can write a blog post fast,",
+      "language": "English"
+    },
+    {
+      "start": 147.43999,
+      "end": 153.28,
+      "text": "but it still can't publish it. On my WordPress blog, I paste every post in and fill in Yoast",
+      "language": "English"
+    },
+    {
+      "start": 153.28,
+      "end": 158.56,
+      "text": "by hand, and that part gets old quickly. This free plugin fixes exactly that. It lets Claude",
+      "language": "English"
+    },
+    {
+      "start": 158.56,
+      "end": 164.48,
+      "text": "do the job inside the site, and it only gets the tools I allow. Setup is three steps. Connect a",
+      "language": "English"
+    },
+    {
+      "start": 164.48,
+      "end": 171.2,
+      "text": "client, verify, and try a prompt. When I approve Claude Desktop, I pick custom instead of read-only",
+      "language": "English"
+    },
+    {
+      "start": 171.2,
+      "end": 176.3,
+      "text": "or full access. That way, it can write and edit posts, but it can't delete anything.",
+      "language": "English"
+    },
+    {
+      "start": 176.48,
+      "end": 181.12,
+      "text": "Now for the real task. I give it this prompt. Claude does the research and writes the post,",
+      "language": "English"
+    },
+    {
+      "start": 181.42,
+      "end": 185.29999,
+      "text": "and here's the draft in WordPress with the focus keyword already filled in.",
+      "language": "English"
+    },
+    {
+      "start": 185.48,
+      "end": 189.84,
+      "text": "Now the part I really wanted to see. I ask it to delete an old test post,",
+      "language": "English"
+    },
+    {
+      "start": 189.84,
+      "end": 193.76,
+      "text": "and the plugin blocks it because my custom setup doesn't allow deleting.",
+      "language": "English"
+    },
+    {
+      "start": 193.76,
+      "end": 198.76,
+      "text": "The audit log shows that refusal, and the change history shows the post before and after.",
+      "language": "English"
+    },
+    {
+      "start": 198.93999,
+      "end": 203.04,
+      "text": "And if I ever want everything stopped, one switch pauses all AI access.",
+      "language": "English"
+    },
+    {
+      "start": 203.26,
+      "end": 205.98,
+      "text": "It also works with Cursor and other MCP clients.",
+      "language": "English"
+    },
+    {
+      "start": 206.2,
+      "end": 209.31999,
+      "text": "That was a sponsored integration with Easy MCP AI,",
+      "language": "English"
+    },
+    {
+      "start": 209.59999,
+      "end": 213.2,
+      "text": "and the free plugin is on WordPress.org with the link in the description.",
+      "language": "English"
+    },
+    {
+      "start": 213.43999,
+      "end": 214.79999,
+      "text": "Okay, back to Claude.",
+      "language": "English"
+    },
+    {
+      "start": 214.95999,
+      "end": 219.36,
+      "text": "Back in Claude, this task is for anyone who studies or learns on the job.",
+      "language": "English"
+    },
+    {
+      "start": 219.45999,
+      "end": 222.59999,
+      "text": "I'm uploading a dense 30-page report that I haven't read.",
+      "language": "English"
+    },
+    {
+      "start": 222.59999,
+      "end": 225.04,
+      "text": "Two details make this prompt work.",
+      "language": "English"
+    },
+    {
+      "start": 225.23999,
+      "end": 228.04,
+      "text": "One question at a time makes Claude act like a tutor.",
+      "language": "English"
+    },
+    {
+      "start": 228.26,
+      "end": 230.65999,
+      "text": "And the page numbers let me check every source.",
+      "language": "English"
+    },
+    {
+      "start": 230.85999,
+      "end": 233.13998,
+      "text": "I'll answer one question wrong on purpose.",
+      "language": "English"
+    },
+    {
+      "start": 233.34,
+      "end": 236.79999,
+      "text": "A good tutor explains the mistake instead of just giving the answer.",
+      "language": "English"
+    },
+    {
+      "start": 237.09999,
+      "end": 240.59999,
+      "text": "After the quiz, there's one more request that people usually forget.",
+      "language": "English"
+    },
+    {
+      "start": 240.77998,
+      "end": 243.21999,
+      "text": "That sheet is built from your actual mistakes.",
+      "language": "English"
+    },
+    {
+      "start": 243.41998,
+      "end": 245.07999,
+      "text": "It's what you come back to tomorrow.",
+      "language": "English"
+    },
+    {
+      "start": 245.4,
+      "end": 249.93999,
+      "text": "Anthropic says Sonnet 5.5 writes more clearly than The Last Generation.",
+      "language": "English"
+    },
+    {
+      "start": 249.93999,
+      "end": 253.69998,
+      "text": "The quiz is a simple way to test that claim yourself.",
+      "language": "English"
+    },
+    {
+      "start": 253.9,
+      "end": 264.816,
+      "text": "If the report makes more sense now the explanation did its job and you can reuse this setup on any document The next task builds something instead of writing text An artifact is the side panel",
+      "language": "English"
+    },
+    {
+      "start": 264.816,
+      "end": 270.856,
+      "text": "where Claude makes a small working app. Comparing two job offers is hard to do in your head, so let's",
+      "language": "English"
+    },
+    {
+      "start": 270.856,
+      "end": 276.256,
+      "text": "build a calculator for it. Once it's built, type in real numbers and see if they make sense. Put the",
+      "language": "English"
+    },
+    {
+      "start": 276.256,
+      "end": 281.296,
+      "text": "same salary in both columns, and the total should only differ by what you changed. If something's",
+      "language": "English"
+    },
+    {
+      "start": 281.296,
+      "end": 286.716,
+      "text": "off, tell Claude what you entered and what came out, then ask for that one fix. Next, add the",
+      "language": "English"
+    },
+    {
+      "start": 286.716,
+      "end": 291.696,
+      "text": "option people forget, which is staying put. Now the comparison is honest because the choice was",
+      "language": "English"
+    },
+    {
+      "start": 291.696,
+      "end": 297.256,
+      "text": "never only between two new offers. You can also ask for a field showing what an hour of your time",
+      "language": "English"
+    },
+    {
+      "start": 297.256,
+      "end": 302.236,
+      "text": "is worth. Then the totals follow your priorities instead of just the money. Next time an offer",
+      "language": "English"
+    },
+    {
+      "start": 302.236,
+      "end": 307.956,
+      "text": "comes in, you open the same artifact and fill in new numbers. Anthropix numbers show why this works",
+      "language": "English"
+    },
+    {
+      "start": 307.956,
+      "end": 315.716,
+      "text": "well on Sonnet. Across 118 real app builds, Sonnet 5.5 made apps that scored level with Opus 5. It",
+      "language": "English"
+    },
+    {
+      "start": 315.716,
+      "end": 323.476,
+      "text": "needed 3.6 rounds of fixes on average against 7.7 for Opus 5. Fewer rounds means fewer messages used,",
+      "language": "English"
+    },
+    {
+      "start": 323.576,
+      "end": 331.036,
+      "text": "which matters on the free plan. Anthropic also says a test can cost up to 30% less. Sonnet 5.5",
+      "language": "English"
+    },
+    {
+      "start": 331.036,
+      "end": 336.476,
+      "text": "uses fewer tokens for the same work, which likely explains that claim. One prompt and a couple of",
+      "language": "English"
+    },
+    {
+      "start": 336.476,
+      "end": 341.076,
+      "text": "follow-ups, then you've got a working tool. The part that actually took skill was checking the",
+      "language": "English"
+    },
+    {
+      "start": 341.076,
+      "end": 347.376,
+      "text": "numbers, spotting what was off, and asking for one precise fix at a time. You can learn that on",
+      "language": "English"
+    },
+    {
+      "start": 347.376,
+      "end": 352.556,
+      "text": "purpose, and it's why we built the Academy into AI Master, my own platform. It has more than 200",
+      "language": "English"
+    },
+    {
+      "start": 352.556,
+      "end": 357.856,
+      "text": "lessons, about 30 hours of courses on prompting and creating with these models. Here's how that",
+      "language": "English"
+    },
+    {
+      "start": 357.856,
+      "end": 363.336,
+      "text": "works. I open a lesson, go through it, and then switch straight to the chat on the same platform",
+      "language": "English"
+    },
+    {
+      "start": 363.336,
+      "end": 365.076,
+      "text": "to practice what it just covered.",
+      "language": "English"
+    },
+    {
+      "start": 365.296,
+      "end": 369.856,
+      "text": "The chat has Claude, ChatGPT, Grok, and Gemini in one window.",
+      "language": "English"
+    },
+    {
+      "start": 370.016,
+      "end": 373.19598,
+      "text": "So I can paste that same calculator prompt into Claude,",
+      "language": "English"
+    },
+    {
+      "start": 373.436,
+      "end": 375.716,
+      "text": "switch to ChatGPT, send it again,",
+      "language": "English"
+    },
+    {
+      "start": 375.836,
+      "end": 377.75598,
+      "text": "and compare what each one gives back.",
+      "language": "English"
+    },
+    {
+      "start": 377.896,
+      "end": 379.476,
+      "text": "Having those models in one window",
+      "language": "English"
+    },
+    {
+      "start": 379.476,
+      "end": 381.376,
+      "text": "also costs less per token",
+      "language": "English"
+    },
+    {
+      "start": 381.376,
+      "end": 383.136,
+      "text": "than paying for each of them separately.",
+      "language": "English"
+    },
+    {
+      "start": 383.396,
+      "end": 386.336,
+      "text": "Image, audio, and video generation are in the same place",
+      "language": "English"
+    },
+    {
+      "start": 386.336,
+      "end": 387.396,
+      "text": "and they're cheaper too.",
+      "language": "English"
+    },
+    {
+      "start": 387.396,
+      "end": 389.436,
+      "text": "You can create consistent characters",
+      "language": "English"
+    },
+    {
+      "start": 389.436,
+      "end": 392.116,
+      "text": "that look the same from one generation to the next,",
+      "language": "English"
+    },
+    {
+      "start": 392.116,
+      "end": 396.676,
+      "text": "then publish them on the platform and earn from them. Anything you generate can be shared,",
+      "language": "English"
+    },
+    {
+      "start": 396.676,
+      "end": 401.076,
+      "text": "so it works for reach instead of sitting in a folder. When you're ready to go past learning,",
+      "language": "English"
+    },
+    {
+      "start": 401.076,
+      "end": 406.276,
+      "text": "there's Vyrable, the newest part of the platform. That's where you and your team run a full channel",
+      "language": "English"
+    },
+    {
+      "start": 406.276,
+      "end": 411.956,
+      "text": "with AI agents writing scripts and descriptions, editing videos and images, and making thumbnails.",
+      "language": "English"
+    },
+    {
+      "start": 411.956,
+      "end": 416.596,
+      "text": "More than 14,000 students are already in the community, and you can see their results and",
+      "language": "English"
+    },
+    {
+      "start": 416.596,
+      "end": 421.636,
+      "text": "testimonials right on the site. There's also a 7-day money-back guarantee. Go to the link in",
+      "language": "English"
+    },
+    {
+      "start": 421.636,
+      "end": 426.996,
+      "text": "the description and hit buy. Select the annual plan, fill in your details, and you'll get a",
+      "language": "English"
+    },
+    {
+      "start": 426.996,
+      "end": 432.276,
+      "text": "confirmation email. Then log in and you're inside the same workspace I just showed you. The whole",
+      "language": "English"
+    },
+    {
+      "start": 432.276,
+      "end": 437.85602,
+      "text": "setup takes under three minutes. Link is below. Now let's cover the question everyone asks about",
+      "language": "English"
+    },
+    {
+      "start": 437.85602,
+      "end": 443.636,
+      "text": "limits. I couldn't find official free plan limits anywhere, so I won't quote hours or message",
+      "language": "English"
+    },
+    {
+      "start": 443.636,
+      "end": 448.81598,
+      "text": "counts. The usage page in your settings is the only number worth trusting. On paid plans,",
+      "language": "English"
+    },
+    {
+      "start": 448.81598,
+      "end": 452.75598,
+      "text": "Anthropic raised the five-hour limits on Pro, Max, and Team.",
+      "language": "English"
+    },
+    {
+      "start": 452.896,
+      "end": 457.036,
+      "text": "It also gave subscribers a reset that you can save and use whenever you want.",
+      "language": "English"
+    },
+    {
+      "start": 457.37598,
+      "end": 461.49597,
+      "text": "Anthropic's ClaudeDevs account says you can apply it until October 22.",
+      "language": "English"
+    },
+    {
+      "start": 461.796,
+      "end": 464.096,
+      "text": "You'll find it in Settings, Under Usage.",
+      "language": "English"
+    },
+    {
+      "start": 464.296,
+      "end": 468.036,
+      "text": "That date comes from a social post, so read it off your own screen.",
+      "language": "English"
+    },
+    {
+      "start": 468.43597,
+      "end": 473.676,
+      "text": "ClaudeDevs also says Opus 5.5 is now the default model on paid plans,",
+      "language": "English"
+    },
+    {
+      "start": 473.676,
+      "end": 478.276,
+      "text": "and because it's priced lower, they say your limits go about 25% further.",
+      "language": "English"
+    },
+    {
+      "start": 478.276,
+      "end": 480.836,
+      "text": "I'm checking that in the model picker right now.",
+      "language": "English"
+    },
+    {
+      "start": 480.996,
+      "end": 484.596,
+      "text": "I couldn't find the exact new limit numbers, so I won't guess them.",
+      "language": "English"
+    },
+    {
+      "start": 484.79602,
+      "end": 486.776,
+      "text": "What's confirmed for everyone is speed.",
+      "language": "English"
+    },
+    {
+      "start": 487.25598,
+      "end": 491.85602,
+      "text": "Sonnet 5.5 answers more than 30% faster than Sonnet 5.",
+      "language": "English"
+    },
+    {
+      "start": 492.016,
+      "end": 494.836,
+      "text": "Whether that helps your cap is my guess, not a promise.",
+      "language": "English"
+    },
+    {
+      "start": 495.076,
+      "end": 497.276,
+      "text": "So watch your usage page for a few days.",
+      "language": "English"
+    },
+    {
+      "start": 497.41602,
+      "end": 501.29602,
+      "text": "Now let's talk about effort, because it explains that 40% claim.",
+      "language": "English"
+    },
+    {
+      "start": 501.496,
+      "end": 505.75598,
+      "text": "Effort is the setting that decides how long Claude thinks before it answers.",
+      "language": "English"
+    },
+    {
+      "start": 505.75598,
+      "end": 508.836,
+      "text": "There are five levels, from low up to max.",
+      "language": "English"
+    },
+    {
+      "start": 508.836,
+      "end": 511.87598,
+      "text": "Higher effort means more thinking and slower answers.",
+      "language": "English"
+    },
+    {
+      "start": 511.87598,
+      "end": 526.292,
+      "text": "It also uses more of your allowance Here the part almost nobody explains Opus 5 defaults to medium effort while Opus 5 defaulted to high So Anthropix 40 cheaper and 30 faster claims compare medium with high",
+      "language": "English"
+    },
+    {
+      "start": 526.43195,
+      "end": 530.032,
+      "text": "Part of that saving is probably just the model thinking less.",
+      "language": "English"
+    },
+    {
+      "start": 530.212,
+      "end": 534.592,
+      "text": "The rest is real, because the price per token also dropped 20%.",
+      "language": "English"
+    },
+    {
+      "start": 534.592,
+      "end": 537.49194,
+      "text": "The apps start you on medium, according to Claude Devs.",
+      "language": "English"
+    },
+    {
+      "start": 537.592,
+      "end": 541.232,
+      "text": "If your plan shows an effort option, you'll find it in the model picker.",
+      "language": "English"
+    },
+    {
+      "start": 541.232,
+      "end": 548.352,
+      "text": "But medium isn't a downgrade at all. Anthropix says Sonnet 5.5 at low, or medium beats Sonnet 5's",
+      "language": "English"
+    },
+    {
+      "start": 548.352,
+      "end": 553.852,
+      "text": "best score on several tests. And it does that for about a tenth of the cost per task. So when should",
+      "language": "English"
+    },
+    {
+      "start": 553.852,
+      "end": 558.89197,
+      "text": "you raise the effort? Raise it when the answer is close, but shallow. Maybe it skipped a step,",
+      "language": "English"
+    },
+    {
+      "start": 559.01196,
+      "end": 565.352,
+      "text": "or it gave you the obvious take. Move up one level and send the same prompt again. Anthropix says to",
+      "language": "English"
+    },
+    {
+      "start": 565.352,
+      "end": 571.212,
+      "text": "test levels on your own work instead of guessing. Keep X high and max for cases where you've seen",
+      "language": "English"
+    },
+    {
+      "start": 571.212,
+      "end": 576.732,
+      "text": "better result. On quick rewrites, higher effort mostly burns your limit. And if you need max on",
+      "language": "English"
+    },
+    {
+      "start": 576.732,
+      "end": 582.49194,
+      "text": "Sonnet, ClawDev says that's your sign to try Opus. Try it on the lease from earlier. Run the same",
+      "language": "English"
+    },
+    {
+      "start": 582.49194,
+      "end": 587.93195,
+      "text": "prompt on medium, then on high. If high catches a clause that medium missed, that kind of document",
+      "language": "English"
+    },
+    {
+      "start": 587.93195,
+      "end": 592.49194,
+      "text": "deserves high. If the lists match, medium is your setting and you save your allowance.",
+      "language": "English"
+    },
+    {
+      "start": 592.49194,
+      "end": 598.652,
+      "text": "So what does Opus actually do better? Anthropix says Opus 5.5 is clearly stronger at complex,",
+      "language": "English"
+    },
+    {
+      "start": 598.652,
+      "end": 602.99194,
+      "text": "open-ended work. That means work that needs sustained judgment. Open-ended means there's",
+      "language": "English"
+    },
+    {
+      "start": 602.99194,
+      "end": 609.352,
+      "text": "no single right answer to check against. Anthropic says Sonnet fits best when a task has a clear spec",
+      "language": "English"
+    },
+    {
+      "start": 609.352,
+      "end": 615.712,
+      "text": "and a way to check the result, while Opus 5.5 performs at the level of Fable 5.1 on most work.",
+      "language": "English"
+    },
+    {
+      "start": 615.712,
+      "end": 621.532,
+      "text": "The 40% cost cut applies to API billing, where developers pay per token. The price per token",
+      "language": "English"
+    },
+    {
+      "start": 621.532,
+      "end": 627.592,
+      "text": "dropped 20%, and Opus also needs fewer tokens per task. You don't pay per token on a subscription,",
+      "language": "English"
+    },
+    {
+      "start": 627.592,
+      "end": 629.852,
+      "text": "so that figure matters more to developers.",
+      "language": "English"
+    },
+    {
+      "start": 630.11194,
+      "end": 635.51196,
+      "text": "For developers, Opus 5.5 costs less than half of Fable 5.1 per token.",
+      "language": "English"
+    },
+    {
+      "start": 635.712,
+      "end": 638.63196,
+      "text": "Anthropic's own tests show the kind of work it means.",
+      "language": "English"
+    },
+    {
+      "start": 638.772,
+      "end": 643.432,
+      "text": "In one, three models wrote a quarterly report from a modified copy of the web.",
+      "language": "English"
+    },
+    {
+      "start": 643.532,
+      "end": 646.19196,
+      "text": "The company's earnings release was hard to find there.",
+      "language": "English"
+    },
+    {
+      "start": 646.332,
+      "end": 651.092,
+      "text": "Opus 5.5 passed Anthropic's quality check in 16 of 18 tries.",
+      "language": "English"
+    },
+    {
+      "start": 651.092,
+      "end": 654.332,
+      "text": "Fable 5.1 and Opus 5 never passed.",
+      "language": "English"
+    },
+    {
+      "start": 654.332,
+      "end": 658.07196,
+      "text": "In another, Anthropic asked why a company's August revenue dropped.",
+      "language": "English"
+    },
+    {
+      "start": 658.23193,
+      "end": 662.672,
+      "text": "Opus 5.5 said a free tier change explains $1.50 of the drop.",
+      "language": "English"
+    },
+    {
+      "start": 662.832,
+      "end": 666.032,
+      "text": "A bug in a billing change explains the other $9.92.",
+      "language": "English"
+    },
+    {
+      "start": 666.39197,
+      "end": 670.772,
+      "text": "Both examples come down to digging past the first answer that sounds right.",
+      "language": "English"
+    },
+    {
+      "start": 670.912,
+      "end": 673.51196,
+      "text": "So Opus fits research where the sources disagree.",
+      "language": "English"
+    },
+    {
+      "start": 673.75195,
+      "end": 676.23193,
+      "text": "Here's a simple way to tell the two models apart.",
+      "language": "English"
+    },
+    {
+      "start": 676.37195,
+      "end": 679.75195,
+      "text": "If you can describe a good answer before you ask, sonnet fits.",
+      "language": "English"
+    },
+    {
+      "start": 679.912,
+      "end": 682.932,
+      "text": "If working that out is part of the job, think Opus.",
+      "language": "English"
+    },
+    {
+      "start": 682.932,
+      "end": 685.19196,
+      "text": "Here's a task that fits that description.",
+      "language": "English"
+    },
+    {
+      "start": 685.472,
+      "end": 689.272,
+      "text": "On a paid plan, I pick Opus 5.5 in the model picker.",
+      "language": "English"
+    },
+    {
+      "start": 689.39197,
+      "end": 692.172,
+      "text": "Then I turn on web search and give it a research job.",
+      "language": "English"
+    },
+    {
+      "start": 692.292,
+      "end": 694.75195,
+      "text": "The first instruction is the one that tests judgment.",
+      "language": "English"
+    },
+    {
+      "start": 695.032,
+      "end": 698.99194,
+      "text": "A good answer stops and asks about my audience, budget, or timeline.",
+      "language": "English"
+    },
+    {
+      "start": 699.292,
+      "end": 702.312,
+      "text": "A weaker one skips the questions and writes a generic report.",
+      "language": "English"
+    },
+    {
+      "start": 702.51196,
+      "end": 706.772,
+      "text": "After I answer, it has to read sources and compare them.",
+      "language": "English"
+    },
+    {
+      "start": 706.912,
+      "end": 709.472,
+      "text": "It also has to notice where they contradict each other.",
+      "language": "English"
+    },
+    {
+      "start": 709.592,
+      "end": 712.61194,
+      "text": "And it still has to remember the recommendation at the end.",
+      "language": "English"
+    },
+    {
+      "start": 712.61194,
+      "end": 715.49194,
+      "text": "When the report comes back, open two citations.",
+      "language": "English"
+    },
+    {
+      "start": 715.75195,
+      "end": 718.19196,
+      "text": "Check that they really say what the report claims.",
+      "language": "English"
+    },
+    {
+      "start": 718.432,
+      "end": 720.61194,
+      "text": "Then look for the disagreement section.",
+      "language": "English"
+    },
+    {
+      "start": 720.89197,
+      "end": 724.81195,
+      "text": "That's the part a model tends to drop when it wants to sound confident.",
+      "language": "English"
+    },
+    {
+      "start": 725.092,
+      "end": 729.11194,
+      "text": "Anthropics' prompting guide has two tips for long jobs like this.",
+      "language": "English"
+    },
+    {
+      "start": 729.31195,
+      "end": 733.43195,
+      "text": "Ask for a checklist so the model doesn't stop after a progress update.",
+      "language": "English"
+    },
+    {
+      "start": 733.592,
+      "end": 737.672,
+      "text": "And give it your design rules for anything visual or you get a default look.",
+      "language": "English"
+    },
+    {
+      "start": 737.792,
+      "end": 739.652,
+      "text": "And the app starts Opus on Medium.",
+      "language": "English"
+    },
+    {
+      "start": 739.652,
+      "end": 742.532,
+      "text": "So raise effort a level for a report like this.",
+      "language": "English"
+    },
+    {
+      "start": 742.61194,
+      "end": 746.69196,
+      "text": "When the report is done, one more message makes it a lot more useful.",
+      "language": "English"
+    },
+    {
+      "start": 746.69196,
+      "end": 748.772,
+      "text": "This is where judgment shows up again.",
+      "language": "English"
+    },
+    {
+      "start": 748.772,
+      "end": 751.57196,
+      "text": "A good answer doesn't just flip the conclusion.",
+      "language": "English"
+    },
+    {
+      "start": 751.57196,
+      "end": 754.772,
+      "text": "It names the one assumption the recommendation rests on,",
+      "language": "English"
+    },
+    {
+      "start": 754.772,
+      "end": 757.89197,
+      "text": "and it gives you something you can measure in the first three months.",
+      "language": "English"
+    },
+    {
+      "start": 757.89197,
+      "end": 760.45197,
+      "text": "The research was one long job in text.",
+      "language": "English"
+    },
+    {
+      "start": 760.45197,
+      "end": 762.61194,
+      "text": "Now Opus builds something you can play.",
+      "language": "English"
+    },
+    {
+      "start": 762.61194,
+      "end": 764.69196,
+      "text": "Remember the quiz from the study demo?",
+      "language": "English"
+    },
+    {
+      "start": 764.69196,
+      "end": 769.01196,
+      "text": "I'm pasting those questions into Opus 5.5 and asking for a game.",
+      "language": "English"
+    },
+    {
+      "start": 769.01196,
+      "end": 771.332,
+      "text": "Before anything else, play it for real.",
+      "language": "English"
+    },
+    {
+      "start": 771.332,
+      "end": 782.828,
+      "text": "answer wrong on purpose until the lives run out then check the game over screen and the restart button Now comes the second message and that the real test Adding a feature is the easy part",
+      "language": "English"
+    },
+    {
+      "start": 782.828,
+      "end": 787.60803,
+      "text": "Changing code without breaking what works is often harder, so after the update, start",
+      "language": "English"
+    },
+    {
+      "start": 787.60803,
+      "end": 789.168,
+      "text": "again from level 1.",
+      "language": "English"
+    },
+    {
+      "start": 789.168,
+      "end": 792.588,
+      "text": "Check that points still count and lives still drop.",
+      "language": "English"
+    },
+    {
+      "start": 792.588,
+      "end": 798.04803,
+      "text": "If the score broke, tell Opus exactly what stopped working, then ask it to fix only that.",
+      "language": "English"
+    },
+    {
+      "start": 798.04803,
+      "end": 802.768,
+      "text": "The boss uses the questions you got wrong, so the game does the review sheet's job.",
+      "language": "English"
+    },
+    {
+      "start": 802.768,
+      "end": 805.508,
+      "text": "That makes it something you might actually come back to.",
+      "language": "English"
+    },
+    {
+      "start": 805.508,
+      "end": 807.648,
+      "text": "The quiz game had a clear structure.",
+      "language": "English"
+    },
+    {
+      "start": 807.648,
+      "end": 810.04803,
+      "text": "This next game leaves the rules to the model.",
+      "language": "English"
+    },
+    {
+      "start": 810.04803,
+      "end": 813.628,
+      "text": "That's closer to the open-ended work Anthropic Points Opus had.",
+      "language": "English"
+    },
+    {
+      "start": 813.628,
+      "end": 815.80804,
+      "text": "Here the rules matter more than the look.",
+      "language": "English"
+    },
+    {
+      "start": 815.80804,
+      "end": 818.86804,
+      "text": "Play two or three days and check that the numbers make sense.",
+      "language": "English"
+    },
+    {
+      "start": 818.86804,
+      "end": 821.288,
+      "text": "Higher prices should bring fewer customers.",
+      "language": "English"
+    },
+    {
+      "start": 821.288,
+      "end": 823.948,
+      "text": "An unsold milk should turn into a loss.",
+      "language": "English"
+    },
+    {
+      "start": 823.948,
+      "end": 826.448,
+      "text": "Then try to break it with a one cent price.",
+      "language": "English"
+    },
+    {
+      "start": 826.448,
+      "end": 829.688,
+      "text": "If one strategy always wins, the rules don't hold together.",
+      "language": "English"
+    },
+    {
+      "start": 829.848,
+      "end": 834.30804,
+      "text": "A good answer names one specific exploit and changes the rule behind it.",
+      "language": "English"
+    },
+    {
+      "start": 834.36804,
+      "end": 837.068,
+      "text": "If it only tweaks a number, play your trick again.",
+      "language": "English"
+    },
+    {
+      "start": 837.188,
+      "end": 841.628,
+      "text": "You'll know fast whether the model built a system or just a screen of numbers.",
+      "language": "English"
+    },
+    {
+      "start": 841.788,
+      "end": 843.328,
+      "text": "Now let's look at the launch numbers.",
+      "language": "English"
+    },
+    {
+      "start": 843.54803,
+      "end": 845.408,
+      "text": "Here's what each test actually measures.",
+      "language": "English"
+    },
+    {
+      "start": 845.668,
+      "end": 849.308,
+      "text": "GDP Val AA is the real work test from the start of this video.",
+      "language": "English"
+    },
+    {
+      "start": 849.308,
+      "end": 855.828,
+      "text": "Opus 5.5 scores 1846 there and Fable 5.1 scores 1735.",
+      "language": "English"
+    },
+    {
+      "start": 855.828,
+      "end": 862.10803,
+      "text": "Opus 5 scores 1708 and GPT-6 Astra scores 1542.",
+      "language": "English"
+    },
+    {
+      "start": 862.348,
+      "end": 866.62805,
+      "text": "Humanity's last exam is a set of very hard questions with tools allowed.",
+      "language": "English"
+    },
+    {
+      "start": 866.848,
+      "end": 873.80804,
+      "text": "Opus 5.5 scores 67.7% and Fable 5.1 scores 65.6%.",
+      "language": "English"
+    },
+    {
+      "start": 873.80804,
+      "end": 879.268,
+      "text": "Terminal Bench 4.0 gives a model a command line and a multi-step job.",
+      "language": "English"
+    },
+    {
+      "start": 879.268,
+      "end": 885.62805,
+      "text": "Opus 5.5 scores 66.4% there against 55.8% for Fable 5.1.",
+      "language": "English"
+    },
+    {
+      "start": 885.62805,
+      "end": 888.98804,
+      "text": "OS World 2.0 checks whether a model can use a full desktop.",
+      "language": "English"
+    },
+    {
+      "start": 889.228,
+      "end": 894.848,
+      "text": "Opus 5.5 scores 81.8%, and Fable 5.1 scores 80.7%.",
+      "language": "English"
+    },
+    {
+      "start": 894.848,
+      "end": 896.408,
+      "text": "Now here's the footnote that matters.",
+      "language": "English"
+    },
+    {
+      "start": 896.60803,
+      "end": 901.688,
+      "text": "Anthropic ran the Opus scores at max effort, it ran the terminal bench score at X high,",
+      "language": "English"
+    },
+    {
+      "start": 901.828,
+      "end": 905.42804,
+      "text": "so the app, which starts on medium, won't show you that full power.",
+      "language": "English"
+    },
+    {
+      "start": 905.568,
+      "end": 907.60803,
+      "text": "But Opus isn't ahead on every row.",
+      "language": "English"
+    },
+    {
+      "start": 907.768,
+      "end": 913.468,
+      "text": "GPT-6 Astra wins terminal bench science, 64.6 to 58.7.",
+      "language": "English"
+    },
+    {
+      "start": 913.468,
+      "end": 917.448,
+      "text": "It also edges Opus on Automation Bench, 41.4 to 40.",
+      "language": "English"
+    },
+    {
+      "start": 917.62805,
+      "end": 920.04803,
+      "text": "There's one odd row in the Sonnet table.",
+      "language": "English"
+    },
+    {
+      "start": 920.348,
+      "end": 925.808,
+      "text": "Sonnet 5.5 scores 70.6% on Terminal Bench above Opus.",
+      "language": "English"
+    },
+    {
+      "start": 926.028,
+      "end": 929.808,
+      "text": "Anthropic ran Opus at X high there and doesn't say Sonnet's level,",
+      "language": "English"
+    },
+    {
+      "start": 930.028,
+      "end": 933.008,
+      "text": "so I wouldn't read that as Sonnet being the better coder.",
+      "language": "English"
+    },
+    {
+      "start": 933.148,
+      "end": 935.408,
+      "text": "One more thing helps with any chart like this.",
+      "language": "English"
+    },
+    {
+      "start": 935.74805,
+      "end": 940.388,
+      "text": "Anthropic lists a standard error of about 2.6 points on that test,",
+      "language": "English"
+    },
+    {
+      "start": 940.48804,
+      "end": 943.008,
+      "text": "so a gap of one or two points is basically a tie.",
+      "language": "English"
+    },
+    {
+      "start": 943.008,
+      "end": 948.188,
+      "text": "By Anthropix chart, Sonnet 5 scored only 10.3% on that test.",
+      "language": "English"
+    },
+    {
+      "start": 948.468,
+      "end": 952.068,
+      "text": "Sonnet 5.5 jumped to 70.6% on the same test.",
+      "language": "English"
+    },
+    {
+      "start": 952.208,
+      "end": 954.48804,
+      "text": "An outside test gives a useful reality check.",
+      "language": "English"
+    },
+    {
+      "start": 954.688,
+      "end": 957.888,
+      "text": "Sonar Source ran Opus 5.5 on Java code in tasks.",
+      "language": "English"
+    },
+    {
+      "start": 958.128,
+      "end": 963.188,
+      "text": "It passed 87.68%, level with Opus 5, with 40% fewer tokens.",
+      "language": "English"
+    },
+    {
+      "start": 963.328,
+      "end": 965.708,
+      "text": "But bug density in the code went up 12%.",
+      "language": "English"
+    },
+    {
+      "start": 965.708,
+      "end": 968.708,
+      "text": "So it's more efficient, and you still review what it writes.",
+      "language": "English"
+    },
+    {
+      "start": 968.888,
+      "end": 971.828,
+      "text": "Here's the last test, and this time you can see the difference.",
+      "language": "English"
+    },
+    {
+      "start": 971.828,
+      "end": 974.448,
+      "text": "Remember the online course from the research report?",
+      "language": "English"
+    },
+    {
+      "start": 974.668,
+      "end": 978.008,
+      "text": "It needs a page, so I'm sending the same prompt to both models.",
+      "language": "English"
+    },
+    {
+      "start": 978.188,
+      "end": 980.92804,
+      "text": "I left the decisions to the model on purpose.",
+      "language": "English"
+    },
+    {
+      "start": 981.268,
+      "end": 985.528,
+      "text": "Deciding is exactly where Anthropic says Opus is stronger.",
+      "language": "English"
+    },
+    {
+      "start": 985.728,
+      "end": 987.54803,
+      "text": "Now I open both files side by side.",
+      "language": "English"
+    },
+    {
+      "start": 987.668,
+      "end": 989.188,
+      "text": "A nice gradient isn't the point.",
+      "language": "English"
+    },
+    {
+      "start": 989.408,
+      "end": 991.568,
+      "text": "Does the first screen say who the course is for?",
+      "language": "English"
+    },
+    {
+      "start": 991.728,
+      "end": 994.828,
+      "text": "Is there one clear button or five fighting each other?",
+      "language": "English"
+    },
+    {
+      "start": 995.028,
+      "end": 998.408,
+      "text": "Is the copy real or placeholder text like feature one?",
+      "language": "English"
+    },
+    {
+      "start": 998.408,
+      "end": 1000.188,
+      "text": "and shrink the window to phone width",
+      "language": "English"
+    },
+    {
+      "start": 1000.188,
+      "end": 1002.308,
+      "text": "because that's where many pages fall apart.",
+      "language": "English"
+    },
+    {
+      "start": 1002.50806,
+      "end": 1004.12805,
+      "text": "If the two pages look about the same,",
+      "language": "English"
+    },
+    {
+      "start": 1004.208,
+      "end": 1005.408,
+      "text": "that's a useful answer too.",
+      "language": "English"
+    },
+    {
+      "start": 1005.54803,
+      "end": 1008.828,
+      "text": "For a simple page, Sonnet on the free plan does the job.",
+      "language": "English"
+    },
+    {
+      "start": 1008.948,
+      "end": 1010.86804,
+      "text": "So here's my rule for choosing a model.",
+      "language": "English"
+    },
+    {
+      "start": 1011.388,
+      "end": 1013.98804,
+      "text": "Start with Sonnet 5.5 on medium.",
+      "language": "English"
+    },
+    {
+      "start": 1014.24805,
+      "end": 1016.148,
+      "text": "If the answer is right but shallow,",
+      "language": "English"
+    },
+    {
+      "start": 1016.688,
+      "end": 1017.98804,
+      "text": "raise effort one level.",
+      "language": "English"
+    },
+    {
+      "start": 1018.228,
+      "end": 1021.74805,
+      "text": "If it still misses what matters, move to Opus.",
+      "language": "English"
+    },
+    {
+      "start": 1022.04803,
+      "end": 1024.308,
+      "text": "For most people, the biggest change in this release",
+      "language": "English"
+    },
+    {
+      "start": 1024.308,
+      "end": 1025.488,
+      "text": "is the free model.",
+      "language": "English"
+    },
+    {
+      "start": 1025.488,
+      "end": 1029.3881,
+      "text": "Sonnet 5.5 is a real step up from the one it replaced.",
+      "language": "English"
+    },
+    {
+      "start": 1029.3881,
+      "end": 1031.7881,
+      "text": "And if you've got a product worth showing this audience,",
+      "language": "English"
+    },
+    {
+      "start": 1031.7881,
+      "end": 1033.988,
+      "text": "the sponsorship link's in the description below.",
+      "language": "English"
+    },
+    {
+      "start": 1033.988,
+      "end": 1035.3881,
+      "text": "Always happy to talk.",
+      "language": "English"
+    }
+  ]
+}
