@@ -672,8 +672,9 @@ class KasStudioHandler(BaseHTTPRequestHandler):
         self.wfile.write(html)
 
     def log_message(self, format: str, *args) -> None:
-        # Keep console output clean
-        pass
+        import sys
+        sys.stderr.write(f"[{self.log_date_time_string()}] {self.address_string()} - {format % args}\n")
+        sys.stderr.flush()
 
 
 def get_lan_ip() -> str:
