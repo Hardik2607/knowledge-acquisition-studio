@@ -1,0 +1,692 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-03T19:57:52Z",
+  "provider": "llm7",
+  "model": "DeepSeek-V4-Flash-0731",
+  "units": [
+    {
+      "id": "k-ecca661cbcdb",
+      "statement": "Claude can generate videos for motion graphics and explainer videos without a dedicated video generator, using code instead.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 0.0,
+          "end": 14.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-ac1013fa8d02",
+      "statement": "Claude creates videos by writing plain JavaScript that draws each frame individually.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 56.0,
+          "end": 100.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-bb8107d3b821",
+      "statement": "JavaScript is the programming language built into every web browser.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 101.0,
+          "end": 107.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-bd3503c9d551",
+      "statement": "Claude-generated videos can be customized and synchronized with voiceovers for precise timing.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 31.0,
+          "end": 36.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-9f2faedc137d",
+      "statement": "A database of 86 customizable video styles is available for use by copying prompts.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 19.0,
+          "end": 31.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-fbe803cb0b76",
+      "statement": "Previous video creation workflows with Claude used frameworks like Remotion and Hyperframes, which are not required for this new method.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 44.0,
+          "end": 56.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-16f1c43e89d7",
+      "statement": "Kevin's creative posts inspired a unique AI-generated video style using code and sound effects.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 11.0,
+          "end": 18.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-bbf7bfad6e68",
+      "statement": "The unique AI-generated video style is created entirely with code, including sound effects, without using text-to-video models.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 58.0,
+          "end": 63.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-57b55b2d190e",
+      "statement": "Claude generated 86 different video styles for YouTube explainer videos, including 20-30 user-specified styles and additional styles created by Claude.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 108.0,
+          "end": 122.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-3ac7e5fbf98e",
+      "statement": "Claude created a database of sound effects using only JavaScript for the AI-generated video styles.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 122.0,
+          "end": 126.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-d2b8d573dc9c",
+      "statement": "The AI-generated video styles are available for free and include 15-second sample generations explaining how AI works.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 126.0,
+          "end": 135.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-6ad7d703e19e",
+      "statement": "Example styles generated include a useful style, a 16-pixel style, and a chalkboard style.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 146.0,
+          "end": 150.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-e45e27331118",
+      "statement": "Cut Paper Diorama is a unique video style option.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 3.23,
+          "end": 3.29
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-20fdd124b309",
+      "statement": "Glassmorphism is a simpler video style option suitable for visual explainers.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 3.45,
+          "end": 3.53
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-63c2fa599919",
+      "statement": "Each video style includes an explainer example with sound effects.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 3.51,
+          "end": 3.54
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-5b4432f786e1",
+      "statement": "Shorter style clips demonstrate how a scene is built.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 3.57,
+          "end": 3.59
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-a1dcd9c2a0e1",
+      "statement": "Explainers are more useful than shorter style clips.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 3.59,
+          "end": 4.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-1b496a0f9a63",
+      "statement": "Voiceover options require a transcript input.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 4.06,
+          "end": 4.12
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-80ee5e79f195",
+      "statement": "Video generation tools can sync content perfectly to a voiceover.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 252.0,
+          "end": 256.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-478aa3cceb4f",
+      "statement": "Video generation tools can create content based on a topic or story without a voiceover.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 256.0,
+          "end": 260.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-8edf2d7bca74",
+      "statement": "Users can provide simple or detailed prompts for video generation.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 260.0,
+          "end": 262.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-044832d6fc4c",
+      "statement": "Video generation tools can generate a visual storyboard before full content creation.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 262.0,
+          "end": 266.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-18f8cb4948d5",
+      "statement": "Storyboards show images of major beats in the video content.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 266.0,
+          "end": 270.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-6926bd010299",
+      "statement": "Users can choose to skip the storyboard and request edits after generation.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 270.0,
+          "end": 275.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-aa7d91692ca1",
+      "statement": "Video generation tools can copy the full prompt for recreating the style and topic.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 287.0,
+          "end": 292.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-88dc60099d06",
+      "statement": "Pasting the copied prompt into the tool allows for easy recreation of the content.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 292.0,
+          "end": 299.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-12c1431c2f54",
+      "statement": "AI-generated videos can be easily modified by requesting specific changes through code.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 305.0,
+          "end": 333.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-8cc0db0d82f1",
+      "statement": "AI-generated videos can benefit from adding a voiceover for enhanced clarity or engagement.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 345.0,
+          "end": 349.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-61ac738097b4",
+      "statement": "Opus and Sonnet are tools that can be used to generate AI videos with similar quality.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 349.0,
+          "end": 357.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-ae5f99545cf1",
+      "statement": "ChatGPT and Astra can also generate AI videos, though the quality may vary compared to other tools.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 357.0,
+          "end": 365.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-825525c0c38a",
+      "statement": "AI video generation tools offer a wide variety of styles to choose from.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 367.0,
+          "end": 371.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-d42cc4c086a3",
+      "statement": "AI video generation can consume usage credits quickly, necessitating careful management of resources.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 371.0,
+          "end": 382.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-fd26c7836f9f",
+      "statement": "Reusing tokens in prompts maximizes their utility.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 382.0,
+          "end": 384.0
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "k-935e93f58b17",
+      "statement": "Long prompts can be attached as text files when pasting into Claude.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 389.0,
+          "end": 397.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-cf5a7f6d44f2",
+      "statement": "Including code in prompts ensures consistent results across different models like Sonnet and Opus.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 402.0,
+          "end": 423.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-4739c75c512c",
+      "statement": "LLMs like VOD and ChatGPT analyze screenshots from videos rather than watching them directly.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 423.0,
+          "end": 434.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-bf5701a3ea67",
+      "statement": "Code-based video generation allows for modifications rather than starting from scratch.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 434.0,
+          "end": 442.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-0f077e98b7dc",
+      "statement": "Prompts can be customized by requesting changes to elements like color palette or speed.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 442.0,
+          "end": 458.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-c059888a845c",
+      "statement": "Customized prompt versions can be saved as skills in Claude for future use.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 458.0,
+          "end": 472.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-cc48c1a20477",
+      "statement": "To use Gemini 3.8 Flash text-to-speech in Google AI Studio, select the model, go to the audio section, choose Gemini 3.8 Flash TTS, and create new dialogue.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 7.52,
+          "end": 7.59
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-5df7ef92b5e9",
+      "statement": "Google AI Studio's Gemini 3.8 Flash TTS offers a variety of voices for text-to-speech conversion.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 7.59,
+          "end": 8.02
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-11f906dfbf70",
+      "statement": "After selecting a voice in Gemini 3.8 Flash TTS, paste the script into the dialogue box.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 8.2,
+          "end": 8.21
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-fccc49b4ad81",
+      "statement": "Gemini 3.8 Flash TTS in Google AI Studio provides customization options for text-to-speech, including style and tags for adding breaths, laughs, and other sounds.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 8.24,
+          "end": 8.34
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-a43d2e0de3f1",
+      "statement": "Stars begin as huge cold clouds of gas and dust.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 8.39,
+          "end": 8.45
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-44967347467d",
+      "statement": "Transcripts with timestamps can be generated using tools like 11Labs or other transcription tools.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 8.52,
+          "end": 8.57
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-ceaca81aa473",
+      "statement": "To generate a word-level SRT transcript, instruct the tool to provide word-by-word timings.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 9.08,
+          "end": 9.14
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-bdb15d490fe4",
+      "statement": "For longer videos, line-level SRT transcripts are more practical due to their smaller size.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 9.19,
+          "end": 9.24
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-12ce5143844b",
+      "statement": "Select a style for the video, such as 'flat vector science', to match the topic.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 9.29,
+          "end": 9.34
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-f5f43e91d2db",
+      "statement": "Enable the 'with voiceover' option and input the topic of the video.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 9.34,
+          "end": 9.39
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-8290bcaeecea",
+      "statement": "Copy the transcript from the transcription tool and paste it into the video creation tool.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 9.39,
+          "end": 9.45
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-17094428e822",
+      "statement": "Disable the storyboard option if not needed and copy the prompt for the video.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 9.45,
+          "end": 9.51
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-194ff04ce73b",
+      "statement": "Load the voiceover by clicking the 'load voiceover' option or dragging the file into the video creation tool.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 9.51,
+          "end": 10.02
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-3d72a53c023c",
+      "statement": "Stars form from large, cold clouds of gas and dust that collapse under gravity, spin faster, and heat up until hydrogen atoms fuse into helium, igniting the star.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 10.02,
+          "end": 10.45
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-76af910bc355",
+      "statement": "The fusion of hydrogen into helium in a star's core releases enormous energy, allowing the star to shine for billions of years.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 10.29,
+          "end": 10.52
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-d3dcab2607b4",
+      "statement": "When creating videos with AI tools, spend time refining a style that fits your aesthetic.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 10.52,
+          "end": 11.01
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-7c5cbfcdda1e",
+      "statement": "AI video generation tools offer a variety of styles to choose from or use as-is, depending on the type of video needed.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 11.01,
+          "end": 11.12
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "k-cf9a2f1ddeee",
+      "statement": "The Style Atlas for AI video generation is available for free at a link in the description.",
+      "source_refs": [
+        {
+          "source_id": "src-474767d1a074",
+          "start": 11.12,
+          "end": 11.18
+        }
+      ],
+      "confidence": "high"
+    }
+  ]
+}

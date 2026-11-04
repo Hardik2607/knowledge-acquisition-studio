@@ -1,0 +1,13 @@
+{
+  "task_id": "t-notes",
+  "criteria": [
+    "AC-06"
+  ],
+  "result": "pass",
+  "artifacts": [
+    "notes/src-474767d1a074.json"
+  ],
+  "command": "kas build --project /app/projects/video-generation",
+  "run_at": "2026-11-03T19:58:47Z",
+  "notes": "Every note carries source_id and a range inside that source's transcript."
+}

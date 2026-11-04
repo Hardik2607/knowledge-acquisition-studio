@@ -1,0 +1,6 @@
+project_id: video-generation
+goal: agents, tools, reponame
+sources:
+- kind: video
+  origin: https://www.youtube.com/watch?v=Ge1B-Ok1Pfk&pp=ygUIdHV0b3JpYWzSBwkJKgwBhyohjO8%3D
+  title: Claude Makes a New Kind of Video - Full Tutorial

@@ -14,12 +14,11 @@ services:
       - ./runtime:/app/runtime
       # Optional: Mount your local Obsidian vault to sync notes directly
       # - ~/Documents/ObsidianVault:/vault
-    environment:
-      # Optional LLM & Transcriber API keys (passed from host environment if present)
-      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
-      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
-      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
-      - GROQ_API_KEY=${GROQ_API_KEY:-}
+    env_file:
+      - path: /home/hardik/.hermes/.env
+        required: false
+      - path: .env
+        required: false
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8765/api/projects"]
       interval: 30s

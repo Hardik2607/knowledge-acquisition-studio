@@ -1,0 +1,814 @@
+{
+  "source_id": "src-474767d1a074",
+  "provider": "groq",
+  "model": "whisper-large-v3",
+  "language": "English",
+  "generated_at": "2026-11-03T19:45:54Z",
+  "schema_version": 1,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.74,
+      "text": "There's a new way to make videos with Claude, and they are perfect for motion graphics,",
+      "language": "English"
+    },
+    {
+      "start": 5.02,
+      "end": 9.2,
+      "text": "explainer videos, and just videos that don't look like they were made with AI.",
+      "language": "English"
+    },
+    {
+      "start": 9.62,
+      "end": 14.679999,
+      "text": "Claude doesn't have a video generator, but it doesn't need one. It does it all through code.",
+      "language": "English"
+    },
+    {
+      "start": 14.96,
+      "end": 19.74,
+      "text": "I'll show you how these work and exactly how to make them. Plus, I actually created a huge",
+      "language": "English"
+    },
+    {
+      "start": 19.74,
+      "end": 26.38,
+      "text": "free database of 86 styles you can explore and use just by copying the prompt. There's simple ones,",
+      "language": "English"
+    },
+    {
+      "start": 26.38,
+      "end": 31.019999,
+      "text": "more elaborate ones, and some that are just really unique. And they're all customizable",
+      "language": "English"
+    },
+    {
+      "start": 31.019999,
+      "end": 36.079998,
+      "text": "and have the option to sync them up to a voiceover and time them perfectly to the words.",
+      "language": "English"
+    },
+    {
+      "start": 39.26,
+      "end": 44.26,
+      "text": "First off, I want to explain what's new about this, since I've been using Clod to create motion",
+      "language": "English"
+    },
+    {
+      "start": 44.26,
+      "end": 49.5,
+      "text": "graphics for a while already, using frameworks like Remotion and Hyperframes, as many other",
+      "language": "English"
+    },
+    {
+      "start": 49.5,
+      "end": 54.68,
+      "text": "people have. Those are toolkits you can install that give Clod a structure to build videos.",
+      "language": "English"
+    },
+    {
+      "start": 54.68,
+      "end": 56.54,
+      "text": "This doesn't need any of that.",
+      "language": "English"
+    },
+    {
+      "start": 56.84,
+      "end": 60.72,
+      "text": "Claude writes plain JavaScript that draws each frame by itself.",
+      "language": "English"
+    },
+    {
+      "start": 61.04,
+      "end": 64.62,
+      "text": "JavaScript is the programming language built into every web browser.",
+      "language": "English"
+    },
+    {
+      "start": 64.92,
+      "end": 67.72,
+      "text": "It doesn't really matter to know any of that, but I wanted to cover it.",
+      "language": "English"
+    },
+    {
+      "start": 67.96,
+      "end": 71.34,
+      "text": "And I got most interested in this over the previous workflows I had",
+      "language": "English"
+    },
+    {
+      "start": 71.34,
+      "end": 75.54,
+      "text": "because of a series of amazing posts by another creator named Kevin.",
+      "language": "English"
+    },
+    {
+      "start": 75.82,
+      "end": 78.14,
+      "text": "You may have already seen this, but I'll show one really quick.",
+      "language": "English"
+    },
+    {
+      "start": 84.68,
+      "end": 110.44,
+      "text": "That was the first one I saw that just blew me away. It's so unique and different from anything",
+      "language": "English"
+    },
+    {
+      "start": 110.44,
+      "end": 114.3,
+      "text": "I've seen AI make before. This is not really something that would make sense in the types",
+      "language": "English"
+    },
+    {
+      "start": 114.3,
+      "end": 118.42,
+      "text": "of videos that I make, but it showcases the creative directions this can be taken in.",
+      "language": "English"
+    },
+    {
+      "start": 118.659996,
+      "end": 123.13999,
+      "text": "And again, it doesn't involve any sort of text to video model. It's all created using code,",
+      "language": "English"
+    },
+    {
+      "start": 123.259995,
+      "end": 130.31999,
+      "text": "including all of the sound effects. Now, I wanted to adapt this more towards YouTube",
+      "language": "English"
+    },
+    {
+      "start": 130.31999,
+      "end": 136.94,
+      "text": "explainer videos, so I had Claude generate a total of 86 different styles. I listed out around 20 to",
+      "language": "English"
+    },
+    {
+      "start": 136.94,
+      "end": 142.51999,
+      "text": "30 that I wanted, then let Claude come up with the rest. I also had it create its own database of",
+      "language": "English"
+    },
+    {
+      "start": 142.52,
+      "end": 146.64,
+      "text": "sound effects to draw from, also using only JavaScript. This whole thing is completely",
+      "language": "English"
+    },
+    {
+      "start": 146.64,
+      "end": 151.62001,
+      "text": "free at the first link in the description. These each have a 15 second sample generation",
+      "language": "English"
+    },
+    {
+      "start": 151.62001,
+      "end": 155.6,
+      "text": "explaining how AI works. You can get a good idea of it that way.",
+      "language": "English"
+    },
+    {
+      "start": 166.36,
+      "end": 185.59201,
+      "text": "This one is a pretty useful style And here a cool 16 pixel style",
+      "language": "English"
+    },
+    {
+      "start": 185.59201,
+      "end": 187.832,
+      "text": "And how about a chalkboard style?",
+      "language": "English"
+    },
+    {
+      "start": 187.832,
+      "end": 190.392,
+      "text": "useful one.",
+      "language": "English"
+    },
+    {
+      "start": 203.272,
+      "end": 209.03201,
+      "text": "Or how about we try one that's more unique? Here's Cut Paper Diorama.",
+      "language": "English"
+    },
+    {
+      "start": 217.832,
+      "end": 224.912,
+      "text": "There's a huge range from simple to really unique.",
+      "language": "English"
+    },
+    {
+      "start": 225.23201,
+      "end": 227.37201,
+      "text": "So I'm going to use this glassmorphism one,",
+      "language": "English"
+    },
+    {
+      "start": 227.53201,
+      "end": 229.15201,
+      "text": "which is on the simpler side of these,",
+      "language": "English"
+    },
+    {
+      "start": 229.25201,
+      "end": 231.03201,
+      "text": "but should be great for a visual explainer.",
+      "language": "English"
+    },
+    {
+      "start": 231.332,
+      "end": 233.37201,
+      "text": "And each of these have that explainer example",
+      "language": "English"
+    },
+    {
+      "start": 233.37201,
+      "end": 234.792,
+      "text": "with the sound effects included.",
+      "language": "English"
+    },
+    {
+      "start": 234.97202,
+      "end": 237.232,
+      "text": "Then you can click to see a shorter style clip,",
+      "language": "English"
+    },
+    {
+      "start": 237.272,
+      "end": 238.772,
+      "text": "which shows how it builds a scene.",
+      "language": "English"
+    },
+    {
+      "start": 239.072,
+      "end": 240.632,
+      "text": "The explainer is more useful,",
+      "language": "English"
+    },
+    {
+      "start": 240.632,
+      "end": 243.412,
+      "text": "but I generated all the shorter ones first actually,",
+      "language": "English"
+    },
+    {
+      "start": 243.632,
+      "end": 245.31201,
+      "text": "and didn't want to just delete them.",
+      "language": "English"
+    },
+    {
+      "start": 245.392,
+      "end": 246.772,
+      "text": "So I left the option to view them.",
+      "language": "English"
+    },
+    {
+      "start": 246.772,
+      "end": 251.15201,
+      "text": "There's a couple other options here you can select with voiceover, which will ask for",
+      "language": "English"
+    },
+    {
+      "start": 251.15201,
+      "end": 252.15201,
+      "text": "a transcript.",
+      "language": "English"
+    },
+    {
+      "start": 252.15201,
+      "end": 256.232,
+      "text": "I'll show that later where you can sync up the whole thing perfectly to a voiceover.",
+      "language": "English"
+    },
+    {
+      "start": 256.232,
+      "end": 260.792,
+      "text": "Then without voiceover just asks for the topic or story you want it to create.",
+      "language": "English"
+    },
+    {
+      "start": 260.792,
+      "end": 262.732,
+      "text": "You can be as simple or as detailed as you want.",
+      "language": "English"
+    },
+    {
+      "start": 262.732,
+      "end": 266.672,
+      "text": "I'll say how noise cancelling headphones work.",
+      "language": "English"
+    },
+    {
+      "start": 266.672,
+      "end": 271.712,
+      "text": "By default, the prompt does also include asking for a visual storyboard first so you can get",
+      "language": "English"
+    },
+    {
+      "start": 271.712,
+      "end": 275.412,
+      "text": "a good idea what it looks like before running the full generation.",
+      "language": "English"
+    },
+    {
+      "start": 275.412,
+      "end": 279.112,
+      "text": "it will show images of each of the major beats that will be used.",
+      "language": "English"
+    },
+    {
+      "start": 279.112,
+      "end": 282.952,
+      "text": "The examples give you a pretty good idea of how it will go, so I switch that off a lot",
+      "language": "English"
+    },
+    {
+      "start": 282.952,
+      "end": 285.652,
+      "text": "of the time, then just ask for edits afterwards if I need them.",
+      "language": "English"
+    },
+    {
+      "start": 285.652,
+      "end": 287.792,
+      "text": "I'll leave it on to show what it looks like.",
+      "language": "English"
+    },
+    {
+      "start": 287.792,
+      "end": 292.092,
+      "text": "Then when I click copy prompt, it includes the full prompt to recreate the style and",
+      "language": "English"
+    },
+    {
+      "start": 292.092,
+      "end": 294.672,
+      "text": "also the parts I added in of the topic.",
+      "language": "English"
+    },
+    {
+      "start": 294.672,
+      "end": 299.052,
+      "text": "So when I go to Claude, all I have to do is paste it in and hit send.",
+      "language": "English"
+    },
+    {
+      "start": 299.052,
+      "end": 301.952,
+      "text": "Now this is what the storyboard looks like when it comes back.",
+      "language": "English"
+    },
+    {
+      "start": 301.952,
+      "end": 305.312,
+      "text": "I think this looks great, so I'll let it generate the whole thing.",
+      "language": "English"
+    },
+    {
+      "start": 305.312,
+      "end": 308.21198,
+      "text": "But you could ask for any changes you want at this point.",
+      "language": "English"
+    },
+    {
+      "start": 308.21198,
+      "end": 333.632,
+      "text": "And here's what came back.",
+      "language": "English"
+    },
+    {
+      "start": 333.63202,
+      "end": 344.74402,
+      "text": "looked great The style was really good The sound effects went along perfectly And since this is all code if you want any changes with most of them it really easy for it to fix or alter anything really precisely",
+      "language": "English"
+    },
+    {
+      "start": 344.74402,
+      "end": 345.704,
+      "text": "Just ask.",
+      "language": "English"
+    },
+    {
+      "start": 345.704,
+      "end": 349.62402,
+      "text": "I do think it could have benefited from a voiceover actually, so I'll show that next.",
+      "language": "English"
+    },
+    {
+      "start": 349.62402,
+      "end": 353.384,
+      "text": "But I do want to mention, I used Opus for that, but you don't have to.",
+      "language": "English"
+    },
+    {
+      "start": 353.384,
+      "end": 357.384,
+      "text": "I generated this one in Sonnet as well, that I think looks just as good.",
+      "language": "English"
+    },
+    {
+      "start": 357.944,
+      "end": 363.224,
+      "text": "Then I also pasted that same prompt into ChatGPT, and Astra gave me a good result too.",
+      "language": "English"
+    },
+    {
+      "start": 363.224,
+      "end": 365.424,
+      "text": "Although I think it is a little worse than Claude's.",
+      "language": "English"
+    },
+    {
+      "start": 365.764,
+      "end": 367.56403,
+      "text": "That's how easy this is to use.",
+      "language": "English"
+    },
+    {
+      "start": 367.704,
+      "end": 369.864,
+      "text": "And there are so many different styles in here.",
+      "language": "English"
+    },
+    {
+      "start": 370.06403,
+      "end": 371.764,
+      "text": "A lot of them are really, really cool.",
+      "language": "English"
+    },
+    {
+      "start": 371.924,
+      "end": 374.06403,
+      "text": "I may have gone a little overboard on this.",
+      "language": "English"
+    },
+    {
+      "start": 374.264,
+      "end": 377.644,
+      "text": "It's the fastest I have ever burned through my usage and resets.",
+      "language": "English"
+    },
+    {
+      "start": 377.924,
+      "end": 382.344,
+      "text": "That's why I was like, I need to make sure other people can use this instead of just me.",
+      "language": "English"
+    },
+    {
+      "start": 382.444,
+      "end": 384.90402,
+      "text": "So all those tokens I used get more use out of them.",
+      "language": "English"
+    },
+    {
+      "start": 385.284,
+      "end": 386.704,
+      "text": "So yeah, it's all free at the link in the description.",
+      "language": "English"
+    },
+    {
+      "start": 389.96402,
+      "end": 392.984,
+      "text": "And you may have noticed when I pasted it into Claude,",
+      "language": "English"
+    },
+    {
+      "start": 392.984,
+      "end": 397.544,
+      "text": "it was the little pasted text attachment. That's because the prompt is really long.",
+      "language": "English"
+    },
+    {
+      "start": 397.824,
+      "end": 402.664,
+      "text": "This is what the whole thing looks like. I do have some guidance built in, but the most important",
+      "language": "English"
+    },
+    {
+      "start": 402.664,
+      "end": 407.824,
+      "text": "part is it includes all the actual code that was used to create the example video. That's why these",
+      "language": "English"
+    },
+    {
+      "start": 407.824,
+      "end": 413.30402,
+      "text": "can be so consistent and why it gets just as good of results out of Sonnet as it does Opus. If you",
+      "language": "English"
+    },
+    {
+      "start": 413.30402,
+      "end": 418.844,
+      "text": "just send the video itself as a style reference, VOD and ChatGPT can't watch it. All they do is",
+      "language": "English"
+    },
+    {
+      "start": 418.844,
+      "end": 424.06403,
+      "text": "take screenshots and analyze those to piece it together. So a lot gets lost in that process.",
+      "language": "English"
+    },
+    {
+      "start": 424.364,
+      "end": 429.044,
+      "text": "Since these are made from code, it includes all the code. So it has that base and just makes",
+      "language": "English"
+    },
+    {
+      "start": 429.044,
+      "end": 433.68402,
+      "text": "modifications instead of writing it all from scratch. Much more consistent. And as you copy",
+      "language": "English"
+    },
+    {
+      "start": 433.68402,
+      "end": 438.824,
+      "text": "these prompts, you can modify anything you want. Just ask to change the color palette or things to",
+      "language": "English"
+    },
+    {
+      "start": 438.824,
+      "end": 443.424,
+      "text": "move slower. Ask for any customizations to these. Just explain that in your prompt or through",
+      "language": "English"
+    },
+    {
+      "start": 443.424,
+      "end": 448.324,
+      "text": "iteration after it comes back. And then if you end up with a new custom version you like, ask Claude",
+      "language": "English"
+    },
+    {
+      "start": 448.324,
+      "end": 452.504,
+      "text": "to turn that into a skill so you don't have to come back to this database every time. You can",
+      "language": "English"
+    },
+    {
+      "start": 452.504,
+      "end": 461.144,
+      "text": "just call the skill instead. Now I'll show how to use this if you have a voiceover. I typically use",
+      "language": "English"
+    },
+    {
+      "start": 461.144,
+      "end": 466.404,
+      "text": "my own voice, but I'll use Gemini 3.8 Flash text-to-speech for this demo. You could also use",
+      "language": "English"
+    },
+    {
+      "start": 466.404,
+      "end": 472.14398,
+      "text": "11 Labs or any method of making a voiceover. I'm in Google AI Studio to use this. There's",
+      "language": "English"
+    },
+    {
+      "start": 472.144,
+      "end": 478.88403,
+      "text": "model selection on the right, hit audio, then Gemini 3.8 Flash TTS, then create new dialogue.",
+      "language": "English"
+    },
+    {
+      "start": 479.30402,
+      "end": 482.164,
+      "text": "Then there's a big list of voices to choose from. I'll listen to a couple.",
+      "language": "English"
+    },
+    {
+      "start": 483.104,
+      "end": 485.784,
+      "text": "Observe how the metaphor develops across the third chapter.",
+      "language": "English"
+    },
+    {
+      "start": 486.44403,
+      "end": 489.664,
+      "text": "Observe how the metaphor develops across the third chapter.",
+      "language": "English"
+    },
+    {
+      "start": 490.02402,
+      "end": 493.204,
+      "text": "Let's solve this quadratic equation using the quadratic formula.",
+      "language": "English"
+    },
+    {
+      "start": 493.784,
+      "end": 496.764,
+      "text": "I completely understand how frustrating that billing issue is.",
+      "language": "English"
+    },
+    {
+      "start": 497.12402,
+      "end": 499.344,
+      "text": "Let me pull up your account right now and adjust the charge.",
+      "language": "English"
+    },
+    {
+      "start": 499.344,
+      "end": 500.344,
+      "text": "That one sounds good.",
+      "language": "English"
+    },
+    {
+      "start": 500.344,
+      "end": 501.68402,
+      "text": "I'll paste in the script.",
+      "language": "English"
+    },
+    {
+      "start": 501.68402,
+      "end": 504.084,
+      "text": "Then there's some more customization options.",
+      "language": "English"
+    },
+    {
+      "start": 504.084,
+      "end": 514.476,
+      "text": "Got a few style options I think narration will be good for this one Then there all these options for tags where you can add breaths and laughs and other sounds throughout It will add the tag right",
+      "language": "English"
+    },
+    {
+      "start": 514.476,
+      "end": 519.23596,
+      "text": "into the script and they usually sound great. That's more for dialogue scenes though. I don't",
+      "language": "English"
+    },
+    {
+      "start": 519.23596,
+      "end": 525.456,
+      "text": "need any in this. So I'll click run. Then pretty quick I can listen to that. Stars begin as huge",
+      "language": "English"
+    },
+    {
+      "start": 525.456,
+      "end": 532.776,
+      "text": "cold clouds of gas and dust. That's sounding great. I'll download it. From here we still need a",
+      "language": "English"
+    },
+    {
+      "start": 532.776,
+      "end": 537.396,
+      "text": "transcript with timestamps. Some tools like 11Labs can give you that with your generation.",
+      "language": "English"
+    },
+    {
+      "start": 537.816,
+      "end": 542.996,
+      "text": "You can also use transcription tools. There's free ones online or local options, or you can ask",
+      "language": "English"
+    },
+    {
+      "start": 542.996,
+      "end": 548.79596,
+      "text": "Claude to use those transcription tools itself. I will drop the file in and say, give me a word",
+      "language": "English"
+    },
+    {
+      "start": 548.79596,
+      "end": 554.716,
+      "text": "level SRT transcript for this that I can copy paste. It works best with the word by word timings.",
+      "language": "English"
+    },
+    {
+      "start": 554.916,
+      "end": 559.73596,
+      "text": "If you only ask for an SRT transcript, it will give you the timing by line instead of for each",
+      "language": "English"
+    },
+    {
+      "start": 559.73596,
+      "end": 564.316,
+      "text": "word. That works well too, and I do that for longer videos, mainly because these word-for-word",
+      "language": "English"
+    },
+    {
+      "start": 564.316,
+      "end": 569.036,
+      "text": "ones will be gigantic for those. But for these shorter ones, having it down to the word is nice.",
+      "language": "English"
+    },
+    {
+      "start": 569.396,
+      "end": 574.896,
+      "text": "And once I have that, all I do is pick a style. This flat vector science looks awesome. Should",
+      "language": "English"
+    },
+    {
+      "start": 574.896,
+      "end": 579.596,
+      "text": "go well with this topic. And I'll toggle it to with voiceover. Then I'll type in the topic,",
+      "language": "English"
+    },
+    {
+      "start": 579.776,
+      "end": 585.276,
+      "text": "how stars are born. Then I'll copy the transcript from Claude and paste that in. And I'll switch the",
+      "language": "English"
+    },
+    {
+      "start": 585.276,
+      "end": 591.47595,
+      "text": "storyboard off for this one. Click copy prompt. Open a new chatting cloud, paste and send it off.",
+      "language": "English"
+    },
+    {
+      "start": 591.896,
+      "end": 597.076,
+      "text": "That's all finished. You'll see the option on the right to load voiceover. You can click that and",
+      "language": "English"
+    },
+    {
+      "start": 597.076,
+      "end": 602.416,
+      "text": "select the file or just drag the voiceover in. Then it's all ready to go. You could upload the",
+      "language": "English"
+    },
+    {
+      "start": 602.416,
+      "end": 606.576,
+      "text": "voiceover file at the same time you send the prompt to, but I wanted to make sure it still",
+      "language": "English"
+    },
+    {
+      "start": 606.576,
+      "end": 611.456,
+      "text": "worked if you forget to do that since I forgot the first time I tested it. It's easier to just",
+      "language": "English"
+    },
+    {
+      "start": 611.456,
+      "end": 619.936,
+      "text": "drop it in now. Let's check this one out. Stars begin as huge, cold clouds of gas and dust.",
+      "language": "English"
+    },
+    {
+      "start": 620.836,
+      "end": 628.85596,
+      "text": "Gravity slowly pulls the cloud together, and as it collapses, it spins faster and heats up.",
+      "language": "English"
+    },
+    {
+      "start": 629.716,
+      "end": 636.376,
+      "text": "When the center reaches about 10 million degrees, hydrogen atoms start fusing into helium,",
+      "language": "English"
+    },
+    {
+      "start": 636.376,
+      "end": 645.29596,
+      "text": "releasing enormous energy. That's the moment it ignites. A new star is born and it can shine",
+      "language": "English"
+    },
+    {
+      "start": 645.29596,
+      "end": 652.656,
+      "text": "for billions of years. That turned out amazing. It honestly blows my mind how easy this is now.",
+      "language": "English"
+    },
+    {
+      "start": 652.656,
+      "end": 657.456,
+      "text": "That was the entire process. And if you're using this for videos, you'll probably want to spend",
+      "language": "English"
+    },
+    {
+      "start": 657.456,
+      "end": 661.996,
+      "text": "some time refining a style that you like that fits with your aesthetic. Like the one I use,",
+      "language": "English"
+    },
+    {
+      "start": 661.996,
+      "end": 666.456,
+      "text": "I based off of this background I have with all the blue and amber dots and lighting.",
+      "language": "English"
+    },
+    {
+      "start": 666.67596,
+      "end": 669.136,
+      "text": "But there's so many cool styles to start from in here",
+      "language": "English"
+    },
+    {
+      "start": 669.136,
+      "end": 672.156,
+      "text": "or just to use as is depending on what types of videos you need.",
+      "language": "English"
+    },
+    {
+      "start": 672.396,
+      "end": 675.696,
+      "text": "Again, that style atlas is completely free at the link in the description.",
+      "language": "English"
+    },
+    {
+      "start": 676.11597,
+      "end": 678.536,
+      "text": "I hope you put it to good use and I'll see you in the next one.",
+      "language": "English"
+    }
+  ]
+}

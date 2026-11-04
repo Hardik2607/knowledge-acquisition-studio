@@ -1,0 +1,14 @@
+{
+  "task_id": "t-qa",
+  "criteria": [
+    "AC-22",
+    "AC-23"
+  ],
+  "result": "fail",
+  "artifacts": [
+    "reports/qa-report.md"
+  ],
+  "command": "kas qa --project /app/projects/video-generation",
+  "run_at": "2026-11-04T12:42:31Z",
+  "notes": "QA report covering AC-01\u2026AC-25 and skill version check."
+}

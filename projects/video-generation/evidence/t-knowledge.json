@@ -1,0 +1,22 @@
+{
+  "task_id": "t-knowledge",
+  "criteria": [
+    "AC-07",
+    "AC-08",
+    "AC-09",
+    "AC-15"
+  ],
+  "result": "pass",
+  "artifacts": [
+    "knowledge/units.json",
+    "knowledge/source-map.json",
+    "knowledge/procedures/p-create-a-video-with-voiceover-using-ai-t.md",
+    "knowledge/procedures/p-create-a-voiceover-for-the-video-using-g.md",
+    "knowledge/procedures/p-generate-a-transcript-for-voiceover-sync.md",
+    "knowledge/procedures/p-generate-a-video-using-claude-s-code-bas.md",
+    "knowledge/procedures/p-refine-and-customize-video-styles.md"
+  ],
+  "command": "kas build --project /app/projects/video-generation",
+  "run_at": "2026-11-03T19:58:47Z",
+  "notes": "Units, procedures and source map are valid and provenance-clean."
+}

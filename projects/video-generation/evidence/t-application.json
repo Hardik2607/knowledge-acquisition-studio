@@ -1,0 +1,13 @@
+{
+  "task_id": "t-application",
+  "criteria": [
+    "AC-20"
+  ],
+  "result": "pass",
+  "artifacts": [
+    "application/report.md"
+  ],
+  "command": "kas qa --project /app/projects/video-generation",
+  "run_at": "2026-11-04T12:42:31Z",
+  "notes": "Application report written to application/report.md"
+}

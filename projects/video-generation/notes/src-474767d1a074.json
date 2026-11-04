@@ -1,0 +1,583 @@
+{
+  "source_id": "src-474767d1a074",
+  "provider": "unorouter",
+  "model": "mistral-small-3.2:free",
+  "generated_at": "2026-11-03T19:52:02Z",
+  "schema_version": 1,
+  "notes": [
+    {
+      "source_id": "src-474767d1a074",
+      "start": 0.0,
+      "end": 4.0,
+      "range": "00:00\u201300:04",
+      "text": "Claude can create videos suitable for motion graphics and explainer videos without looking AI-generated."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 5.0,
+      "end": 9.0,
+      "range": "00:05\u201300:09",
+      "text": "Claude's video creation process does not require a dedicated video generator."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 9.0,
+      "end": 14.0,
+      "range": "00:09\u201300:14",
+      "text": "Claude creates videos through code, specifically by writing plain JavaScript that draws each frame individually."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 14.0,
+      "end": 26.0,
+      "range": "00:14\u201300:26",
+      "text": "A free database of 86 customizable video styles is available, which can be synced to a voiceover for perfect timing."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 39.0,
+      "end": 54.0,
+      "range": "00:39\u201300:54",
+      "text": "Previous methods for creating motion graphics with Claude involved using frameworks like Remotion and Hyperframes, which provide a structure for building videos."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 54.0,
+      "end": 60.0,
+      "range": "00:54\u201301:00",
+      "text": "The new method does not require any additional toolkits or frameworks."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 61.0,
+      "end": 64.0,
+      "range": "01:01\u201301:04",
+      "text": "JavaScript is the programming language built into every web browser."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 67.0,
+      "end": 71.0,
+      "range": "01:07\u201301:11",
+      "text": "The new workflow of Claude writing plain JavaScript to draw each frame is more efficient than previous methods."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 118.0,
+      "end": 123.0,
+      "range": "01:58\u201302:03",
+      "text": "The video creation process does not involve any text-to-video models."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 123.0,
+      "end": 130.0,
+      "range": "02:03\u201302:10",
+      "text": "The video and sound effects are created using code, specifically JavaScript."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 130.0,
+      "end": 142.0,
+      "range": "02:10\u201302:22",
+      "text": "Claude generated 86 different styles for YouTube explainer videos. The creator listed 20-30 styles and Claude generated the rest."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 142.0,
+      "end": 146.0,
+      "range": "02:22\u201302:26",
+      "text": "Claude created a database of sound effects using only JavaScript."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 146.0,
+      "end": 151.0,
+      "range": "02:26\u201302:31",
+      "text": "The project is completely free and available at the first link in the description."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 151.0,
+      "end": 155.0,
+      "range": "02:31\u201302:35",
+      "text": "Each style has a 15-second sample generation explaining how AI works."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 185.0,
+      "end": 187.0,
+      "range": "03:05\u201303:07",
+      "text": "A chalkboard style is one of the generated styles."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 203.0,
+      "end": 209.0,
+      "range": "03:23\u201303:29",
+      "text": "Explore unique video styles like Cut Paper Diorama."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 217.0,
+      "end": 224.0,
+      "range": "03:37\u201303:44",
+      "text": "Video styles range from simple to unique."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 225.0,
+      "end": 227.0,
+      "range": "03:45\u201303:47",
+      "text": "Select the glassmorphism video style for a visual explainer."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 227.0,
+      "end": 229.0,
+      "range": "03:47\u201303:49",
+      "text": "Glassmorphism is on the simpler side of video styles."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 231.0,
+      "end": 233.0,
+      "range": "03:51\u201303:53",
+      "text": "Each video style includes an explainer example with sound effects."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 234.0,
+      "end": 238.0,
+      "range": "03:54\u201303:58",
+      "text": "Click to view a shorter style clip that shows how a scene builds."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 239.0,
+      "end": 240.0,
+      "range": "03:59\u201304:00",
+      "text": "The explainer video is more useful than the shorter clips."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 240.0,
+      "end": 243.0,
+      "range": "04:00\u201304:03",
+      "text": "Generate shorter clips first before creating the full explainer video."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 243.0,
+      "end": 245.0,
+      "range": "04:03\u201304:05",
+      "text": "Retain the option to view shorter clips even after generating the explainer."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 246.0,
+      "end": 251.0,
+      "range": "04:06\u201304:11",
+      "text": "Select voiceover options which will ask for a transcript."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 252.0,
+      "end": 256.0,
+      "range": "04:12\u201304:16",
+      "text": "Sync the video perfectly to a voiceover."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 256.0,
+      "end": 260.0,
+      "range": "04:16\u201304:20",
+      "text": "Request a video creation without voiceover by specifying the topic or story."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 260.0,
+      "end": 262.0,
+      "range": "04:20\u201304:22",
+      "text": "Provide a simple or detailed description for the video topic."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 262.0,
+      "end": 266.0,
+      "range": "04:22\u201304:26",
+      "text": "Example prompt: 'how noise cancelling headphones work'."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 266.0,
+      "end": 275.0,
+      "range": "04:26\u201304:35",
+      "text": "By default, the prompt includes a request for a visual storyboard first."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 275.0,
+      "end": 279.0,
+      "range": "04:35\u201304:39",
+      "text": "The storyboard shows images of each major beat in the video."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 279.0,
+      "end": 285.0,
+      "range": "04:39\u201304:45",
+      "text": "Option to switch off the storyboard and request edits afterwards if needed."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 285.0,
+      "end": 292.0,
+      "range": "04:45\u201304:52",
+      "text": "Copy the full prompt to recreate the style and include the topic."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 292.0,
+      "end": 299.0,
+      "range": "04:52\u201304:59",
+      "text": "Paste the copied prompt into Claude and hit send to generate the video."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 299.0,
+      "end": 301.0,
+      "range": "04:59\u201305:01",
+      "text": "Review the storyboard returned by Claude."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 301.0,
+      "end": 305.0,
+      "range": "05:01\u201305:05",
+      "text": "Generate the full video if the storyboard is approved."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 305.0,
+      "end": 308.0,
+      "range": "05:05\u201305:08",
+      "text": "Request changes to the generated video by asking for modifications."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 308.0,
+      "end": 333.0,
+      "range": "05:08\u201305:33",
+      "text": "Review the generated video for style, sound effects, and overall quality."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 333.0,
+      "end": 345.0,
+      "range": "05:33\u201305:45",
+      "text": "Since the video is code-based, changes can be made precisely and easily."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 345.0,
+      "end": 349.0,
+      "range": "05:45\u201305:49",
+      "text": "Consider adding a voiceover to enhance the video."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 349.0,
+      "end": 353.0,
+      "range": "05:49\u201305:53",
+      "text": "Opus was used for generating the video, but other tools can also be used."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 353.0,
+      "end": 363.0,
+      "range": "05:53\u201306:03",
+      "text": "The same prompt can be used in different tools like Sonnet and ChatGPT to generate similar results."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 363.0,
+      "end": 365.0,
+      "range": "06:03\u201306:05",
+      "text": "Compare the results from different tools to determine the best output."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 365.0,
+      "end": 367.0,
+      "range": "06:05\u201306:07",
+      "text": "The process of generating and modifying videos is straightforward and user-friendly."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 367.0,
+      "end": 371.0,
+      "range": "06:07\u201306:11",
+      "text": "Explore various styles available for video generation."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 371.0,
+      "end": 374.0,
+      "range": "06:11\u201306:14",
+      "text": "Be mindful of usage limits when generating multiple videos."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 374.0,
+      "end": 382.0,
+      "range": "06:14\u201306:22",
+      "text": "Share the method with others to allow wider usage of the video generation technique."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 382.0,
+      "end": 384.0,
+      "range": "06:22\u201306:24",
+      "text": "Reusing tokens maximizes their utility."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 385.0,
+      "end": 386.0,
+      "range": "06:25\u201306:26",
+      "text": "The process described is free and accessible via a link in the description."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 389.0,
+      "end": 392.0,
+      "range": "06:29\u201306:32",
+      "text": "Long prompts in Claude are pasted as text attachments."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 392.0,
+      "end": 397.0,
+      "range": "06:32\u201306:37",
+      "text": "The prompt includes the entire code used to create the example video."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 402.0,
+      "end": 407.0,
+      "range": "06:42\u201306:47",
+      "text": "Including the actual code ensures consistency in results across different models like Sonnet and Opus."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 413.0,
+      "end": 424.0,
+      "range": "06:53\u201307:04",
+      "text": "Sending a video as a style reference to VOD and ChatGPT results in analysis of screenshots, losing much information."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 424.0,
+      "end": 433.0,
+      "range": "07:04\u201307:13",
+      "text": "Code-based video creation allows for modifications rather than writing from scratch, ensuring consistency."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 433.0,
+      "end": 443.0,
+      "range": "07:13\u201307:23",
+      "text": "Prompts can be modified to change color palettes, speed, or other customizations by explaining changes in the prompt or through iteration."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 443.0,
+      "end": 452.0,
+      "range": "07:23\u201307:32",
+      "text": "Custom versions of prompts can be turned into skills in Claude to avoid repeatedly accessing the database."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 452.0,
+      "end": 461.0,
+      "range": "07:32\u201307:41",
+      "text": "Call the skill directly instead of using a voiceover."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 461.0,
+      "end": 472.0,
+      "range": "07:41\u201307:52",
+      "text": "Use Gemini 3.8 Flash text-to-speech for voiceover generation. Alternatives include 11 Labs."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 472.0,
+      "end": 478.0,
+      "range": "07:52\u201307:58",
+      "text": "Access Gemini 3.8 Flash TTS in Google AI Studio by selecting the model, choosing audio, and then creating new dialogue."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 479.0,
+      "end": 482.0,
+      "range": "07:59\u201308:02",
+      "text": "Select from a list of available voices in Gemini 3.8 Flash TTS."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 483.0,
+      "end": 485.0,
+      "range": "08:03\u201308:05",
+      "text": "Example text for voiceover: 'Observe how the metaphor develops across the third chapter.'"
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 486.0,
+      "end": 489.0,
+      "range": "08:06\u201308:09",
+      "text": "Example text for voiceover: 'Observe how the metaphor develops across the third chapter.'"
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 490.0,
+      "end": 493.0,
+      "range": "08:10\u201308:13",
+      "text": "Example text for voiceover: 'Let's solve this quadratic equation using the quadratic formula.'"
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 493.0,
+      "end": 496.0,
+      "range": "08:13\u201308:16",
+      "text": "Example text for voiceover: 'I completely understand how frustrating that billing issue is.'"
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 497.0,
+      "end": 499.0,
+      "range": "08:17\u201308:19",
+      "text": "Example text for voiceover: 'Let me pull up your account right now and adjust the charge.'"
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 500.0,
+      "end": 501.0,
+      "range": "08:20\u201308:21",
+      "text": "Paste the script into the dialogue box."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 501.0,
+      "end": 504.0,
+      "range": "08:21\u201308:24",
+      "text": "Customize the voiceover with additional options."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 504.0,
+      "end": 514.0,
+      "range": "08:24\u201308:34",
+      "text": "Choose style options like narration and add tags for breaths, laughs, and other sounds to enhance the voiceover."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 514.0,
+      "end": 519.0,
+      "range": "08:34\u201308:39",
+      "text": "Tags are more suitable for dialogue scenes."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 532.0,
+      "end": 548.0,
+      "range": "08:52\u201309:08",
+      "text": "To generate a transcript with timestamps, use tools like 11Labs or other transcription services. These can be free online tools, local options, or integrated through AI assistants like Claude."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 548.0,
+      "end": 559.0,
+      "range": "09:08\u201309:19",
+      "text": "Request a word-level SRT transcript for precise timing. Command: 'give me a word level SRT transcript for this that I can copy paste'."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 559.0,
+      "end": 569.0,
+      "range": "09:19\u201309:29",
+      "text": "For longer videos, line-level SRT transcripts are more efficient due to smaller file sizes."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 569.0,
+      "end": 585.0,
+      "range": "09:29\u201309:45",
+      "text": "Select a video style (e.g., 'flat vector science') and enable the 'with voiceover' option. Enter the topic (e.g., 'how stars are born') and paste the transcript. Disable the storyboard feature if desired."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 585.0,
+      "end": 591.0,
+      "range": "09:45\u201309:51",
+      "text": "Copy the generated prompt, open a new chat session, paste the prompt, and send it to generate the video."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 591.0,
+      "end": 602.0,
+      "range": "09:51\u201310:02",
+      "text": "Load the voiceover by clicking the 'load voiceover' option and selecting the file, or drag and drop the voiceover file into the designated area."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 602.0,
+      "end": 606.0,
+      "range": "10:02\u201310:06",
+      "text": "Send a voiceover file simultaneously with the prompt to ensure synchronization."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 606.0,
+      "end": 611.0,
+      "range": "10:06\u201310:11",
+      "text": "Dropping the voiceover file in with the prompt is easier to ensure synchronization."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 611.0,
+      "end": 652.0,
+      "range": "10:11\u201310:52",
+      "text": "Stars form from huge, cold clouds of gas and dust. Gravity pulls the cloud together, causing it to spin faster and heat up. When the center reaches about 10 million degrees, hydrogen atoms fuse into helium, releasing enormous energy and igniting the star."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 652.0,
+      "end": 661.0,
+      "range": "10:52\u201311:01",
+      "text": "Refine the style of the video to fit your aesthetic and the type of videos you need."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 661.0,
+      "end": 666.0,
+      "range": "11:01\u201311:06",
+      "text": "Base your video style on a background that fits your aesthetic, such as one with blue and amber dots and lighting."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 666.0,
+      "end": 672.0,
+      "range": "11:06\u201311:12",
+      "text": "There are many cool styles available to start from or use as is, depending on the type of videos you need."
+    },
+    {
+      "source_id": "src-474767d1a074",
+      "start": 672.0,
+      "end": 675.0,
+      "range": "11:12\u201311:15",
+      "text": "The style atlas is completely free and available at the link in the description."
+    }
+  ]
+}
