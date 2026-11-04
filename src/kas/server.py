@@ -316,7 +316,37 @@ class KasStudioHandler(BaseHTTPRequestHandler):
     def __init__(self, *args, workspace_root: Path, default_project: Path | None = None, **kwargs):
         self.workspace_root = workspace_root
         self.default_project = default_project
+        self._is_head = False
         super().__init__(*args, **kwargs)
+
+    def _write_body(self, data: bytes) -> None:
+        if not getattr(self, "_is_head", False):
+            self.wfile.write(data)
+
+    def do_HEAD(self) -> None:
+        self._is_head = True
+        try:
+            self.do_GET()
+        finally:
+            self._is_head = False
+
+    def _resolve_project_target(self, params: dict[str, list[str]]) -> Path:
+        req = params.get("path", [""])[0] or params.get("project", [""])[0] or params.get("name", [""])[0]
+        if req:
+            p = Path(req)
+            if p.is_absolute() and p.is_dir():
+                return p
+            if (self.workspace_root / req).is_dir():
+                return (self.workspace_root / req).resolve()
+            if (self.workspace_root / "projects" / req).is_dir():
+                return (self.workspace_root / "projects" / req).resolve()
+            return (self.workspace_root / "projects" / req).resolve()
+        if self.default_project:
+            return self.default_project
+        projects = list_all_projects(self.workspace_root)
+        if projects:
+            return Path(projects[0]["path"])
+        return self.workspace_root / "projects" / "claude-tutorial"
 
     def do_GET(self) -> None:
         parsed = urllib.parse.urlparse(self.path)
@@ -333,17 +363,7 @@ class KasStudioHandler(BaseHTTPRequestHandler):
             return
 
         if path == "/api/project":
-            req_path = params.get("path", [""])[0] or params.get("name", [""])[0]
-            if req_path:
-                target = Path(req_path)
-                if not target.is_absolute():
-                    target = self.workspace_root / "projects" / req_path
-            elif self.default_project:
-                target = self.default_project
-            else:
-                projects = list_all_projects(self.workspace_root)
-                target = Path(projects[0]["path"]) if projects else self.workspace_root
-
+            target = self._resolve_project_target(params)
             if not target.is_dir():
                 self._send_json({"error": f"Project not found: {target}"}, status=HTTPStatus.NOT_FOUND)
                 return
@@ -355,8 +375,7 @@ class KasStudioHandler(BaseHTTPRequestHandler):
         if path == "/api/skills":
             # Search skills across current project or all
             query = params.get("q", [""])[0].lower()
-            req_path = params.get("path", [""])[0]
-            target = Path(req_path) if req_path else (self.default_project or (self.workspace_root / "projects" / "claude-tutorial"))
+            target = self._resolve_project_target(params)
             data = load_project_data(target)
 
             matched_units = []
@@ -381,8 +400,7 @@ class KasStudioHandler(BaseHTTPRequestHandler):
             return
 
         if path == "/api/export/skill":
-            req_path = params.get("path", [""])[0]
-            target = Path(req_path) if req_path else (self.default_project or (self.workspace_root / "projects" / "claude-tutorial"))
+            target = self._resolve_project_target(params)
             data = load_project_data(target)
             skill_md = export_as_antigravity_skill(data)
             self.send_response(HTTPStatus.OK)
@@ -390,12 +408,11 @@ class KasStudioHandler(BaseHTTPRequestHandler):
             self.send_header("Content-Disposition", f"attachment; filename={data.get('project_id', 'skill')}.skill.md")
             self.send_header("Content-Length", str(len(skill_md.encode("utf-8"))))
             self.end_headers()
-            self.wfile.write(skill_md.encode("utf-8"))
+            self._write_body(skill_md.encode("utf-8"))
             return
 
         if path == "/api/export/dossier":
-            req_path = params.get("path", [""])[0]
-            target = Path(req_path) if req_path else (self.default_project or (self.workspace_root / "projects" / "claude-tutorial"))
+            target = self._resolve_project_target(params)
             data = load_project_data(target)
             host_header = self.headers.get("Host", "localhost:8765")
             base_url = f"http://{host_header}"
@@ -405,7 +422,7 @@ class KasStudioHandler(BaseHTTPRequestHandler):
             self.send_header("Content-Disposition", f"attachment; filename={data.get('project_id', 'project')}-visual-dossier.md")
             self.send_header("Content-Length", str(len(dossier_md.encode("utf-8"))))
             self.end_headers()
-            self.wfile.write(dossier_md.encode("utf-8"))
+            self._write_body(dossier_md.encode("utf-8"))
             return
 
         if path.startswith("/media/"):
@@ -422,7 +439,7 @@ class KasStudioHandler(BaseHTTPRequestHandler):
                     self.send_header("Content-Length", str(len(content)))
                     self.send_header("Cache-Control", "public, max-age=86400")
                     self.end_headers()
-                    self.wfile.write(content)
+                    self._write_body(content)
                     return
             self.send_response(HTTPStatus.NOT_FOUND)
             self.end_headers()
@@ -661,7 +678,7 @@ class KasStudioHandler(BaseHTTPRequestHandler):
         self.send_header("Content-Length", str(len(payload)))
         self.send_header("Access-Control-Allow-Origin", "*")
         self.end_headers()
-        self.wfile.write(payload)
+        self._write_body(payload)
 
     def _serve_spa(self) -> None:
         html = INDEX_HTML.encode("utf-8")
@@ -669,7 +686,7 @@ class KasStudioHandler(BaseHTTPRequestHandler):
         self.send_header("Content-Type", "text/html; charset=utf-8")
         self.send_header("Content-Length", str(len(html)))
         self.end_headers()
-        self.wfile.write(html)
+        self._write_body(html)
 
     def log_message(self, format: str, *args) -> None:
         import sys

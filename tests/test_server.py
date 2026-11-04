@@ -91,16 +91,32 @@ def test_server_routes():
     assert "Visual Knowledge Dossier" in dossier_content
     assert "claude-tutorial" in dossier_content
 
-    # 7. POST /api/project/vault
-    tmp_vault = workspace / ".tmp" / "test_vault"
-    vault_payload = {"path": "projects/claude-tutorial", "vault_path": str(tmp_vault)}
-    conn.request("POST", "/api/project/vault", body=json.dumps(vault_payload), headers={"Content-Type": "application/json"})
+    # 6b. HEAD /api/projects
+    conn.request("HEAD", "/api/projects")
     res = conn.getresponse()
     assert res.status == 200
-    vault_data = json.loads(res.read().decode("utf-8"))
-    assert vault_data["status"] == "ok"
-    assert vault_data["written_count"] > 0
-    assert (tmp_vault / "Sources").is_dir()
+    assert res.read() == b""
+
+    # 6c. GET /api/export/dossier?project=claude-tutorial
+    conn.request("GET", "/api/export/dossier?project=claude-tutorial")
+    res = conn.getresponse()
+    assert res.status == 200
+    assert "claude-tutorial" in res.read().decode("utf-8")
+
+    # 7. POST /api/project/vault
+    orig_vault_evidence = (workspace / "projects" / "claude-tutorial" / "evidence" / "t-vault.json").read_bytes()
+    try:
+        tmp_vault = workspace / ".tmp" / "test_vault"
+        vault_payload = {"path": "projects/claude-tutorial", "vault_path": str(tmp_vault)}
+        conn.request("POST", "/api/project/vault", body=json.dumps(vault_payload), headers={"Content-Type": "application/json"})
+        res = conn.getresponse()
+        assert res.status == 200
+        vault_data = json.loads(res.read().decode("utf-8"))
+        assert vault_data["status"] == "ok"
+        assert vault_data["written_count"] > 0
+        assert (tmp_vault / "Sources").is_dir()
+    finally:
+        (workspace / "projects" / "claude-tutorial" / "evidence" / "t-vault.json").write_bytes(orig_vault_evidence)
 
     conn.close()
     server.shutdown()
